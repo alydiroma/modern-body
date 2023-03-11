@@ -1,0 +1,23 @@
+{% extends "_layout" %}
+{% block content %}
+<main class="home">
+    <section class="home-hero">
+        <div class="home-hero-container stack-reg">
+            <h1 class="home-hero-title">
+                {% set image = entry.homeHerologo.one() %}
+                {% if image %}
+                    <img src="{{ image.url() }}" alt="Modern Body by Ali DiRoma">
+                {% endif %}
+            </h1>
+            <div class="home-hero-copy">
+                <button class="home-hero-video-btn" type="button"></button>
+                <p class="home-hero-text">{{ entry.homeHeroTagline|striptags }}</p>
+            </div>
+        </div>
+        <video class="home-hero-video" playsinline autoplay muted>
+            <source src="{{ entry.homeHeroVideo.one().url }}" type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+    </section>
+</main>
+{% endblock %}

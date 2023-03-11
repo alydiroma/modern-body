@@ -1,0 +1,7 @@
+@each $size, $margin in $stack {
+	.stack-#{$size} {
+		> * + * {
+			margin-block-start: $margin;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.footer {
+	display: none;
+	position: relative;
+	padding: $gap-xs 0;
+	border-top: 1px solid $accent;
+	z-index: 2;
+	
+	&-container {
+		@include container;
+		display: flex;
+		justify-content: center;
+		
+		p {
+			@include font-bold;
+			@include toRem('font-size', 10);
+		}
+	}
+}

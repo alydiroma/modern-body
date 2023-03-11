@@ -1,0 +1,63 @@
+html {
+	box-sizing: border-box;
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	@include font-reg;
+	@include toRem('font-size', 16);
+	line-height: 1.8;
+	color: $black;
+	background-color: $white;
+	margin: 0;
+	padding: 0;
+}
+
+h2, .h2-style {
+	@include font-bold;
+	@include toRem('font-size', 36);
+	line-height: 1.2;
+
+	@include break(tablet) {
+		@include toRem('font-size', 30);
+	}
+
+	@include break(mobile) {
+		@include toRem('font-size', 28);
+	}
+}
+
+h3, .h3-style {
+	@include font-bold;
+	@include toRem('font-size', 28);
+	line-height: 1.2;
+
+	@include break(mobile) {
+		@include toRem('font-size', 21);
+	}
+}
+
+strong {
+	@include font-bold;
+}
+
+.large-font {
+	@include toRem('font-size', 18);
+
+	@include break(tablet) {
+		@include toRem('font-size', 17);
+	}
+}
+
+.object-fit {
+	@include object-fit;
+}
+

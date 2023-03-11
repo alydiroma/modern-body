@@ -1,0 +1,57 @@
+dateModified: 1678564665
+email:
+  fromEmail: alhmail@gmail.com
+  fromName: 'Modern Body'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  imageFiles:
+    hasUrls: true
+    name: 'Image Files'
+    settings:
+      path: '@webroot'
+    type: craft\fs\Local
+    url: '@web'
+  videoFiles:
+    hasUrls: true
+    name: 'Video Files'
+    settings:
+      path: '@webroot'
+    type: craft\fs\Local
+    url: '@web'
+meta:
+  __names__:
+    6d8edb5f-1775-4b83-9df0-2c1fb6d97ae7: Videos # Videos
+    6dd9aa0b-b4f3-4320-8d34-181a52eb6a00: Home # Home
+    07dede5f-e375-4ca2-9622-0adde621a5c3: Home # Home
+    9a08632a-f16d-4a7b-98d7-ded85bf94df6: Images # Images
+    9d74e71c-d037-432d-887d-4065ec79a9c7: 'Modern Body' # Modern Body
+    43c4b11f-16f2-4fb5-8984-7701e5e667d0: 'Hero Tagline' # Hero Tagline
+    196bdac8-d7ed-4635-acc3-e671ce97f550: Common # Common
+    c249f4db-294d-44b8-ba21-a84bc989d17a: Home # Home
+    c422089c-49f0-4d9a-9b30-dca485b14661: 'Hero Video' # Hero Video
+    e89c1ecc-9442-423f-ab32-6b3d2de27eac: 'Hero Logo' # Hero Logo
+    edd1d7a7-ee00-446d-af3c-31d47d1609b4: 'Modern Body' # Modern Body
+plugins:
+  mix:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      assetPath: /assets
+      publicPath: /
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: solo
+  live: true
+  name: 'Modern Body'
+  schemaVersion: 4.4.0.4
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

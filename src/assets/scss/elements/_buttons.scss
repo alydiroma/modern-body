@@ -1,0 +1,19 @@
+.btn {
+	@include button-reset;
+	display: inline-block;
+	height: 44px;
+	@include font-bold;
+	@include toRem('font-size', 16);
+	line-height: 42px;
+	padding: 0 $gap;
+	color: $accent;
+	background-color: transparent;
+	border: 2px solid $accent;
+	border-radius: $radius;
+	transition: color .6s ease, background-color .6s ease;
+
+	&:hover {
+		color: $white;
+		background-color: $accent;
+	}
+}

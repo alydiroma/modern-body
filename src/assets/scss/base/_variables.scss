@@ -1,0 +1,48 @@
+// colors 
+$black: #222;
+$white: #ffffff;
+$accent: #8a3a42;
+
+// fonts
+$font-logo-light: 'Roslindale Display Narrow Extra Light', serif;
+$font-logo-medium: 'Roslindale Display Narrow Medium', serif;
+$font-head: 'Poppins Bold', sans-serif;
+$font-bold: 'Poppins Bold', sans-serif;
+$font-medium: 'Poppins Medium', sans-serif;
+$font-reg: 'Poppins Regular', sans-serif;
+
+// spacing
+$gap-xxl: 6rem;
+$gap-xl: 5rem;
+$gap-lg: 4rem;
+$gap-md: 3rem;
+$gap: 2rem;
+$gap-sm: 1rem;
+$gap-xs: .5rem;
+$space: .25rem;
+
+// misc 
+$header-height: 65px;
+$radius: .25rem;
+
+// breakpoints
+$breakpoints: (
+	mobile:  ( max-width:  767px ),
+	tablet: ( max-width:  992px ),
+	laptop: ( max-width:  1024px ),
+	wide:  ( min-width: 1401px )
+);
+
+// containers 
+$narrow: 40rem;
+$wide: 82rem;
+
+// stack 
+$stack: (
+	'xl': $gap-xl,
+	'lg': $gap-lg,
+	'md': $gap-md,
+	'reg': $gap,
+	'sm': $gap-sm,
+	'xs': $gap-xs
+)

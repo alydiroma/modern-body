@@ -1,0 +1,79 @@
+fieldLayouts:
+  abdfec67-80f8-4142-9344-94cb880124a1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a601171e-78df-434c-a102-c99fc4fd4d16
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e89c1ecc-9442-423f-ab32-6b3d2de27eac # Hero Logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 13f78985-4582-4b46-b492-b5ebaa1b06c5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c422089c-49f0-4d9a-9b30-dca485b14661 # Hero Video
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aa74d5b3-02e6-46a6-8923-6359f4b09584
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 43c4b11f-16f2-4fb5-8984-7701e5e667d0 # Hero Tagline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a6b508ae-0777-43bb-8c76-349b6e5f9d2d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Hero
+        uid: 2d0d1b17-a520-4545-966f-1803340257ff
+        userCondition: null
+handle: home
+hasTitleField: false
+name: Home
+section: c249f4db-294d-44b8-ba21-a84bc989d17a # Home
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
