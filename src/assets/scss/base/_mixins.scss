@@ -1,11 +1,20 @@
 // fonts 
+
+@mixin font-logo {
+	font-family: $font-logo;
+	font-variation-settings: "wght" 700;
+	letter-spacing: .125rem;
+}
+
 @mixin font-logo-medium {
-	font-family: $font-logo-medium;
+	font-family: $font-logo;
+	font-variation-settings: "wght" 500;
 	letter-spacing: .125rem;
 }
 
 @mixin font-logo-light {
-	font-family: $font-logo-light;
+	font-family: $font-logo;
+	font-variation-settings: "wght" 300;
 	letter-spacing: .125rem;
 }
 
@@ -19,8 +28,13 @@
 	letter-spacing: .05rem;
 }
 
-@mixin font-bold {
+@mixin font-medium {
 	font-family: $font-medium;
+	letter-spacing: .05rem;
+}
+
+@mixin font-semibold {
+	font-family: $font-semibold;
 	letter-spacing: .05rem;
 }
 
@@ -66,7 +80,7 @@
 		width: calc(100% - $gap-lg);
 	}
 
-	@include break(tablet) {
+	@include break(mobile) {
 		width: calc(100% - $gap);
 	}
 }

@@ -1,5 +1,5 @@
 {
-    "/web/assets/js/main.js": "/web/assets/js/main.js",
+    "/web/assets/js/home.js": "/web/assets/js/home.js",
     "/web/assets/css/main.css": "/web/assets/css/main.css",
     "/web/assets/fonts/Poppins-Bold.woff": "/web/assets/fonts/Poppins-Bold.woff",
     "/web/assets/fonts/Poppins-Medium.woff": "/web/assets/fonts/Poppins-Medium.woff",
@@ -7,5 +7,7 @@
     "/web/assets/fonts/roslindale-displaynarrowextralight-webfont.woff": "/web/assets/fonts/roslindale-displaynarrowextralight-webfont.woff",
     "/web/assets/fonts/roslindale-displaynarrowmedium-webfont.woff": "/web/assets/fonts/roslindale-displaynarrowmedium-webfont.woff",
     "/web/assets/icons/icon-pause.svg": "/web/assets/icons/icon-pause.svg",
-    "/web/assets/icons/icon-play.svg": "/web/assets/icons/icon-play.svg"
+    "/web/assets/icons/icon-play.svg": "/web/assets/icons/icon-play.svg",
+    "/web/assets/fonts/Poppins-SemiBold.woff": "/web/assets/fonts/Poppins-SemiBold.woff",
+    "/web/assets/fonts/RoslindaleVariableVFDisplay.woff2": "/web/assets/fonts/RoslindaleVariableVFDisplay.woff2"
 }

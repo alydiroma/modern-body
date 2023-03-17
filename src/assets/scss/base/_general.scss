@@ -21,27 +21,39 @@ body {
 	padding: 0;
 }
 
-h2, .h2-style {
-	@include font-bold;
-	@include toRem('font-size', 36);
-	line-height: 1.2;
+section {
+	margin-bottom: 8rem;
 
 	@include break(tablet) {
-		@include toRem('font-size', 30);
+		margin-bottom: 6rem;
 	}
 
 	@include break(mobile) {
+		margin-bottom: 4rem;
+	}
+}
+
+h2, .h2-style {
+	@include font-logo;
+	@include toRem('font-size', 32);
+	line-height: 1.2;
+
+	@include break(tablet) {
 		@include toRem('font-size', 28);
+	}
+
+	@include break(mobile) {
+		@include toRem('font-size', 24);
 	}
 }
 
 h3, .h3-style {
-	@include font-bold;
-	@include toRem('font-size', 28);
+	@include font-medium;
+	@include toRem('font-size', 24);
 	line-height: 1.2;
 
 	@include break(mobile) {
-		@include toRem('font-size', 21);
+		@include toRem('font-size', 20);
 	}
 }
 
@@ -61,3 +73,12 @@ strong {
 	@include object-fit;
 }
 
+.sr-only:not(:focus):not(:active) {
+	clip: rect(0 0 0 0); 
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap; 
+	width: 1px;
+  }

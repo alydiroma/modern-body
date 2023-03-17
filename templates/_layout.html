@@ -12,5 +12,8 @@
     {% block content %}
     {% endblock %}
     <script type="text/javascript" defer src="{{ 'js/main.js' | mix }}"></script>
+    {% if entry.section.handle == 'home' %}
+        <script type="text/javascript" defer src="{{ 'js/home.js' | mix }}"></script>
+    {% endif %}
 </body>
 </html>

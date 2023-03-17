@@ -1,0 +1,86 @@
+field: d7efe282-0770-409c-b80d-98a2d44f3231 # Testimonials List
+fieldLayouts:
+  2ce200b4-334a-4adb-ba8a-64cfb2901194:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ebe89201-1375-4202-8c7d-80cd9a140f5d # Testimonial
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 337bab3a-5e86-4cb5-810d-c9dd84faead7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d76015ab-cb69-4d6c-9f18-cc3506db7bd7 # Testimonial Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1e187492-e38b-460c-91b9-ce157cac39c0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 92f43532-2e7b-4120-aba4-d8be334b3350
+        userCondition: null
+fields:
+  d76015ab-cb69-4d6c-9f18-cc3506db7bd7: # Testimonial Name
+    columnSuffix: gnmlchnb
+    contentColumnType: text
+    fieldGroup: null
+    handle: homeTestimonialName
+    instructions: null
+    name: 'Testimonial Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ebe89201-1375-4202-8c7d-80cd9a140f5d: # Testimonial
+    columnSuffix: noqfjonc
+    contentColumnType: text
+    fieldGroup: null
+    handle: homeTestimonial
+    instructions: null
+    name: Testimonial
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: homeTestimonialItems
+name: 'Testimonial Items'
+sortOrder: 1

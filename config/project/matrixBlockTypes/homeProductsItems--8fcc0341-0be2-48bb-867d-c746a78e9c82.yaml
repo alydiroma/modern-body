@@ -1,0 +1,161 @@
+field: bc2faaee-59b6-4f7a-a9a5-36f7a19cbb14 # Products List
+fieldLayouts:
+  1720bf5e-2892-4c20-a80f-f3564110a5ed:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: da4444f1-47dd-462a-84b6-0d72b5c266f6 # Product Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 343b6cee-2897-4de7-8fab-938bd08217f5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: da521950-25a7-4aaa-be24-0f045a90984a # Product Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f4aef017-e93f-4a2d-997e-099b18216f99
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6bfbcd2b-1df4-4957-93f9-af5634cb74d7 # Product Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d5eb64c4-888d-4c91-959f-c49bad5e0bf4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a0b8c855-93b6-4653-9497-d652eaa52757
+        userCondition: null
+fields:
+  6bfbcd2b-1df4-4957-93f9-af5634cb74d7: # Product Link
+    columnSuffix: kpsaehej
+    contentColumnType: string
+    fieldGroup: null
+    handle: homeProductLink
+    instructions: null
+    name: 'Product Link'
+    searchable: false
+    settings:
+      allowCustomText: true
+      allowTarget: false
+      autoNoReferrer: false
+      customTextMaxLength: 0
+      customTextRequired: true
+      defaultLinkName: asset
+      defaultText: 'Product Link'
+      enableAllLinkTypes: false
+      enableAriaLabel: false
+      enableElementCache: false
+      enableTitle: false
+      typeSettings:
+        asset:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        category:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        custom:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        email:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        entry:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: true
+          sources: '*'
+        site:
+          enabled: false
+          sites: '*'
+        tel:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        url:
+          allowAliases: false
+          disableValidation: false
+          enabled: true
+        user:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+    translationKeyFormat: null
+    translationMethod: none
+    type: lenz\linkfield\fields\LinkField
+  da4444f1-47dd-462a-84b6-0d72b5c266f6: # Product Title
+    columnSuffix: jfueqglv
+    contentColumnType: text
+    fieldGroup: null
+    handle: homeProductTitle
+    instructions: null
+    name: 'Product Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  da521950-25a7-4aaa-be24-0f045a90984a: # Product Description
+    columnSuffix: gkksgtpk
+    contentColumnType: text
+    fieldGroup: null
+    handle: homeProductDescription
+    instructions: null
+    name: 'Product Description'
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: homeProductsItems
+name: 'Products Items'
+sortOrder: 1

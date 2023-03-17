@@ -2,16 +2,17 @@
 {% block content %}
 <main class="home">
     <section class="home-hero">
-        <div class="home-hero-container stack-reg">
-            <h1 class="home-hero-title">
+        <div class="home-hero-container">
+            <h1 class="sr-only">{{ entry.homeTitle }}</h1>
+            <div class="home-hero-logo">
                 {% set image = entry.homeHerologo.one() %}
                 {% if image %}
                     <img src="{{ image.url() }}" alt="Modern Body by Ali DiRoma">
                 {% endif %}
-            </h1>
+            </div>
             <div class="home-hero-copy">
-                <button class="home-hero-video-btn" type="button"></button>
-                <p class="home-hero-text">{{ entry.homeHeroTagline|striptags }}</p>
+                <button class="home-hero-play" type="button"></button>
+                <p class="home-hero-tagline">{{ entry.homeHeroTagline | striptags }}</p>
             </div>
         </div>
         <video class="home-hero-video" playsinline autoplay muted>
@@ -19,5 +20,91 @@
             Sorry, your browser doesn't support embedded videos.
         </video>
     </section>
-</main>
+
+    <section class="home-about animate">
+        <div class="home-about-container">
+            <div class="home-about-image">
+                {% set image = entry.homeAboutImage.one() %}
+                {% if image %}
+                    <img src="{{ image.url() }}" alt="Aly DiRoma">
+                {% endif %}
+            </div>
+            <div class="home-about-copy stack-sm">
+                <p class="home-about-quote">&#8220;{{ entry.homeAboutCopy | striptags }}&#8221;</p>
+                {% set signature = entry.homeAboutSignature.one() %}
+                {% if signature %}
+                <p class="home-about-signature">&mdash; <img src="{{ signature.url() }}" alt="Aly DiRoma signature" /></p>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+        <section class="home-company stack-xl">
+            <div class="home-company-container">
+                <div class="stack-reg">
+                    <h2 class="logo">{{ entry.homeCompanyHead }}</h2>
+                    <p class="home-company-intro animate">{{ entry.homeCompanyCopy | striptags }}</p>
+                </div>
+                <div class="home-company-bullets stack-reg animate">
+                    {% set blocks = entry.homeCompanyBullets.all() %}
+                    {% if blocks | length %}
+                        {% for block in blocks %}
+                            <div class="home-company-item stack-xs">
+                                <h3>{{ block.homeCompanyBulletHead }}</h3>
+                                <p>{{ block.homeCompanyBulletCopy | striptags }}</p>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="home-company-image animate">
+                {% set companyImage = entry.homeCompanyImage.one() %}
+                {% if companyImage %}
+                    <img src="{{ companyImage.url() }}" alt="Aly DiRoma">
+                {% endif %}
+            </div>
+        </section>
+
+        <section class="home-products stack-reg">
+            <div class="home-products-head animate">
+                <h2>{{ entry.homeProductsHead }}</h2>
+            </div>
+            <div class="home-products-container">
+                {% set blocks = entry.homeProductsList.all() %}
+                {% if blocks | length %}
+                    {% for block in blocks %}
+                        <div class="home-products-item stack-sm animate">
+                            <div class="stack-xs">
+                                <h3>{{ block.homeProductTitle }}</h3>
+                                <p>{{ block.homeProductDescription | striptags }}</p>
+                            </div>
+                            <p><a class="btn" href="{{ block.homeProductLink }}">{{ block.homeProductLink.getCustomText('Learn More') }}</a></p>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </section>
+
+        <section class="home-testimonials">
+            <div class="home-testimonials-container">
+                <div class="home-testimonials-image animate">
+                    {% set testimonialImage = entry.homeTestimonialImage.one() %}
+                    {% if testimonialImage %}
+                        <img src="{{ testimonialImage.url() }}" alt="">
+                    {% endif %}
+                </div>
+                <div class="home-testimonials-copy stack-sm animate">
+                    <h2>{{ entry.homeTestimonialsHead }}</h2>
+                    <div class="stack-reg">
+                        {% set blocks = entry.homeTestimonialsList.all() %}
+                        {% if blocks | length %}
+                            {% for block in blocks %}
+                                <p>{{ block.homeTestimonial | striptags }}&mdash;<em>{{ block.homeTestimonialName }}</em></p>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 {% endblock %}

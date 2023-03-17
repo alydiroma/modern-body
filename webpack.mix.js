@@ -1,7 +1,7 @@
 let mix = require('laravel-mix');
 
 mix
-.js('src/assets/js/main.js', 'web/assets/js')
+.js('src/assets/js/**.js', 'web/assets/js')
 .sass('src/assets/scss/main.scss', 'web/assets/css')
     .options({
         autoprefixer: {

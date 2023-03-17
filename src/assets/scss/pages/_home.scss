@@ -1,33 +1,10 @@
 .home {
 
-	section {
-		margin-bottom: 8rem;
-
-		@include break(tablet) {
-			margin-bottom: 6rem;
-		}
-
-		@include break(mobile) {
-			margin-bottom: 4rem;
-		}
-	}
-
 	&-hero {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-end;
 		height: 100vh;
 		overflow: hidden;
-		//margin-top: -$header-height;
 
 		@include break(tablet) {
-			justify-content: flex-end;
-			align-items: center;
-		}
-
-		@include break(mobile) {
 			height: -webkit-fill-available;
 		}
 
@@ -45,7 +22,107 @@
 			}
 		}
 
-		&-video {
+		&-container {
+			@include container;
+			position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+			height: 100vh;
+            padding: 15vh 0 10vh 0;
+			z-index: 1;
+
+			@include break(tablet) {
+				text-align: center;
+				padding: 10vh 0;
+			}
+
+			@include break(mobile) {
+				padding: 10vh 0 5vh 0 ;
+			}
+		}
+
+		&-logo {
+			width: 40vw;
+
+			@include break(tablet) {
+				width: 70vw;
+			}			
+
+			@include break(mobile) {
+				width: 100%;
+			}
+
+			svg {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		&-copy {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+            
+            @include break(mobile) {
+				flex-direction: column;
+			}	
+		}
+
+		&-tagline {
+			@include font-medium;
+			@include toRem('font-size', 28);
+			letter-spacing: .125rem;
+			color: $black;
+			padding: $gap-sm $gap;
+
+			@include break(mobile) {
+                order: 1;
+				width: 100%;
+				@include toRem('font-size', 24);
+				letter-spacing: .0625rem;
+			}		
+		}
+
+        &-play {
+            @include button-reset;
+            display: block;
+            width: $gap;
+            height: $gap;
+            background-color: transparent;
+            border-radius: 50%;
+            opacity: .75;
+            transform: scale(1);
+            transition: transform .6s ease;
+            z-index: 999;
+
+            @include break(mobile) {
+                order: 2;
+            }
+
+            &:hover {
+                transform: scale(1.2);
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-image: url(/assets/icons/icon-play.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+
+            &.playing {
+                &::before {
+                    background-image: url(/assets/icons/icon-pause.svg);
+                }
+            }
+        }
+
+        &-video {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -58,116 +135,414 @@
 			video {
 				@include object-fit;
 			}	
+		}
+	}
 
-			&-btn {
-				@include button-reset;
+	&-about {
+		position: relative;
+
+		&.in-view {
+			.home-about-image {
+				img {
+					transform: scale(1.1);
+				}
+			}
+
+			.home-about-copy {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		&-container {
+			@include container;
+			position: relative;
+			height: 70vh;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			gap: $gap-lg;
+			z-index: 2;
+
+			@include break(mobile) {
 				display: block;
-				width: $gap;
-				height: $gap;
-				background-color: transparent;
-				border-radius: 50%;
-				opacity: .75;
+				height: auto;
+			}
+		}		
+
+		&-image {
+			flex: 1;
+			height: 100%;
+			overflow: hidden;
+
+			@include break(mobile) {
+				height: 300px;
+			}
+
+			img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
 				transform: scale(1);
-				transition: transform .6s ease;
-				z-index: 999;
+				transition: transform 1.2s ease;
+			}	
+		}
 
-				&:hover {
-					transform: scale(1.2);
+		&-copy {
+			position: relative;
+			flex: 1;
+			line-height: 1.6;
+			color: $black;
+			transform: translateY($gap-lg);
+			opacity: 0;
+			transition: opacity .3s ease, transform .6s ease;
+
+			@include break(mobile) {
+				//transform: translateY(2rem);
+			}
+		}
+
+		&-quote {
+			display: block;
+			@include font-medium;
+			@include toRem('font-size', 32);
+
+			@include break(mobile) {
+				@include toRem('font-size', 26);
+			}
+		}
+
+		&-signature {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			@include font-medium;
+			@include toRem('font-size', 32);
+			margin: 0 2rem 0 0;
+
+			@include break(mobile) {
+				@include toRem('font-size', 26);
+			}
+
+			img {
+				display: block;
+				width: auto;
+				height: 3.5rem;
+				margin-left: .5rem;
+				transition: filter .6s ease;
+			}
+		}
+	}
+
+	&-company {
+		position: relative;
+
+		&-intro {
+			@include toRem('font-size', 24);
+			opacity: 0;
+			transform: translateY($gap-lg);
+			transition: opacity .6s ease, transform .9s ease;
+
+			@include break(mobile) {
+				opacity: 1;
+				transform: translateY(0);
+			}
+
+			&.in-view {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		&-container {
+			display: flex;
+			justify-content: space-between;
+			gap: $gap-lg;
+			position: relative;
+			@include container;
+			z-index: 2;
+
+			@include break(mobile) {
+				display: block;
+				text-align: left;
+			}
+
+			& > * {
+				flex: 1;
+			}
+
+			.logo {
+				font-family: $font-logo-medium;
+				@include toRem('font-size', 60);
+				line-height: 1.1;
+
+				strong {
+					@include font-logo-medium;
+					@include toRem('font-size', 72);
+
+					@include break(tablet) {
+						@include toRem('font-size', 60);
+					}
+
+					@include break(mobile) {
+						@include toRem('font-size', 44);
+					}
 				}
 
-				&::before {
-					content: '';
-					display: block;
-					width: 100%;
-					height: 100%;
-					background-image: url(/assets/icons/icon-play.svg);
-					background-repeat: no-repeat;
-					background-size: 100%;
+				@include break(tablet) {
+					@include toRem('font-size', 44);
 				}
 
-				&.playing {
-					&::before {
-						background-image: url(/assets/icons/icon-pause.svg);
+				@include break(mobile) {
+					@include toRem('font-size', 32);
+				}
+			}
+		}
+
+		&-bullets {
+			padding-top: $gap-sm;
+
+			@include break(mobile) {
+				padding-top: $gap;
+			}
+
+			&.in-view {
+				.home-company-item h3 {
+
+					&::after {
+						width: 100%;
 					}
 				}
 			}
 		}
 
-		&-container {
-			position: relative;
-			@include container;
-			height: 100%;
-			z-index: 1;
+		&-item {
+			flex: 1;			
+
+			h3 {
+				position: relative;
+				display: inline-block;
+				color: $black;
+				padding-bottom: $space;
+				transition: color .6s ease;
+
+				&::after {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					content: '';
+					display: block;
+					width: 0;
+					height: 2px;
+					background-color: $accent;
+					transition: width .6s ease;
+				}
+			}
+
+			&:nth-of-type(1) {
+				h3 {
+
+					&::after {
+						@include break(mobile) {
+							transition-delay: unset;
+						}
+					}					
+				}
+			}
+
+			&:nth-of-type(2) {
+				h3 {
+					transition-delay: .6s;
+
+					&::after {
+						transition-delay: .6s;
+
+						@include break(mobile) {
+							transition-delay: .9s;
+						}
+					}
+				}
+			}
+
+			&:nth-of-type(3) {
+				h3 {
+					transition-delay: 1.2s;
+
+					&::after {
+						transition-delay: 1.2s;
+
+						@include break(mobile) {
+							transition-delay: 1.8s;
+						}
+					}
+				}
+			}
+		}		
+
+		&-image {
+			width: 100%;
+			height: 300px;
+			margin: 5rem 0;
+			overflow: hidden;
 
 			@include break(tablet) {
-				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
-				height: calc(100vh - $header-height);
-				text-align: center;
-				margin: 0;
-				padding: calc($gap-xxl + $header-height) 0 $gap-md 0;
+				margin: 4rem 0;
 			}
 
 			@include break(mobile) {
-				max-inline-size: calc(100% - $gap-lg);
+				margin: 3rem 0;
+			}
+
+			&.in-view {
+				img {
+					transform: scale(1.075);
+				}
+			}			
+
+			img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				transform: scale(1);
+				transition: transform 1.2s ease;				
+			}
+		}
+	}
+
+	&-products {
+		position: relative;
+		z-index: 1;
+
+		&-head {
+			@include container;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			padding-bottom: $gap-sm;
+
+			&.in-view {
+
+				&::after {
+					transform: scaleX(1);
+				}
+			}
+
+			&::after {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				content: '';
+				display: block;
+				width: 100%;
+				height: 2px;
+				background-color: $accent;
+				transform: scaleX(0);
+				transition: transform .6s ease;
+				z-index: -1;
+			}
+
+			h2 {
+				color: $black;
+				padding: $gap-xs $gap-sm;
+				transition: color .6s ease;
 			}
 		}
 
-		&-title {
-			position: absolute;
-			left: 0;
-			top: 20vh;
-			width: 40vw;
+		&-container {
+			@include container;
+			display: flex;
+			justify-content: space-between;
+			gap: $gap-lg;
 
 			@include break(tablet) {
-				top: 10vh;
-				width: 50vw;
-			}			
+				flex-direction: column;
+			}
+		}
+
+		&-item {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			text-align: center;
+
+			& > * {
+				max-width: 50ch;
+			}
+
+			&.in-view {
+				.btn {
+					transform: translateY(0);
+				}
+			}
+
+			.btn {
+				transform: translateY($gap);
+				transition: transform .9s ease, color .6s ease, background-color .6s ease;
+			}
+		}
+	}
+
+	&-testimonials {
+
+		&-container {
+			@include container;
+			display: flex;
+			justify-content: space-between;
+			gap: $gap-lg;
 
 			@include break(mobile) {
-				top: 20vh;
-				width: 100%;
+				display: block;
+			}
+		}		
+
+		&-image {
+			position: relative;
+			flex: 1;
+			height: auto;
+			overflow: hidden;
+
+			@include break(mobile) {
+				height: 300px;
+				margin-bottom: $gap;
 			}
 
-			svg {
+			&.in-view {
+				img {
+					transform: scale(1.075);
+				}
+			}
+
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
 				display: block;
 				width: 100%;
-			}
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+				transform: scale(1);
+				transition: transform 1.2s ease;
+			}	
 		}
 
 		&-copy {
-			position: absolute;
-			left: 0;
-			bottom: $gap-lg;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			align-items: center;
-			width: 100%;
+			flex: 1;
 
-			@include break(laptop) {
-				bottom: $gap-md;
+			h2 {
+				position: relative;
+				display: inline-block;
+				color: $black;
+				margin-left: -$gap-sm;
+				padding: $gap-xs $gap-sm;
+				transition: color .6s ease;
+				z-index: 1;
 			}
-
-			@include break(tablet) {
-				bottom: $gap;
-			}			
-		}
-
-		&-text {
-			position: relative;
-			@include font-bold;
-			@include toRem('font-size', 24);
-			letter-spacing: .125rem;
-			color: $black;
-			padding: $gap-sm $gap;
-
-			@include break(mobile) {
-				width: 100%;
-				@include toRem('font-size', 16);
-				letter-spacing: .0625rem;
-			}		
 		}
 	}
 }
