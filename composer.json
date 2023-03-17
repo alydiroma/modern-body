@@ -1,7 +1,7 @@
 {
   "require": {
-    "craftcms/cms": "^4.4.0",
-    "craftcms/redactor": "3.0.3",
+    "craftcms/cms": "4.4.3",
+    "craftcms/redactor": "3.0.4",
     "misterbk/mix": "^1.6",
     "sebastianlenz/linkfield": "^2.1",
     "vlucas/phpdotenv": "^5.4.0"
