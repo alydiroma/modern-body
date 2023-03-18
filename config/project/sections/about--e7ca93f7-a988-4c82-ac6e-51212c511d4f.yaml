@@ -1,12 +1,12 @@
 defaultPlacement: end
 enableVersioning: true
-handle: classes
-name: Classes
+handle: about
+name: About
 propagationMethod: all
 siteSettings:
   9d74e71c-d037-432d-887d-4065ec79a9c7: # Modern Body
     enabledByDefault: true
-    hasUrls: false
-    template: null
-    uriFormat: null
+    hasUrls: true
+    template: about/_entry
+    uriFormat: about
 type: single

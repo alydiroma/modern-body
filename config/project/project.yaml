@@ -1,4 +1,4 @@
-dateModified: 1679108501
+dateModified: 1679181643
 email:
   fromEmail: alhmail@gmail.com
   fromName: 'Modern Body'
@@ -42,13 +42,17 @@ meta:
     84d4713f-9e53-4b1c-8d8e-e5600fa07269: Class # Class
     96f6e380-8739-4368-a5b3-042e778befe7: 'Company Head' # Company Head
     196bdac8-d7ed-4635-acc3-e671ce97f550: Common # Common
+    221b0134-0f21-4270-a087-06a4eaf0ded3: About # About
     485c9d29-4e5b-4658-9c86-ed411faf38f6: Title # Title
     854bb4fe-e607-46c0-8623-93814869aea5: Description # Description
     9121f0f4-c29a-4085-af84-e633b5d10a1a: Title # Title
     83953fb7-e107-4565-970c-a90f8151ddd5: Classes # Classes
     089201a8-2f54-4061-8689-d946689afe52: 'Bullet Head' # Bullet Head
+    476101d0-23c9-47fa-98eb-7d3ec4770862: Credentials # Credentials
+    51560042-57cb-418c-8ba2-b86b090eb5b4: Title # Title
     92053381-bc29-48a8-b8c9-f691eefa64b5: Title # Title
     b87d114e-c463-4311-adbe-dc8e506e6d2b: Classes # Classes
+    b87e3b3f-cace-45aa-9c6d-2378c7874b72: Image # Image
     bc2faaee-59b6-4f7a-a9a5-36f7a19cbb14: 'Products List' # Products List
     be094951-a83c-4f73-90e2-1279b3332b1b: 'Bullet Copy' # Bullet Copy
     bfc66a87-43b5-45fb-992a-27586fcff3e4: 'Testimonials Head' # Testimonials Head
@@ -56,13 +60,17 @@ meta:
     c249f4db-294d-44b8-ba21-a84bc989d17a: Home # Home
     c422089c-49f0-4d9a-9b30-dca485b14661: 'Hero Video' # Hero Video
     ca38367d-589e-4287-bdc0-29124c535643: 'Company Copy' # Company Copy
+    cdd37bfc-0c28-4258-91d1-7a6a000c53f6: Bio # Bio
     d7efe282-0770-409c-b80d-98a2d44f3231: 'Testimonials List' # Testimonials List
     d76015ab-cb69-4d6c-9f18-cc3506db7bd7: 'Testimonial Name' # Testimonial Name
     da4444f1-47dd-462a-84b6-0d72b5c266f6: 'Product Title' # Product Title
     da521950-25a7-4aaa-be24-0f045a90984a: 'Product Description' # Product Description
+    e7ca93f7-a988-4c82-ac6e-51212c511d4f: About # About
+    e81aaea7-81e6-4426-937a-9af062c0cd16: 'Credentials Head' # Credentials Head
     e86c3ea3-5a1e-4917-a91a-cee28bdf3ca3: 'About Copy' # About Copy
     e89c1ecc-9442-423f-ab32-6b3d2de27eac: 'Hero Logo' # Hero Logo
     ebe89201-1375-4202-8c7d-80cd9a140f5d: Testimonial # Testimonial
+    ec6b8c17-c1c6-4f35-ad4c-eb15724fdc38: About # About
     edd1d7a7-ee00-446d-af3c-31d47d1609b4: 'Modern Body' # Modern Body
     f1dbd402-7281-4d1a-a2dc-3753d5a44df9: 'Company Bullets' # Company Bullets
     f4af40b0-3ee1-4b65-bfe3-fcf6e67c3c75: 'About Signature' # About Signature

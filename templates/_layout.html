@@ -9,6 +9,25 @@
     <link rel="stylesheet" href="{{ 'css/main.css' | mix }}">
 </head>
 <body>
+    <nav class="main-nav">
+        <ul class="nav-menu">
+            {#
+            {% set entries = craft.entries.all() %}
+            {% nav entry in entries %}
+                <li class="nav-item">
+                    <a href="{{ entry.url }}">{{ entry.title }}</a>
+                    {% ifchildren %}
+                         <div class="sub-nav">
+                            <ul class="sub-nav-group">
+                                {% children %}
+                            </ul>
+                        </div>
+                    {% endifchildren %}
+                </li>
+            {% endnav %}
+            #}
+        </ul>
+    </nav>
     {% block content %}
     {% endblock %}
     <script type="text/javascript" defer src="{{ 'js/main.js' | mix }}"></script>

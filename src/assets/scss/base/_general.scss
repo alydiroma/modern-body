@@ -71,6 +71,10 @@ h3, .h3-style {
 	}
 }
 
+ul {
+	padding-left: $gap-sm;
+}
+
 strong {
 	@include font-medium;
 }
@@ -80,6 +84,18 @@ strong {
 
 	@include break(tablet) {
 		@include toRem('font-size', 17);
+	}
+}
+
+.emphasis {
+	@include font-medium;
+	@include toRem('font-size', 22);
+	line-height: 1.6;
+	color: $accent;
+	padding: $gap 0; 
+
+	@include break(tablet) {
+		@include toRem('font-size', 20);
 	}
 }
 

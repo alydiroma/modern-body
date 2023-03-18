@@ -1,0 +1,25 @@
+.about {
+
+    &-container {
+        @include container($medium);
+        display: flex;
+        justify-content: space-between;
+        gap: $gap-lg;
+    }
+
+    &-image {
+        aspect-ratio: 1 / 1;
+
+        img {
+            @include object-fit;
+        }
+    }
+
+    &-credentials {
+        flex: 1;
+    }
+
+    &-bio {
+        flex: 2;
+    }
+}
