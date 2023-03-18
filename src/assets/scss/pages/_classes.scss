@@ -3,7 +3,7 @@
     &-title {
         @include container($medium);
 
-        & > * {
+        &>* {
             max-width: $max-line-length;
         }
     }
@@ -57,13 +57,15 @@
             display: flex;
             justify-content: space-between;
             gap: $gap;
+
+            @include break(mobile) {
+                flex-direction: column;
+                gap: $gap-sm;
+            }
         }
 
         &-subtitle {
             flex: 1;
-            //display: flex;
-            //flex-direction: column;
-            //justify-content: space-between;
         }
 
         &-description {

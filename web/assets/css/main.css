@@ -978,6 +978,12 @@ strong {
   justify-content: space-between;
   gap: 2rem;
 }
+@media (max-width: 767px) {
+  .classes-item-copy {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
 .classes-item-subtitle {
   flex: 1;
 }
