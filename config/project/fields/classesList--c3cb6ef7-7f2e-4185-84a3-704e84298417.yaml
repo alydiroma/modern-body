@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: b87d114e-c463-4311-adbe-dc8e506e6d2b # Classes
+handle: classesList
+instructions: null
+name: 'Class List'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_classeslist}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

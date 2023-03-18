@@ -1,11 +1,8 @@
-.btn {
+%btn {
 	@include button-reset;
 	display: inline-block;
-	height: 44px;
 	@include font-bold;
 	@include toRem('font-size', 16);
-	line-height: 40px;
-	padding: 0 $gap;
 	color: $accent;
 	background-color: transparent;
 	border: 2px solid $accent;
@@ -16,4 +13,18 @@
 		color: $white;
 		background-color: $accent;
 	}
+}
+
+.btn {
+	@extend %btn;
+	height: 44px;
+	line-height: 40px;
+	padding: 0 $gap;
+}
+
+.btn-sm {
+	@extend %btn;
+	height: 34px;
+	line-height: 30px;
+	padding: 0 $gap-sm;
 }

@@ -1,0 +1,97 @@
+fieldLayouts:
+  e35d9748-0c43-4379-a234-f86474c062ab:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 3fa1720b-f619-4313-8ad1-647a40f307c9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 92053381-bc29-48a8-b8c9-f691eefa64b5 # Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 92fe09ad-bc4f-49cf-8afe-1e5ef84dea58
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 854bb4fe-e607-46c0-8623-93814869aea5 # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a51b847f-1ef2-4b36-9fe2-ff3fcdc98f08
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0e62c248-99e6-42ab-b8cd-d7ec668bc886 # Hero Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8f6e6d07-de89-4c8b-b18d-afebf99a58e1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7b77a43f-4259-43e9-8db8-007c40530e48
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c3cb6ef7-7f2e-4185-84a3-704e84298417 # Class List
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1d4829bf-bf4b-4124-b1fc-434313e8fa55
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Classes List'
+        uid: f02a24f2-8ad1-4f06-977a-4577ca39b9f0
+        userCondition: null
+handle: classes
+hasTitleField: false
+name: Classes
+section: 83953fb7-e107-4565-970c-a90f8151ddd5 # Classes
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

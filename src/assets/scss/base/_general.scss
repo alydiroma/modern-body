@@ -33,6 +33,20 @@ section {
 	}
 }
 
+h1, .h1-style {
+	@include font-logo;
+	@include toRem('font-size', 44);
+	line-height: 1.2;
+
+	@include break(tablet) {
+		@include toRem('font-size', 40);
+	}
+
+	@include break(mobile) {
+		@include toRem('font-size', 36);
+	}
+}
+
 h2, .h2-style {
 	@include font-logo;
 	@include toRem('font-size', 32);
@@ -58,7 +72,7 @@ h3, .h3-style {
 }
 
 strong {
-	@include font-bold;
+	@include font-medium;
 }
 
 .large-font {

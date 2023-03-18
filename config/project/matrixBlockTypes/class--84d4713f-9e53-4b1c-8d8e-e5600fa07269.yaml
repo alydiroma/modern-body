@@ -1,0 +1,201 @@
+field: c3cb6ef7-7f2e-4185-84a3-704e84298417 # Class List
+fieldLayouts:
+  a3b7a9d9-575d-4bee-a97d-5ce8c6491e46:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 485c9d29-4e5b-4658-9c86-ed411faf38f6 # Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c824540b-a62c-430a-906a-ee40825bd3d0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5d9037d9-870f-4c88-93fb-fc01efa9af9d # Subtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 26e9290f-9190-4e88-a531-6268c2d43fda
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 010f0163-ae73-4856-aa58-73380990ab5b # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ae9a451f-1b04-4522-9cac-33e4871a2f46
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0e24ebfd-5210-45ab-8434-b505aa1e3db4 # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f6dda3d7-6eb8-4c3e-a1e9-a2d3ad700ff8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b6dcba5b-5180-4ae7-ab31-58cef1f1f05a
+        userCondition: null
+fields:
+  0e24ebfd-5210-45ab-8434-b505aa1e3db4: # Link
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: classLink
+    instructions: null
+    name: Link
+    searchable: false
+    settings:
+      allowCustomText: true
+      allowTarget: true
+      autoNoReferrer: true
+      customTextMaxLength: 0
+      customTextRequired: false
+      defaultLinkName: url
+      defaultText: 'Find Out More'
+      enableAllLinkTypes: false
+      enableAriaLabel: false
+      enableElementCache: false
+      enableTitle: false
+      typeSettings:
+        asset:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        category:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        custom:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        email:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        entry:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: true
+          sources: '*'
+        site:
+          enabled: false
+          sites: '*'
+        tel:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        url:
+          allowAliases: false
+          disableValidation: false
+          enabled: true
+        user:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+    translationKeyFormat: null
+    translationMethod: none
+    type: lenz\linkfield\fields\LinkField
+  5d9037d9-870f-4c88-93fb-fc01efa9af9d: # Subtitle
+    columnSuffix: fzwedecp
+    contentColumnType: text
+    fieldGroup: null
+    handle: classSubtitle
+    instructions: null
+    name: Subtitle
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  010f0163-ae73-4856-aa58-73380990ab5b: # Description
+    columnSuffix: tvlbeebc
+    contentColumnType: text
+    fieldGroup: null
+    handle: classDescription
+    instructions: null
+    name: Description
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  485c9d29-4e5b-4658-9c86-ed411faf38f6: # Title
+    columnSuffix: nvantnum
+    contentColumnType: text
+    fieldGroup: null
+    handle: classTitle
+    instructions: null
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: class
+name: Class
+sortOrder: 1

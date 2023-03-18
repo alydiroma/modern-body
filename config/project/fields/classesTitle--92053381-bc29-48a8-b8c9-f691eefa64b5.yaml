@@ -1,0 +1,19 @@
+columnSuffix: ublmkqpv
+contentColumnType: text
+fieldGroup: b87d114e-c463-4311-adbe-dc8e506e6d2b # Classes
+handle: classesTitle
+instructions: null
+name: Title
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

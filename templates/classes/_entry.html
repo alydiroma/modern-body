@@ -1,0 +1,42 @@
+{% extends "_layout" %}
+{% block content %}
+<main class="classes stack-md">
+    {% set Image = entry.classesHeroImage.one() %}
+    {% if Image %}
+    <div class="classes-hero-img">
+        <img src="{{ Image.url() }}" alt="Aly DiRoma">
+    </div>
+    {% endif %}
+
+    <div class="classes-title stack-sm">
+        <h1>{{ entry.classesTitle }}</h1>
+        {% if entry.classesDescription %}
+            <div class="rich-text stack-xs">
+                {{ entry.classesDescription }}
+            </div>
+        {% endif %}
+    </div>
+
+    {% set blocks = entry.classesList.all() %}
+    {% if blocks | length %}
+        <div class="classes-list stack-lg">
+            {% for block in blocks %}
+            <div class="classes-item stack-sm animate">
+                <div class="classes-item-title">
+                        <h2>{{ block.classTitle }}</h2>
+                    </div>
+                    <div class="classes-item-copy">
+                        <div class="classes-item-subtitle">
+                            <p><strong>{{ block.classSubtitle | striptags }}</strong></p>
+                        </div>
+                        <div  class="classes-item-description stack-sm">
+                            {{ block.classDescription }}
+                            <p><a class="btn-sm" href="{{ block.classLink }}">{{ block.classLink.getCustomText('Learn More') }}</a></p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+</main>
+{% endblock %}

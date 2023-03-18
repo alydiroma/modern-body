@@ -1,4 +1,4 @@
-dateModified: 1679093910
+dateModified: 1679108501
 email:
   fromEmail: alhmail@gmail.com
   fromName: 'Modern Body'
@@ -22,7 +22,11 @@ meta:
   __names__:
     0abc2601-eb4e-47a7-bb20-6358900e5ed0: 'About Image' # About Image
     0d0100be-ea79-4a84-b7ba-2a406203ef77: 'Company Image' # Company Image
+    0e24ebfd-5210-45ab-8434-b505aa1e3db4: Link # Link
+    0e62c248-99e6-42ab-b8cd-d7ec668bc886: 'Hero Image' # Hero Image
+    1f1a8a59-4979-401d-82a3-b9b53b9c1de2: Classes # Classes
     5d6e6468-5ba1-4d69-9cc9-61ae8d7dec0c: 'Testimonial Image' # Testimonial Image
+    5d9037d9-870f-4c88-93fb-fc01efa9af9d: Subtitle # Subtitle
     6bfbcd2b-1df4-4957-93f9-af5634cb74d7: 'Product Link' # Product Link
     6d8edb5f-1775-4b83-9df0-2c1fb6d97ae7: Videos # Videos
     6dd9aa0b-b4f3-4320-8d34-181a52eb6a00: Home # Home
@@ -30,17 +34,25 @@ meta:
     8fcc0341-0be2-48bb-867d-c746a78e9c82: 'Products Items' # Products Items
     9a08632a-f16d-4a7b-98d7-ded85bf94df6: Images # Images
     9d74e71c-d037-432d-887d-4065ec79a9c7: 'Modern Body' # Modern Body
+    010f0163-ae73-4856-aa58-73380990ab5b: Description # Description
     21b6ca88-6ace-44d7-8c0e-fb6ccbab53d8: Bullet # Bullet
     34d91206-bdc7-4cac-b810-e54fa52a8f98: 'Products Head' # Products Head
     43c4b11f-16f2-4fb5-8984-7701e5e667d0: 'Hero Tagline' # Hero Tagline
     63ee439f-a7aa-41cf-b686-93b2f5f6392d: 'Product Link Text' # Product Link Text
+    84d4713f-9e53-4b1c-8d8e-e5600fa07269: Class # Class
     96f6e380-8739-4368-a5b3-042e778befe7: 'Company Head' # Company Head
     196bdac8-d7ed-4635-acc3-e671ce97f550: Common # Common
+    485c9d29-4e5b-4658-9c86-ed411faf38f6: Title # Title
+    854bb4fe-e607-46c0-8623-93814869aea5: Description # Description
     9121f0f4-c29a-4085-af84-e633b5d10a1a: Title # Title
+    83953fb7-e107-4565-970c-a90f8151ddd5: Classes # Classes
     089201a8-2f54-4061-8689-d946689afe52: 'Bullet Head' # Bullet Head
+    92053381-bc29-48a8-b8c9-f691eefa64b5: Title # Title
+    b87d114e-c463-4311-adbe-dc8e506e6d2b: Classes # Classes
     bc2faaee-59b6-4f7a-a9a5-36f7a19cbb14: 'Products List' # Products List
     be094951-a83c-4f73-90e2-1279b3332b1b: 'Bullet Copy' # Bullet Copy
     bfc66a87-43b5-45fb-992a-27586fcff3e4: 'Testimonials Head' # Testimonials Head
+    c3cb6ef7-7f2e-4185-84a3-704e84298417: 'Class List' # Class List
     c249f4db-294d-44b8-ba21-a84bc989d17a: Home # Home
     c422089c-49f0-4d9a-9b30-dca485b14661: 'Hero Video' # Hero Video
     ca38367d-589e-4287-bdc0-29124c535643: 'Company Copy' # Company Copy
