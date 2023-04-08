@@ -1,16 +1,26 @@
 .classes {
 
-    &-title {
+    &-head {
         @include container($medium);
+        display: flex;
+        justify-content: space-between;
+        gap: $gap;
+
+        @include break(mobile) {
+            flex-direction: column;
+        }
 
         &>* {
             max-width: $max-line-length;
         }
     }
 
-    &-hero-img {
-        width: 100%;
-        height: 30vh;
+    &-title {
+        flex: 2;
+    }
+
+    &-image {
+        flex: 1;
 
         img {
             display: block;

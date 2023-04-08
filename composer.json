@@ -5,6 +5,7 @@
     "craftcms/redactor": "^3.0",
     "misterbk/mix": "^1.6",
     "sebastianlenz/linkfield": "^2.1",
+    "verbb/navigation": "^2.0",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {

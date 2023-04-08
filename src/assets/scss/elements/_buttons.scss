@@ -28,3 +28,11 @@
 	line-height: 30px;
 	padding: 0 $gap-sm;
 }
+
+.btn-wide-mobile {
+	@include break(mobile) {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}

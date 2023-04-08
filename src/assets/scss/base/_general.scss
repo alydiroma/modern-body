@@ -79,6 +79,22 @@ strong {
 	@include font-medium;
 }
 
+.desktop {
+	display: block;
+
+	@include break(mobile) {
+		display: none;
+	}
+}
+
+.mobile {
+	display: none;
+
+	@include break(mobile) {
+		display: block;
+	}
+}
+
 .large-font {
 	@include toRem('font-size', 18);
 
@@ -88,14 +104,17 @@ strong {
 }
 
 .emphasis {
-	@include font-medium;
-	@include toRem('font-size', 22);
+	@include font-logo;
+	@include toRem('font-size', 30);
 	line-height: 1.6;
 	color: $accent;
-	padding: $gap 0; 
 
 	@include break(tablet) {
-		@include toRem('font-size', 20);
+		@include toRem('font-size', 26);
+	}
+
+	@include break(mobile) {
+		@include toRem('font-size', 22);
 	}
 }
 

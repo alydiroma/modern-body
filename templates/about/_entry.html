@@ -2,9 +2,6 @@
 {% block content %}
 <main class="about stack-reg">
     <div class="about-container">
-        <h1>{{ entry.aboutTitle }}</h1>
-    </div>
-    <div class="about-container">
         <div class="about-credentials stack-md">
             {% set image = entry.aboutImage.one() %}
             {% if image %}
@@ -12,13 +9,18 @@
                 <img src="{{ image.url() }}" alt="Aly DiRoma">
             </div>
             {% endif %}
-            <div class="stack-sm">
+            <div class="desktop stack-sm">
                 <h2>{{ entry.aboutCredentialsHead }}</h2>
                 {{ entry.aboutCredentials }}
             </div>
         </div>
-        <div class="about-bio stack-sm">
+        <div class="about-bio stack-reg">
+            <h1>{{ entry.aboutTitle }}</h1>
             {{ entry.aboutBio }}
+            <div class="mobile stack-sm">
+                <h2>{{ entry.aboutCredentialsHead }}</h2>
+                {{ entry.aboutCredentials }}
+            </div>
         </div>
     </div>
 </main>

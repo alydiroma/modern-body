@@ -1,43 +1,36 @@
 .header {
-	position: absolute;
-	top: 0;
-	left: 0;
 	width: 100%;
-	padding: $gap-sm 0;
-	z-index: 999;
+	padding: $gap-sm 0 $gap-lg 0;
+	z-index: 999;	
 
-	&-nav {
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-		gap: $gap;
-		list-style: none;
+	&-home {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		.header-container {
+			justify-content: flex-end;
+		}
 	}
 
-	&-link {
+	&-container {
+		@include container($medium);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: $gap;
+	}
+
+	&-logo {
 		position: relative;
 		display: block;
-		@include font-bold;
-		@include toRem('font-size', 14);
-		color: $black;
-		text-decoration-color: transparent;
-		overflow: hidden;
+		height: 2.5em;
 
-		&::after {
-			position: absolute;
-			bottom: 0;
-			left: -100%;
-			content: '';
+		img {
+			display: block;
 			width: 100%;
-			height: 2px;
-			background-color: $accent;
-			transition: left .3s ease;
-		}
-
-		&:hover {
-			&::after {
-				left: 0;
-			}
+			height: 100%;
+			object-fit: contain;
 		}
 	}
 }
