@@ -17,6 +17,7 @@ body {
 	line-height: 1.8;
 	color: $black;
 	background-color: $white;
+	background: linear-gradient(0deg, $beige 0%, $white 100%);
 	margin: 0;
 	padding: 0;
 }
@@ -33,10 +34,24 @@ section {
 	}
 }
 
+*:last-child {
+	margin-bottom: 0;
+}
+
+p {
+	margin-bottom: $gap-sm;
+}
+
+p + h2,
+p + .h2-style {
+	margin-top: $gap-md;
+}
+
 h1, .h1-style {
 	@include font-logo;
 	@include toRem('font-size', 44);
 	line-height: 1.2;
+	margin-bottom: $gap-sm;
 
 	@include break(tablet) {
 		@include toRem('font-size', 40);
@@ -49,15 +64,19 @@ h1, .h1-style {
 
 h2, .h2-style {
 	@include font-logo;
-	@include toRem('font-size', 32);
+	@include toRem('font-size', 28);
 	line-height: 1.2;
 
 	@include break(tablet) {
-		@include toRem('font-size', 28);
+		@include toRem('font-size', 24);
 	}
 
 	@include break(mobile) {
-		@include toRem('font-size', 24);
+		@include toRem('font-size', 22);
+	}
+
+	& + p {
+		margin-top: $gap-sm;
 	}
 }
 
@@ -105,16 +124,17 @@ strong {
 
 .emphasis {
 	@include font-logo;
-	@include toRem('font-size', 30);
-	line-height: 1.6;
+	@include toRem('font-size', 24);
+	line-height: 1.8;
 	color: $accent;
+	margin: $gap 0;
 
 	@include break(tablet) {
-		@include toRem('font-size', 26);
+		@include toRem('font-size', 22);
 	}
 
 	@include break(mobile) {
-		@include toRem('font-size', 22);
+		@include toRem('font-size', 20);
 	}
 }
 

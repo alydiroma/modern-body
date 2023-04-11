@@ -6,6 +6,10 @@
         justify-content: space-between;
         gap: $gap-lg;
 
+        @include break(tablet) {
+            gap: $gap;
+        }
+
         @include break(mobile) {
             flex-direction: column;
         }
@@ -13,6 +17,8 @@
 
     &-image {
         aspect-ratio: 1 / 1;
+        border-radius: $radius-large;
+        overflow: hidden;
 
         img {
             @include object-fit;
@@ -21,6 +27,21 @@
 
     &-credentials {
         flex: 1;
+
+        &-list {
+            color: $white;
+            padding: $gap;
+            background-color: $accent;
+            border-radius: $radius-large;
+
+            @include break(tablet) {
+                padding: $gap-sm;
+            }
+
+            @include break(mobile) {
+                margin-top: $gap;
+            }
+        }
     }
 
     &-bio {

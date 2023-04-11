@@ -3,15 +3,15 @@
 	display: inline-block;
 	@include font-bold;
 	@include toRem('font-size', 16);
-	color: $accent;
-	background-color: transparent;
+	color: $white;
+	background-color: $accent;
 	border: 2px solid $accent;
 	border-radius: $radius;
 	transition: color .6s ease, background-color .6s ease;
 
 	&:hover {
-		color: $white;
-		background-color: $accent;
+		color: $accent;
+		background-color: transparent;
 	}
 }
 

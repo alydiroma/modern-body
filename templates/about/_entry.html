@@ -2,22 +2,22 @@
 {% block content %}
 <main class="about stack-reg">
     <div class="about-container">
-        <div class="about-credentials stack-md">
+        <div class="about-credentials stack-sm">
             {% set image = entry.aboutImage.one() %}
             {% if image %}
             <div class="about-image">
                 <img src="{{ image.url() }}" alt="Aly DiRoma">
             </div>
             {% endif %}
-            <div class="desktop stack-sm">
+            <div class="desktop about-credentials-list stack-sm">
                 <h2>{{ entry.aboutCredentialsHead }}</h2>
                 {{ entry.aboutCredentials }}
             </div>
         </div>
-        <div class="about-bio stack-reg">
+        <div class="about-bio">
             <h1>{{ entry.aboutTitle }}</h1>
             {{ entry.aboutBio }}
-            <div class="mobile stack-sm">
+            <div class="about-credentials-list mobile stack-sm">
                 <h2>{{ entry.aboutCredentialsHead }}</h2>
                 {{ entry.aboutCredentials }}
             </div>
