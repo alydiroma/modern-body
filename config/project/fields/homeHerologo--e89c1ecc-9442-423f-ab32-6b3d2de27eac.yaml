@@ -11,7 +11,7 @@ settings:
   allowUploads: true
   allowedKinds: null
   branchLimit: null
-  defaultUploadLocationSource: 'volume:9a08632a-f16d-4a7b-98d7-ded85bf94df6' # Images
+  defaultUploadLocationSource: 'volume:14a6f0f3-b531-4d1d-a2b5-c9b0a56a2ef0' # Assets
   defaultUploadLocationSubpath: null
   localizeRelations: false
   maintainHierarchy: false
@@ -21,7 +21,7 @@ settings:
   restrictFiles: false
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
-  restrictedLocationSource: 'volume:9a08632a-f16d-4a7b-98d7-ded85bf94df6' # Images
+  restrictedLocationSource: 'volume:14a6f0f3-b531-4d1d-a2b5-c9b0a56a2ef0' # Assets
   restrictedLocationSubpath: null
   selectionCondition:
     __assoc__:
@@ -39,7 +39,7 @@ settings:
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources:
-    - 'volume:9a08632a-f16d-4a7b-98d7-ded85bf94df6' # Images
+    - 'volume:14a6f0f3-b531-4d1d-a2b5-c9b0a56a2ef0' # Assets
   targetSiteId: null
   validateRelatedElements: false
   viewMode: large

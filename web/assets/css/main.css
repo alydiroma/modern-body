@@ -345,7 +345,7 @@ strong {
 }
 .header-container {
   width: calc(100% - 5rem);
-  max-width: 60rem;
+  max-width: 65rem;
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
@@ -1026,7 +1026,7 @@ strong {
 
 .about-container {
   width: calc(100% - 5rem);
-  max-width: 60rem;
+  max-width: 65rem;
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
@@ -1091,7 +1091,7 @@ strong {
 
 .classes-head {
   width: calc(100% - 5rem);
-  max-width: 60rem;
+  max-width: 65rem;
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
@@ -1136,7 +1136,7 @@ strong {
 }
 .classes-list {
   width: calc(100% - 5rem);
-  max-width: 60rem;
+  max-width: 65rem;
   margin-inline: auto;
 }
 @media (max-width: 1024px) {

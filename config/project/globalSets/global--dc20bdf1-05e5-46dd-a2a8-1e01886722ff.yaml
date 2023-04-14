@@ -1,0 +1,36 @@
+fieldLayouts:
+  5adaffd7-b0ae-40e2-8593-c333041b818b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: cb0bc08e-fc13-48d5-94d7-26e840daa2df # Logo Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b9e967cd-a811-4f6c-b0a8-3f958242db1b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c45206d2-9d75-4bdb-9a7a-7871d6f93696 # Logo Image Long
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f463f536-0bf8-47eb-a920-967a2ce519fc
+            userCondition: null
+            warning: null
+            width: 100
+        name: Image
+        uid: 37f5331c-13e1-4a5b-8db7-768488a143ff
+        userCondition: null
+handle: global
+name: Global
+sortOrder: 1

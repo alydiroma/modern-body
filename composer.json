@@ -1,10 +1,11 @@
 {
   "require": {
     "carlcs/craft-redactorcustomstyles": "^4.0",
-    "craftcms/cms": "4.4.3",
+    "craftcms/cms": "4.4.7",
     "craftcms/redactor": "^3.0",
     "misterbk/mix": "^1.6",
     "sebastianlenz/linkfield": "^2.1",
+    "servd/craft-asset-storage": "3.3.1",
     "verbb/navigation": "^2.0",
     "vlucas/phpdotenv": "^5.4.0"
   },
