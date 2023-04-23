@@ -74,6 +74,9 @@ heroVideo.addEventListener("ended", function () {
   \*******************************/
 /***/ (() => {
 
+// set copyright year
+document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
+
 // general animation
 var animateItem = function animateItem(entries, observer) {
   entries.forEach(function (entry) {

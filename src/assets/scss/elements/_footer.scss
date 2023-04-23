@@ -1,18 +1,73 @@
 .footer {
-	display: none;
 	position: relative;
-	padding: $gap-xs 0;
-	border-top: 1px solid $accent;
+	margin-top: $gap-xl;
+	padding: $gap 0;
+	border-top: 2px solid $accent;
 	z-index: 2;
+
+	a {
+		color: $accent;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 	
 	&-container {
-		@include container;
+		@include container($medium);
 		display: flex;
-		justify-content: center;
-		
-		p {
-			@include font-bold;
-			@include toRem('font-size', 10);
+		flex-direction: column;
+		align-items: center;
+		gap: $gap-sm;
+	}
+
+	&-logo {
+		width: 15rem;
+
+		svg {
+			display: block;
+			width: 100%;
 		}
+	}
+
+	&-nav {
+		display: flex;
+		gap: $gap;
+
+		&-item {
+			display: inline-block;
+			list-style: none;
+		}
+	}
+
+	&-social {
+		display: flex;
+		gap: $gap;
+		
+		li {
+			display: inline-block;
+			width: $gap;
+			list-style: none;
+
+			a {
+				&:hover {
+					svg {
+						fill: $black;
+					}
+				}
+			}
+
+			svg {
+				display: block;
+				width: 100%;
+				fill: $accent;
+				transition: fill .3s ease;
+			}
+		}
+	}
+
+	&-copyright {
+		text-align: center;
 	}
 }

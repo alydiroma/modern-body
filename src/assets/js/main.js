@@ -1,3 +1,6 @@
+// set copyright year
+document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
+
 // general animation
 const animateItem = (entries, observer) => {
 	entries.forEach((entry) => {
@@ -18,3 +21,4 @@ const animateItems = document.querySelectorAll(".animate");
 animateItems.forEach((item) => {
 	animateItemsObserver.observe(item);
 });
+

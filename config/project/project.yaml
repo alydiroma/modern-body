@@ -1,4 +1,4 @@
-dateModified: 1682220132
+dateModified: 1682277549
 email:
   fromEmail: alhmail@gmail.com
   fromName: 'Modern Body'
@@ -25,6 +25,7 @@ meta:
     0e24ebfd-5210-45ab-8434-b505aa1e3db4: Link # Link
     0e62c248-99e6-42ab-b8cd-d7ec668bc886: 'Hero Image' # Hero Image
     1f1a8a59-4979-401d-82a3-b9b53b9c1de2: Classes # Classes
+    4d2ffb4a-b740-4fd6-96c8-451c18168856: 'Tik Tok' # Tik Tok
     5c337995-e31f-4ea4-9ee5-80ee8beda0c9: Global # Global
     5d6e6468-5ba1-4d69-9cc9-61ae8d7dec0c: 'Testimonial Image' # Testimonial Image
     5d9037d9-870f-4c88-93fb-fc01efa9af9d: Subtitle # Subtitle
@@ -39,6 +40,7 @@ meta:
     29c627bb-9663-43ab-95e0-dec6b1e20414: 'Main Nav' # Main Nav
     34d91206-bdc7-4cac-b810-e54fa52a8f98: 'Products Head' # Products Head
     43c4b11f-16f2-4fb5-8984-7701e5e667d0: 'Hero Tagline' # Hero Tagline
+    45cdf667-692c-4321-96aa-54465fc2c000: Instagram # Instagram
     63ee439f-a7aa-41cf-b686-93b2f5f6392d: 'Product Link Text' # Product Link Text
     84d4713f-9e53-4b1c-8d8e-e5600fa07269: Class # Class
     96f6e380-8739-4368-a5b3-042e778befe7: 'Company Head' # Company Head
@@ -57,6 +59,7 @@ meta:
     92053381-bc29-48a8-b8c9-f691eefa64b5: Title # Title
     b87d114e-c463-4311-adbe-dc8e506e6d2b: Classes # Classes
     b87e3b3f-cace-45aa-9c6d-2378c7874b72: Image # Image
+    b57296a2-c74b-4856-b697-d65b455c9c88: 'Footer Nav' # Footer Nav
     bc2faaee-59b6-4f7a-a9a5-36f7a19cbb14: 'Products List' # Products List
     be094951-a83c-4f73-90e2-1279b3332b1b: 'Bullet Copy' # Bullet Copy
     bf710d01-d9f2-4c16-97d2-6e04c591a6cd: Image # Image
@@ -68,6 +71,7 @@ meta:
     ca38367d-589e-4287-bdc0-29124c535643: 'Company Copy' # Company Copy
     cb0bc08e-fc13-48d5-94d7-26e840daa2df: 'Logo Image' # Logo Image
     cdd37bfc-0c28-4258-91d1-7a6a000c53f6: Bio # Bio
+    cef6c373-ddac-4750-a65b-14ec99b6a138: YouTube # YouTube
     d7efe282-0770-409c-b80d-98a2d44f3231: 'Testimonials List' # Testimonials List
     d76015ab-cb69-4d6c-9f18-cc3506db7bd7: 'Testimonial Name' # Testimonial Name
     da4444f1-47dd-462a-84b6-0d72b5c266f6: 'Product Title' # Product Title

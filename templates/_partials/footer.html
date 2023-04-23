@@ -1,0 +1,48 @@
+<footer class="footer">
+    <div class="footer-container">
+        {% set image = global.globalLogoImageLong.one() %}
+        {% if image %}
+            <div class="footer-logo">
+                <a class="header-logo" href="/" title="home">
+                    <img src="{{ image.url() }}" alt="Aly DiRoma">
+                </a>
+            </div>
+        {% endif %}
+            
+        <ul class="footer-social">
+            {% if global.tikTok %}
+                <li>
+                    <a href="{{ global.tikTok }}"{% if global.tikTok.getTarget() %} target="_blank" rel="noopener noreferrer"{% endif %}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M11.5 6C8.48 6 6 8.48 6 11.5v25c0 3.02 2.48 5.5 5.5 5.5h25c3.02 0 5.5-2.48 5.5-5.5v-25C42 8.48 39.52 6 36.5 6h-25zm16 5c.83 0 1.5.67 1.5 1.5 0 3.03 2.47 5.5 5.5 5.5.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5c-2.1 0-4.02-.76-5.5-2.02V29c0 4.41-3.59 8-8 8s-8-3.59-8-8 3.59-8 8-8c.21 0 .42.01.62.02.83.07 1.45.79 1.38 1.61a1.5 1.5 0 0 1-1.61 1.39c-.13-.01-.26-.02-.39-.02-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5V12.5c0-.83.67-1.5 1.5-1.5z"/></svg>
+                        <span class="sr-only">{{ global.tikTok.getCustomText('TikTok') }}</span>
+                    </a>
+                </li>
+            {% endif %}
+            {% if global.youTube %}
+                <li><a href="{{ global.youTube }}"{% if global.youTube.getTarget() %} target="_blank" rel="noopener noreferrer"{% endif %}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M23.857 8.5c-6.352 0-12.255.453-15.623 1.156a1.5 1.5 0 0 0-.021.006c-2.538.569-4.927 2.386-5.43 5.233a1.5 1.5 0 0 0-.002.011C2.395 17.2 2 20.191 2 24.5c0 4.301.396 7.212.885 9.627.515 2.762 2.85 4.635 5.426 5.21a1.5 1.5 0 0 0 .037.01c3.515.693 9.25 1.153 15.603 1.153s12.092-.46 15.608-1.152a1.5 1.5 0 0 0 .037-.01c2.537-.569 4.926-2.386 5.43-5.233a1.5 1.5 0 0 0 .003-.021c.38-2.34.874-5.328.971-9.645a1.5 1.5 0 0 0 0-.033c0-4.318-.494-7.327-.977-9.71-.51-2.769-2.848-4.647-5.427-5.223a1.5 1.5 0 0 0-.12-.022c-3.43-.482-9.265-.951-15.619-.951zm-3.7 8.502c.37-.008.753.08 1.113.283l8.603 4.861a2.124 2.124 0 0 1 0 3.71l-8.603 4.86c-1.44.813-3.233-.216-3.233-1.855V19.14c0-1.23 1.008-2.114 2.12-2.137z"/></svg>
+                    <span class="sr-only">{{ global.youTube.getCustomText('YouTube') }}</span>
+                </a></li>
+            {% endif %}
+            {% if global.instagram %}
+                <li><a href="{{ global.instagram }}"{% if global.instagram.getTarget() %} target="_blank" rel="noopener noreferrer"{% endif %}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M16.5 5C10.159 5 5 10.159 5 16.5v15C5 37.841 10.159 43 16.5 43h15C37.841 43 43 37.841 43 31.5v-15C43 10.159 37.841 5 31.5 5h-15zM34 12a2 2 0 1 1 .001 3.999A2 2 0 0 1 34 12zm-10 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0 3a7 7 0 1 0 0 14 7 7 0 1 0 0-14z"/></svg>
+                    <span class="sr-only">{{ global.instagram.getCustomText('Instagram') }}</span>
+                </a></li>
+            {% endif %}
+        </ul>
+
+        <nav>
+            {{ craft.navigation.render('footerNav', {
+                ulClass: 'footer-nav',
+                liClass: 'footer-nav-item',
+                aClass: 'footer-nav-link',
+                activeClass: 'footer-nav-active',
+                })
+            }}
+        </nav>
+        <div class="footer-copyright">
+            <small>&copy; <span id="copyright-year"></span> Aly DiRoma. Designed & built by <a href="http://angelahanshaw.com" target="_blank" rel="noopener noreferrer">Angela Hanshaw</a>.</small>
+        </div>
+    </div>
+</footer>
