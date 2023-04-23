@@ -64,11 +64,11 @@ h2, .h2-style {
 	line-height: 1.2;
 
 	@include break(tablet) {
-		@include toRem('font-size', 24);
+		@include toRem('font-size', 26);
 	}
 
 	@include break(mobile) {
-		@include toRem('font-size', 22);
+		@include toRem('font-size', 24);
 	}
 
 	& + p {

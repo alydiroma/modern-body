@@ -108,12 +108,12 @@ h2, .h2-style {
 }
 @media (max-width: 992px) {
   h2, .h2-style {
-    font-size: 1.5rem;
+    font-size: 1.625rem;
   }
 }
 @media (max-width: 600px) {
   h2, .h2-style {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 h2 + p, .h2-style + p {
@@ -604,7 +604,7 @@ strong {
 }
 @media (max-width: 600px) {
   .home-hero-container {
-    padding: 10vh 0 5vh 0;
+    padding: 10vh 0 15vh 0;
   }
 }
 .home-hero-logo {
@@ -757,6 +757,7 @@ strong {
     flex-direction: column;
     align-items: stretch;
     gap: 2rem;
+    height: unset;
   }
 }
 .home-about-image {
