@@ -43,7 +43,9 @@
 
 	&-social {
 		display: flex;
+		align-items: center;
 		gap: $gap;
+		padding: 0;
 		
 		li {
 			display: inline-block;

@@ -518,7 +518,9 @@ strong {
 }
 .footer-social {
   display: flex;
+  align-items: center;
   gap: 2rem;
+  padding: 0;
 }
 .footer-social li {
   display: inline-block;
