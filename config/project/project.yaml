@@ -1,4 +1,4 @@
-dateModified: 1681439076
+dateModified: 1682215735
 email:
   fromEmail: alhmail@gmail.com
   fromName: 'Modern Body'
@@ -44,18 +44,22 @@ meta:
     96f6e380-8739-4368-a5b3-042e778befe7: 'Company Head' # Company Head
     196bdac8-d7ed-4635-acc3-e671ce97f550: Common # Common
     221b0134-0f21-4270-a087-06a4eaf0ded3: About # About
+    313c48a2-dfc1-4518-9ba6-7fc0974e9c50: Block # Block
     485c9d29-4e5b-4658-9c86-ed411faf38f6: Title # Title
     854bb4fe-e607-46c0-8623-93814869aea5: Description # Description
+    949dacbe-f141-438a-9783-ccf2d76f4cc3: Full-Width # Full-Width
     9121f0f4-c29a-4085-af84-e633b5d10a1a: Title # Title
     83953fb7-e107-4565-970c-a90f8151ddd5: Classes # Classes
     089201a8-2f54-4061-8689-d946689afe52: 'Bullet Head' # Bullet Head
     476101d0-23c9-47fa-98eb-7d3ec4770862: Credentials # Credentials
+    612978b4-b183-4027-a49c-607cf17f73f3: 'Full-Width Laptop' # Full-Width Laptop
     51560042-57cb-418c-8ba2-b86b090eb5b4: Title # Title
     92053381-bc29-48a8-b8c9-f691eefa64b5: Title # Title
     b87d114e-c463-4311-adbe-dc8e506e6d2b: Classes # Classes
     b87e3b3f-cace-45aa-9c6d-2378c7874b72: Image # Image
     bc2faaee-59b6-4f7a-a9a5-36f7a19cbb14: 'Products List' # Products List
     be094951-a83c-4f73-90e2-1279b3332b1b: 'Bullet Copy' # Bullet Copy
+    bf710d01-d9f2-4c16-97d2-6e04c591a6cd: Image # Image
     bfc66a87-43b5-45fb-992a-27586fcff3e4: 'Testimonials Head' # Testimonials Head
     c3cb6ef7-7f2e-4185-84a3-704e84298417: 'Class List' # Class List
     c249f4db-294d-44b8-ba21-a84bc989d17a: Home # Home
@@ -79,6 +83,7 @@ meta:
     ef78c8c4-5030-4480-8f50-50b231fff44c: 'Second Image' # Second Image
     f1dbd402-7281-4d1a-a2dc-3753d5a44df9: 'Company Bullets' # Company Bullets
     f4af40b0-3ee1-4b65-bfe3-fcf6e67c3c75: 'About Signature' # About Signature
+    f8eb5410-e3fc-41c3-a94e-d80f41ebad14: 'Full-width Mobile' # Full-width Mobile
     f851a4be-7bd7-4309-b0ef-c6ae24caecf3: 'Testimonial Items' # Testimonial Items
 plugins:
   mix:

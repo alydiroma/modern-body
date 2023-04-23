@@ -5,3 +5,14 @@
 .container-narrow {
 	@include container($narrow);
 }
+
+.container-bg {
+	color: $white;
+	padding: $gap;
+	background-color: $accent;
+	border-radius: $radius-large;
+
+	@include break(tablet) {
+		padding: $gap-sm;
+	}
+}

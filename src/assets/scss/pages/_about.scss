@@ -2,17 +2,6 @@
 
     &-container {
         @include container($medium);
-        display: flex;
-        justify-content: space-between;
-        gap: $gap-lg;
-
-        @include break(tablet) {
-            gap: $gap;
-        }
-
-        @include break(mobile) {
-            flex-direction: column;
-        }
     }
 
     &-image {
@@ -26,7 +15,6 @@
     }
 
     &-credentials {
-        flex: 1;
 
         &-list {
             color: $white;
@@ -42,9 +30,5 @@
                 margin-top: $gap;
             }
         }
-    }
-
-    &-bio {
-        flex: 2;
     }
 }

@@ -1,0 +1,47 @@
+.flex-block {
+    @include container($medium);
+    display: flex;
+    justify-content: space-between;
+    gap: $gap-lg;
+
+    @include break(tablet) {
+        gap: $gap;
+    }
+
+    @include break(mobile) {
+        flex-direction: column;
+    }
+
+    * {
+
+        &:first-child {
+            flex: 1;
+        }
+
+        &:last-child {
+            flex: 2;
+        }
+    }
+
+    &-bg {
+        color: $white;
+        padding: $gap;
+        background-color: $accent;
+        border-radius: $radius-large;
+
+        @include break(tablet) {
+            padding: $gap-sm;
+        }
+    }
+
+    &-img {
+        border-radius: $radius-large;
+        overflow: hidden; 
+
+        img {
+            @include object-fit;
+        }
+    }
+
+
+}

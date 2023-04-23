@@ -1,0 +1,10 @@
+<picture>
+    <source {{ attr({
+        type: 'image/jpeg',
+        srcset: fullWidthImage.getSrcset(
+            [600, 1024, 1920], { format: 'jpg', }
+        ),
+        sizes: '(max-width: 600px) 600px, (max-width: 1024px) 1024px, 1920px',
+    }) }}>
+    <img width="{{ fullWidthImage.width }}" height="{{ fullWidthImage.height }}" alt="{{ fullWidthImage.alt }}" />
+</picture>

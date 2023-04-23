@@ -1,0 +1,11 @@
+fill: null
+format: null
+handle: fullWidthMobile
+height: 300
+interlace: none
+mode: crop
+name: 'Full-width Mobile'
+position: center-center
+quality: null
+upscale: true
+width: 600

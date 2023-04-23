@@ -3,3 +3,28 @@
     justify-content: space-between;
     gap: $gap;
 }
+
+.layout {
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        gap: $gap-lg;
+
+        @include break(tablet) {
+            gap: $gap;
+        }
+
+        @include break(mobile) {
+            flex-direction: column;
+        }
+    }
+
+    &-side {
+        flex: 1;
+    }
+
+    &-main {
+        flex: 2;
+    }
+}

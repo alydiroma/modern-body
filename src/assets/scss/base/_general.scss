@@ -38,10 +38,6 @@ section {
 	margin-bottom: 0;
 }
 
-p {
-	margin-bottom: $gap-sm;
-}
-
 p + h2,
 p + .h2-style {
 	margin-top: $gap-md;
@@ -96,6 +92,10 @@ ul {
 
 strong {
 	@include font-medium;
+}
+
+.rich-text {
+	max-width: $narrow;
 }
 
 .desktop {

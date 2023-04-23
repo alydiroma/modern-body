@@ -1,18 +1,8 @@
 .classes {
 
     &-head {
-        @include container($medium);
-        display: flex;
-        justify-content: space-between;
-        gap: $gap;
-
-        @include break(mobile) {
-            flex-direction: column;
-        }
-
-        &>* {
-            max-width: $max-line-length;
-        }
+        @include container($narrow);
+        text-align: center;
     }
 
     &-title {
@@ -36,10 +26,6 @@
         }
     }
 
-    &-list {
-        @include container($medium);
-    }
-
     &-item {
 
         &.in-view {
@@ -50,9 +36,24 @@
             }
         }
 
+        &-img {
+            align-self: flex-start;
+            padding: 0;
+            border-radius: $radius-large;
+            overflow: hidden;
+        }
+
+        &-desc {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: $gap-sm;
+        }
+
         &-title {
             position: relative;
-            padding-bottom: $gap-xs;
+            margin-bottom: $gap-sm;
+            padding-bottom: $gap-sm;
 
             &::after {
                 position: absolute;
@@ -69,24 +70,15 @@
             }
         }
 
-        &-copy {
-            display: flex;
-            justify-content: space-between;
-            gap: $gap-md;
-
-            @include break(mobile) {
-                flex-direction: column;
-                gap: $gap-sm;
+        &-link {
+            position: relative;
+            padding-top: $gap;
+            
+            a {
+                position: absolute;
+                bottom: 0;
+                display: inline-block;
             }
-        }
-
-        &-subtitle {
-            flex: 1;
-        }
-
-        &-description {
-            flex: 2;
-            max-width: $max-line-length;
         }
     }
 }

@@ -24,9 +24,9 @@
     <section class="home-about animate">
         <div class="home-about-container">
             <div class="home-about-image">
-                {% set image = entry.homeAboutImage.one() %}
-                {% if image %}
-                    <img src="{{ image.url() }}" alt="Aly DiRoma">
+                {% set blockImage = entry.homeAboutImage.one() %}
+                {% if blockImage %}
+                    {% include '_partials/block-image' %}
                 {% endif %}
             </div>
             <div class="home-about-copy stack-sm">
@@ -57,12 +57,12 @@
                     {% endif %}
                 </div>
             </div>
-            <div class="home-company-image animate">
-                {% set companyImage = entry.homeCompanyImage.one() %}
-                {% if companyImage %}
-                    <img src="{{ companyImage.url() }}" alt="Aly DiRoma">
-                {% endif %}
-            </div>
+            {% set fullWidthImage = entry.homeCompanyImage.one() %}
+            {% if fullWidthImage %}
+                <div class="home-company-image animate">
+                    {% include '_partials/full-width-image' %}
+                </div>
+            {% endif %}
         </section>
 
         <section class="home-products stack-reg">
@@ -88,9 +88,9 @@
         <section class="home-testimonials">
             <div class="home-testimonials-container">
                 <div class="home-testimonials-image animate">
-                    {% set testimonialImage = entry.homeTestimonialImage.one() %}
-                    {% if testimonialImage %}
-                        <img src="{{ testimonialImage.url() }}" alt="">
+                    {% set blockImage = entry.homeTestimonialImage.one() %}
+                    {% if blockImage %}
+                        {% include '_partials/block-image' %}
                     {% endif %}
                 </div>
                 <div class="home-testimonials-copy stack-sm animate">

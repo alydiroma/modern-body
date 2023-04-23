@@ -1,12 +1,15 @@
 {% extends "_layout" %}
 {% block content %}
 <main class="about stack-reg">
-    <div class="about-container">
-        <div class="about-credentials stack-reg">
+    <div class="layout-container about-container">
+        <div class="layout-side about-credentials stack-reg">
             {% set image1 = entry.aboutImage.one() %}
             {% if image1 %}
-            <div class="about-image">
-                <img src="{{ image1.url() }}" alt="Aly DiRoma">
+            <div class="about-image animate animate-image">
+                <img src="{{ image1.url('block') }}" 
+                width="{{ image1.getWidth('block') }}"
+                height="{{ image1.getHeight('block') }}"
+                alt="{{ image1.alt }}" />
             </div>
             {% endif %}
             <div class="desktop about-credentials-list stack-sm">
@@ -15,19 +18,25 @@
                 {% set image2 = entry.aboutSecondImage.one() %}
             </div>
             {% if image2 %}
-            <div class="desktop about-image">
-                <img src="{{ image2.url() }}" alt="Aly DiRoma">
+            <div class="desktop about-image animate animate-image">
+                <img src="{{ image2.url('block') }}" 
+                width="{{ image2.getWidth('block') }}"
+                height="{{ image2.getHeight('block') }}"
+                alt="{{ image2.alt }}" />
             </div>
             {% endif %}
         </div>
-        <div class="about-bio">
+        <div class="layout-main about-bio">
             <h1>{{ entry.aboutTitle }}</h1>
             {{ entry.aboutBio }}
             <div class="about-credentials-list mobile stack-sm">
                 {% set image2 = entry.aboutSecondImage.one() %}
                 {% if image2 %}
-                <div class="about-image">
-                    <img src="{{ image2.url() }}" alt="Aly DiRoma">
+                <div class="about-image animate animate-image">
+                    <img src="{{ image2.url('block') }}" 
+                    width="{{ image2.getWidth('block') }}"
+                    height="{{ image2.getHeight('block') }}"
+                    alt="{{ image2.alt }}" />
                 </div>
                 {% endif %}
                 <h2>{{ entry.aboutCredentialsHead }}</h2>

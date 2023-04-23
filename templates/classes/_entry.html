@@ -1,41 +1,41 @@
 {% extends "_layout" %}
 {% block content %}
 <main class="classes stack-md">
-    <div class="classes-head">
-        <div class="classes-title stack-sm">
-            <h1>{{ entry.classesTitle }}</h1>
-            {% if entry.classesDescription %}
-            <div class="rich-text stack-xs">
-                {{ entry.classesDescription }}
-            </div>
-            {% endif %}
-        </div>
-        {% set Image = entry.classesHeroImage.one() %}
-        {% if Image %}
-        <div class="classes-image">
-            <img src="{{ Image.url() }}" alt="Aly DiRoma">
+    <div class="classes-head stack-sm">
+        <h1>{{ entry.classesTitle }}</h1>
+        {% if entry.classesDescription %}
+        <div class="rich-text stack-xs">
+            {{ entry.classesDescription }}
         </div>
         {% endif %}
     </div>
 
     {% set blocks = entry.classesList.all() %}
     {% if blocks | length %}
-    <div class="classes-list stack-xl">
+    <div class="stack-xl">
         {% for block in blocks %}
         <div class="classes-item stack-sm animate">
-            <div class="classes-item-title">
-                <h2>{{ block.classTitle }}</h2>
+            <div class="flex-block">
+                <h2 class="classes-item-title">{{ block.classTitle }}</h2>
             </div>
-            <div class="classes-item-copy">
-                <div class="classes-item-subtitle stack-reg">
-                    <p class="large-font"><strong>{{ block.classSubtitle | striptags }}</strong></p>
-                    <p class="desktop"><a class="btn-sm" href="{{ block.classLink }}">{{ block.classLink.getCustomText('Learn More')
-                    }}</a></p>
+            <div class="flex-block">
+                <div class="flex-block-bg classes-item-img animate animate-image">
+                    {% set classImage = block.classImage.one() %}
+                    {% if classImage %}
+                        <img src="{{ classImage.url('block') }}" 
+                        width="{{ classImage.getWidth('block') }}"
+                        height="{{ classImage.getHeight('block') }}"
+                        alt="{{ classImage.alt }}" />
+                    {% endif %}
                 </div>
-                <div class="classes-item-description stack-reg">
-                    {{ block.classDescription }}
-                    <p class="mobile"><a class="btn-sm btn-wide-mobile" href="{{ block.classLink }}">{{ block.classLink.getCustomText('Learn More')
-                    }}</a></p>
+                <div class="classes-item-desc">
+                    <div>
+                        <p class="large-font"><strong>{{ block.classSubtitle | striptags }}</strong></p>
+                        {{ block.classDescription }}
+                    </div>
+                    <p class="classes-item-link">
+                        <a class="btn-sm btn-wide-mobile" href="{{ block.classLink }}">{{ block.classLink.getCustomText('Learn More') }}</a>
+                    </p>
                 </div>
             </div>
         </div>
