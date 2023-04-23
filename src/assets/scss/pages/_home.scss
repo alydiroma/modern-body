@@ -165,8 +165,9 @@
 			z-index: 2;
 
 			@include break(mobile) {
-				display: block;
-				height: auto;
+				flex-direction: column;
+				align-items: stretch;
+				gap: $gap;
 			}
 		}		
 
@@ -177,7 +178,7 @@
 			overflow: hidden;
 
 			@include break(mobile) {
-				height: 300px;
+				order: 2;
 			}
 
 			img {
@@ -201,7 +202,7 @@
 			transition: opacity .3s ease, transform .6s ease;
 
 			@include break(mobile) {
-				//transform: translateY(2rem);
+				order: 1;
 			}
 		}
 
