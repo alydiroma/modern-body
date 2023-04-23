@@ -52,7 +52,6 @@ body {
   line-height: 1.8;
   color: #222;
   background-color: #ffffff;
-  background: linear-gradient(0deg, #fbfbfb 0%, #ffffff 100%);
   margin: 0;
   padding: 0;
 }
@@ -1307,4 +1306,68 @@ strong {
   position: absolute;
   bottom: 0;
   display: inline-block;
+}
+
+.faq-head {
+  width: calc(100% - 5rem);
+  max-width: 40rem;
+  margin-inline: auto;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .faq-head {
+    width: calc(100% - 4rem);
+  }
+}
+@media (max-width: 600px) {
+  .faq-head {
+    width: calc(100% - 2rem);
+  }
+}
+.faq-container {
+  width: calc(100% - 5rem);
+  max-width: 65rem;
+  margin-inline: auto;
+}
+@media (max-width: 1024px) {
+  .faq-container {
+    width: calc(100% - 4rem);
+  }
+}
+@media (max-width: 600px) {
+  .faq-container {
+    width: calc(100% - 2rem);
+  }
+}
+
+.contact-head {
+  width: calc(100% - 5rem);
+  max-width: 40rem;
+  margin-inline: auto;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .contact-head {
+    width: calc(100% - 4rem);
+  }
+}
+@media (max-width: 600px) {
+  .contact-head {
+    width: calc(100% - 2rem);
+  }
+}
+.contact-container {
+  width: calc(100% - 5rem);
+  max-width: 65rem;
+  margin-inline: auto;
+}
+@media (max-width: 1024px) {
+  .contact-container {
+    width: calc(100% - 4rem);
+  }
+}
+@media (max-width: 600px) {
+  .contact-container {
+    width: calc(100% - 2rem);
+  }
 }

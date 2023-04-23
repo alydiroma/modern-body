@@ -1,0 +1,11 @@
+.faq {
+    
+    &-head {
+        @include container($narrow);
+        text-align: center;
+    }
+
+    &-container {
+        @include container($medium);
+    }
+}

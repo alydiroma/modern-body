@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: contact
+name: Contact
+propagationMethod: all
+siteSettings:
+  9d74e71c-d037-432d-887d-4065ec79a9c7: # Modern Body
+    enabledByDefault: true
+    hasUrls: true
+    template: contact/_entry
+    uriFormat: contact
+type: single

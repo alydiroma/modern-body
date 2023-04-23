@@ -1,4 +1,4 @@
-dateModified: 1682277549
+dateModified: 1682281135
 email:
   fromEmail: alhmail@gmail.com
   fromName: 'Modern Body'
@@ -31,13 +31,16 @@ meta:
     5d9037d9-870f-4c88-93fb-fc01efa9af9d: Subtitle # Subtitle
     6bfbcd2b-1df4-4957-93f9-af5634cb74d7: 'Product Link' # Product Link
     6dd9aa0b-b4f3-4320-8d34-181a52eb6a00: Home # Home
+    7c815618-2626-41f3-bbec-7e8471481ac9: FAQ # FAQ
     07dede5f-e375-4ca2-9622-0adde621a5c3: Home # Home
     8fcc0341-0be2-48bb-867d-c746a78e9c82: 'Products Items' # Products Items
     9d74e71c-d037-432d-887d-4065ec79a9c7: 'Modern Body' # Modern Body
     010f0163-ae73-4856-aa58-73380990ab5b: Description # Description
+    11d2fbd0-367e-4709-b5a0-ab8554cc5c29: 'FAQ Question' # FAQ Question
     14a6f0f3-b531-4d1d-a2b5-c9b0a56a2ef0: Assets # Assets
     21b6ca88-6ace-44d7-8c0e-fb6ccbab53d8: Bullet # Bullet
     29c627bb-9663-43ab-95e0-dec6b1e20414: 'Main Nav' # Main Nav
+    29f08e9f-d744-454f-bc1a-64cbddf3f0c8: Contact # Contact
     34d91206-bdc7-4cac-b810-e54fa52a8f98: 'Products Head' # Products Head
     43c4b11f-16f2-4fb5-8984-7701e5e667d0: 'Hero Tagline' # Hero Tagline
     45cdf667-692c-4321-96aa-54465fc2c000: Instagram # Instagram
@@ -48,20 +51,28 @@ meta:
     221b0134-0f21-4270-a087-06a4eaf0ded3: About # About
     313c48a2-dfc1-4518-9ba6-7fc0974e9c50: Block # Block
     485c9d29-4e5b-4658-9c86-ed411faf38f6: Title # Title
+    831a1862-ae47-4961-b2a4-ddc9c451e096: FAQ # FAQ
     854bb4fe-e607-46c0-8623-93814869aea5: Description # Description
     949dacbe-f141-438a-9783-ccf2d76f4cc3: Full-Width # Full-Width
+    6887f96e-ee16-4b11-9a20-45e7c13aeda4: FAQs # FAQs
     9121f0f4-c29a-4085-af84-e633b5d10a1a: Title # Title
     83953fb7-e107-4565-970c-a90f8151ddd5: Classes # Classes
     089201a8-2f54-4061-8689-d946689afe52: 'Bullet Head' # Bullet Head
     476101d0-23c9-47fa-98eb-7d3ec4770862: Credentials # Credentials
     612978b4-b183-4027-a49c-607cf17f73f3: 'Full-Width Laptop' # Full-Width Laptop
+    3050829a-ace6-4ccb-a141-cfe1f06e97aa: Contact # Contact
     51560042-57cb-418c-8ba2-b86b090eb5b4: Title # Title
+    68962412-698f-411d-a320-ca893137e690: Intro # Intro
     92053381-bc29-48a8-b8c9-f691eefa64b5: Title # Title
+    a7317e16-6eeb-4299-a34d-02eabaa60519: Intro # Intro
+    aa2ff4ae-da1b-4ca0-8b78-03ce349ee782: 'FAQ Item' # FAQ Item
+    ac16953e-d476-4c04-a41e-9115e69331e6: Contact # Contact
     b87d114e-c463-4311-adbe-dc8e506e6d2b: Classes # Classes
     b87e3b3f-cace-45aa-9c6d-2378c7874b72: Image # Image
     b57296a2-c74b-4856-b697-d65b455c9c88: 'Footer Nav' # Footer Nav
     bc2faaee-59b6-4f7a-a9a5-36f7a19cbb14: 'Products List' # Products List
     be094951-a83c-4f73-90e2-1279b3332b1b: 'Bullet Copy' # Bullet Copy
+    bea3d6c0-82bf-44e2-8922-7fe48dac029b: FAQ # FAQ
     bf710d01-d9f2-4c16-97d2-6e04c591a6cd: Image # Image
     bfc66a87-43b5-45fb-992a-27586fcff3e4: 'Testimonials Head' # Testimonials Head
     c3cb6ef7-7f2e-4185-84a3-704e84298417: 'Class List' # Class List
@@ -89,6 +100,7 @@ meta:
     f4af40b0-3ee1-4b65-bfe3-fcf6e67c3c75: 'About Signature' # About Signature
     f8eb5410-e3fc-41c3-a94e-d80f41ebad14: 'Full-width Mobile' # Full-width Mobile
     f851a4be-7bd7-4309-b0ef-c6ae24caecf3: 'Testimonial Items' # Testimonial Items
+    fd99ba12-b360-4bbb-8fa1-2d576c0d95f5: 'FAQ Answer' # FAQ Answer
 plugins:
   mix:
     edition: standard
