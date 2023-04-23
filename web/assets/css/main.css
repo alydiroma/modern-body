@@ -567,10 +567,10 @@ strong {
     height: -webkit-fill-available;
   }
 }
-.home-hero.in-view .hero-video {
+.home-hero.in-view .home-hero-video {
   opacity: 0.15;
 }
-.home-hero.no-autoplay .hero-video {
+.home-hero.no-autoplay .home-hero-video {
   opacity: 0.15;
   transition: opacity 0;
 }
@@ -708,7 +708,7 @@ strong {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  opacity: 0.65;
+  opacity: 0.5;
   transition: opacity 7.75s ease 4.25s;
 }
 .home-hero-video video {
