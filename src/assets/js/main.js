@@ -21,4 +21,3 @@ const animateItems = document.querySelectorAll(".animate");
 animateItems.forEach((item) => {
 	animateItemsObserver.observe(item);
 });
-

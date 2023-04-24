@@ -86,11 +86,18 @@ h3, .h3-style {
 	}
 }
 
+.p-style {
+	@include font-reg;
+	@include toRem('font-size', 16);
+	line-height: 1.8;
+}
+
 ul {
 	padding-left: $gap-sm;
 }
 
-strong {
+strong,
+.bold {
 	@include font-medium;
 }
 

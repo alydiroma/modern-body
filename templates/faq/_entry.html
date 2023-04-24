@@ -1,22 +1,28 @@
 {% extends "_layout" %}
 {% block content %}
-    <main class="faq stack-xl">
-        <div class="faq-head stack-sm">
-            <h1>{{ entry.title }}</h1>
-            {% if entry.faqIntro %}
-            <div class="rich-text stack-xs">
-                {{ entry.faqIntro }}
-            </div>
-            {% endif %}
+<main class="faq stack-xl">
+    <div class="faq-head stack-sm">
+        <h1>{{ entry.title }}</h1>
+        {% if entry.faqIntro %}
+        <div class="rich-text stack-xs">
+            {{ entry.faqIntro }}
         </div>
-        <div class="faq-container">
-            {% set blocks = entry.faqs.all() %}
-            {% if blocks | length %}
-                {% for block in blocks %}
-                    {{ block.faqQuestion }}
-                    {{ block.faqAnswer }}
-                {% endfor %}
-            {% endif %}
-        </div>
-    </main>
+        {% endif %}
+    </div>
+    <div class="faq-container stack-reg" data-panel-group>
+        {% set blocks = entry.faqs.all() %}
+        {% if blocks | length %}
+            {% for block in blocks %}
+                <div class="stack-xs" data-panel>
+                    <button class="faq-question large-font bold" data-panel-trigger aria-expanded="false">
+                        {{ block.faqQuestion }}
+                    </button>
+                    <div class="panel-target" data-panel-target>
+                        {{ block.faqAnswer }}
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+</main>
 {% endblock %}

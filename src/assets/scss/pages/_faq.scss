@@ -6,6 +6,16 @@
     }
 
     &-container {
-        @include container($medium);
+        @include container($narrow);
+    }
+
+    &-question {
+        @include button-reset;
+        @include font-medium;
+        text-align: left;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
