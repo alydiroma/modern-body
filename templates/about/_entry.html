@@ -14,7 +14,9 @@
             {% endif %}
             <div class="desktop about-credentials-list stack-sm">
                 <h2>{{ entry.aboutCredentialsHead }}</h2>
-                {{ entry.aboutCredentials }}
+                <div class="rich-text">
+                    {{ entry.aboutCredentials }}
+                </div>
                 {% set image2 = entry.aboutSecondImage.one() %}
             </div>
             {% if image2 %}
@@ -26,7 +28,7 @@
             </div>
             {% endif %}
         </div>
-        <div class="layout-main about-bio">
+        <div class="layout-main about-bio rich-text">
             <h1>{{ entry.aboutTitle }}</h1>
             {{ entry.aboutBio }}
             <div class="about-credentials-list mobile stack-sm">

@@ -4,7 +4,7 @@
     <div class="faq-head stack-sm">
         <h1>{{ entry.title }}</h1>
         {% if entry.faqIntro %}
-        <div class="rich-text stack-xs">
+        <div class="rich-text">
             {{ entry.faqIntro }}
         </div>
         {% endif %}
@@ -17,7 +17,7 @@
                     <button class="faq-question large-font bold" data-panel-trigger aria-expanded="false">
                         {{ block.faqQuestion }}
                     </button>
-                    <div class="panel-target" data-panel-target>
+                    <div class="panel-target rich-text" data-panel-target>
                         {{ block.faqAnswer }}
                     </div>
                 </div>

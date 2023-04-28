@@ -70,10 +70,6 @@ h2, .h2-style {
 	@include break(mobile) {
 		@include toRem('font-size', 24);
 	}
-
-	& + p {
-		margin-top: $gap-sm;
-	}
 }
 
 h3, .h3-style {
@@ -101,10 +97,6 @@ strong,
 	@include font-medium;
 }
 
-.rich-text {
-	max-width: $narrow;
-}
-
 .desktop {
 	display: block;
 
@@ -129,7 +121,7 @@ strong,
 	}
 }
 
-.emphasis {
+.emphasis:nth-child(n) {
 	@include font-logo;
 	@include toRem('font-size', 24);
 	line-height: 1.8;
