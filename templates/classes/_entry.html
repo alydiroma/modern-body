@@ -31,7 +31,7 @@
                 <div class="classes-item-desc">
                     <div class="stack-xs">
                         <p class="large-font"><strong>{{ block.classSubtitle | striptags }}</strong></p>
-                        <div class="rich-text">{{ block.classDescription }}</div>
+                        <p>{{ block.classDescription | striptags }}</p>
                     </div>
                     <p class="classes-item-link">
                         <a class="btn btn-wide-mobile" href="{{ block.classLink }}">{{ block.classLink.getCustomText('Learn More') }}</a>
