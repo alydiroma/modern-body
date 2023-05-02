@@ -39,6 +39,17 @@
 			display: inline-block;
 			list-style: none;
 		}
+
+		&-link {
+
+			&.active {
+				text-decoration: underline;
+
+				&:hover {
+					cursor: default;
+				}
+			}
+		}
 	}
 
 	&-social {

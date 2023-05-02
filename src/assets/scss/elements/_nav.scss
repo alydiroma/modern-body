@@ -36,9 +36,20 @@
 		}
 
 		&:hover {
+			
 			&::after {
 				left: 0;
 			}
 		}
+
+		&.active {
+			@include font-medium;
+			color: $accent;
+			cursor: default;
+
+			&::after {
+				display: none;
+			}
+		}		
     }
 }

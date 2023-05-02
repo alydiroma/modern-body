@@ -493,6 +493,15 @@ strong,
 .nav-link:hover::after {
   left: 0;
 }
+.nav-link.active {
+  font-family: "Poppins Medium", sans-serif;
+  letter-spacing: 0.05rem;
+  color: #8a3a42;
+  cursor: default;
+}
+.nav-link.active::after {
+  display: none;
+}
 
 .footer {
   position: relative;
@@ -541,6 +550,12 @@ strong,
 .footer-nav-item {
   display: inline-block;
   list-style: none;
+}
+.footer-nav-link.active {
+  text-decoration: underline;
+}
+.footer-nav-link.active:hover {
+  cursor: default;
 }
 .footer-social {
   display: flex;
