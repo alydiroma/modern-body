@@ -74,7 +74,7 @@ h2, .h2-style {
 
 h3, .h3-style {
 	@include font-medium;
-	@include toRem('font-size', 24);
+	@include toRem('font-size', 22);
 	line-height: 1.2;
 
 	@include break(mobile) {

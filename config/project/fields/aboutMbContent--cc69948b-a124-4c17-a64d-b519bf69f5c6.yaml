@@ -1,9 +1,9 @@
-columnSuffix: zadqialv
+columnSuffix: tzsyqevb
 contentColumnType: text
-fieldGroup: ec6b8c17-c1c6-4f35-ad4c-eb15724fdc38 # About
-handle: aboutBio
+fieldGroup: 24552ad8-1522-4671-bd6f-aefad369b0ef # About MB
+handle: aboutMbContent
 instructions: null
-name: Bio
+name: Content
 searchable: false
 settings:
   availableTransforms: ''
@@ -14,7 +14,7 @@ settings:
   manualConfig: ''
   purifierConfig: null
   purifyHtml: true
-  redactorConfig: Custom.json
+  redactorConfig: null
   removeEmptyTags: false
   removeInlineStyles: false
   removeNbsp: false

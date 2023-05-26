@@ -1,9 +1,9 @@
-columnSuffix: srulqscd
+columnSuffix: zadqialv
 contentColumnType: text
-fieldGroup: ec6b8c17-c1c6-4f35-ad4c-eb15724fdc38 # About
-handle: aboutCredentials
+fieldGroup: ec6b8c17-c1c6-4f35-ad4c-eb15724fdc38 # About Aly
+handle: aboutAlyBio
 instructions: null
-name: Credentials
+name: Bio
 searchable: false
 settings:
   availableTransforms: ''
@@ -14,7 +14,7 @@ settings:
   manualConfig: ''
   purifierConfig: null
   purifyHtml: true
-  redactorConfig: null
+  redactorConfig: Custom.json
   removeEmptyTags: false
   removeInlineStyles: false
   removeNbsp: false

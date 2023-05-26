@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: ec6b8c17-c1c6-4f35-ad4c-eb15724fdc38 # About
-handle: aboutSecondImage
+fieldGroup: 24552ad8-1522-4671-bd6f-aefad369b0ef # About MB
+handle: aboutMbSidebarImage
 instructions: null
-name: 'Second Image'
+name: 'Sidebar Image'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -15,7 +15,7 @@ settings:
   defaultUploadLocationSubpath: null
   localizeRelations: false
   maintainHierarchy: false
-  maxRelations: 1
+  maxRelations: null
   minRelations: null
   previewMode: full
   restrictFiles: false
@@ -35,7 +35,7 @@ settings:
         - class
         - craft\elements\conditions\assets\AssetCondition
   selectionLabel: null
-  showSiteMenu: true
+  showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources:

@@ -1,0 +1,86 @@
+field: 961c4e37-3a41-4b10-8ec3-6a16adb32128 # Sidebar Accordion
+fieldLayouts:
+  f304a548-91ea-4a7c-831f-8f3533779858:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 36244931-f53f-4d86-a541-bd644c03591f # Accordion Head
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 84f44f14-07f3-48c8-9e54-e9ecbd250569
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3c9b8501-9904-40a0-aacb-1ed669a96d5f # Accordion Copy
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1f2c672e-2257-4c53-b32f-75ef59731fef
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bda6fcee-2a0b-4f0b-9d98-7280f9f00103
+        userCondition: null
+fields:
+  3c9b8501-9904-40a0-aacb-1ed669a96d5f: # Accordion Copy
+    columnSuffix: htkybvry
+    contentColumnType: text
+    fieldGroup: null
+    handle: accordionCopy
+    instructions: null
+    name: 'Accordion Copy'
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  36244931-f53f-4d86-a541-bd644c03591f: # Accordion Head
+    columnSuffix: ykifbtoo
+    contentColumnType: text
+    fieldGroup: null
+    handle: accordionHead
+    instructions: null
+    name: 'Accordion Head'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: accordion
+name: Accordion
+sortOrder: 1

@@ -1,10 +1,17 @@
 .rich-text {
     max-width: $narrow;
 
-    h2,
-    h3 {
+    h2 {
         &+p {
             margin-top: $gap-sm;
+        }
+    }
+
+    h3 {
+        margin-top: $gap-sm;
+
+        &+p {
+            margin-top: $gap-xs;
         }
     }
 

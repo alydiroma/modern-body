@@ -1,5 +1,5 @@
 fieldLayouts:
-  83506676-8904-4aa0-a7d5-bba28582fdba:
+  7c44993a-d632-4bd5-b393-98350394ced8:
     tabs:
       -
         elementCondition: null
@@ -26,101 +26,71 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: c18a3649-d9f0-45b3-bd53-593904703dc8
+            uid: 762c7b39-6c09-49ee-8724-5d948dc18eb0
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 51560042-57cb-418c-8ba2-b86b090eb5b4 # Title
+            fieldUid: cc69948b-a124-4c17-a64d-b519bf69f5c6 # Content
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 22bebcfb-c5ed-4d6a-b81e-8ee1a225a33d
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: b87e3b3f-cace-45aa-9c6d-2378c7874b72 # Image
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 38af4046-33dc-4f00-9c13-c130aa98038b
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: ef78c8c4-5030-4480-8f50-50b231fff44c # Second Image
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 877ed653-bf38-45a4-9362-265b79ce07f2
+            uid: 9af9a273-5d56-4cfa-bfc6-d614b8949b35
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 8d072418-ae91-448e-b2e2-f7091f543093
+        uid: 25267ece-be52-4f83-a131-3c7a9e1b7318
         userCondition: null
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: e81aaea7-81e6-4426-937a-9af062c0cd16 # Credentials Head
+            fieldUid: ef70b6a7-9da3-4ffd-b6a3-33407f08a79b # Sidebar Head
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8e37480e-1c7d-490d-8964-71d39608f1ac
+            uid: 8f90ca81-2f37-41b1-84c8-8a523f4460d7
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 476101d0-23c9-47fa-98eb-7d3ec4770862 # Credentials
+            fieldUid: 961c4e37-3a41-4b10-8ec3-6a16adb32128 # Sidebar Accordion
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 40c46c47-e0af-422b-a8b2-64f958675138
+            uid: fa0b5737-b186-4da7-97c6-507d9292f922
             userCondition: null
             warning: null
             width: 100
-        name: Credentials
-        uid: f98efdd4-3a45-4b66-b22f-87cb3e5e7c6a
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
           -
             elementCondition: null
-            fieldUid: cdd37bfc-0c28-4258-91d1-7a6a000c53f6 # Bio
+            fieldUid: cf9ba132-fcad-4b8c-b751-f8f46acea212 # Sidebar Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 31958124-d3f3-4b6a-8830-f8834cbd260c
+            uid: d5bcb79f-8fa0-401a-a824-90159963c140
             userCondition: null
             warning: null
             width: 100
-        name: Bio
-        uid: 9e496416-4324-4899-bcda-f882112a4286
+        name: Sidebar
+        uid: 2ebe1f2a-ebce-4568-9500-279c122e31eb
         userCondition: null
-handle: about
+handle: aboutModernBody
 hasTitleField: false
-name: About
-section: e7ca93f7-a988-4c82-ac6e-51212c511d4f # About
+name: 'About Modern Body'
+section: 32622215-2664-4d65-84fb-c1a3d9939bdd # About Modern Body
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

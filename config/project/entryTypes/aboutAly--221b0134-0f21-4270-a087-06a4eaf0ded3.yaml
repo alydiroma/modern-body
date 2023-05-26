@@ -1,0 +1,127 @@
+fieldLayouts:
+  83506676-8904-4aa0-a7d5-bba28582fdba:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c18a3649-d9f0-45b3-bd53-593904703dc8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 51560042-57cb-418c-8ba2-b86b090eb5b4 # Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 22bebcfb-c5ed-4d6a-b81e-8ee1a225a33d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b87e3b3f-cace-45aa-9c6d-2378c7874b72 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 38af4046-33dc-4f00-9c13-c130aa98038b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ef78c8c4-5030-4480-8f50-50b231fff44c # Second Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 877ed653-bf38-45a4-9362-265b79ce07f2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 8d072418-ae91-448e-b2e2-f7091f543093
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e81aaea7-81e6-4426-937a-9af062c0cd16 # Credentials Head
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8e37480e-1c7d-490d-8964-71d39608f1ac
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 476101d0-23c9-47fa-98eb-7d3ec4770862 # Credentials
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 40c46c47-e0af-422b-a8b2-64f958675138
+            userCondition: null
+            warning: null
+            width: 100
+        name: Credentials
+        uid: f98efdd4-3a45-4b66-b22f-87cb3e5e7c6a
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: cdd37bfc-0c28-4258-91d1-7a6a000c53f6 # Bio
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 31958124-d3f3-4b6a-8830-f8834cbd260c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Bio
+        uid: 9e496416-4324-4899-bcda-f882112a4286
+        userCondition: null
+handle: aboutAly
+hasTitleField: false
+name: 'About Aly'
+section: e7ca93f7-a988-4c82-ac6e-51212c511d4f # About Aly
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

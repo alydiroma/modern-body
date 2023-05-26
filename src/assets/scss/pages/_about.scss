@@ -31,4 +31,34 @@
             }
         }
     }
+
+    &-trigger {
+        @include button-reset;
+        position: relative;
+        display: block;
+        width: 100%;
+        text-align: left;
+        color: $white;
+        padding-right: $gap;
+
+        &:hover {
+            &::after {
+                transform: translateY(-50%) scale(1.5);
+            }
+        }
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            display: inline-block;
+            content: '+';
+            transform: translateY(-50%);
+            transition: transform .3s ease;
+        }
+    }
+
+    &-target {
+        margin-block: $gap-xs;
+    }
 }

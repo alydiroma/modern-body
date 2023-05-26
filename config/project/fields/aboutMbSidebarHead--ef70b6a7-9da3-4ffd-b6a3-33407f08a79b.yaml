@@ -1,0 +1,19 @@
+columnSuffix: twqdninp
+contentColumnType: text
+fieldGroup: 24552ad8-1522-4671-bd6f-aefad369b0ef # About MB
+handle: aboutMbSidebarHead
+instructions: null
+name: 'Sidebar Head'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

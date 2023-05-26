@@ -1,0 +1,44 @@
+{% extends "_layout" %}
+{% block content %}
+<main class="about stack-reg">
+    <div class="layout-container about-container">
+        <div class="layout-side about-credentials stack-reg">
+            {% set sidebarImage = entry.aboutAlyImage.one() %}
+            {% if sidebarImage %}
+            <div class="about-image animate animate-image">
+                {% include '_partials/sidebar-image' %}
+            </div>
+            {% endif %}
+            <div class="desktop about-credentials-list stack-sm">
+                <h2>{{ entry.aboutAlyCredentialsHead }}</h2>
+                <div class="rich-text">
+                    {{ entry.aboutAlyCredentials }}
+                </div>
+                {% set image2 = entry.aboutAlySecondImage.one() %}
+            </div>
+            {% if image2 %}
+            <div class="desktop about-image animate animate-image">
+                <img src="{{ image2.url('block') }}" 
+                width="{{ image2.getWidth('block') }}"
+                height="{{ image2.getHeight('block') }}"
+                alt="{{ image2.alt }}" />
+            </div>
+            {% endif %}
+        </div>
+        <div class="layout-main about-bio rich-text">
+            <h1>{{ entry.aboutAlyTitle }}</h1>
+            {{ entry.aboutAlyBio }}
+            <div class="about-credentials-list mobile stack-sm">
+                {% set sidebarImage = entry.aboutAlySecondImage.one() %}
+                {% if sidebarImage %}
+                    <div class="about-image animate animate-image">
+                        {% include '_partials/sidebar-image' %}
+                    </div>
+                {% endif %}
+                <h2>{{ entry.aboutAlyCredentialsHead }}</h2>
+                {{ entry.aboutAlyCredentials }}
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
