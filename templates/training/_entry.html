@@ -31,17 +31,12 @@
                     </div>
                 </div>
                 <div class="classes-item-desc">
-                    <div class="stack-xs">
-                        {% if block.classSubtitle %}
-                            <p class="large-font"><strong>{{ block.classSubtitle | striptags }}</strong></p>
-                        {% endif %}
-                        <p>{{ block.classDescription }}</p>
-                    </div>
                     <div class="stack-reg">
-                        <div>
+                        <div class="stack-xs">
                             {% if block.classSubtitle %}
-                                {{ block.classPricing }}
+                                <p class="large-font"><strong>{{ block.classSubtitle | striptags }}</strong></p>
                             {% endif %}
+                            <p>{{ block.classDescription }}</p>
                         </div>
                         <p class="classes-item-link">
                             <a class="btn btn-wide-mobile" href="{{ block.classLink }}">{{ block.classLink.getCustomText('Learn More') }}</a>
