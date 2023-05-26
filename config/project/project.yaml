@@ -1,4 +1,4 @@
-dateModified: 1685062356
+dateModified: 1685065179
 email:
   fromEmail: alhmail@gmail.com
   fromName: 'Modern Body'
@@ -57,6 +57,7 @@ meta:
     854bb4fe-e607-46c0-8623-93814869aea5: Description # Description
     949dacbe-f141-438a-9783-ccf2d76f4cc3: Full-Width # Full-Width
     961c4e37-3a41-4b10-8ec3-6a16adb32128: 'Sidebar Accordion' # Sidebar Accordion
+    4046c835-2452-4000-84ec-20b3d05d8d00: Pricing # Pricing
     6887f96e-ee16-4b11-9a20-45e7c13aeda4: FAQs # FAQs
     9121f0f4-c29a-4085-af84-e633b5d10a1a: Title # Title
     24552ad8-1522-4671-bd6f-aefad369b0ef: 'About MB' # About MB
@@ -70,6 +71,7 @@ meta:
     51560042-57cb-418c-8ba2-b86b090eb5b4: Title # Title
     68962412-698f-411d-a320-ca893137e690: Intro # Intro
     92053381-bc29-48a8-b8c9-f691eefa64b5: Title # Title
+    a4731ac5-9e41-4ca2-b1d3-9d5f372ec3bc: '1:1 Training' # 1:1 Training
     a7317e16-6eeb-4299-a34d-02eabaa60519: Intro # Intro
     aa2ff4ae-da1b-4ca0-8b78-03ce349ee782: 'FAQ Item' # FAQ Item
     ac16953e-d476-4c04-a41e-9115e69331e6: Contact # Contact
@@ -98,6 +100,7 @@ meta:
     da4444f1-47dd-462a-84b6-0d72b5c266f6: 'Product Title' # Product Title
     da521950-25a7-4aaa-be24-0f045a90984a: 'Product Description' # Product Description
     dc20bdf1-05e5-46dd-a2a8-1e01886722ff: Global # Global
+    e0364518-4df8-4d7e-bbc0-a509ebe03558: '1:1 Training' # 1:1 Training
     e7ca93f7-a988-4c82-ac6e-51212c511d4f: 'About Aly' # About Aly
     e81aaea7-81e6-4426-937a-9af062c0cd16: 'Credentials Head' # Credentials Head
     e86c3ea3-5a1e-4917-a91a-cee28bdf3ca3: 'About Copy' # About Copy

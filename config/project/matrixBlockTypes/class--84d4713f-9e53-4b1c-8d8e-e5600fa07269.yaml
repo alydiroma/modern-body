@@ -43,6 +43,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 4046c835-2452-4000-84ec-20b3d05d8d00 # Pricing
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b0e78002-10a2-419a-9584-0d580137d818
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 0e24ebfd-5210-45ab-8434-b505aa1e3db4 # Link
             instructions: null
             label: null
@@ -208,6 +220,34 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  4046c835-2452-4000-84ec-20b3d05d8d00: # Pricing
+    columnSuffix: afabtqan
+    contentColumnType: text
+    fieldGroup: null
+    handle: classPricing
+    instructions: 'For 1:1 page.'
+    name: Pricing
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
   bf710d01-d9f2-4c16-97d2-6e04c591a6cd: # Image
     columnSuffix: null
     contentColumnType: string
@@ -246,7 +286,7 @@ fields:
             - class
             - craft\elements\conditions\assets\AssetCondition
       selectionLabel: null
-      showSiteMenu: false
+      showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       sources:

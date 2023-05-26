@@ -1,0 +1,73 @@
+fieldLayouts:
+  c95c1061-317e-425d-9462-8e6967bb30c9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 4621c95a-9445-4533-b1cf-9721d2296522
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 854bb4fe-e607-46c0-8623-93814869aea5 # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b2a0e6e9-417b-4289-879d-db95751d8302
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 72f248e3-6bce-40cf-bc1e-701cf24124db
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c3cb6ef7-7f2e-4185-84a3-704e84298417 # Class List
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aea139d5-a7b2-4a42-b2d2-d0f977cea8d7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Training
+        uid: 114bf426-dcc5-4f4a-8c5a-2cf07aed43b1
+        userCondition: null
+handle: training
+hasTitleField: false
+name: '1:1 Training'
+section: e0364518-4df8-4d7e-bbc0-a509ebe03558 # 1:1 Training
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
