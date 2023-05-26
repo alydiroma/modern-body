@@ -14,7 +14,7 @@
                             {{ block.accordionHead }}
                         </button>
                         <div class="panel-target about-target rich-text" data-panel-target>
-                            {{ block.accordionCopy | striptags('<p>') }}
+                            {{ block.accordionCopy | striptags }}
                         </div>
                     </div>
                     {% endfor %}
@@ -43,7 +43,7 @@
                             {{ block.accordionHead }}
                         </button>
                         <div class="panel-target about-target rich-text" data-panel-target>
-                            {{ block.accordionCopy | striptags('<p>') }}
+                            {{ block.accordionCopy | striptags }}
                         </div>
                     </div>
                     {% endfor %}

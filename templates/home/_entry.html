@@ -12,7 +12,7 @@
             </div>
             <div class="home-hero-copy">
                 <button class="home-hero-play" type="button"></button>
-                <p class="home-hero-tagline">{{ entry.homeHeroTagline | striptags('<p>') }}</p>
+                <p class="home-hero-tagline">{{ entry.homeHeroTagline | striptags }}</p>
             </div>
         </div>
         <video class="home-hero-video" playsinline autoplay muted>
@@ -30,7 +30,7 @@
                 {% endif %}
             </div>
             <div class="home-about-copy stack-sm">
-                <p class="home-about-quote">&#8220;{{ entry.homeAboutCopy | striptags('<p>') }}&#8221;</p>
+                <p class="home-about-quote">&#8220;{{ entry.homeAboutCopy | striptags }}&#8221;</p>
                 {% set signature = entry.homeAboutSignature.one() %}
                 {% if signature %}
                 <p class="home-about-signature">&mdash; <img src="{{ signature.url() }}" alt="Aly DiRoma signature" /></p>
@@ -43,7 +43,7 @@
             <div class="home-company-container">
                 <div class="stack-sm">
                     <h2 class="logo">{{ entry.homeCompanyHead }}</h2>
-                    <p class="home-company-intro animate">{{ entry.homeCompanyCopy | striptags('<p>') }}</p>
+                    <p class="home-company-intro animate">{{ entry.homeCompanyCopy | striptags }}</p>
                 </div>
                 <div class="home-company-bullets stack-reg animate">
                     {% set blocks = entry.homeCompanyBullets.all() %}
@@ -51,7 +51,7 @@
                         {% for block in blocks %}
                             <div class="home-company-item stack-xs">
                                 <h3>{{ block.homeCompanyBulletHead }}</h3>
-                                <p>{{ block.homeCompanyBulletCopy | striptags('<p>') }}</p>
+                                <p>{{ block.homeCompanyBulletCopy | striptags }}</p>
                             </div>
                         {% endfor %}
                     {% endif %}
@@ -76,7 +76,7 @@
                         <div class="home-products-item stack-sm animate">
                             <div class="stack-xs">
                                 <h3>{{ block.homeProductTitle }}</h3>
-                                <p>{{ block.homeProductDescription | striptags('<p>') }}</p>
+                                <p>{{ block.homeProductDescription | striptags }}</p>
                             </div>
                             <p><a class="btn" href="{{ block.homeProductLink }}">{{ block.homeProductLink.getCustomText('Learn More') }}</a></p>
                         </div>
@@ -99,7 +99,7 @@
                         {% set blocks = entry.homeTestimonialsList.all() %}
                         {% if blocks | length %}
                             {% for block in blocks %}
-                                <p>{{ block.homeTestimonial | striptags('<p>') }}&mdash;<em>{{ block.homeTestimonialName }}</em></p>
+                                <p>{{ block.homeTestimonial | striptags }}&mdash;<em>{{ block.homeTestimonialName }}</em></p>
                             {% endfor %}
                         {% endif %}
                     </div>

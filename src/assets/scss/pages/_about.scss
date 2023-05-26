@@ -47,6 +47,13 @@
             }
         }
 
+        &[aria-expanded="true"] {
+            &::after {
+                content: '-';
+                transform: translateY(-50%) scale(1.5);
+            }
+        }
+
         &::after {
             position: absolute;
             top: 50%;
