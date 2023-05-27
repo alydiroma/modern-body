@@ -1,5 +1,3 @@
-
-// panels
 const panels = () => {
     const panelGroups = document.querySelectorAll('[data-panel-group]');
 
@@ -11,9 +9,14 @@ const panels = () => {
         panels.forEach((panel) => {
             const panelTrigger = panel.querySelector('[data-panel-trigger]');
             const panelTarget = panel.querySelector('[data-panel-target]');
+            panelTarget.style.height = "";
             const panelTargetHeight = panelTarget.offsetHeight;
+            console.log('panelTargetHeight', panelTargetHeight);
 
-            panelTarget.style.height = "0";
+            setTimeout(() => {
+                panelTarget.style.height = "0";
+            }, 100);
+
             panelTrigger.addEventListener("click", (event) => {
                 event.preventDefault();
                 const triggered = panelTrigger.getAttribute('aria-expanded');
@@ -34,3 +37,5 @@ const panels = () => {
         });
     });
 }
+
+export default panels;

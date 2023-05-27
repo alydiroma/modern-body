@@ -11,10 +11,10 @@ mix
             }
         }
     })
-.copyDirectory('src/assets/js', 'web/assets/js')
-    .options({
-        processCssUrls: false
-    })
+.js('src/assets/js/about-mb.js', 'web/assets/js/')
+.js('src/assets/js/faq.js', 'web/assets/js/')
+.js('src/assets/js/home.js', 'web/assets/js/')
+.js('src/assets/js/main.js', 'web/assets/js/')
 .copyDirectory('src/assets/fonts', 'web/assets/fonts')
     .options({
         processCssUrls: false
