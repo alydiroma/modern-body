@@ -2,73 +2,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/assets/js/about-mb.js":
-/*!***********************************!*\
-  !*** ./src/assets/js/about-mb.js ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_panels__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/panels */ "./src/assets/js/modules/panels.js");
-
-window.onload = function () {
-  (0,_modules_panels__WEBPACK_IMPORTED_MODULE_0__["default"])();
-};
-// window resize 
-var timer;
-window.onresize = function () {
-  clearTimeout(timer);
-  timer = setTimeout(_modules_panels__WEBPACK_IMPORTED_MODULE_0__["default"], 50);
-};
-
-/***/ }),
-
-/***/ "./src/assets/js/modules/panels.js":
-/*!*****************************************!*\
-  !*** ./src/assets/js/modules/panels.js ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-var panels = function panels() {
-  var panelGroups = document.querySelectorAll('[data-panel-group]');
-  panelGroups.forEach(function (panelGroup) {
-    var panels = panelGroup.querySelectorAll('[data-panel]');
-    var panelTriggers = panelGroup.querySelectorAll('[data-panel-trigger]');
-    var panelTargets = panelGroup.querySelectorAll('[data-panel-target]');
-    panels.forEach(function (panel) {
-      var panelTrigger = panel.querySelector('[data-panel-trigger]');
-      var panelTarget = panel.querySelector('[data-panel-target]');
-      panelTarget.style.height = "";
-      var panelTargetHeight = panelTarget.offsetHeight;
-      console.log('panelTargetHeight', panelTargetHeight);
-      setTimeout(function () {
-        panelTarget.style.height = "0";
-      }, 100);
-      panelTrigger.addEventListener("click", function (event) {
-        event.preventDefault();
-        var triggered = panelTrigger.getAttribute('aria-expanded');
-        panelTriggers.forEach(function (trigger) {
-          trigger.setAttribute('aria-expanded', 'false');
-        });
-        panelTargets.forEach(function (target) {
-          target.style.height = "0";
-        });
-        if (triggered === 'false') {
-          panelTrigger.setAttribute('aria-expanded', 'true');
-          panelTarget.style.height = panelTargetHeight + 'px';
-        }
-      });
-    });
-  });
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (panels);
-
-/***/ }),
-
 /***/ "./src/assets/scss/main.scss":
 /*!***********************************!*\
   !*** ./src/assets/scss/main.scss ***!
@@ -140,18 +73,6 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -230,7 +151,6 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["web/assets/css/main"], () => (__webpack_require__("./src/assets/js/about-mb.js")))
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["web/assets/css/main"], () => (__webpack_require__("./src/assets/scss/main.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	

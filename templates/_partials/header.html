@@ -3,8 +3,8 @@
 {% if url == "/" %}
 <header class="header header-home">
     {% else %}
-    <header class="header">
-{% endif %}
+<header class="header">
+    {% endif %}
     <div class="header-container">
         {% if url != "/" %}
             {% set image = global.globalLogoImageLong.one() %}
@@ -14,15 +14,31 @@
             </a>
             {% endif %}
         {% endif %}
+        {% set nodes = craft.navigation.nodes('mainNav').all() %}
         <nav class="header-nav">
-            {{ craft.navigation.render('mainNav', {
-                ulClass: 'nav-items',
-                liClass: 'nav-item',
-                aClass: 'nav-link',
-                activeClass: 'active',
-                hasChildrenClass: 'has-children'
-                })
-            }}
+            <ul class="nav-items" data-panel-group>
+                {% nav node in nodes %}
+                    {% if node.hasDescendants %}
+                        <li class="nav-item" data-panel>
+                            <button {% if node.url %}href="{{ node.url }}" {% endif %}
+                                class="nav-link nav-button bold {% if node.active %}nav-active{% endif %}" data-panel-trigger  aria-expanded="false">
+                                {{- node.title -}}
+                            </button>
+                    {% else %}
+                        <li class="nav-item">
+                            <a {% if node.url %}href="{{ node.url }}" {% endif %}
+                                class="nav-link bold {% if node.active %}nav-active{% endif %}">
+                                {{- node.title -}}
+                            </a>
+                    {% endif %}
+                    {% ifchildren %}
+                        <ul class="panel-target nav-panel" style="visibility: hidden" data-panel-target>
+                            {% children %}
+                        </ul>
+                    {% endifchildren %}
+                </li>
+                {% endnav %}
+            </ul>
         </nav>
     </div>
 </header>

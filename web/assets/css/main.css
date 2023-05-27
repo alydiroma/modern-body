@@ -21,17 +21,14 @@
   font-family: "Poppins Medium";
   src: url("/assets/fonts/Poppins-Medium.woff") format("woff");
 }
-/*
 @font-face {
-	font-family: "Poppins SemiBold";
-	src: url("/assets/fonts/Poppins-SemiBold.woff") format("woff");
+  font-family: "Poppins SemiBold";
+  src: url("/assets/fonts/Poppins-SemiBold.woff") format("woff");
 }
-
 @font-face {
-	font-family: "Poppins Bold";
-	src: url("/assets/fonts/Poppins-Bold.woff") format("woff");
+  font-family: "Poppins Bold";
+  src: url("/assets/fonts/Poppins-Bold.woff") format("woff");
 }
-*/
 html {
   box-sizing: border-box;
 }
@@ -314,7 +311,7 @@ strong,
      -moz-appearance: none;
           appearance: none;
   display: inline-block;
-  font-family: "Poppins Bold", sans-serif;
+  font-family: "Poppins Medium", sans-serif;
   letter-spacing: 0.05rem;
   font-size: 1rem;
   color: #ffffff;
@@ -472,17 +469,19 @@ strong,
 .nav-items {
   display: flex;
   justify-content: flex-end;
-  gap: 2rem;
+  gap: 3rem;
 }
 .nav-item {
+  position: relative;
   list-style: none;
 }
 .nav-link {
   position: relative;
-  display: block;
-  font-family: "Poppins Bold", sans-serif;
+  display: inline-block;
+  font-family: "Poppins SemiBold", sans-serif;
   letter-spacing: 0.05rem;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
   color: #222;
   text-decoration-color: transparent;
   overflow: hidden;
@@ -497,7 +496,7 @@ strong,
   background-color: #8a3a42;
   transition: left 0.3s ease;
 }
-.nav-link:hover::after {
+.nav-link:hover::after, .nav-link.nav-active::after, .nav-link[aria-expanded=true]::after {
   left: 0;
 }
 .nav-link.active {
@@ -508,6 +507,42 @@ strong,
 }
 .nav-link.active::after {
   display: none;
+}
+.nav-button {
+  text-decoration: none;
+  text-shadow: none;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-top: -0.25rem;
+  padding-bottom: 0.25rem;
+}
+.nav-button:hover {
+  cursor: pointer;
+}
+.nav-panel {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+.nav-panel .nav-link {
+  font-family: "Poppins Regular", sans-serif;
+  letter-spacing: 0.05rem;
+  font-size: 0.9375rem;
+  text-transform: none;
+}
+
+.header-home .nav-panel {
+  background-color: transparent;
 }
 
 .footer {
@@ -921,7 +956,6 @@ strong,
   position: relative;
 }
 .home-company-intro {
-  font-size: 1.5rem;
   opacity: 0;
   transform: translateY(4rem);
   transition: opacity 0.6s ease, transform 0.9s ease;
@@ -935,6 +969,9 @@ strong,
 .home-company-intro.in-view {
   opacity: 1;
   transform: translateY(0);
+}
+.home-company-intro p {
+  font-size: 1.5rem;
 }
 .home-company-container {
   display: flex;

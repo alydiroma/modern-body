@@ -243,7 +243,6 @@
 		position: relative;
 
 		&-intro {
-			@include toRem('font-size', 24);
 			opacity: 0;
 			transform: translateY($gap-lg);
 			transition: opacity .6s ease, transform .9s ease;
@@ -256,6 +255,10 @@
 			&.in-view {
 				opacity: 1;
 				transform: translateY(0);
+			}
+
+			p {
+				@include toRem('font-size', 24);
 			}
 		}
 

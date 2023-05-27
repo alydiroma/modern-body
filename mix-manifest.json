@@ -1,8 +1,6 @@
 {
-    "/web/assets/js/about-mb.js": "/web/assets/js/about-mb.js",
-    "/web/assets/js/faq.js": "/web/assets/js/faq.js",
-    "/web/assets/js/home.js": "/web/assets/js/home.js",
     "/web/assets/js/main.js": "/web/assets/js/main.js",
+    "/web/assets/js/home.js": "/web/assets/js/home.js",
     "/web/assets/css/main.css": "/web/assets/css/main.css",
     "/web/assets/fonts/Poppins-Bold.woff": "/web/assets/fonts/Poppins-Bold.woff",
     "/web/assets/fonts/Poppins-Medium.woff": "/web/assets/fonts/Poppins-Medium.woff",

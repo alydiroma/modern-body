@@ -8,18 +8,20 @@
     &-items {
         display: flex;
         justify-content: flex-end;
-        gap: $gap;
+        gap: $gap-md;
     }
 
     &-item {
+		position: relative;
         list-style: none;
-    }
+	}
 
     &-link {
 		position: relative;
-		display: block;
-		@include font-bold;
-		@include toRem('font-size', 15);
+		display: inline-block;
+		@include font-semibold;
+		@include toRem('font-size', 14);
+		text-transform: uppercase;
 		color: $black;
 		text-decoration-color: transparent;
 		overflow: hidden;
@@ -35,7 +37,9 @@
 			transition: left .3s ease;
 		}
 
-		&:hover {
+		&:hover,
+		&.nav-active,
+		&[aria-expanded="true"] {
 			
 			&::after {
 				left: 0;
@@ -52,4 +56,34 @@
 			}
 		}		
     }
+
+	&-button {
+		@include button-reset;
+		margin-top: -$space;
+		padding-bottom: $space;
+	}
+
+	&-panel {
+		position: absolute;
+		top: $gap-md;
+		left: 0;
+		width: 300px;
+		margin: 0;
+		padding: 0;
+		background-color: $white;
+
+		.nav-link {
+			@include font-reg;
+			@include toRem('font-size', 15);
+			text-transform: none;
+		}
+	}
+}
+
+.header-home {
+	.nav {
+		&-panel {
+			background-color: transparent;
+		}
+	}
 }

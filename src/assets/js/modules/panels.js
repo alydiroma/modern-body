@@ -11,10 +11,10 @@ const panels = () => {
             const panelTarget = panel.querySelector('[data-panel-target]');
             panelTarget.style.height = "";
             const panelTargetHeight = panelTarget.offsetHeight;
-            console.log('panelTargetHeight', panelTargetHeight);
 
             setTimeout(() => {
                 panelTarget.style.height = "0";
+                panelTarget.style.visibility = "";
             }, 100);
 
             panelTrigger.addEventListener("click", (event) => {

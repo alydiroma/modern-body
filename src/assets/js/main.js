@@ -1,3 +1,14 @@
+//panels
+import panels from './modules/panels';
+window.onload = function() {
+	panels();
+}
+let timer;
+window.onresize = function() {
+    clearTimeout(timer);
+    timer = setTimeout(panels, 50);
+}
+
 // set copyright year
 document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
 

@@ -43,7 +43,12 @@
             <div class="home-company-container">
                 <div class="stack-sm">
                     <h2 class="logo">{{ entry.homeCompanyHead }}</h2>
-                    <p class="home-company-intro animate">{{ entry.homeCompanyCopy | striptags }}</p>
+                    <div class="home-company-intro stack-sm animate">
+                        <p>{{ entry.homeCompanyCopy | striptags }}</p>
+                    {% if entry.homeCompanyCta %}
+                        <a class="btn" href="{{ entry.homeCompanyCta }}">{{ entry.homeCompanyCta.getCustomText('Learn More') }}</a>
+                    {% endif %}
+                    </div>
                 </div>
                 <div class="home-company-bullets stack-reg animate">
                     {% set blocks = entry.homeCompanyBullets.all() %}

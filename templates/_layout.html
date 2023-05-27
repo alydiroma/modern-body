@@ -17,12 +17,6 @@
     {% if entry.section.handle == 'home' %}
         <script type="text/javascript" defer src="{{ 'js/home.js' | mix }}"></script>
     {% endif %}
-    {% if entry.section.handle == 'aboutModernBody' %}
-    <script type="text/javascript" defer src="{{ 'js/about-mb.js' | mix }}"></script>
-    {% endif %}
-    {% if entry.section.handle == 'faq' %}
-        <script type="text/javascript" defer src="{{ 'js/faq.js' | mix }}"></script>
-    {% endif %}
     {% include '_partials/footer' %}
 </body>
 </html>

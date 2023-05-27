@@ -158,6 +158,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: e21c3150-347c-44cc-9e2e-64f9899bb194 # Company CTA
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4d6d3134-2c39-411c-b944-cf85fbfb6fc2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: f1dbd402-7281-4d1a-a2dc-3753d5a44df9 # Company Bullets
             instructions: null
             label: null

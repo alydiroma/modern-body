@@ -1,7 +1,7 @@
 %btn {
 	@include button-reset;
 	display: inline-block;
-	@include font-bold;
+	@include font-medium;
 	@include toRem('font-size', 16);
 	color: $white;
 	background-color: $accent;
