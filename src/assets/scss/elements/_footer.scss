@@ -1,3 +1,5 @@
+$_icon-padding: .35rem;
+
 .footer {
 	position: relative;
 	margin-top: $gap-xl;
@@ -13,7 +15,7 @@
 			text-decoration: underline;
 		}
 	}
-	
+
 	&-container {
 		@include container($medium);
 		display: flex;
@@ -34,10 +36,29 @@
 	&-nav {
 		display: flex;
 		gap: $gap;
+		flex-wrap: wrap;
+
+		@include break(tablet) {
+			justify-content: center;
+			gap: $gap-sm;
+			text-align: center;
+		}
+
+		@include break(small) {
+			justify-content: flex-start;
+		}
 
 		&-item {
 			display: inline-block;
 			list-style: none;
+
+			@include break(tablet) {
+				flex: 0 0 calc(33% - #{$gap-sm});
+			}
+
+			@include break(tablet) {
+				flex: 0 0 calc(50% - #{$gap-sm});
+			}
 		}
 
 		&-link {
@@ -57,7 +78,7 @@
 		align-items: center;
 		gap: $gap;
 		padding: 0;
-		
+
 		li {
 			display: inline-block;
 			width: $gap;
@@ -65,18 +86,25 @@
 
 			a {
 				display: block;
-				
+				width: $gap;
+				height: $gap;
+				padding: $_icon-padding;
+				background-color: $accent;
+				border-radius: $radius-large;
+				transition: background-color .3s ease;
+
 				&:hover {
-					svg {
-						fill: $black;
-					}
+					background-color: $black;
 				}
 			}
 
 			svg {
 				display: block;
 				width: 100%;
-				fill: $accent;
+				height: 100%;
+				object-fit: contain;
+				object-position: center;
+				fill: $white;
 				transition: fill .3s ease;
 			}
 		}

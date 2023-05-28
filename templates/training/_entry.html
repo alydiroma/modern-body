@@ -38,9 +38,11 @@
                             {% endif %}
                             <p>{{ block.classDescription }}</p>
                         </div>
-                        <p class="classes-item-link">
-                            <a class="btn btn-wide-mobile" href="{{ block.classLink }}">{{ block.classLink.getCustomText('Learn More') }}</a>
-                        </p>
+                        {% if block.classLink %}
+                            <p class="classes-item-link">
+                                <a class="btn btn-wide-mobile" href="{{ block.classLink }}">{{ block.classLink.getCustomText('Learn More') }}</a>
+                            </p>
+                        {% endif %}
                     </div>
                 </div>
             </div>

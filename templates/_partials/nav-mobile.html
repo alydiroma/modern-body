@@ -1,0 +1,31 @@
+<div class="nav-mobile stack-sm" data-mobile-nav>
+    {% set image = global.globalLogoImageLong.one() %}
+    {% if image %}
+    <a class="nav-mobile-image" href="/" title="home">
+        <img src="{{ image.url() }}" alt="Aly DiRoma">
+    </a>
+    {% endif %}
+    {% set nodes = craft.navigation.nodes('mainNav').all() %}
+    <nav class="mobile-nav">
+        <ul class="nav-items stack-xs">
+            {% nav node in nodes %}
+                {% if node.hasDescendants %}
+                    <li class="nav-item">
+                        {{- node.title -}}
+                {% else %}
+                    <li class="nav-item">
+                        <a {% if node.url %}href="{{ node.url }}" {% endif %}
+                            class="nav-link bold {% if node.active %}nav-active{% endif %}">
+                            {{- node.title -}}
+                        </a>
+                {% endif %}
+                {% ifchildren %}
+                    <ul class="stack-xs">
+                        {% children %}
+                    </ul>
+                {% endifchildren %}
+            </li>
+            {% endnav %}
+        </ul>
+    </nav>
+</div>

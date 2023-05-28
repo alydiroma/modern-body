@@ -20,6 +20,15 @@ body {
 	//background: linear-gradient(0deg, $beige 0%, $white 100%);
 	margin: 0;
 	padding: 0;
+
+	&.fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+	}
 }
 
 section {

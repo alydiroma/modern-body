@@ -1,4 +1,4 @@
-dateModified: 1685221734
+dateModified: 1685240311
 email:
   fromEmail: alhmail@gmail.com
   fromName: 'Modern Body'
@@ -26,6 +26,8 @@ meta:
     0e62c248-99e6-42ab-b8cd-d7ec668bc886: 'Hero Image' # Hero Image
     1f1a8a59-4979-401d-82a3-b9b53b9c1de2: Classes # Classes
     3c9b8501-9904-40a0-aacb-1ed669a96d5f: 'Accordion Copy' # Accordion Copy
+    3dfd732e-0ff1-4997-b0fa-45bd54fb4662: 'Intro to Pilates' # Intro to Pilates
+    4b9411de-fe15-4e34-b54a-3eaa702c336d: 'Intro to Pilates' # Intro to Pilates
     4d2ffb4a-b740-4fd6-96c8-451c18168856: 'Tik Tok' # Tik Tok
     5c337995-e31f-4ea4-9ee5-80ee8beda0c9: Global # Global
     5d6e6468-5ba1-4d69-9cc9-61ae8d7dec0c: 'Testimonial Image' # Testimonial Image
@@ -78,7 +80,7 @@ meta:
     ae634bf8-48e5-4164-8ab4-7ea661caa5a5: Accordion # Accordion
     b87d114e-c463-4311-adbe-dc8e506e6d2b: Classes # Classes
     b87e3b3f-cace-45aa-9c6d-2378c7874b72: Image # Image
-    b57296a2-c74b-4856-b697-d65b455c9c88: 'Footer Nav' # Footer Nav
+    b57296a2-c74b-4856-b697-d65b455c9c88: 'Mobile/Footer Nav' # Mobile/Footer Nav
     bc2faaee-59b6-4f7a-a9a5-36f7a19cbb14: 'Products List' # Products List
     be094951-a83c-4f73-90e2-1279b3332b1b: 'Bullet Copy' # Bullet Copy
     bea3d6c0-82bf-44e2-8922-7fe48dac029b: FAQ # FAQ

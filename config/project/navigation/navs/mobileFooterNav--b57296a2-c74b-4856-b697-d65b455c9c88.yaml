@@ -148,10 +148,10 @@ fieldLayouts:
         name: Advanced
         uid: 51cfee0d-ff1d-4e6b-9b19-97493d2cb50a
         userCondition: null
-handle: footerNav
+handle: mobileFooterNav
 instructions: ''
 maxNodes: null
-name: 'Footer Nav'
+name: 'Mobile/Footer Nav'
 permissions:
   craft\elements\Asset:
     enabled: '1'

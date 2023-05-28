@@ -1,0 +1,73 @@
+fieldLayouts:
+  34911b49-5177-47d8-8e60-cabeb7d2c078:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 352b5d97-ec27-4d6a-99d4-0ffd4a5a6902
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 854bb4fe-e607-46c0-8623-93814869aea5 # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4127bddb-3fd4-4251-a2a1-1fb2342130b3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2956a0c2-f769-4e5e-bf0d-8a7a3aafd891
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c3cb6ef7-7f2e-4185-84a3-704e84298417 # Class List
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7d1418dc-4a56-444e-ad65-7a0fbab2edde
+            userCondition: null
+            warning: null
+            width: 100
+        name: Courses
+        uid: 9a1ef728-4a3a-42a3-8d47-6eec22156f3d
+        userCondition: null
+handle: introToPilates
+hasTitleField: false
+name: 'Intro to Pilates'
+section: 4b9411de-fe15-4e34-b54a-3eaa702c336d # Intro to Pilates
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

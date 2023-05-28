@@ -2,7 +2,8 @@
     max-width: $narrow;
 
     h2 {
-        &+p {
+        &+p,
+        &+ul {
             margin-top: $gap-sm;
         }
     }
@@ -10,7 +11,8 @@
     h3 {
         margin-top: $gap-sm;
 
-        &+p {
+        &+p,
+        &+ul {
             margin-top: $gap-xs;
         }
     }

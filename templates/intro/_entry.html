@@ -1,0 +1,60 @@
+{% extends "_layout" %}
+{% block content %}
+<main class="classes stack-md">
+    <div class="classes-head stack-sm">
+        <h1>{{ entry.title }}</h1>
+        {% if entry.classesDescription %}
+        <div class="rich-text">
+            {{ entry.classesDescription }}
+        </div>
+        {% endif %}
+    </div>
+
+    {% set blocks = entry.classesList.all() %}
+    {% if blocks | length %}
+    <div class="stack-xl">
+        {% for block in blocks %}
+            <div class="classes-item stack-sm animate">
+                <div class="flex-block">
+                    {% if block.classTitle %}
+                        <h2 class="classes-item-title">{{ block.classTitle }}</h2>
+                    {% else %}
+                        <div class="classes-item-title"></div>
+                    {% endif %}
+                </div>
+                <div class="flex-block">
+                    <div class="stack-reg">
+                        <div class="flex-block-bg classes-item-img animate animate-image">
+                            {% set classImage = block.classImage.one() %}
+                            {% if classImage %}
+                                <img src="{{ classImage.url('block') }}" 
+                                width="{{ classImage.getWidth('block') }}"
+                                height="{{ classImage.getHeight('block') }}"
+                                alt="{{ classImage.alt }}" />
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="classes-item-desc">
+                        <div class="stack-reg">
+                            <div class="stack-xs">
+                                {% if block.classSubtitle %}
+                                    <p class="large-font"><strong>{{ block.classSubtitle | striptags }}</strong></p>
+                                {% endif %}
+                                <div class="rich-text">
+                                    {{ block.classDescription }}
+                                </div>
+                            </div>
+                            {% if block.classLink %}
+                                <p class="classes-item-link">
+                                    <a class="btn btn-wide-mobile" href="{{ block.classLink }}">{{ block.classLink.getCustomText('Learn More') }}</a>
+                                </p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+</main>
+{% endblock %}

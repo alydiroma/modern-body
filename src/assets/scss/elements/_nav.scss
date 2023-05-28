@@ -18,9 +18,10 @@
 
     &-link {
 		position: relative;
-		display: inline-block;
+		display: block;
 		@include font-semibold;
 		@include toRem('font-size', 14);
+		line-height: 1.8;
 		text-transform: uppercase;
 		color: $black;
 		text-decoration-color: transparent;
@@ -59,13 +60,11 @@
 			&::after {
 				display: none;
 			}
-		}		
+		}
     }
 
 	&-button {
 		@include button-reset;
-		margin-top: -$space;
-		padding-bottom: $space;
 	}
 
 	&-panel {
@@ -74,10 +73,11 @@
 		left: 0;
 		width: 300px;
 		margin: 0;
-		padding: 0;
+		padding: 3px; // accommodate focus outline
 		background-color: $white;
 
 		.nav-link {
+			display: inline-block;
 			@include font-reg;
 			@include toRem('font-size', 15);
 			text-transform: none;

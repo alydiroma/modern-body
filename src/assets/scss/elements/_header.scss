@@ -33,4 +33,19 @@
 			object-fit: contain;
 		}
 	}
+
+	&-nav {
+		@include break(tablet) {
+			display: none;
+		}
+	}
+
+	&-mobile {
+		display: none;
+		
+		@include break(tablet) {
+			display: block;
+			z-index: 999;
+		}
+	}
 }
