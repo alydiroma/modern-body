@@ -63,17 +63,39 @@ var panels = function panels() {
     panels.forEach(function (panel) {
       var panelTrigger = panel.querySelector('[data-panel-trigger]');
       var panelTarget = panel.querySelector('[data-panel-target]');
+      var panelLinks = panelTarget.querySelectorAll('a, button');
       panelTarget.style.height = "";
       var panelTargetHeight = panelTarget.offsetHeight;
+
+      // show/hide clickable panel elements
+      var panelLinksArr = [];
+      var hideLinks = function hideLinks() {
+        if (panelLinks) {
+          panelLinksArr = Array.from(panelLinks);
+          panelLinksArr.forEach(function (link) {
+            link.tabIndex = -1;
+          });
+        }
+      };
+      var showLinks = function showLinks() {
+        if (panelLinks) {
+          panelLinksArr = Array.from(panelLinks);
+          panelLinksArr.forEach(function (link) {
+            link.tabIndex = '';
+          });
+        }
+      };
       setTimeout(function () {
         panelTarget.style.height = "0";
         panelTarget.style.visibility = "";
       }, 100);
+      hideLinks();
       panelTrigger.addEventListener("click", function (event) {
         event.preventDefault();
         var triggered = panelTrigger.getAttribute('aria-expanded');
         panelTriggers.forEach(function (trigger) {
           trigger.setAttribute('aria-expanded', 'false');
+          hideLinks();
         });
         panelTargets.forEach(function (target) {
           target.style.height = "0";
@@ -81,6 +103,7 @@ var panels = function panels() {
         if (triggered === 'false') {
           panelTrigger.setAttribute('aria-expanded', 'true');
           panelTarget.style.height = panelTargetHeight + 'px';
+          showLinks();
         }
       });
     });

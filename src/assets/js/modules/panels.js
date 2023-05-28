@@ -9,13 +9,37 @@ const panels = () => {
         panels.forEach((panel) => {
             const panelTrigger = panel.querySelector('[data-panel-trigger]');
             const panelTarget = panel.querySelector('[data-panel-target]');
+            const panelLinks = panelTarget.querySelectorAll('a, button');
             panelTarget.style.height = "";
             const panelTargetHeight = panelTarget.offsetHeight;
+
+            // show/hide clickable panel elements
+            let panelLinksArr = [];
+            const hideLinks = () => {
+                if (panelLinks) {
+                    panelLinksArr = Array.from(panelLinks);
+    
+                    panelLinksArr.forEach((link) => {
+                        link.tabIndex = -1;
+                    });
+                }
+            }
+            const showLinks = () => {
+                if (panelLinks) {
+                    panelLinksArr = Array.from(panelLinks);
+    
+                    panelLinksArr.forEach((link) => {
+                        link.tabIndex = '';
+                    });
+                }
+            }
 
             setTimeout(() => {
                 panelTarget.style.height = "0";
                 panelTarget.style.visibility = "";
             }, 100);
+
+            hideLinks();
 
             panelTrigger.addEventListener("click", (event) => {
                 event.preventDefault();
@@ -23,6 +47,7 @@ const panels = () => {
 
                 panelTriggers.forEach((trigger) => {
                     trigger.setAttribute('aria-expanded', 'false');
+                    hideLinks();
                 });
 
                 panelTargets.forEach((target) => {
@@ -32,6 +57,7 @@ const panels = () => {
                 if (triggered === 'false') {
                     panelTrigger.setAttribute('aria-expanded', 'true');
                     panelTarget.style.height = panelTargetHeight + 'px';
+                    showLinks();
                 }
             });
         });

@@ -46,6 +46,11 @@
 			}
 		}
 
+		&:focus-visible {
+			outline: 1px solid $accent;
+			outline-offset: 2px;
+		}
+
 		&.active {
 			@include font-medium;
 			color: $accent;

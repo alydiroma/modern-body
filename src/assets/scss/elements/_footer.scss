@@ -64,6 +64,8 @@
 			list-style: none;
 
 			a {
+				display: block;
+				
 				&:hover {
 					svg {
 						fill: $black;

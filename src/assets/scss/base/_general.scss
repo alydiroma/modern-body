@@ -94,6 +94,13 @@ h4, .h4-style {
 	line-height: 1.8;
 }
 
+a, button {
+	&:focus-visible {
+		outline: 1px solid $accent;
+		outline-offset: 2px;
+	}
+}
+
 ul {
 	padding-left: $gap-sm;
 }

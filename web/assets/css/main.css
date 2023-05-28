@@ -139,6 +139,11 @@ h4, .h4-style {
   line-height: 1.8;
 }
 
+a:focus-visible, button:focus-visible {
+  outline: 1px solid #8a3a42;
+  outline-offset: 2px;
+}
+
 ul {
   padding-left: 1rem;
 }
@@ -499,6 +504,10 @@ strong,
 .nav-link:hover::after, .nav-link.nav-active::after, .nav-link[aria-expanded=true]::after {
   left: 0;
 }
+.nav-link:focus-visible {
+  outline: 1px solid #8a3a42;
+  outline-offset: 2px;
+}
 .nav-link.active {
   font-family: "Poppins Medium", sans-serif;
   letter-spacing: 0.05rem;
@@ -609,6 +618,9 @@ strong,
   display: inline-block;
   width: 2rem;
   list-style: none;
+}
+.footer-social li a {
+  display: block;
 }
 .footer-social li a:hover svg {
   fill: #222;
