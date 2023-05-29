@@ -1,7 +1,9 @@
 //panels
+import getHeight from './modules/getHeight';
 import panels from './modules/panels';
 
 window.onload = function () {
+	getHeight();
 	panels();
 }
 let timer;

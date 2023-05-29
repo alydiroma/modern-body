@@ -11,7 +11,7 @@ const panels = () => {
             const panelTarget = panel.querySelector('[data-panel-target]');
             const panelLinks = panelTarget.querySelectorAll('a, button');
             panelTarget.style.height = "";
-            const panelTargetHeight = panelTarget.offsetHeight;
+            const panelTargetHeight = panelTarget.dataset.height;
 
             // show/hide clickable panel elements
             let panelLinksArr = [];

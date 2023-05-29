@@ -20,7 +20,7 @@
                         <button class="large-font bold about-trigger" data-panel-trigger aria-expanded="false">
                             {{ block.accordionHead }}
                         </button>
-                        <div class="panel-target about-target rich-text" style="visibility: hidden" data-panel-target>
+                        <div class="panel-target about-target rich-text" style="visibility: hidden" data-panel-target data-height>
                             {{ block.accordionCopy | striptags }}
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                         <button class="large-font bold about-trigger" data-panel-trigger aria-expanded="false">
                             {{ block.accordionHead }}
                         </button>
-                        <div class="panel-target about-target rich-text" data-panel-target>
+                        <div class="panel-target about-target rich-text" data-panel-target data-height>
                             {{ block.accordionCopy | striptags }}
                         </div>
                     </div>
