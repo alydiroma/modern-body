@@ -1,4 +1,4 @@
-dateModified: 1685327040
+dateModified: 1685327615
 email:
   fromEmail: alhmail@gmail.com
   fromName: 'Modern Body'
@@ -55,6 +55,7 @@ meta:
     221b0134-0f21-4270-a087-06a4eaf0ded3: 'About Aly' # About Aly
     313c48a2-dfc1-4518-9ba6-7fc0974e9c50: Block # Block
     485c9d29-4e5b-4658-9c86-ed411faf38f6: Title # Title
+    0816ea9d-8582-4bee-aafc-b482935a9c94: 'Footer Nav Column 2' # Footer Nav Column 2
     831a1862-ae47-4961-b2a4-ddc9c451e096: FAQ # FAQ
     854bb4fe-e607-46c0-8623-93814869aea5: Description # Description
     949dacbe-f141-438a-9783-ccf2d76f4cc3: Full-Width # Full-Width
@@ -98,6 +99,7 @@ meta:
     cef6c373-ddac-4750-a65b-14ec99b6a138: YouTube # YouTube
     cf9ba132-fcad-4b8c-b751-f8f46acea212: 'Sidebar Image' # Sidebar Image
     d7efe282-0770-409c-b80d-98a2d44f3231: 'Testimonials List' # Testimonials List
+    d109eed7-bc66-4edb-8452-ac786ef35013: 'Footer Nav Column 3' # Footer Nav Column 3
     d76015ab-cb69-4d6c-9f18-cc3506db7bd7: 'Testimonial Name' # Testimonial Name
     da4444f1-47dd-462a-84b6-0d72b5c266f6: 'Product Title' # Product Title
     da521950-25a7-4aaa-be24-0f045a90984a: 'Product Description' # Product Description
@@ -115,6 +117,7 @@ meta:
     ee5c98ed-bfa0-436e-b575-a89a085760b5: 'Second Sidebar Image' # Second Sidebar Image
     ef70b6a7-9da3-4ffd-b6a3-33407f08a79b: 'Sidebar Head' # Sidebar Head
     ef78c8c4-5030-4480-8f50-50b231fff44c: 'Second Image' # Second Image
+    f055c382-964c-43a8-a07a-efd54cb890e5: 'Footer Nav Column 1' # Footer Nav Column 1
     f1dbd402-7281-4d1a-a2dc-3753d5a44df9: 'Company Bullets' # Company Bullets
     f4af40b0-3ee1-4b65-bfe3-fcf6e67c3c75: 'About Signature' # About Signature
     f8eb5410-e3fc-41c3-a94e-d80f41ebad14: 'Full-width Mobile' # Full-width Mobile

@@ -676,6 +676,13 @@ input[type=text] {
   border-top: 2px solid #8a3a42;
   z-index: 2;
 }
+@media (max-width: 992px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
 .footer a {
   color: #8a3a42;
   text-decoration: none;
@@ -683,7 +690,7 @@ input[type=text] {
 .footer a:hover {
   text-decoration: underline;
 }
-.footer-container {
+.footer-top {
   width: calc(100% - 5rem);
   max-width: 65rem;
   margin-inline: auto;
@@ -692,17 +699,23 @@ input[type=text] {
   gap: 1rem;
 }
 @media (max-width: 1024px) {
-  .footer-container {
+  .footer-top {
     width: calc(100% - 4rem);
   }
 }
 @media (max-width: 600px) {
-  .footer-container {
+  .footer-top {
     width: calc(100% - 2rem);
   }
 }
+@media (max-width: 992px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
 @media (max-width: 600px) {
-  .footer-container {
+  .footer-top {
     flex-direction: column;
     gap: 2rem;
   }
@@ -713,33 +726,32 @@ input[type=text] {
 .footer-logo img {
   display: block;
   width: 100%;
-  max-width: 18.75rem;
+  max-width: 16.75rem;
 }
 @media (max-width: 600px) {
   .footer-logo img {
     max-width: 14.75rem;
   }
 }
-.footer-subscribe input[type=text] {
-  width: 100%;
-  max-width: 18.75rem;
-}
 .footer-nav {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem 2rem;
+  display: flex;
+  gap: 4rem;
+}
+@media (max-width: 600px) {
+  .footer-nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+.footer-nav-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   padding: 0;
 }
 @media (max-width: 992px) {
-  .footer-nav {
-    display: flex;
-    flex-direction: column;
+  .footer-nav-column {
     gap: 0.5rem;
-  }
-}
-@media null {
-  .footer-nav {
-    justify-content: flex-start;
   }
 }
 .footer-nav-item {
@@ -796,11 +808,35 @@ input[type=text] {
   fill: #ffffff;
   transition: fill 0.3s ease;
 }
-.footer-copyright {
-  text-align: center;
+.footer-bottom {
+  width: calc(100% - 5rem);
+  max-width: 65rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
 }
-.footer-small {
-  text-align: center;
+@media (max-width: 1024px) {
+  .footer-bottom {
+    width: calc(100% - 4rem);
+  }
+}
+@media (max-width: 600px) {
+  .footer-bottom {
+    width: calc(100% - 2rem);
+  }
+}
+@media (max-width: 992px) {
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}
+.footer-subscribe input[type=text] {
+  width: 100%;
+  max-width: 16.75rem;
 }
 
 .flex-block {

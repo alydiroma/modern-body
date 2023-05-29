@@ -1,5 +1,5 @@
 $_icon-padding: .35rem;
-$_logo-width: 18.75rem;
+$_logo-width: 16.75rem;
 $_logo-width-mobile: 14.75rem;
 
 .footer {
@@ -8,6 +8,12 @@ $_logo-width-mobile: 14.75rem;
 	padding: $gap 0;
 	border-top: 2px solid $accent;
 	z-index: 2;
+
+	@include break(tablet) {
+		display: flex;
+		flex-direction: column;
+		gap: $gap;
+	}
 
 	a {
 		color: $accent;
@@ -18,11 +24,16 @@ $_logo-width-mobile: 14.75rem;
 		}
 	}
 
-	&-container {
+	&-top {
 		@include container($medium);
 		display: flex;
 		justify-content: space-between;
 		gap: $gap-sm;
+
+		@include break(tablet) {
+			flex-direction: column;
+			gap: $gap;
+		}
 
 		@include break(mobile) {
 			flex-direction: column;
@@ -47,27 +58,24 @@ $_logo-width-mobile: 14.75rem;
 		}
 	}
 
-	&-subscribe {
-		input[type="text"] {
-			width: 100%;
-			max-width: $_logo-width;
-		}
-	}
-
 	&-nav {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: $gap-sm $gap;
-		padding: 0;
+		display: flex;
+		gap: $gap-lg;
 
-		@include break(tablet) {
+		@include break(mobile) {
+			flex-direction: column;
+			gap: $gap-sm;
+		}
+
+		&-column {
 			display: flex;
 			flex-direction: column;
-			gap: $gap-xs;
-		}
+			gap: $gap-sm;
+			padding: 0;
 
-		@include break(small) {
-			justify-content: flex-start;
+			@include break(tablet) {
+				gap: $gap-xs;
+			}
 		}
 
 		&-item {
@@ -132,11 +140,24 @@ $_logo-width-mobile: 14.75rem;
 		}
 	}
 
-	&-copyright {
-		text-align: center;
+	&-bottom {
+		@include container($medium);
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		gap: $gap-sm;
+
+		@include break(tablet) {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: $gap;
+		}
 	}
 
-	&-small {
-		text-align: center;
+	&-subscribe {
+		input[type="text"] {
+			width: 100%;
+			max-width: $_logo-width;
+		}
 	}
 }
