@@ -1,0 +1,19 @@
+columnSuffix: qcwmlmjd
+contentColumnType: text
+fieldGroup: 5c337995-e31f-4ea4-9ee5-80ee8beda0c9 # Global
+handle: newsletterSubscribeLabel
+instructions: null
+name: 'Newsletter Subscribe Label'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

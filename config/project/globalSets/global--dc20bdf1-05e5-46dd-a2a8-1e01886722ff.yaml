@@ -73,6 +73,24 @@ fieldLayouts:
         name: 'Social Media'
         uid: 3421dc66-f03d-4731-9d54-2be7dbf46f36
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ecb84e38-b859-4ef8-aeaa-c1e468b2fd35 # Newsletter Subscribe Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 02ea93f6-da57-4640-aefd-a5aac1362913
+            userCondition: null
+            warning: null
+            width: 100
+        name: Newsletter
+        uid: 429e79a9-6431-4b1e-a965-9977af7c52d1
+        userCondition: null
 handle: global
 name: Global
 sortOrder: 1
