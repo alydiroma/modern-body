@@ -1,0 +1,17 @@
+label {
+    display: block;
+	@include font-medium;
+	@include toRem('font-size', 14);
+	line-height: 1.2;
+    text-transform: uppercase;
+}
+
+input[type="text"] {
+	height: 44px;
+	line-height: 40px;
+	color: $black;
+	padding: $space;
+	background-color: $white;
+	border-color: $black;
+    border-radius: $radius-large;
+}

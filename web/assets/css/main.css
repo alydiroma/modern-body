@@ -147,6 +147,10 @@ h4, .h4-style {
   line-height: 1.8;
 }
 
+small {
+  font-size: 0.75rem;
+}
+
 a:focus-visible, button:focus-visible {
   outline: 1px solid #8a3a42;
   outline-offset: 2px;
@@ -444,6 +448,25 @@ strong,
   transition: height 0.3s ease;
 }
 
+label {
+  display: block;
+  font-family: "Poppins Medium", sans-serif;
+  letter-spacing: 0.05rem;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+input[type=text] {
+  height: 44px;
+  line-height: 40px;
+  color: #222;
+  padding: 0.25rem;
+  background-color: #ffffff;
+  border-color: #222;
+  border-radius: 0.5rem;
+}
+
 .header {
   width: 100%;
   padding: 1rem 0 4rem 0;
@@ -665,8 +688,7 @@ strong,
   max-width: 65rem;
   margin-inline: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
   gap: 1rem;
 }
 @media (max-width: 1024px) {
@@ -679,23 +701,40 @@ strong,
     width: calc(100% - 2rem);
   }
 }
-.footer-logo {
-  width: 15rem;
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
-.footer-logo svg {
+.footer-column {
+  flex: 1;
+}
+.footer-logo img {
   display: block;
   width: 100%;
+  max-width: 18.75rem;
+}
+@media (max-width: 600px) {
+  .footer-logo img {
+    max-width: 14.75rem;
+  }
+}
+.footer-subscribe input[type=text] {
+  width: 100%;
+  max-width: 18.75rem;
 }
 .footer-nav {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2rem;
+  padding: 0;
 }
 @media (max-width: 992px) {
   .footer-nav {
-    justify-content: center;
-    gap: 1rem;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
 @media null {
@@ -758,6 +797,9 @@ strong,
   transition: fill 0.3s ease;
 }
 .footer-copyright {
+  text-align: center;
+}
+.footer-small {
   text-align: center;
 }
 

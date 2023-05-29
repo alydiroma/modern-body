@@ -1,4 +1,6 @@
 $_icon-padding: .35rem;
+$_logo-width: 18.75rem;
+$_logo-width-mobile: 14.75rem;
 
 .footer {
 	position: relative;
@@ -19,29 +21,49 @@ $_icon-padding: .35rem;
 	&-container {
 		@include container($medium);
 		display: flex;
-		flex-direction: column;
-		align-items: center;
+		justify-content: space-between;
 		gap: $gap-sm;
+
+		@include break(mobile) {
+			flex-direction: column;
+			gap: $gap;
+		}
+	}
+
+	&-column {
+		flex: 1;
 	}
 
 	&-logo {
-		width: 15rem;
 
-		svg {
+		img {
 			display: block;
 			width: 100%;
+			max-width: $_logo-width;
+
+			@include break(mobile) {
+				max-width: $_logo-width-mobile;
+			}
+		}
+	}
+
+	&-subscribe {
+		input[type="text"] {
+			width: 100%;
+			max-width: $_logo-width;
 		}
 	}
 
 	&-nav {
-		display: flex;
-		gap: $gap;
-		flex-wrap: wrap;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: $gap-sm $gap;
+		padding: 0;
 
 		@include break(tablet) {
-			justify-content: center;
-			gap: $gap-sm;
-			text-align: center;
+			display: flex;
+			flex-direction: column;
+			gap: $gap-xs;
 		}
 
 		@include break(small) {
@@ -111,6 +133,10 @@ $_icon-padding: .35rem;
 	}
 
 	&-copyright {
+		text-align: center;
+	}
+
+	&-small {
 		text-align: center;
 	}
 }

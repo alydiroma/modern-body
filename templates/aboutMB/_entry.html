@@ -28,6 +28,13 @@
                     {% endif %}
                 </div>
             </div>
+            {% set sidebarImage2 = entry.aboutMbSecondSidebarImage.one() %}
+            {% if sidebarImage2 %}
+            <div class="about-image animate animate-image">
+                <img src="{{ sidebarImage2.url('block') }}" width="{{ sidebarImage2.getWidth('block') }}"
+                    height="{{ sidebarImage2.getHeight('block') }}" alt="{{ sidebarImage2.alt }}" />
+            </div>
+            {% endif %}
         </div>
         <div class="layout-main about-main rich-text">
             <h1>{{ entry.title }}</h1>

@@ -103,6 +103,10 @@ h4, .h4-style {
 	line-height: 1.8;
 }
 
+small {
+	@include toRem('font-size', 12);
+}
+
 a, button {
 	&:focus-visible {
 		outline: 1px solid $accent;

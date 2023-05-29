@@ -50,6 +50,18 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: cf9ba132-fcad-4b8c-b751-f8f46acea212 # Sidebar Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d5bcb79f-8fa0-401a-a824-90159963c140
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: ef70b6a7-9da3-4ffd-b6a3-33407f08a79b # Sidebar Head
             instructions: null
             label: null
@@ -74,13 +86,13 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: cf9ba132-fcad-4b8c-b751-f8f46acea212 # Sidebar Image
+            fieldUid: ee5c98ed-bfa0-436e-b575-a89a085760b5 # Second Sidebar Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: d5bcb79f-8fa0-401a-a824-90159963c140
+            uid: 057fb658-9d40-45f9-8c43-381f67454a44
             userCondition: null
             warning: null
             width: 100
