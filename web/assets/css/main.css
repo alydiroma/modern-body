@@ -461,7 +461,7 @@ input[type=text] {
   height: 44px;
   line-height: 40px;
   color: #222;
-  padding: 0.25rem;
+  padding: 0.25rem 0.5rem;
   background-color: #ffffff;
   border-color: #222;
   border-radius: 0.5rem;
@@ -834,9 +834,18 @@ input[type=text] {
     gap: 2rem;
   }
 }
+@media (max-width: 600px) {
+  .footer-subscribe {
+    width: 100%;
+  }
+}
 .footer-subscribe input[type=text] {
-  width: 100%;
-  max-width: 16.75rem;
+  width: 18rem;
+}
+@media (max-width: 600px) {
+  .footer-subscribe input[type=text] {
+    width: 100%;
+  }
 }
 
 .flex-block {

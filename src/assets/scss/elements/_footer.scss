@@ -1,6 +1,7 @@
 $_icon-padding: .35rem;
 $_logo-width: 16.75rem;
 $_logo-width-mobile: 14.75rem;
+$_subscribe-form-width: 18rem;
 
 .footer {
 	position: relative;
@@ -155,9 +156,16 @@ $_logo-width-mobile: 14.75rem;
 	}
 
 	&-subscribe {
-		input[type="text"] {
+		@include break(mobile) {
 			width: 100%;
-			max-width: $_logo-width;
+		}
+
+		input[type="text"] {
+			width: $_subscribe-form-width;
+
+			@include break(mobile) {
+				width: 100%;
+			}
 		}
 	}
 }
