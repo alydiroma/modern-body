@@ -661,7 +661,14 @@ input[type=text] {
 }
 
 .header-home .nav-panel {
+  padding: 0;
   background-color: transparent;
+}
+.header-home .nav-link {
+  margin-left: 0;
+}
+.header-home .nav-link[aria-expanded=true] + .nav-panel {
+  box-shadow: none;
 }
 
 .nav-mobile {

@@ -103,7 +103,18 @@ $_nav-panel-width: 14rem;
 .header-home {
 	.nav {
 		&-panel {
+			padding: 0;
 			background-color: transparent;
+		}
+
+		&-link {
+			margin-left: 0;
+			
+			&[aria-expanded="true"] {
+				+ .nav-panel {
+					box-shadow: none;
+				}
+			}
 		}
 	}
 }
