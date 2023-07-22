@@ -1,0 +1,21 @@
+{% extends "_layout" %}
+{% block content %}
+<main class="post">
+    <div class="post-head stack-sm">
+        <h1>{{ entry.postTitle }}</h1>
+        {% if entry.postSubtitle %}
+            <p class="h3-style">{{ entry.postSubtitle | striptags }}</h1>
+        {% endif %}
+        {% if entry.postIntro %}
+            <div class="post-intro rich-text large-font">
+                {{ entry.postIntro }}
+            </div>
+        {% endif %}
+    </div>
+    <div class="post-container stack-reg">
+        <div class="rich-text">
+            {{ entry.postContent }}
+        </div>
+    </div>
+</main>
+{% endblock %}

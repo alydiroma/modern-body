@@ -1,0 +1,52 @@
+.post {
+
+    &-head {
+        @include container($narrow);
+        text-align: center;
+
+        h1 {
+            margin: 0;
+        }
+    }
+
+    &-intro {
+        margin-top: $gap-md;
+    }
+
+    &-container {
+        @include container($narrow);
+        margin-top: $gap-md;
+        padding-top: $gap-sm;
+        border-top: 2px solid $accent;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        .image-left {
+            float: left;
+            width: calc(50% - $gap);
+            margin-right: $gap;
+        }
+
+        .image-right {
+            float: right;
+            width: calc(50% - $gap);
+            margin-left: $gap;
+        }
+
+        .image-center {
+            width: 100%;
+        }
+
+        .emphasis {
+            @include font-medium;
+            transform: translateX(-$gap);
+
+            @include break(tablet) {
+                transform: translateX(0);
+            }
+        }
+    }
+}

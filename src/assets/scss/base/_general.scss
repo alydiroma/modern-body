@@ -103,6 +103,12 @@ h4, .h4-style {
 	line-height: 1.8;
 }
 
+.p-small {
+	@include font-reg;
+	@include toRem('font-size', 14);
+	line-height: 1.8;
+}
+
 small {
 	@include toRem('font-size', 12);
 }
@@ -114,7 +120,17 @@ a, button {
 	}
 }
 
-ul {
+a {
+	color: $accent;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+ul,
+ol {
 	padding-left: $gap-sm;
 }
 

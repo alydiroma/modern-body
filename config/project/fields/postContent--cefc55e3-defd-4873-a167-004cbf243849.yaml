@@ -1,20 +1,21 @@
-columnSuffix: tzsyqevb
+columnSuffix: fhjnjazi
 contentColumnType: text
-fieldGroup: 24552ad8-1522-4671-bd6f-aefad369b0ef # About MB
-handle: aboutMbContent
+fieldGroup: 5f0332ac-8ba6-4aab-ab82-e982da9d4551 # Posts
+handle: postContent
 instructions: null
 name: Content
 searchable: false
 settings:
-  availableTransforms: ''
-  availableVolumes: ''
+  availableTransforms: '*'
+  availableVolumes:
+    - 14a6f0f3-b531-4d1d-a2b5-c9b0a56a2ef0 # Assets
   columnType: text
   configSelectionMode: choose
   defaultTransform: ''
   manualConfig: ''
   purifierConfig: null
   purifyHtml: true
-  redactorConfig: Custom.json
+  redactorConfig: Post.json
   removeEmptyTags: false
   removeInlineStyles: false
   removeNbsp: false

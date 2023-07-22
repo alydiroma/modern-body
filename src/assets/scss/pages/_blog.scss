@@ -1,0 +1,40 @@
+.blog {
+    
+    &-head {
+        @include container($narrow);
+        text-align: center;
+    }
+
+    &-intro {
+        margin-top: $gap-md;
+    }
+
+    &-container {
+        @include container();
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: $gap-md;
+        margin-top: $gap-md;
+        padding-top: $gap-md;
+        border-top: 2px solid $accent;
+
+        @include break(laptop) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include break(tablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include break(mobile) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &-item {
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}

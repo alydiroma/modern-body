@@ -1,0 +1,64 @@
+{
+    "buttons": [
+        "html",
+        "format",
+        "bold",
+        "italic",
+        "lists",
+        "link",
+        "image",
+        "video"
+    ],
+    "imagePosition" : {
+        "left": "image-left",
+        "right": "image-right"
+    },
+    "plugins": [
+      "customstyles"
+    ],
+    "customStyles": {
+      "style": {
+        "dropdown": {
+          "emphasis": {
+            "api": "module.block.format",
+            "args": {
+              "tag": "p",
+              "class": "emphasis"
+            }
+          }
+        }
+      },
+      "clearStyles": {
+        "api": "module.inline.clearformat"
+      },
+      "align": {
+        "dropdown": {
+          "alignLeft": {
+            "api": "module.block.format",
+            "args": "p"
+          },
+          "alignRight": {
+            "api": "module.block.format",
+            "args": {
+              "tag": "p",
+              "class": "align-right"
+            }
+          },
+          "alignCenter": {
+            "api": "module.block.format",
+            "args": {
+              "tag": "p",
+              "class": "align-center"
+            }
+          },
+          "alignJustify": {
+            "api": "module.block.format",
+            "args": {
+              "tag": "p",
+              "class": "align-justify"
+            }
+          }
+        }
+      }
+    }
+  }

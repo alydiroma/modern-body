@@ -1,4 +1,6 @@
 .animate-image {
+    overflow: hidden;
+    
     &.in-view {
         img {
             transform: scale(1.075);

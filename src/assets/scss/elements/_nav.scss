@@ -16,6 +16,12 @@ $_nav-panel-width: 14rem;
     &-item {
 		position: relative;
         list-style: none;
+
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+		}
 	}
 
     &-link {
@@ -63,6 +69,12 @@ $_nav-panel-width: 14rem;
 				display: none;
 			}
 		}
+
+		&[aria-expanded="true"] {
+			+ .nav-panel {
+				box-shadow: 4px 4px 4px 0px rgba($black, .25);
+			}
+		}
     }
 
 	&-button {
@@ -75,7 +87,7 @@ $_nav-panel-width: 14rem;
 		left: 0;
 		width: $_nav-panel-width;
 		margin: 0;
-		padding: 3px; // accommodate focus outline
+		padding: 3px;
 		background-color: $white;
 
 		.nav-link {
@@ -83,6 +95,7 @@ $_nav-panel-width: 14rem;
 			@include font-reg;
 			@include toRem('font-size', 15);
 			text-transform: none;
+			margin-left: $space;
 		}
 	}
 }

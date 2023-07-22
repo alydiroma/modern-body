@@ -1,4 +1,4 @@
-dateModified: 1685329354
+dateModified: 1690031913
 email:
   fromEmail: alhmail@gmail.com
   fromName: 'Modern Body'
@@ -21,9 +21,11 @@ fs:
 meta:
   __names__:
     0abc2601-eb4e-47a7-bb20-6358900e5ed0: 'About Image' # About Image
+    0cde0605-f76d-4d81-b240-a89fc8d0966e: Subtitle # Subtitle
     0d0100be-ea79-4a84-b7ba-2a406203ef77: 'Company Image' # Company Image
     0e24ebfd-5210-45ab-8434-b505aa1e3db4: Link # Link
     0e62c248-99e6-42ab-b8cd-d7ec668bc886: 'Hero Image' # Hero Image
+    1ead34db-f5ca-4e93-86d7-d61743978668: Default # Default
     1f1a8a59-4979-401d-82a3-b9b53b9c1de2: Classes # Classes
     3c9b8501-9904-40a0-aacb-1ed669a96d5f: 'Accordion Copy' # Accordion Copy
     3dfd732e-0ff1-4997-b0fa-45bd54fb4662: 'Intro to Pilates' # Intro to Pilates
@@ -32,10 +34,14 @@ meta:
     5c337995-e31f-4ea4-9ee5-80ee8beda0c9: Global # Global
     5d6e6468-5ba1-4d69-9cc9-61ae8d7dec0c: 'Testimonial Image' # Testimonial Image
     5d9037d9-870f-4c88-93fb-fc01efa9af9d: Subtitle # Subtitle
+    5f0332ac-8ba6-4aab-ab82-e982da9d4551: Posts # Posts
+    5f8469b0-407a-4b00-b0e9-4d7704b09500: title # title
     6bfbcd2b-1df4-4957-93f9-af5634cb74d7: 'Product Link' # Product Link
     6dd9aa0b-b4f3-4320-8d34-181a52eb6a00: Home # Home
     7c815618-2626-41f3-bbec-7e8471481ac9: FAQ # FAQ
     07dede5f-e375-4ca2-9622-0adde621a5c3: Home # Home
+    8a752967-d814-4b19-bdfb-02fe03817648: Title # Title
+    8d08adba-2f82-490b-9eb6-cb31df5a179e: Intro # Intro
     8fcc0341-0be2-48bb-867d-c746a78e9c82: 'Products Items' # Products Items
     9d74e71c-d037-432d-887d-4065ec79a9c7: 'Modern Body' # Modern Body
     9ddbe15b-bd59-4e81-b887-21754a3754c0: Sidebar # Sidebar
@@ -54,6 +60,7 @@ meta:
     196bdac8-d7ed-4635-acc3-e671ce97f550: Common # Common
     221b0134-0f21-4270-a087-06a4eaf0ded3: 'About Aly' # About Aly
     313c48a2-dfc1-4518-9ba6-7fc0974e9c50: Block # Block
+    414a85ef-26ae-44bc-84ae-b9b99c0c85f8: Intro # Intro
     485c9d29-4e5b-4658-9c86-ed411faf38f6: Title # Title
     0816ea9d-8582-4bee-aafc-b482935a9c94: 'Footer Nav Column 2' # Footer Nav Column 2
     831a1862-ae47-4961-b2a4-ddc9c451e096: FAQ # FAQ
@@ -62,6 +69,7 @@ meta:
     961c4e37-3a41-4b10-8ec3-6a16adb32128: 'Sidebar Accordion' # Sidebar Accordion
     4046c835-2452-4000-84ec-20b3d05d8d00: Pricing # Pricing
     6887f96e-ee16-4b11-9a20-45e7c13aeda4: FAQs # FAQs
+    7365b913-af69-4a61-8213-fcf62513f1b5: Posts # Posts
     9121f0f4-c29a-4085-af84-e633b5d10a1a: Title # Title
     24552ad8-1522-4671-bd6f-aefad369b0ef: 'About MB' # About MB
     83953fb7-e107-4565-970c-a90f8151ddd5: Classes # Classes
@@ -69,16 +77,19 @@ meta:
     476101d0-23c9-47fa-98eb-7d3ec4770862: Credentials # Credentials
     612978b4-b183-4027-a49c-607cf17f73f3: 'Full-Width Laptop' # Full-Width Laptop
     3050829a-ace6-4ccb-a141-cfe1f06e97aa: Contact # Contact
+    8915217e-26ce-446f-86ff-c4175cabb0b2: Blog # Blog
     32622215-2664-4d65-84fb-c1a3d9939bdd: 'About Modern Body' # About Modern Body
     36244931-f53f-4d86-a541-bd644c03591f: 'Accordion Head' # Accordion Head
     51560042-57cb-418c-8ba2-b86b090eb5b4: Title # Title
     68962412-698f-411d-a320-ca893137e690: Intro # Intro
+    77517042-ad23-4cb1-a85b-a749aad0e660: Blog # Blog
     92053381-bc29-48a8-b8c9-f691eefa64b5: Title # Title
     a4731ac5-9e41-4ca2-b1d3-9d5f372ec3bc: '1:1 Training' # 1:1 Training
     a7317e16-6eeb-4299-a34d-02eabaa60519: Intro # Intro
     aa2ff4ae-da1b-4ca0-8b78-03ce349ee782: 'FAQ Item' # FAQ Item
     ac16953e-d476-4c04-a41e-9115e69331e6: Contact # Contact
     ae634bf8-48e5-4164-8ab4-7ea661caa5a5: Accordion # Accordion
+    b01a73ea-d922-4f2c-99e1-45ed4ba8d02a: Blog # Blog
     b87d114e-c463-4311-adbe-dc8e506e6d2b: Classes # Classes
     b87e3b3f-cace-45aa-9c6d-2378c7874b72: Image # Image
     bc2faaee-59b6-4f7a-a9a5-36f7a19cbb14: 'Products List' # Products List
@@ -89,13 +100,16 @@ meta:
     c3cb6ef7-7f2e-4185-84a3-704e84298417: 'Class List' # Class List
     c249f4db-294d-44b8-ba21-a84bc989d17a: Home # Home
     c817d89d-53c9-4fc0-957d-f3a0de39fb06: 'About Modern Body' # About Modern Body
+    c7647f61-cb31-4cae-a072-d52ef1e89892: Image # Image
     c45206d2-9d75-4bdb-9a7a-7871d6f93696: 'Logo Image Long' # Logo Image Long
+    c96949ec-f032-4c2f-9645-fc318ee7038f: Summary # Summary
     c422089c-49f0-4d9a-9b30-dca485b14661: 'Hero Video' # Hero Video
     ca38367d-589e-4287-bdc0-29124c535643: 'Company Copy' # Company Copy
     cb0bc08e-fc13-48d5-94d7-26e840daa2df: 'Logo Image' # Logo Image
     cc69948b-a124-4c17-a64d-b519bf69f5c6: Content # Content
     cdd37bfc-0c28-4258-91d1-7a6a000c53f6: Bio # Bio
     cef6c373-ddac-4750-a65b-14ec99b6a138: YouTube # YouTube
+    cefc55e3-defd-4873-a167-004cbf243849: Content # Content
     cf9ba132-fcad-4b8c-b751-f8f46acea212: 'Sidebar Image' # Sidebar Image
     d7efe282-0770-409c-b80d-98a2d44f3231: 'Testimonials List' # Testimonials List
     d109eed7-bc66-4edb-8452-ac786ef35013: 'Footer Nav Column 3' # Footer Nav Column 3

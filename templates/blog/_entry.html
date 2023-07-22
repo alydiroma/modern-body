@@ -1,0 +1,35 @@
+{% extends "_layout" %}
+{% block content %}
+<main class="post">
+    <div class="blog-head stack-sm">
+        <h1>{{ entry.blogTitle }}</h1>
+        {% if entry.blogIntro %}
+            <div class="blog-intro rich-text large-font">
+                {{ entry.blogIntro }}
+            </div>
+        {% endif %}
+    </div>
+    <div class="blog-container">
+      {% set entryQuery = craft.entries()
+        .section('posts')
+        .orderBy('postDate DESC')
+        .limit(10) %}
+      {% set entries = entryQuery.all() %}
+      {% if entries | length %}
+        {% for entry in entries %}
+            <div class="blog-item stack-sm">
+                {% set postImage = entry.postImage.one() %}
+                {% if postImage %}
+                  <div class="animate animate-image">
+                      <img src="{{ postImage.url('block') }}" width="{{ postImage.getWidth('block') }}"
+                          height="{{ postImage.getHeight('block') }}" alt="{{ postImage.alt }}" />
+                  </div>
+                {% endif %}
+                <h2><a href="{{ entry.slug }}">{{ entry.postTitle }}</a></h2>
+                <p class="p-small">{{ entry.postSummary | striptags }}</p>
+            </div>
+        {% endfor %}
+    {% endif %}
+    </div>
+</main>
+{% endblock %}

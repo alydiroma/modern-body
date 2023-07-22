@@ -1,9 +1,9 @@
-columnSuffix: tzsyqevb
+columnSuffix: jjttehga
 contentColumnType: text
-fieldGroup: 24552ad8-1522-4671-bd6f-aefad369b0ef # About MB
-handle: aboutMbContent
+fieldGroup: 77517042-ad23-4cb1-a85b-a749aad0e660 # Blog
+handle: blogIntro
 instructions: null
-name: Content
+name: Intro
 searchable: false
 settings:
   availableTransforms: ''
@@ -14,7 +14,7 @@ settings:
   manualConfig: ''
   purifierConfig: null
   purifyHtml: true
-  redactorConfig: Custom.json
+  redactorConfig: null
   removeEmptyTags: false
   removeInlineStyles: false
   removeNbsp: false

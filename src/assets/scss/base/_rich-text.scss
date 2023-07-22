@@ -17,7 +17,13 @@
         }
     }
 
-    p {
+    p,
+    ul,
+    li {
         margin-top: $gap-sm;
+    }
+
+    figure {
+        margin-block: $gap;
     }
 }
