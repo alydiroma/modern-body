@@ -26,4 +26,25 @@
     figure {
         margin-block: $gap;
     }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    .image-left {
+        float: left;
+        width: calc(50% - $gap);
+        margin: 0 $gap 0 0;
+    }
+
+    .image-right {
+        float: right;
+        width: calc(50% - $gap);
+        margin: 0 0 0 $gap;
+    }
+
+    .image-center {
+        width: 100%;
+    }
 }

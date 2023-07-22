@@ -265,6 +265,23 @@ strong,
 .rich-text figure {
   margin-block: 2rem;
 }
+.rich-text img {
+  display: block;
+  width: 100%;
+}
+.rich-text .image-left {
+  float: left;
+  width: calc(50% - 2rem);
+  margin: 0 2rem 0 0;
+}
+.rich-text .image-right {
+  float: right;
+  width: calc(50% - 2rem);
+  margin: 0 0 0 2rem;
+}
+.rich-text .image-center {
+  width: 100%;
+}
 
 .flex-between {
   display: flex;
@@ -1875,23 +1892,6 @@ input[type=text] {
   .post-container {
     width: calc(100% - 2rem);
   }
-}
-.post-container img {
-  display: block;
-  width: 100%;
-}
-.post-container .image-left {
-  float: left;
-  width: calc(50% - 2rem);
-  margin-right: 2rem;
-}
-.post-container .image-right {
-  float: right;
-  width: calc(50% - 2rem);
-  margin-left: 2rem;
-}
-.post-container .image-center {
-  width: 100%;
 }
 .post-container .emphasis {
   font-family: "Poppins Medium", sans-serif;
