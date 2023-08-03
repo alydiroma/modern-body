@@ -1,4 +1,4 @@
-dateModified: 1690031913
+dateModified: 1691090746
 email:
   fromEmail: alhmail@gmail.com
   fromName: 'Modern Body'
@@ -28,6 +28,7 @@ meta:
     1ead34db-f5ca-4e93-86d7-d61743978668: Default # Default
     1f1a8a59-4979-401d-82a3-b9b53b9c1de2: Classes # Classes
     3c9b8501-9904-40a0-aacb-1ed669a96d5f: 'Accordion Copy' # Accordion Copy
+    03ca5c96-0536-4845-9b34-97eb57f9e59a: 'Testimonial Intro' # Testimonial Intro
     3dfd732e-0ff1-4997-b0fa-45bd54fb4662: 'Intro to Pilates' # Intro to Pilates
     4b9411de-fe15-4e34-b54a-3eaa702c336d: 'Intro to Pilates' # Intro to Pilates
     4d2ffb4a-b740-4fd6-96c8-451c18168856: 'Tik Tok' # Tik Tok
@@ -42,6 +43,7 @@ meta:
     07dede5f-e375-4ca2-9622-0adde621a5c3: Home # Home
     8a752967-d814-4b19-bdfb-02fe03817648: Title # Title
     8d08adba-2f82-490b-9eb6-cb31df5a179e: Intro # Intro
+    008d22bc-e1f4-4f9e-8107-1d146047680c: 'Testimonial Name' # Testimonial Name
     8fcc0341-0be2-48bb-867d-c746a78e9c82: 'Products Items' # Products Items
     9d74e71c-d037-432d-887d-4065ec79a9c7: 'Modern Body' # Modern Body
     9ddbe15b-bd59-4e81-b887-21754a3754c0: Sidebar # Sidebar
@@ -57,6 +59,7 @@ meta:
     63ee439f-a7aa-41cf-b686-93b2f5f6392d: 'Product Link Text' # Product Link Text
     84d4713f-9e53-4b1c-8d8e-e5600fa07269: Class # Class
     96f6e380-8739-4368-a5b3-042e778befe7: 'Company Head' # Company Head
+    124a2b5d-f5d0-4b64-866a-f328213b6f7a: 'Testimonial Video ID' # Testimonial Video ID
     196bdac8-d7ed-4635-acc3-e671ce97f550: Common # Common
     221b0134-0f21-4270-a087-06a4eaf0ded3: 'About Aly' # About Aly
     313c48a2-dfc1-4518-9ba6-7fc0974e9c50: Block # Block
@@ -82,12 +85,14 @@ meta:
     36244931-f53f-4d86-a541-bd644c03591f: 'Accordion Head' # Accordion Head
     51560042-57cb-418c-8ba2-b86b090eb5b4: Title # Title
     68962412-698f-411d-a320-ca893137e690: Intro # Intro
+    76361647-45f5-4715-8354-8155fe5b6810: Testimonials # Testimonials
     77517042-ad23-4cb1-a85b-a749aad0e660: Blog # Blog
     92053381-bc29-48a8-b8c9-f691eefa64b5: Title # Title
     a4731ac5-9e41-4ca2-b1d3-9d5f372ec3bc: '1:1 Training' # 1:1 Training
     a7317e16-6eeb-4299-a34d-02eabaa60519: Intro # Intro
     aa2ff4ae-da1b-4ca0-8b78-03ce349ee782: 'FAQ Item' # FAQ Item
     ac16953e-d476-4c04-a41e-9115e69331e6: Contact # Contact
+    aca07eab-0630-4970-8c9c-c2c20f485094: 'Testimonial Summary' # Testimonial Summary
     ae634bf8-48e5-4164-8ab4-7ea661caa5a5: Accordion # Accordion
     b01a73ea-d922-4f2c-99e1-45ed4ba8d02a: Blog # Blog
     b87d114e-c463-4311-adbe-dc8e506e6d2b: Classes # Classes
@@ -111,18 +116,22 @@ meta:
     cef6c373-ddac-4750-a65b-14ec99b6a138: YouTube # YouTube
     cefc55e3-defd-4873-a167-004cbf243849: Content # Content
     cf9ba132-fcad-4b8c-b751-f8f46acea212: 'Sidebar Image' # Sidebar Image
+    d4baabcc-a917-427c-92e1-321c37f3b023: 'Testimonial Items' # Testimonial Items
     d7efe282-0770-409c-b80d-98a2d44f3231: 'Testimonials List' # Testimonials List
+    d92a80b9-3c27-47b7-991b-dc4254819fe9: Testimonials # Testimonials
     d109eed7-bc66-4edb-8452-ac786ef35013: 'Footer Nav Column 3' # Footer Nav Column 3
     d76015ab-cb69-4d6c-9f18-cc3506db7bd7: 'Testimonial Name' # Testimonial Name
     da4444f1-47dd-462a-84b6-0d72b5c266f6: 'Product Title' # Product Title
     da521950-25a7-4aaa-be24-0f045a90984a: 'Product Description' # Product Description
     dc20bdf1-05e5-46dd-a2a8-1e01886722ff: Global # Global
+    dccb8fdf-e43a-4604-838c-f3e8f9568225: 'Testimonial Item' # Testimonial Item
     e0364518-4df8-4d7e-bbc0-a509ebe03558: '1:1 Training' # 1:1 Training
     e7ca93f7-a988-4c82-ac6e-51212c511d4f: 'About Aly' # About Aly
     e21c3150-347c-44cc-9e2e-64f9899bb194: 'Company CTA' # Company CTA
     e81aaea7-81e6-4426-937a-9af062c0cd16: 'Credentials Head' # Credentials Head
     e86c3ea3-5a1e-4917-a91a-cee28bdf3ca3: 'About Copy' # About Copy
     e89c1ecc-9442-423f-ab32-6b3d2de27eac: 'Hero Logo' # Hero Logo
+    e528c06e-6a42-4282-ae2b-4e38fceda003: Testimonials # Testimonials
     ebe89201-1375-4202-8c7d-80cd9a140f5d: Testimonial # Testimonial
     ec6b8c17-c1c6-4f35-ad4c-eb15724fdc38: 'About Aly' # About Aly
     ecb84e38-b859-4ef8-aeaa-c1e468b2fd35: 'Newsletter Subscribe Label' # Newsletter Subscribe Label

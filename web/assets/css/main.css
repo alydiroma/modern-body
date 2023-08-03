@@ -1910,3 +1910,52 @@ input[type=text] {
     transform: translateX(0);
   }
 }
+
+.testimonials-head {
+  width: calc(100% - 5rem);
+  max-width: 40rem;
+  margin-inline: auto;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .testimonials-head {
+    width: calc(100% - 4rem);
+  }
+}
+@media (max-width: 600px) {
+  .testimonials-head {
+    width: calc(100% - 2rem);
+  }
+}
+.testimonials-head h1 {
+  margin: 0;
+}
+.testimonials-intro {
+  margin-top: 3rem;
+}
+.testimonials-container {
+  width: calc(100% - 5rem);
+  max-width: 82rem;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 2px solid #8a3a42;
+}
+@media (max-width: 1024px) {
+  .testimonials-container {
+    width: calc(100% - 4rem);
+  }
+}
+@media (max-width: 600px) {
+  .testimonials-container {
+    width: calc(100% - 2rem);
+  }
+}
+@media (max-width: 992px) {
+  .testimonials-container {
+    grid-template-columns: 1fr;
+  }
+}

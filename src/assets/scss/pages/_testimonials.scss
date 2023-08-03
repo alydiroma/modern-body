@@ -1,0 +1,29 @@
+.testimonials {
+
+    &-head {
+        @include container($narrow);
+        text-align: center;
+
+        h1 {
+            margin: 0;
+        }
+    }
+
+    &-intro {
+        margin-top: $gap-md;
+    }
+
+    &-container {
+        @include container();
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $gap-md;
+        margin-top: $gap-md;
+        padding-top: $gap-md;
+        border-top: 2px solid $accent;
+
+        @include break(tablet) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

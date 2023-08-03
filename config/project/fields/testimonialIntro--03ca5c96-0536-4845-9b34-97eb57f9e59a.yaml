@@ -1,0 +1,27 @@
+columnSuffix: ahnpbrql
+contentColumnType: text
+fieldGroup: e528c06e-6a42-4282-ae2b-4e38fceda003 # Testimonials
+handle: testimonialIntro
+instructions: null
+name: 'Testimonial Intro'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

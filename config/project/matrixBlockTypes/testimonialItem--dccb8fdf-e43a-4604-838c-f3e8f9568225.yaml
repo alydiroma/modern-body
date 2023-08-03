@@ -1,0 +1,118 @@
+field: d4baabcc-a917-427c-92e1-321c37f3b023 # Testimonial Items
+fieldLayouts:
+  7105ad7e-c31c-49e9-8dbd-75dcf25c9812:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 124a2b5d-f5d0-4b64-866a-f328213b6f7a # Testimonial Video ID
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a28adb6c-21c2-4512-b48c-e6bf9bcd8cfe
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 008d22bc-e1f4-4f9e-8107-1d146047680c # Testimonial Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b408a823-3c09-4ee7-a064-2b32725d421d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: aca07eab-0630-4970-8c9c-c2c20f485094 # Testimonial Summary
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0b40f782-ca00-4db6-bfe5-d1e4d03162bf
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 50245ace-e348-4901-a011-edeb2e4977d4
+        userCondition: null
+fields:
+  008d22bc-e1f4-4f9e-8107-1d146047680c: # Testimonial Name
+    columnSuffix: xnuwisqf
+    contentColumnType: text
+    fieldGroup: null
+    handle: testimonialName
+    instructions: null
+    name: 'Testimonial Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  124a2b5d-f5d0-4b64-866a-f328213b6f7a: # Testimonial Video ID
+    columnSuffix: bkrogvdx
+    contentColumnType: text
+    fieldGroup: null
+    handle: testimonialVideo
+    instructions: null
+    name: 'Testimonial Video ID'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  aca07eab-0630-4970-8c9c-c2c20f485094: # Testimonial Summary
+    columnSuffix: uficqjgq
+    contentColumnType: text
+    fieldGroup: null
+    handle: testimonialSummary
+    instructions: null
+    name: 'Testimonial Summary'
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: testimonialItem
+name: 'Testimonial Item'
+sortOrder: 1
