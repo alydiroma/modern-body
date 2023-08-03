@@ -104,7 +104,10 @@
                         {% set blocks = entry.homeTestimonialsList.all() %}
                         {% if blocks | length %}
                             {% for block in blocks %}
-                                <p>{{ block.homeTestimonial | striptags }}&mdash;<em>{{ block.homeTestimonialName }}</em></p>
+                                <div>
+                                    <p>{{ block.homeTestimonial | striptags }}&mdash;<em>{{ block.homeTestimonialName }}</em></p>
+                                    <a class="home-testimonials-link" href="{{ block.homeTestimonialLink }}">{{ block.homeTestimonialLink.getCustomText('Watch Video') }}</a>
+                                </div>
                             {% endfor %}
                         {% endif %}
                     </div>

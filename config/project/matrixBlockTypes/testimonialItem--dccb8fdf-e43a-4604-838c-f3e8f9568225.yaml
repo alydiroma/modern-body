@@ -41,6 +41,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 045ba267-c317-43b4-a99b-65dc73c739b4 # Testimonial Anchor
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5d82a85d-6d25-44e3-86f1-93151b7f0b3e
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 50245ace-e348-4901-a011-edeb2e4977d4
         userCondition: null
@@ -52,6 +64,26 @@ fields:
     handle: testimonialName
     instructions: null
     name: 'Testimonial Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  045ba267-c317-43b4-a99b-65dc73c739b4: # Testimonial Anchor
+    columnSuffix: uwaxrpxp
+    contentColumnType: text
+    fieldGroup: null
+    handle: testimonialAnchor
+    instructions: null
+    name: 'Testimonial Anchor'
     searchable: false
     settings:
       byteLimit: null

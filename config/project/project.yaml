@@ -1,4 +1,4 @@
-dateModified: 1691090746
+dateModified: 1691093264
 email:
   fromEmail: alhmail@gmail.com
   fromName: 'Modern Body'
@@ -55,6 +55,7 @@ meta:
     29f08e9f-d744-454f-bc1a-64cbddf3f0c8: Contact # Contact
     34d91206-bdc7-4cac-b810-e54fa52a8f98: 'Products Head' # Products Head
     43c4b11f-16f2-4fb5-8984-7701e5e667d0: 'Hero Tagline' # Hero Tagline
+    045ba267-c317-43b4-a99b-65dc73c739b4: 'Testimonial Anchor' # Testimonial Anchor
     45cdf667-692c-4321-96aa-54465fc2c000: Instagram # Instagram
     63ee439f-a7aa-41cf-b686-93b2f5f6392d: 'Product Link Text' # Product Link Text
     84d4713f-9e53-4b1c-8d8e-e5600fa07269: Class # Class
@@ -125,6 +126,7 @@ meta:
     da521950-25a7-4aaa-be24-0f045a90984a: 'Product Description' # Product Description
     dc20bdf1-05e5-46dd-a2a8-1e01886722ff: Global # Global
     dccb8fdf-e43a-4604-838c-f3e8f9568225: 'Testimonial Item' # Testimonial Item
+    df06f0d5-d0a1-4425-ac88-297d50ad1c80: 'Testimonial Link' # Testimonial Link
     e0364518-4df8-4d7e-bbc0-a509ebe03558: '1:1 Training' # 1:1 Training
     e7ca93f7-a988-4c82-ac6e-51212c511d4f: 'About Aly' # About Aly
     e21c3150-347c-44cc-9e2e-64f9899bb194: 'Company CTA' # Company CTA

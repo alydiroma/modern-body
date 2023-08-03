@@ -551,5 +551,10 @@
 				z-index: 1;
 			}
 		}
+
+		&-link {
+			display: block;
+			@include font-semibold;
+		}
 	}
 }
