@@ -852,6 +852,9 @@ input[type=text] {
 .footer-social li a:hover {
   background-color: #222;
 }
+.footer-social li a:hover svg .fill {
+  fill: #222;
+}
 .footer-social li svg {
   display: block;
   width: 100%;
@@ -861,6 +864,10 @@ input[type=text] {
   -o-object-position: center;
      object-position: center;
   fill: #ffffff;
+  transition: fill 0.3s ease;
+}
+.footer-social li svg .fill {
+  fill: #8a3a42;
   transition: fill 0.3s ease;
 }
 .footer-bottom {

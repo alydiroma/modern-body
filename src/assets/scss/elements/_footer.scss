@@ -126,6 +126,12 @@ $_subscribe-form-width: 18rem;
 
 				&:hover {
 					background-color: $black;
+
+					svg {
+						.fill {
+							fill: $black;
+						}
+					}
 				}
 			}
 
@@ -137,6 +143,11 @@ $_subscribe-form-width: 18rem;
 				object-position: center;
 				fill: $white;
 				transition: fill .3s ease;
+
+				.fill {
+					fill: $accent;
+					transition: fill .3s ease;
+				}
 			}
 		}
 	}
