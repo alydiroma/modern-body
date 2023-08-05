@@ -7,15 +7,41 @@
 
     &-container {
         @include container($narrow);
+        margin-top: $gap-md;
+        padding-top: $gap-md;
+        border-top: 2px solid $accent;
     }
 
     &-question {
+        position: relative;
         @include button-reset;
         @include font-medium;
         text-align: left;
+        margin-left: $gap;
+
+        &::before {
+            position: absolute;
+            left: -$gap;
+            content: '+';
+            display: inline;
+            color: $accent;
+            margin-left: 0;
+            transform: scale(1.25) rotate(0);
+            transition: transform .3s ease;
+        }
+
+        &[aria-expanded="true"] {
+            &::before {
+                transform: scale(1.6) rotate(225deg);
+            }
+        }
 
         &:hover {
             text-decoration: underline;
         }
+    }
+
+    &-answer {
+        padding-left: $gap;
     }
 }
