@@ -106,7 +106,9 @@
                             {% for block in blocks %}
                                 <div>
                                     <p>{{ block.homeTestimonial | striptags }}&mdash;<em>{{ block.homeTestimonialName }}</em></p>
-                                    <a class="home-testimonials-link" href="{{ block.homeTestimonialLink }}">{{ block.homeTestimonialLink.getCustomText('Watch Video') }}</a>
+                                    {% if block.homeTestimonialLink %}
+                                        <a class="home-testimonials-link" href="{{ block.homeTestimonialLink }}">{{ block.homeTestimonialLink.getCustomText('Watch Video') }}</a>
+                                    {% endif %}
                                 </div>
                             {% endfor %}
                         {% endif %}
