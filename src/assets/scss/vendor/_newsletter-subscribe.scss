@@ -1,0 +1,125 @@
+
+.fd-has-success .fd-form-content {
+    display: none;
+}
+
+.fd-has-captcha .fd-form-content>*:not(.fd-form-captcha) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fd-form-success {
+    display: none;
+}
+
+.fd-has-success .fd-form-success {
+    display: block;
+    color: $accent !important;
+}
+
+.fd-form-success>*:last-child {
+    margin-bottom: 0;
+}
+
+.fd-form-error {
+    display: none;
+}
+
+.fd-has-error .fd-form-error {
+    display: block;
+}
+
+.fd-form-error>*:last-child {
+    margin-bottom: 0;
+}
+
+.fd-form-intro {
+    margin-bottom: $gap;
+
+    @include break(tablet) {
+        margin-bottom: $gap-sm;
+    }
+}
+
+.fd-form {
+    text-align: center;
+
+    @include break(tablet) {
+        text-align: left;
+    }
+}
+
+.fd-form-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end !important;
+    gap: $gap;
+
+    @include break(tablet) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: $gap-sm;
+    }
+}
+
+.fd-form-group {
+    padding-top: 1.5rem;
+
+    .fd-form-label {
+        font-family: $font-medium !important;
+        font-size: 0.75rem !important;
+        line-height: 1.2 !important;
+        text-align: left;
+        text-transform: uppercase !important;
+        padding: 0 !important
+    }
+
+    input {
+        min-width: 12rem;
+        height: 44px !important;
+        border-radius: $radius !important;
+
+        @include break(mobile) {
+           width: 100%;
+        }
+    }
+}
+
+.fd-focus-visible:nth-child(n):nth-child(n):nth-child(n) {
+    outline: 1px solid $accent !important;
+    box-shadow: unset !important;
+}
+
+.fd-btn {
+	@include button-reset;
+	display: inline-block;
+	font-family: $font-medium !important;
+	font-size: 1rem !important;
+    height: 44px !important;
+	line-height: 40px !important;
+	color: $white;
+	padding: 0 $gap !important;
+	background-color: $accent !important;
+	border: 2px solid $accent !important;
+	border-radius: $radius !important;
+	transition: color .6s ease, background-color .6s ease;
+
+	&:hover {
+		color: $accent !important;
+		background-color: transparent !important;
+	}
+}
+
+.ff-64f77876db7b1adad52ffecb__form {
+    padding: 0 !important;
+}
+
+.ff-64f77876db7b1adad52ffecb__title {
+    display: none !important;
+}
+
+.ff-64f77876db7b1adad52ffecb__subtitle {
+    font-family: $font-reg;
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
+}

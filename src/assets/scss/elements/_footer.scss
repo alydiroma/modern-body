@@ -44,24 +44,42 @@ $_subscribe-form-width: 18rem;
 
 	&-column {
 		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		@include break(tablet) {
+			flex-direction: row;
+			gap: $gap;
+		}
+
+		@include break(mobile) {
+			flex-direction: column;
+		}
 	}
 
 	&-logo {
+		display: block;
+		width: $_logo-width;
+
+		@include break(mobile) {
+			width: $_logo-width-mobile;
+		}
 
 		img {
 			display: block;
 			width: 100%;
-			max-width: $_logo-width;
-
-			@include break(mobile) {
-				max-width: $_logo-width-mobile;
-			}
 		}
 	}
 
 	&-nav {
 		display: flex;
+		justify-content: flex-end;
 		gap: $gap-lg;
+
+		@include break(tablet) {
+			justify-content: flex-start;
+		}
 
 		@include break(mobile) {
 			flex-direction: column;
@@ -105,10 +123,12 @@ $_subscribe-form-width: 18rem;
 	}
 
 	&-social {
-		display: flex;
-		align-items: center;
-		gap: $gap;
-		padding: 0;
+
+		ul {
+			display: flex;
+			gap: $gap;
+			padding: 0;
+		}
 
 		li {
 			display: inline-block;
@@ -152,31 +172,26 @@ $_subscribe-form-width: 18rem;
 		}
 	}
 
+	&-subscribe {
+		@include container($medium);
+		margin-block: $gap-md;
+
+		@include break(mobile) {
+			margin-block: 0;
+		}
+	}
+
 	&-bottom {
 		@include container($medium);
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: flex-end;
 		gap: $gap-sm;
 
 		@include break(tablet) {
 			flex-direction: column;
-			align-items: flex-start;
+			align-items: center;
 			gap: $gap;
-		}
-	}
-
-	&-subscribe {
-		@include break(mobile) {
-			width: 100%;
-		}
-
-		input[type="text"] {
-			width: $_subscribe-form-width;
-
-			@include break(mobile) {
-				width: 100%;
-			}
 		}
 	}
 }
