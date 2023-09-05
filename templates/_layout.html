@@ -17,6 +17,9 @@
     {% if entry.section.handle == 'home' %}
         <script type="text/javascript" defer src="{{ 'js/home.js' | mix }}"></script>
     {% endif %}
+    {% if entry.section.handle == 'testimonials' %}
+        <script type="text/javascript" defer src="{{ 'js/testimonials.js' | mix }}"></script>
+    {% endif %}
     {% include '_partials/footer' %}
 </body>
 </html>

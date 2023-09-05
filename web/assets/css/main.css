@@ -2013,8 +2013,51 @@ input[type=text] {
   }
 }
 .testimonials-video {
+  position: relative;
   flex: 1;
   aspect-ratio: 16/9;
+}
+.testimonials-video-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  z-index: 1;
+}
+.testimonials-video-btn:hover {
+  cursor: pointer;
+}
+.testimonials-video-btn:hover svg {
+  transform: scale(1.25);
+}
+.testimonials-video-btn svg {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  fill: #ffffff;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  pointer-events: none;
+}
+.testimonials-video-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(50%);
 }
 .testimonials-video iframe {
   display: block;
