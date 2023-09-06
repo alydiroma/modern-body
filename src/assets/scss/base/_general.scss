@@ -56,7 +56,7 @@ p+.h2-style {
 
 h1,
 .h1-style {
-	@include font-logo;
+	@include font-logo-medium;
 	@include toRem('font-size', 44);
 	line-height: 1.2;
 	margin-bottom: $gap-sm;
