@@ -77,6 +77,7 @@
     input {
         min-width: 12rem;
         height: 44px !important;
+        border: 1px solid $gray !important;
         border-radius: $radius !important;
 
         @include break(mobile) {

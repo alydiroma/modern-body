@@ -1,18 +1,8 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Roslindale Display Variable";
   src: url("/assets/fonts/RoslindaleVariableVFDisplay.woff2") format("woff2");
 }
-/*
-@font-face {
-	font-family: "Roslindale Display Narrow Medium";
-	src: url("/assets/fonts/roslindale-displaynarrowmedium-webfont.woff") format("woff");
-}
-
-@font-face {
-	font-family: "Roslindale Display Narrow Extra Light";
-	src: url("/assets/fonts/roslindale-displaynarrowextralight-webfont.woff") format("woff");
-}
-*/
 @font-face {
   font-family: "Poppins Regular";
   src: url("/assets/fonts/Poppins-Regular.woff") format("woff");
@@ -38,7 +28,9 @@ html {
   padding: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -84,7 +76,8 @@ p + .h2-style {
   margin-top: 3rem;
 }
 
-h1, .h1-style {
+h1,
+.h1-style {
   font-family: "Roslindale Display Variable", serif;
   font-variation-settings: "wght" 700;
   letter-spacing: 0.125rem;
@@ -93,47 +86,55 @@ h1, .h1-style {
   margin-bottom: 1rem;
 }
 @media (max-width: 992px) {
-  h1, .h1-style {
+  h1,
+  .h1-style {
     font-size: 2.5rem;
   }
 }
 @media (max-width: 600px) {
-  h1, .h1-style {
+  h1,
+  .h1-style {
     font-size: 2.25rem;
   }
 }
 
-h2, .h2-style {
+h2,
+.h2-style {
   font-family: "Roslindale Display Variable", serif;
-  font-variation-settings: "wght" 700;
+  font-variation-settings: "wght" 500;
   letter-spacing: 0.125rem;
   font-size: 1.75rem;
   line-height: 1.2;
 }
 @media (max-width: 992px) {
-  h2, .h2-style {
+  h2,
+  .h2-style {
     font-size: 1.625rem;
   }
 }
 @media (max-width: 600px) {
-  h2, .h2-style {
+  h2,
+  .h2-style {
     font-size: 1.5rem;
   }
 }
 
-h3, .h3-style {
+h3,
+.h3-style {
   font-family: "Poppins Medium", sans-serif;
   letter-spacing: 0.05rem;
   font-size: 1.375rem;
   line-height: 1.2;
 }
 @media (max-width: 600px) {
-  h3, .h3-style {
+  h3,
+  .h3-style {
     font-size: 1.25rem;
   }
 }
 
-h4, .h4-style {
+h4,
+.h4-style {
   font-family: "Poppins Medium", sans-serif;
   letter-spacing: 0.05rem;
   font-size: 1.125rem;
@@ -158,7 +159,8 @@ small {
   font-size: 0.75rem;
 }
 
-a:focus-visible, button:focus-visible {
+a:focus-visible,
+button:focus-visible {
   outline: 1px solid #8a3a42;
   outline-offset: 2px;
 }
@@ -168,7 +170,8 @@ a {
   text-decoration: none;
 }
 a[target=_blank]::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24'%3E%3Cpath fill='%238a3a42' d='M5 3c-1.093 0-2 .907-2 2v14c0 1.093.907 2 2 2h14c1.093 0 2-.907 2-2v-7h-2v7H5V5h7V3H5zm9 0v2h3.586l-9.293 9.293 1.414 1.414L19 6.414V10h2V3h-7z'/%3E%3C/svg%3E");
+  content: "➚";
+  font-size: 1em;
 }
 a:hover {
   text-decoration: underline;
@@ -877,6 +880,9 @@ input[type=text] {
   background-color: #8a3a42;
   border-radius: 0.5rem;
   transition: background-color 0.3s ease;
+}
+.footer-social li a::after {
+  display: none;
 }
 .footer-social li a:hover {
   background-color: #222;
@@ -2187,6 +2193,7 @@ input[type=text] {
 .fd-form-group input {
   min-width: 12rem;
   height: 44px !important;
+  border: 1px solid #bbb !important;
   border-radius: 0.25rem !important;
 }
 @media (max-width: 600px) {

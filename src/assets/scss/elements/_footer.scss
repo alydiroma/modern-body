@@ -144,6 +144,10 @@ $_subscribe-form-width: 18rem;
 				border-radius: $radius-large;
 				transition: background-color .3s ease;
 
+				&::after {
+					display: none;
+				}
+
 				&:hover {
 					background-color: $black;
 
