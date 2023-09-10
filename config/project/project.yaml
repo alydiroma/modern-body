@@ -1,4 +1,4 @@
-dateModified: 1693867675
+dateModified: 1694389052
 email:
   fromEmail: alhmail@gmail.com
   fromName: 'Modern Body'
@@ -134,6 +134,7 @@ meta:
     e86c3ea3-5a1e-4917-a91a-cee28bdf3ca3: 'About Copy' # About Copy
     e89c1ecc-9442-423f-ab32-6b3d2de27eac: 'Hero Logo' # Hero Logo
     e528c06e-6a42-4282-ae2b-4e38fceda003: Testimonials # Testimonials
+    eb27df65-98ff-4304-a1c5-656559b62c93: Image # Image
     ebe89201-1375-4202-8c7d-80cd9a140f5d: Testimonial # Testimonial
     ec6b8c17-c1c6-4f35-ad4c-eb15724fdc38: 'About Aly' # About Aly
     ecb84e38-b859-4ef8-aeaa-c1e468b2fd35: 'Newsletter Subscribe Label' # Newsletter Subscribe Label
@@ -149,6 +150,17 @@ meta:
     f851a4be-7bd7-4309-b0ef-c6ae24caecf3: 'Testimonial Items' # Testimonial Items
     fd99ba12-b360-4bbb-8fa1-2d576c0d95f5: 'FAQ Answer' # FAQ Answer
 plugins:
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      allowedMessageFields: null
+      prependSender: 'On behalf of'
+      prependSubject: 'New message from Modern Body'
+      successFlashMessage: 'Thanks for getting in touch!'
+      toEmail: alhmail@gmail.com
   mix:
     edition: standard
     enabled: true

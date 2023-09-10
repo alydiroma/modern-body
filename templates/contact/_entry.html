@@ -3,11 +3,79 @@
     <main class="contact stack-xl">
         <div class="contact-head stack-sm">
             <h1>{{ entry.title }}</h1>
+
+            {% set contactImage = entry.contactImage.one() %}
+            {% if contactImage %}
+                <div class="contact-image">
+                    <img src="{{ contactImage.url() }}" alt="{{ contactImage.alt }}">
+                </div>
+            {% endif %}
+
             {% if entry.contactIntro %}
             <div class="rich-text">
                 {{ entry.contactIntro }}
             </div>
             {% endif %}
         </div>
+
+        {% macro errorList(errors) %}
+            {% if errors %}
+                {{ ul(errors, {class: 'errors'}) }}
+            {% endif %}
+        {% endmacro %}
+
+        {% set submission = submission ?? null %}
+
+        <form method="post" action="" accept-charset="UTF-8" class="contact-form stack-sm">
+
+            {% if craft.app.session.hasFlash('notice') %}
+                <p class="message notice">{{ craft.app.session.getFlash('notice') }}</p>
+            {% elseif craft.app.session.hasFlash('error') %}
+                <p class="message error">{{ craft.app.session.getFlash('error') }}</p>
+            {% endif %}
+
+            {{ csrfInput() }}
+            {{ actionInput('contact-form/send') }}
+
+            <div>
+                <label for="from-name">Your Name</label>
+                {{ input('text', 'fromName', submission.fromName ?? '', {
+                    id: 'from-name',
+                    autocomplete: 'name',
+                }) }}
+                {{ submission ? _self.errorList(submission.getErrors('fromName')) }}
+            </div>
+
+            <div>
+                <label for="from-email">Your Email</label>
+            {{ input('email', 'fromEmail', submission.fromEmail ?? '', {
+                id: 'from-email',
+                autocomplete: 'email',
+            }) }}
+            {{ submission ? _self.errorList(submission.getErrors('fromEmail')) }}
+            </div>
+
+            <div>
+                <label for="subject">Subject</label>
+                {{ input('text', 'subject', submission.subject ?? '', {
+                    id: 'subject',
+                }) }}
+                {{ submission ? _self.errorList(submission.getErrors('subject')) }}
+            </div>
+
+            <div>
+                <label for="message">Message</label>
+                {{ tag('textarea', {
+                    text: submission.message ?? '',
+                    id: 'message',
+                    name: 'message',
+                    rows: 10,
+                    cols: 40,
+                }) }}
+                {{ submission ? _self.errorList(submission.getErrors('message')) }}
+            </div>
+
+            <button class="btn" type="submit">Submit Your Message</button>
+        </form>
     </main>
 {% endblock %}

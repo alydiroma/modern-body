@@ -7,9 +7,19 @@ label {
     text-transform: uppercase;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="email"] {
 	height: 44px;
 	line-height: 40px;
+	color: $black;
+	padding: $space $gap-xs;
+	background-color: $white;
+	border: 1px solid $gray;
+    border-radius: $radius;
+	appearance: none;
+}
+
+textarea {
 	color: $black;
 	padding: $space $gap-xs;
 	background-color: $white;

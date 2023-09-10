@@ -3,8 +3,47 @@
         @include container($narrow);
         text-align: center;
     }
-    
-    &-container {
-        @include container($medium);
+
+    &-image {
+        
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &-form {
+        @include container($narrow);
+
+        label {
+            margin-bottom: $space;
+        }
+
+        .message.error {
+            color: $accent;
+        }
+
+        .errors {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                @include toRem('font-size', 14);
+                color: $accent;
+            }
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+
+            & + .errors {
+                margin-top: $space;
+            }
+        }
+
+        textarea {
+            width: 100%;
+        }
     }
 }
