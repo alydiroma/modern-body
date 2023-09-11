@@ -1,6 +1,6 @@
 {% extends "_layout" %}
 {% block content %}
-    <main class="contact stack-xl">
+    <main class="contact stack-reg">
         <div class="contact-head stack-sm">
             <h1>{{ entry.title }}</h1>
 
@@ -27,6 +27,7 @@
         {% set submission = submission ?? null %}
 
         <form method="post" action="" accept-charset="UTF-8" class="contact-form stack-sm">
+            <p>* Required field.</p>
 
             {% if craft.app.session.hasFlash('notice') %}
                 <p class="message notice">{{ craft.app.session.getFlash('notice') }}</p>
@@ -47,12 +48,12 @@
             </div>
 
             <div>
-                <label for="from-email">Your Email</label>
-            {{ input('email', 'fromEmail', submission.fromEmail ?? '', {
-                id: 'from-email',
-                autocomplete: 'email',
-            }) }}
-            {{ submission ? _self.errorList(submission.getErrors('fromEmail')) }}
+                <label for="from-email">Your Email*</label>
+                {{ input('email', 'fromEmail', submission.fromEmail ?? '', {
+                    id: 'from-email',
+                    autocomplete: 'email',
+                }) }}
+                {{ submission ? _self.errorList(submission.getErrors('fromEmail')) }}
             </div>
 
             <div>
@@ -64,7 +65,7 @@
             </div>
 
             <div>
-                <label for="message">Message</label>
+                <label for="message">Message*</label>
                 {{ tag('textarea', {
                     text: submission.message ?? '',
                     id: 'message',
