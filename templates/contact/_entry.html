@@ -27,16 +27,17 @@
         {% set submission = submission ?? null %}
 
         <form method="post" action="" accept-charset="UTF-8" class="contact-form stack-sm">
-            <p>* Required field.</p>
 
             {% if craft.app.session.hasFlash('notice') %}
-                <p class="message notice">{{ craft.app.session.getFlash('notice') }}</p>
+                <p class="large-font message notice"><strong>{{ craft.app.session.getFlash('notice') }}</strong></p>
             {% elseif craft.app.session.hasFlash('error') %}
                 <p class="message error">{{ craft.app.session.getFlash('error') }}</p>
             {% endif %}
 
             {{ csrfInput() }}
             {{ actionInput('contact-form/send') }}
+
+            <p>* Required field.</p>
 
             <div>
                 <label for="from-name">Your Name</label>
