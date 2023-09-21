@@ -1,8 +1,16 @@
-dateModified: 1695152491
+dateModified: 1695153521
 email:
   fromEmail: alhmail@gmail.com
   fromName: 'Modern Body'
-  transportType: craft\mail\transportadapters\Sendmail
+  replyToEmail: null
+  template: null
+  transportSettings:
+    host: $SERVD_SMTP_HOSTNAME
+    password: $SERVD_SMTP_PASSWORD
+    port: $SERVD_SMTP_PORT
+    useAuthentication: '1'
+    username: $SERVD_SMTP_USERNAME
+  transportType: craft\mail\transportadapters\Smtp
 fs:
   assets:
     hasUrls: true
