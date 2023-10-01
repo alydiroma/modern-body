@@ -1,4 +1,4 @@
-dateModified: 1695153521
+dateModified: 1696181477
 email:
   fromEmail: alhmail@gmail.com
   fromName: 'Modern Body'
@@ -179,7 +179,7 @@ plugins:
   navigation:
     edition: standard
     enabled: true
-    licenseKey: AHXYW4VZ3YUFHQ4EHMY9P8TD
+    licenseKey: DRE8JQEZNKX0BQ0CYJ2H3S5K
     schemaVersion: 2.0.7
   redactor:
     edition: standard
@@ -189,6 +189,11 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: VQZ8J88KPTFXWGRF48YFG2IO
+    schemaVersion: 3.0.12
   servd-asset-storage:
     edition: standard
     enabled: true
