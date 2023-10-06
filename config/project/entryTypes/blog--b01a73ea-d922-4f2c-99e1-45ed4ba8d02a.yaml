@@ -57,10 +57,31 @@ fieldLayouts:
         name: Content
         uid: d5de9b76-ff8a-4b4b-a19f-2790b8645d76
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 14f5726b-60c3-4f4e-bc91-c2b2e0364c3d # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e3225a1c-8e08-43fa-bb0c-932224ef256c
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 3fd9c600-c192-465a-a9d3-af9ad4a4ed5c
+        userCondition: null
 handle: blog
 hasTitleField: false
 name: Blog
 section: 8915217e-26ce-446f-86ff-c4175cabb0b2 # Blog
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{blogTitle | striptags}'
 titleTranslationKeyFormat: null

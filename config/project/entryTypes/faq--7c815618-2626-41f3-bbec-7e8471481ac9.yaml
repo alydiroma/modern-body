@@ -63,10 +63,31 @@ fieldLayouts:
         name: 'Q & A'
         uid: 65dda3d0-4a1e-4372-83a0-84c04e517ad9
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 14f5726b-60c3-4f4e-bc91-c2b2e0364c3d # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 14c4b891-7f2e-4d96-b044-aa731879b48d
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: df7318b0-705f-4c67-8706-4aa8c12c5f5d
+        userCondition: null
 handle: faq
 hasTitleField: false
 name: FAQ
 section: 831a1862-ae47-4961-b2a4-ddc9c451e096 # FAQ
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

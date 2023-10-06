@@ -63,10 +63,31 @@ fieldLayouts:
         name: Courses
         uid: 9a1ef728-4a3a-42a3-8d47-6eec22156f3d
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 14f5726b-60c3-4f4e-bc91-c2b2e0364c3d # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6e6ba509-583f-449d-8663-0e9fc9f7dbb3
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: e5047d66-d57d-4a9f-b60f-6b89cc2ff4a5
+        userCondition: null
 handle: introToPilates
 hasTitleField: false
 name: 'Intro to Pilates'
 section: 4b9411de-fe15-4e34-b54a-3eaa702c336d # Intro to Pilates
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

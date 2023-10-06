@@ -75,10 +75,31 @@ fieldLayouts:
         name: 'Classes List'
         uid: f02a24f2-8ad1-4f06-977a-4577ca39b9f0
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 14f5726b-60c3-4f4e-bc91-c2b2e0364c3d # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e1ffa257-3870-45ec-8024-86581f9605c4
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 4bc3920b-82a7-4384-84dc-84370eb0d98a
+        userCondition: null
 handle: classes
 hasTitleField: false
 name: Classes
 section: 83953fb7-e107-4565-970c-a90f8151ddd5 # Classes
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

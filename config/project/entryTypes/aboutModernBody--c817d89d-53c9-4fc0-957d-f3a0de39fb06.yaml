@@ -99,10 +99,31 @@ fieldLayouts:
         name: Sidebar
         uid: 2ebe1f2a-ebce-4568-9500-279c122e31eb
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 14f5726b-60c3-4f4e-bc91-c2b2e0364c3d # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 62b3e2db-a98c-4c4e-85b0-eeb6dadfbcca
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 2d80a432-343f-4021-9407-778b5f423f37
+        userCondition: null
 handle: aboutModernBody
 hasTitleField: false
 name: 'About Modern Body'
 section: 32622215-2664-4d65-84fb-c1a3d9939bdd # About Modern Body
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

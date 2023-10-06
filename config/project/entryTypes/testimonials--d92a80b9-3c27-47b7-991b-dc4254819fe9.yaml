@@ -57,10 +57,31 @@ fieldLayouts:
         name: Content
         uid: 94fe934d-aa00-4e85-8166-32544da517f8
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 14f5726b-60c3-4f4e-bc91-c2b2e0364c3d # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 04963105-47d0-44ee-8770-0205a07b5359
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 38103cdd-ffda-4309-b9ce-db180b35f3bb
+        userCondition: null
 handle: testimonials
 hasTitleField: false
 name: Testimonials
 section: 76361647-45f5-4715-8354-8155fe5b6810 # Testimonials
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

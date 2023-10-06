@@ -267,10 +267,31 @@ fieldLayouts:
         name: Testimonials
         uid: 03bb47bb-21bf-45e6-9cc9-085519ec25c3
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 14f5726b-60c3-4f4e-bc91-c2b2e0364c3d # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a51c6e3e-113b-449e-93c1-a6687e955275
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 65495126-810e-470a-943d-68a843732d6d
+        userCondition: null
 handle: home
 hasTitleField: false
 name: Home
 section: c249f4db-294d-44b8-ba21-a84bc989d17a # Home
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

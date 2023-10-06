@@ -1,4 +1,4 @@
-dateModified: 1696617598
+dateModified: 1696618750
 email:
   fromEmail: alhmail@gmail.com
   fromName: 'Modern Body'
@@ -58,6 +58,7 @@ meta:
     010f0163-ae73-4856-aa58-73380990ab5b: Description # Description
     11d2fbd0-367e-4709-b5a0-ab8554cc5c29: 'FAQ Question' # FAQ Question
     14a6f0f3-b531-4d1d-a2b5-c9b0a56a2ef0: Assets # Assets
+    14f5726b-60c3-4f4e-bc91-c2b2e0364c3d: SEO # SEO
     21b6ca88-6ace-44d7-8c0e-fb6ccbab53d8: Bullet # Bullet
     29c627bb-9663-43ab-95e0-dec6b1e20414: 'Main Nav' # Main Nav
     29f08e9f-d744-454f-bc1a-64cbddf3f0c8: Contact # Contact
@@ -80,6 +81,7 @@ meta:
     949dacbe-f141-438a-9783-ccf2d76f4cc3: Full-Width # Full-Width
     961c4e37-3a41-4b10-8ec3-6a16adb32128: 'Sidebar Accordion' # Sidebar Accordion
     4046c835-2452-4000-84ec-20b3d05d8d00: Pricing # Pricing
+    4600c290-19b8-4151-be72-581d542046ce: SEO # SEO
     6887f96e-ee16-4b11-9a20-45e7c13aeda4: FAQs # FAQs
     7365b913-af69-4a61-8213-fcf62513f1b5: Posts # Posts
     9121f0f4-c29a-4085-af84-e633b5d10a1a: Title # Title
