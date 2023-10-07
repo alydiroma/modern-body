@@ -1,8 +1,8 @@
-dateModified: 1696618750
+dateModified: 1696641370
 email:
-  fromEmail: alhmail@gmail.com
+  fromEmail: alysonadiroma@gmail.com
   fromName: 'Modern Body'
-  replyToEmail: null
+  replyToEmail: alysonadiroma@gmail.com
   template: null
   transportSettings:
     host: $SERVD_SMTP_HOSTNAME
@@ -170,7 +170,7 @@ plugins:
       prependSender: 'On behalf of'
       prependSubject: 'New message from Modern Body'
       successFlashMessage: 'Thanks for getting in touch!'
-      toEmail: alhmail@gmail.com
+      toEmail: alysonadiroma@gmail.com
   mix:
     edition: standard
     enabled: true
