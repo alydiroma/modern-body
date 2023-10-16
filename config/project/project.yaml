@@ -1,8 +1,8 @@
-dateModified: 1696641370
+dateModified: 1697421624
 email:
-  fromEmail: alysonadiroma@gmail.com
+  fromEmail: support@modernbody.io
   fromName: 'Modern Body'
-  replyToEmail: alysonadiroma@gmail.com
+  replyToEmail: support@modernbody.io
   template: null
   transportSettings:
     host: $SERVD_SMTP_HOSTNAME
@@ -167,10 +167,10 @@ plugins:
     settings:
       allowAttachments: ''
       allowedMessageFields: null
-      prependSender: 'On behalf of'
-      prependSubject: 'New message from Modern Body'
+      prependSender: ''
+      prependSubject: 'Message from Modern Body'
       successFlashMessage: 'Thanks for getting in touch!'
-      toEmail: alysonadiroma@gmail.com
+      toEmail: support@modernbody.io
   mix:
     edition: standard
     enabled: true
