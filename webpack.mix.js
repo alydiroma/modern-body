@@ -18,6 +18,10 @@ mix
     .options({
         processCssUrls: false
     })
+.copyDirectory('src/assets/favicon', 'web/assets/favicon')
+    .options({
+        processCssUrls: false
+    })
 .copyDirectory('src/assets/icons', 'web/assets/icons')
     .options({
         processCssUrls: false
