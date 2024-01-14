@@ -10,7 +10,7 @@ settings:
   allowTarget: true
   autoNoReferrer: true
   customTextMaxLength: 0
-  customTextRequired: true
+  customTextRequired: false
   defaultLinkName: url
   defaultText: ''
   enableAllLinkTypes: false

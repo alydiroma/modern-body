@@ -14,8 +14,8 @@
                 <button class="home-hero-play" type="button"></button>
                 <div>
                     <p class="home-hero-tagline">{{ entry.homeHeroTagline | striptags }}</p>
-                    {% if entry.homeHeroCta %}
-                        <p class="home-hero-cta"><a class="btn" href="{{ entry.homeHeroCta }}">{{ entry.homeHeroCta.getCustomText('Start 7-day Free Trial') }}</a></p>
+                    {% if entry.homeHeroCta.getLink() %}
+                        <p class="home-hero-cta"><a class="btn" href="{{ entry.homeHeroCta }}">{{ entry.homeHeroCta.customText }}</a></p>
                     {% endif %}
                 </div>
             </div>
