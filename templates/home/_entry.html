@@ -12,7 +12,12 @@
             </div>
             <div class="home-hero-copy">
                 <button class="home-hero-play" type="button"></button>
-                <p class="home-hero-tagline">{{ entry.homeHeroTagline | striptags }}</p>
+                <div>
+                    <p class="home-hero-tagline">{{ entry.homeHeroTagline | striptags }}</p>
+                    {% if entry.homeHeroCta %}
+                        <p class="home-hero-cta"><a class="btn" href="{{ entry.homeHeroCta }}">{{ entry.homeHeroCta.getCustomText('Start 7-day Free Trial') }}</a></p>
+                    {% endif %}
+                </div>
             </div>
         </div>
         <video class="home-hero-video" playsinline autoplay muted>

@@ -1,4 +1,4 @@
-dateModified: 1697421624
+dateModified: 1705250644
 email:
   fromEmail: support@modernbody.io
   fromName: 'Modern Body'
@@ -138,6 +138,7 @@ meta:
     dccb8fdf-e43a-4604-838c-f3e8f9568225: 'Testimonial Item' # Testimonial Item
     df06f0d5-d0a1-4425-ac88-297d50ad1c80: 'Testimonial Link' # Testimonial Link
     e0364518-4df8-4d7e-bbc0-a509ebe03558: '1:1 Training' # 1:1 Training
+    e5ea1376-e6fc-44b1-8c04-fab31a32d186: 'Hero CTA' # Hero CTA
     e7ca93f7-a988-4c82-ac6e-51212c511d4f: 'About Aly' # About Aly
     e21c3150-347c-44cc-9e2e-64f9899bb194: 'Company CTA' # Company CTA
     e81aaea7-81e6-4426-937a-9af062c0cd16: 'Credentials Head' # Credentials Head
@@ -211,19 +212,13 @@ plugins:
       fsMaps:
         __assoc__:
           -
-            - imageFiles
-            - none
-          -
-            - media
-            - none
-          -
-            - videoFiles
+            - assets
             - none
       fsMapsEnabled: ''
       imageAutoConversion: webp
       injectCors: ''
-      projectSlug: ''
-      securityKey: ''
+      projectSlug: modern-body
+      securityKey: qLNHbuXmaw85EbG3wqtgkXUPH5LPRunB
       suppressWarnings: ''
       useLocalVolumes: false
   typedlinkfield:

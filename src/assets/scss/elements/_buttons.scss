@@ -7,9 +7,10 @@
 	background-color: $accent;
 	border: 2px solid $accent;
 	border-radius: $radius;
-	transition: color .6s ease, background-color .6s ease;
+	transition: color .6s ease, background-color .6s ease, border-color .6s ease;
 
 	&:hover {
+		text-decoration: none;
 		color: $accent;
 		background-color: transparent;
 	}

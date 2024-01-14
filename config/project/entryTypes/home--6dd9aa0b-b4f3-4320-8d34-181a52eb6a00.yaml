@@ -84,6 +84,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: e5ea1376-e6fc-44b1-8c04-fab31a32d186 # Hero CTA
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c4212607-a2f5-4c36-ae62-b5a8234a276d
+            userCondition: null
+            warning: null
+            width: 100
         name: Hero
         uid: 2d0d1b17-a520-4545-966f-1803340257ff
         userCondition: null

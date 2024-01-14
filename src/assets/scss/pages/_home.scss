@@ -62,7 +62,7 @@
 		&-copy {
 			display: flex;
 			justify-content: space-between;
-			align-items: center;
+			align-items: flex-end;
 			width: 100%;
             
             @include break(mobile) {
@@ -83,6 +83,24 @@
 				@include toRem('font-size', 24);
 				letter-spacing: .0625rem;
 			}		
+		}
+		
+		&-cta {
+			text-align: right;
+			padding: 0 $gap;
+
+			@include break(mobile) {
+               padding-bottom: $gap;
+			}	
+
+			a {
+
+				&:hover {
+					color: $white;
+					background-color: $black;
+					border-color: $black;
+				}
+			}
 		}
 
         &-play {

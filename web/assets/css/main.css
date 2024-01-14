@@ -382,12 +382,13 @@ strong,
   background-color: #8a3a42;
   border: 2px solid #8a3a42;
   border-radius: 0.25rem;
-  transition: color 0.6s ease, background-color 0.6s ease;
+  transition: color 0.6s ease, background-color 0.6s ease, border-color 0.6s ease;
 }
 .btn-sm:hover, .btn-secondary-black:hover, .btn-secondary:hover, .btn:hover {
   cursor: pointer;
 }
 .btn-sm:hover, .btn-secondary-black:hover, .btn-secondary:hover, .btn:hover {
+  text-decoration: none;
   color: #8a3a42;
   background-color: transparent;
 }
@@ -1093,7 +1094,7 @@ textarea {
 .home-hero-copy {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
 }
 @media (max-width: 600px) {
@@ -1116,6 +1117,20 @@ textarea {
     font-size: 1.5rem;
     letter-spacing: 0.0625rem;
   }
+}
+.home-hero-cta {
+  text-align: right;
+  padding: 0 2rem;
+}
+@media (max-width: 600px) {
+  .home-hero-cta {
+    padding-bottom: 2rem;
+  }
+}
+.home-hero-cta a:hover {
+  color: #ffffff;
+  background-color: #222;
+  border-color: #222;
 }
 .home-hero-play {
   text-decoration: none;
