@@ -16,7 +16,9 @@
                 {% set episodeImage = entry.podcastImage.one() %}
                 {% if episodeImage %}
                   <div class="animate animate-image">
+                    <a href="/podcasts/{{ entry.slug }}">
                       <img src="{{ episodeImage.url('block') }}" width="{{ episodeImage.getWidth('block') }}" height="{{ episodeImage.getHeight('block') }}" alt="{{ episodeImage.alt }}" />
+                    </a>
                   </div>
                 {% endif %}
                 <h2><a href="/podcasts/{{ entry.slug }}">{{ entry.podcastTitle }}</a></h2>
