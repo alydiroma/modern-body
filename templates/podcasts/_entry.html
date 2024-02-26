@@ -1,0 +1,29 @@
+{% extends "_layout" %}
+{% block content %}
+<main class="blog">
+    <div class="blog-head stack-sm">
+        <h1>Podcasts</h1>
+    </div>
+    <div class="blog-container">
+      {% set entryQuery = craft.entries()
+        .section('podcastEpisode')
+        .orderBy('podcastDate DESC')
+        .limit(10) %}
+      {% set entries = entryQuery.all() %}
+      {% if entries | length %}
+        {% for entry in entries %}
+            <div class="blog-item stack-sm">
+                {% set episodeImage = entry.podcastImage.one() %}
+                {% if episodeImage %}
+                  <div class="animate animate-image">
+                      <img src="{{ episodeImage.url('block') }}" width="{{ episodeImage.getWidth('block') }}" height="{{ episodeImage.getHeight('block') }}" alt="{{ episodeImage.alt }}" />
+                  </div>
+                {% endif %}
+                <h2><a href="/podcasts/{{ entry.slug }}">{{ entry.podcastTitle }}</a></h2>
+                <p class="p-small">{{ entry.podcastSummary | striptags }}</p>
+            </div>
+        {% endfor %}
+    {% endif %}
+    </div>
+</main>
+{% endblock %}

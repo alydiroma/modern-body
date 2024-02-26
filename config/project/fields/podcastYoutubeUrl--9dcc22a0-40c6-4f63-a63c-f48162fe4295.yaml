@@ -1,0 +1,14 @@
+columnSuffix: ewnczxrn
+contentColumnType: string(255)
+fieldGroup: 1048f1f6-9ff4-4134-94d1-1dc90d85b12c # Podcasts
+handle: podcastYoutubeUrl
+instructions: null
+name: 'Podcast YouTube URL'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

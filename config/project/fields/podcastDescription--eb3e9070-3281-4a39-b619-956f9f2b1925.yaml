@@ -1,0 +1,27 @@
+columnSuffix: kkktqsbr
+contentColumnType: text
+fieldGroup: 1048f1f6-9ff4-4134-94d1-1dc90d85b12c # Podcasts
+handle: podcastDescription
+instructions: null
+name: 'Podcast Description'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

@@ -1,0 +1,79 @@
+.episode {
+    @include container($narrow);
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: $gap;
+
+        @include break(mobile) {
+            flex-direction: column;
+            align-items: flex-start;;
+        }
+
+        &__image {
+            flex: 1;
+            aspect-ratio: 1 / 1;
+
+            img {
+                @include object-fit;
+            }
+        }
+
+        &__copy {
+            flex: 2;
+        }
+    }
+
+    &__content {
+
+        &__links {
+            display: flex;
+            gap: $gap;
+
+            @include break(mobile) {
+                flex-direction: column;
+                gap: $gap-sm;
+            }
+
+            .link-apple-podcast {
+
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    margin-right: $gap-xs;
+                    background-image: url(/assets/icons/icon-podcasts-apple.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    transform: translateY(.375rem);
+                }
+            }
+
+            .link-spotify-podcast {
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    margin-right: $gap-xs;
+                    background-image: url(/assets/icons/icon-podcasts-spotify.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    transform: translateY(.375rem);
+                }
+
+            }
+        }
+
+        &__video {
+            aspect-ratio: 16 / 9;
+
+            iframe {
+                @include object-fit;
+            }
+        }
+    }
+}
