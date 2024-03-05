@@ -122,18 +122,6 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 9dcc22a0-40c6-4f63-a63c-f48162fe4295 # Podcast YouTube URL
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: ad6810ea-25da-43e9-ad03-fd3b07987872
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
             fieldUid: 3535db6f-4eec-4e4f-9099-c45146b30d88 # Podcast YouTube Embed URL
             instructions: null
             label: null
