@@ -1,4 +1,4 @@
-dateModified: 1708915337
+dateModified: 1709599806
 email:
   fromEmail: support@modernbody.io
   fromName: 'Modern Body'
@@ -163,7 +163,7 @@ meta:
     ecb84e38-b859-4ef8-aeaa-c1e468b2fd35: 'Newsletter Subscribe Label' # Newsletter Subscribe Label
     edd1d7a7-ee00-446d-af3c-31d47d1609b4: 'Modern Body' # Modern Body
     ee5c98ed-bfa0-436e-b575-a89a085760b5: 'Second Sidebar Image' # Second Sidebar Image
-    ee757f8e-ee65-4f02-8c69-eb90acbd9dbb: podcastSummary # podcastSummary
+    ee757f8e-ee65-4f02-8c69-eb90acbd9dbb: 'Podcast Summary' # Podcast Summary
     ef70b6a7-9da3-4ffd-b6a3-33407f08a79b: 'Sidebar Head' # Sidebar Head
     ef78c8c4-5030-4480-8f50-50b231fff44c: 'Second Image' # Second Image
     f055c382-964c-43a8-a07a-efd54cb890e5: 'Footer Nav Column 1' # Footer Nav Column 1
