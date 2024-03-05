@@ -1,31 +1,30 @@
 {% extends "_layout" %}
 {% block content %}
-<main class="blog">
-    <div class="blog-head stack-sm">
-        <h1>Podcasts</h1>
+<main class="podcasts">
+  <div class="podcasts-head stack-sm">
+    <h1>Podcasts</h1>
+  </div>
+  <div class="podcasts-container">
+    {% set entryQuery = craft.entries()
+    .section('podcastEpisode')
+    .orderBy('podcastDate DESC')
+    .limit(10) %}
+    {% set entries = entryQuery.all() %}
+    {% if entries | length %}
+    {% for entry in entries %}
+    <div class="podcasts-item stack-sm">
+      {% set episodeImage = entry.podcastImage.one() %}
+      {% if episodeImage %}
+      <a class="podcasts-item-image" href="/podcasts/{{ entry.slug }}">
+        <img src="{{ episodeImage.url('block') }}" width="{{ episodeImage.getWidth('block') }}"
+          height="{{ episodeImage.getHeight('block') }}" alt="{{ episodeImage.alt }}" />
+      </a>
+      {% endif %}
+      <h2><a class="podcasts-item-link" href="/podcasts/{{ entry.slug }}">{{ entry.podcastTitle }}</a></h2>
+      <p class="p-small">{{ entry.podcastSummary | striptags }}</p>
     </div>
-    <div class="blog-container">
-      {% set entryQuery = craft.entries()
-        .section('podcastEpisode')
-        .orderBy('podcastDate DESC')
-        .limit(10) %}
-      {% set entries = entryQuery.all() %}
-      {% if entries | length %}
-        {% for entry in entries %}
-            <div class="blog-item stack-sm">
-                {% set episodeImage = entry.podcastImage.one() %}
-                {% if episodeImage %}
-                  <div class="animate animate-image">
-                    <a href="/podcasts/{{ entry.slug }}">
-                      <img src="{{ episodeImage.url('block') }}" width="{{ episodeImage.getWidth('block') }}" height="{{ episodeImage.getHeight('block') }}" alt="{{ episodeImage.alt }}" />
-                    </a>
-                  </div>
-                {% endif %}
-                <h2><a href="/podcasts/{{ entry.slug }}">{{ entry.podcastTitle }}</a></h2>
-                <p class="p-small">{{ entry.podcastSummary | striptags }}</p>
-            </div>
-        {% endfor %}
+    {% endfor %}
     {% endif %}
-    </div>
+  </div>
 </main>
 {% endblock %}
