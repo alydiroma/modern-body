@@ -9,12 +9,16 @@
 
         @include break(mobile) {
             flex-direction: column;
-            align-items: flex-start;;
+            align-items: flex-start;
         }
 
         &__image {
             flex: 1;
             aspect-ratio: 1 / 1;
+
+            @include break(mobile) {
+                order: 2;
+            }
 
             img {
                 @include object-fit;
@@ -23,6 +27,11 @@
 
         &__copy {
             flex: 2;
+
+            @include break(mobile) {
+                flex: 1;
+                order: 1;
+            }
         }
     }
 
@@ -35,6 +44,17 @@
             @include break(mobile) {
                 flex-direction: column;
                 gap: $gap-sm;
+            }
+
+            a {
+                @include font-medium;
+                text-decoration: underline;
+                text-decoration-color: transparent;
+                transition: text-decoration-color .3s ease;
+    
+                &:hover {
+                    text-decoration-color: inherit;
+                }
             }
 
             .link-apple-podcast {
