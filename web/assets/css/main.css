@@ -2299,6 +2299,11 @@ textarea {
     order: 1;
   }
 }
+.episode__content blockquote {
+  font-size: 1.25rem;
+  color: #8a3a42;
+  padding-block: 1rem;
+}
 .episode__content__links {
   display: flex;
   gap: 2rem;
@@ -2318,11 +2323,6 @@ textarea {
 }
 .episode__content__links a:hover {
   text-decoration-color: inherit;
-}
-.episode__content__links blockquote {
-  font-size: 1.25rem;
-  color: #8a3a42;
-  padding-block: 1rem;
 }
 .episode__content__links .link-apple-podcast::before {
   content: "";
