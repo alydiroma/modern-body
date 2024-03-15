@@ -9,21 +9,21 @@
     .section('podcastEpisode')
     .orderBy('podcastDate DESC')
     .limit(10) %}
-    {% set entries = entryQuery.all() %}
-    {% if entries | length %}
-    {% for entry in entries %}
-    <div class="podcasts-item stack-sm">
-      {% set episodeImage = entry.podcastImage.one() %}
-      {% if episodeImage %}
-      <a class="podcasts-item-image" href="/podcasts/{{ entry.slug }}">
-        <img src="{{ episodeImage.url('block') }}" width="{{ episodeImage.getWidth('block') }}"
-          height="{{ episodeImage.getHeight('block') }}" alt="{{ episodeImage.alt }}" />
-      </a>
-      {% endif %}
-      <h2><a class="podcasts-item-link" href="/podcasts/{{ entry.slug }}">{{ entry.podcastTitle }}</a></h2>
-      <p class="p-small">{{ entry.podcastSummary | striptags }}</p>
-    </div>
-    {% endfor %}
+      {% set entries = entryQuery.all() %}
+      {% if entries | length %}
+      {% for entry in entries %}
+      <div class="podcasts-item stack-sm">
+        {% set episodeImage = entry.podcastImage.one() %}
+        {% if episodeImage %}
+        <a class="podcasts-item-image" href="/podcasts/{{ entry.slug }}">
+          <img src="{{ episodeImage.url('block') }}" width="{{ episodeImage.getWidth('block') }}"
+            height="{{ episodeImage.getHeight('block') }}" alt="{{ episodeImage.alt }}" />
+        </a>
+        {% endif %}
+        <h2><a class="podcasts-item-link" href="/podcasts/{{ entry.slug }}">{{ entry.podcastTitle }}</a></h2>
+        <p class="p-small">{{ entry.podcastSummary | striptags }}</p>
+      </div>
+      {% endfor %}
     {% endif %}
   </div>
 </main>

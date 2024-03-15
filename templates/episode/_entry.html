@@ -3,13 +3,13 @@
 
 <main class="episode stack-lg">
     <div class="episode__head">
-        <div class="episode__head__image">
-            {% set podcastImage = entry.podcastImage.one() %}
-            {% if podcastImage %}
-            <img src="{{ podcastImage.url('block') }}" width="{{ podcastImage.getWidth('block') }}"
-                height="{{ podcastImage.getHeight('block') }}" alt="{{ podcastImage.alt }}" />
-            {% endif %}
-        </div>
+        {% set podcastImage = entry.podcastImage.one() %}
+        {% if podcastImage %}
+            <div class="episode__head__image">
+                <img src="{{ podcastImage.url('block') }}" width="{{ podcastImage.getWidth('block') }}"
+                    height="{{ podcastImage.getHeight('block') }}" alt="{{ podcastImage.alt }}" />
+            </div>
+        {% endif %}
         <div class="episode__head__copy stack-sm">
             <h1>{{ entry.podcastTitle }}</h1>
             <p>{{ entry.podcastDate | date }}</p>
@@ -17,28 +17,29 @@
     </div>
     <div class="episode__content stack-reg">
         <div class="episode__content__links">
-            <p>{{ tag('a', {
-                text: 'Listen on Apple Podcasts',
-                href: entry.podcastAppleUrl,
-                class: 'link-apple-podcast'
-                })
-                }}</p>
-    
-                <p>{{ tag('a', {
-                text: 'Listen on Spotify',
-                href: entry.podcastSpotifyUrl,
-                class: 'link-spotify-podcast'
-                })
-                }}</p>
+            <p>
+                {{ tag('a', {
+                    text: 'Listen on Apple Podcasts',
+                    href: entry.podcastAppleUrl,
+                    class: 'link-apple-podcast'
+                    })
+                }}
+            </p>
+            <p>
+                {{ tag('a', {
+                    text: 'Listen on Spotify',
+                    href: entry.podcastSpotifyUrl,
+                    class: 'link-spotify-podcast'
+                    })
+                }}
+            </p>
         </div>
 
         {{ entry.podcastDescription }}
         
         <div class="episode__content__video">
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/{{ entry.podcastYoutubeEmbedUrl }}"
-            title="{{ entry.podcastTitle }}" frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen></iframe>
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/{{ entry.podcastYoutubeEmbedUrl }}"
+            title="{{ entry.podcastTitle }}" frameBorder="0" allowFullScreen></iframe>
         </div>
     </div>
 </main>
