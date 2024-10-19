@@ -1,0 +1,278 @@
+field: ee32acb1-caf5-4b06-95bd-eea113ffbfc7 # Membership Options
+fieldLayouts:
+  5d47a796-ddef-4179-91ee-e1f4eaef9c1f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: bbacdeb5-f511-4a44-b666-f24ba0c9b5fd # Home Membership Option Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b1c25184-30a4-43bf-a267-6c24423d21b6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4871b553-a933-4e7c-adbd-3d84341b6958 # Membership Option Plan
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6840cc07-031e-430c-9a9f-473cf5573d59
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ef63c8d7-e566-43cd-bd90-5ef7107b443d # Membership Option Price
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3ccca537-79ae-43f9-8a38-e171b5ea10e8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: edeb94d7-66ba-4232-856d-c3110b64a5d0 # Membership Option Subhead
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f2a19801-bd83-46f4-97bb-3b137f81d2ee
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 51746d4c-7059-4e18-a742-14078d5dbab7 # Membership Option CTA
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b96fbeab-e65e-4166-8678-a1d330f2055f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b1a0dcc7-f87c-4b74-a02d-f1e59ebe30c7 # Membership Option Detail
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aeb3c1e9-ef61-4a70-8db3-caaed8270947
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 65c64193-9221-42a7-94d5-c21978038cb6
+        userCondition: null
+fields:
+  4871b553-a933-4e7c-adbd-3d84341b6958: # Membership Option Plan
+    columnSuffix: ptzvouwi
+    contentColumnType: text
+    fieldGroup: null
+    handle: homeMembershipOptionPlan
+    instructions: null
+    name: 'Membership Option Plan'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  51746d4c-7059-4e18-a742-14078d5dbab7: # Membership Option CTA
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: homeMembershipOptionCta
+    instructions: null
+    name: 'Membership Option CTA'
+    searchable: false
+    settings:
+      allowCustomText: true
+      allowTarget: true
+      autoNoReferrer: true
+      customTextMaxLength: 0
+      customTextRequired: false
+      defaultLinkName: entry
+      defaultText: ''
+      enableAllLinkTypes: false
+      enableAriaLabel: false
+      enableElementCache: false
+      enableTitle: false
+      typeSettings:
+        asset:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        category:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        custom:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        email:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        entry:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: true
+          sources: '*'
+        site:
+          enabled: false
+          sites: '*'
+        tel:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        url:
+          allowAliases: false
+          disableValidation: false
+          enabled: true
+        user:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+    translationKeyFormat: null
+    translationMethod: none
+    type: lenz\linkfield\fields\LinkField
+  b1a0dcc7-f87c-4b74-a02d-f1e59ebe30c7: # Membership Option Detail
+    columnSuffix: oavxzdzn
+    contentColumnType: text
+    fieldGroup: null
+    handle: homeMembershipOptionDetail
+    instructions: null
+    name: 'Membership Option Detail'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  bbacdeb5-f511-4a44-b666-f24ba0c9b5fd: # Home Membership Option Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: homeMembershipOptionImage
+    instructions: null
+    name: 'Home Membership Option Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:14a6f0f3-b531-4d1d-a2b5-c9b0a56a2ef0' # Assets
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: 1
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:14a6f0f3-b531-4d1d-a2b5-c9b0a56a2ef0' # Assets
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:14a6f0f3-b531-4d1d-a2b5-c9b0a56a2ef0' # Assets
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  edeb94d7-66ba-4232-856d-c3110b64a5d0: # Membership Option Subhead
+    columnSuffix: eyngdklw
+    contentColumnType: text
+    fieldGroup: null
+    handle: homeMembershipOptionSubhead
+    instructions: null
+    name: 'Membership Option Subhead'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ef63c8d7-e566-43cd-bd90-5ef7107b443d: # Membership Option Price
+    columnSuffix: verobxqz
+    contentColumnType: text
+    fieldGroup: null
+    handle: homeMembershipOptionPrice
+    instructions: null
+    name: 'Membership Option Price'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: homeMembershipOption
+name: 'Membership Option'
+sortOrder: 1

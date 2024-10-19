@@ -22,24 +22,18 @@
 	font-family: $font-head;
 }
 
-@mixin font-reg {
-	font-family: $font-reg;
-	letter-spacing: .05rem;
+@mixin font-body {
+	font-family: $font-body;
 }
 
 @mixin font-medium {
-	font-family: $font-medium;
-	letter-spacing: .05rem;
-}
-
-@mixin font-semibold {
-	font-family: $font-semibold;
-	letter-spacing: .05rem;
+	font-family: $font-body;
+	font-weight: 500;
 }
 
 @mixin font-bold {
-	font-family: $font-bold;
-	letter-spacing: .05rem;
+	font-family: $font-body;
+	font-weight: 700;
 }
 
 @mixin toRem($property, $value) {

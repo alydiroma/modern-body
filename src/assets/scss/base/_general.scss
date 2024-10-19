@@ -14,11 +14,11 @@ html {
 }
 
 body {
-	@include font-reg;
+	@include font-body;
 	@include toRem('font-size', 16);
 	line-height: 1.8;
-	color: $black;
-	background-color: $white;
+	color: $coffee;
+	background-color: $floral-white;
 	//background: linear-gradient(0deg, $beige 0%, $white 100%);
 	margin: 0;
 	padding: 0;
@@ -33,17 +33,6 @@ body {
 	}
 }
 
-section {
-	margin-bottom: 8rem;
-
-	@include break(tablet) {
-		margin-bottom: 6rem;
-	}
-
-	@include break(mobile) {
-		margin-bottom: 4rem;
-	}
-}
 
 *:last-child {
 	margin-bottom: 0;
@@ -56,7 +45,7 @@ p+.h2-style {
 
 h1,
 .h1-style {
-	@include font-logo-medium;
+	@include font-head;
 	@include toRem('font-size', 44);
 	line-height: 1.2;
 	margin-bottom: $gap-sm;
@@ -72,7 +61,7 @@ h1,
 
 h2,
 .h2-style {
-	@include font-logo-medium;
+	@include font-head;
 	@include toRem('font-size', 28);
 	line-height: 1.2;
 
@@ -104,13 +93,13 @@ h4,
 }
 
 .p-style {
-	@include font-reg;
+	@include font-body;
 	@include toRem('font-size', 16);
 	line-height: 1.8;
 }
 
 .p-small {
-	@include font-reg;
+	@include font-body;
 	@include toRem('font-size', 14);
 	line-height: 1.8;
 }
@@ -175,7 +164,7 @@ strong,
 }
 
 .emphasis:nth-child(n) {
-	@include font-logo;
+	@include font-head;
 	@include toRem('font-size', 24);
 	line-height: 1.8;
 	color: $accent;

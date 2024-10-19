@@ -1,0 +1,94 @@
+field: 9b43a1c8-2c76-4cd1-9fde-669250b96f30 # FAQ List
+fieldLayouts:
+  408b7187-2a03-4273-87bf-449d274feea8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4228cf43-424d-43d2-a3d7-9a057c92dfdc # FAQ Question
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 76f7bc23-cb9f-497f-bada-9fbf961ebf52
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1e26f696-518f-4f53-93e3-06ad726eee90 # FAQ Answer
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3b4c4f42-d97c-470c-b4b7-2ce275bc4dd5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4e3575e7-7808-4795-bc55-8cb934c3ed24
+        userCondition: null
+fields:
+  1e26f696-518f-4f53-93e3-06ad726eee90: # FAQ Answer
+    columnSuffix: ggchdvao
+    contentColumnType: text
+    fieldGroup: null
+    handle: homeFaqAnswer
+    instructions: null
+    name: 'FAQ Answer'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  4228cf43-424d-43d2-a3d7-9a057c92dfdc: # FAQ Question
+    columnSuffix: oaxxjapr
+    contentColumnType: text
+    fieldGroup: null
+    handle: homeFaqQuestion
+    instructions: null
+    name: 'FAQ Question'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: homeFaqItem
+name: 'FAQ Item'
+sortOrder: 1

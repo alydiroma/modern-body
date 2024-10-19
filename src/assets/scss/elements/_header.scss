@@ -1,6 +1,9 @@
 .header {
+	position: relative;
+	display: flex;
+	align-items: center;
 	width: 100%;
-	padding: $gap-sm 0 $gap-lg 0;
+	height: $gap-xxl;
 	z-index: 999;	
 
 	&-home {
@@ -14,17 +17,37 @@
 	}
 
 	&-container {
-		@include container($medium);
+		@include container();
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		gap: $gap;
 	}
 
+	&-nav {
+		flex: 1;
+
+		@include break(tablet) {
+			display: none;
+		}
+	}
+
 	&-logo {
+		flex: 1;
 		position: relative;
 		display: block;
-		height: $gap-md;
+		height: $gap-xl;
+		text-align: center;
+		transition: opacity .3s ease;
+
+		@include break(mobile) {
+			flex: auto;
+			height: 2.5rem;
+		}
+
+		&:hover {
+			opacity: .7;
+		}
 
 		img {
 			display: block;
@@ -34,9 +57,80 @@
 		}
 	}
 
-	&-nav {
-		@include break(tablet) {
-			display: none;
+	&-trial {
+		flex: 1;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		@include break(mobile) {
+			flex: auto;
+		}
+
+		a {
+			position: relative;
+			display: inline-block;
+			@include font-bold;
+			@include toRem('font-size', 16);
+			text-transform: uppercase;
+			line-height: 1.8;
+			color: $white;
+			text-decoration-color: transparent;
+			padding-left: $gap;
+			overflow: hidden;
+
+			&::before {
+				position: absolute;
+				left: 0;
+				top: 50%;
+				content: '';
+				display: inline-block;
+				width: $gap;
+				height: $gap;
+				background-image: url(/assets/icons/flower-red.png);
+				background-repeat: no-repeat;
+				background-size: contain;
+				transform: translateY(-50%);
+			}
+	
+			&::after {
+				position: absolute;
+				bottom: 0;
+				right: -100%;
+				content: '';
+				width: calc(100% - $gap);
+				height: 2px;
+				background-color: $white;
+				transition: right .3s ease;
+			}
+	
+			&:hover {
+				
+				&::after {
+					right: 0;
+				}
+			}
+	
+			&:focus-visible {
+				outline: 1px solid $accent;
+				outline-offset: 2px;
+			}
+	
+			&.active {
+				@include font-medium;
+				color: $accent;
+				cursor: default;
+	
+				&::after {
+					display: none;
+				}
+			}
+	
+			&[aria-expanded="true"] {
+				+ .nav-panel {
+					//box-shadow: 4px 4px 4px 0px rgba($black, .25);
+				}
+			}
 		}
 	}
 

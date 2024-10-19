@@ -62,6 +62,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: cb943325-6075-4bfe-94bc-24dd3c75f67a # Hero Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0e698f42-47cc-4831-8ddc-c17a7e4eef1e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: c422089c-49f0-4d9a-9b30-dca485b14661 # Hero Video
             instructions: null
             label: null
@@ -104,138 +116,204 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 0abc2601-eb4e-47a7-bb20-6358900e5ed0 # About Image
+            fieldUid: 51e9181e-4a28-40cf-9c94-3c2ef58b2dbf # Approach Top Text
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b08a1ff9-6a59-4db8-a3d3-3238e2d3f259
+            uid: 1b989f4e-ef48-48b5-8e88-625bce1b026b
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: e86c3ea3-5a1e-4917-a91a-cee28bdf3ca3 # About Copy
+            fieldUid: ed6ccbec-5dc5-4aae-afe2-4d164632b585 # Approach Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 27276731-a4f4-473c-b717-91323b551195
+            uid: 67fdc71b-ee5b-448b-a3f2-53e5df455e71
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: f4af40b0-3ee1-4b65-bfe3-fcf6e67c3c75 # About Signature
+            fieldUid: 1a723490-90d3-4125-80a2-2f0c6f91b5eb # Approach Icon
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: db0782ff-6d5c-4e98-a3de-3edd77af1e38
+            uid: 61c534a2-5185-4a20-86ab-1dcd13bad7d8
             userCondition: null
             warning: null
             width: 100
-        name: About
-        uid: a1cdc246-92d0-4bfb-a116-f13ae06af18c
+          -
+            elementCondition: null
+            fieldUid: ce2c625c-1f6f-4907-ab36-bd4170a940c3 # Approach Bottom Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8c1c2e62-9af4-4be6-9254-b4211fa5f9d7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 620c319e-a58d-401d-ba93-5d4b6317efa0 # Approach CTA
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 83d616f2-5f26-4150-bb36-3405be9f17b3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Approach
+        uid: 4306cfb3-2a33-476a-8495-83eab1bef946
         userCondition: null
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: 96f6e380-8739-4368-a5b3-042e778befe7 # Company Head
+            fieldUid: d24222de-bc96-4eff-8cd1-e26af7a505cb # Difference Head
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b42e343d-ecef-4068-be0c-f3ce5e8af293
+            uid: 0b55ae1f-5257-480f-9005-53a86464320f
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: ca38367d-589e-4287-bdc0-29124c535643 # Company Copy
+            fieldUid: 72290a5d-87bd-4deb-82d3-e36bf3349682 # Difference Text
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: c22f5db8-4a4f-444c-ba85-73b204ee07c3
+            uid: 82c1554f-9ee7-4e30-977f-319a41bd7704
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: e21c3150-347c-44cc-9e2e-64f9899bb194 # Company CTA
+            fieldUid: 6ed75db1-ad9e-4521-9601-42a5208aca06 # Difference List
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 4d6d3134-2c39-411c-b944-cf85fbfb6fc2
+            uid: 02cd274b-5081-4586-bafb-3f63803f5935
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
-            fieldUid: f1dbd402-7281-4d1a-a2dc-3753d5a44df9 # Company Bullets
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: faed5c3b-08a8-4dab-b757-dfec96396b0c
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 0d0100be-ea79-4a84-b7ba-2a406203ef77 # Company Image
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 885fd775-dbd5-4220-9945-0915f084e71c
-            userCondition: null
-            warning: null
-            width: 100
-        name: Company
-        uid: 97bbabec-30cc-4e6a-bfc8-de83f9f92c42
+        name: Difference
+        uid: a13e6c67-132f-4b9a-86f4-98582bc6d7d6
         userCondition: null
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: 34d91206-bdc7-4cac-b810-e54fa52a8f98 # Products Head
+            fieldUid: 28a4dc1f-944a-44ed-82cb-8a50a8b69243 # Try Head
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: caf3997b-7aad-4519-8b07-dd907f9347ad
+            uid: eadbbef2-e054-4546-b244-1c26e22ea246
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: bc2faaee-59b6-4f7a-a9a5-36f7a19cbb14 # Products List
+            fieldUid: 63c128b9-aff9-4cd2-ab38-873bdce8e2a1 # Try Subhead
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 3a84bdb2-1323-4bb0-b567-0c8a25e46ca3
+            uid: 3afd1ced-5e5f-464d-b409-b1a67b78d5cb
             userCondition: null
             warning: null
             width: 100
-        name: Products
-        uid: d0af2513-0711-44c3-bb47-978bbdb53479
+          -
+            elementCondition: null
+            fieldUid: d7a6e9a6-eab6-444f-b7f8-7a0ed4194618 # Try Images
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3fa315c1-a272-4b85-8c4c-9e02d1509912
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4b64d905-1751-48d9-b6d7-c226b9124379 # Try Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 33e7532a-5d70-43e6-8476-7450eaf66f53
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f53309fd-198f-4b52-90b4-7f6ed0b6d947 # Try CTA
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 88cd8c1b-7174-4ba5-bff2-c170df989d8f
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Try MB'
+        uid: db1c7d1a-dae4-4cd6-b5b1-b16daf850b6b
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 1d8da57b-b4ba-4538-b802-fa5a134c1005 # Class List Head
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9afc2c35-f3f7-4851-b121-286826e071df
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d91b67ff-af2c-42a0-a94d-69318e247992 # Class List
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 14831677-a41e-4994-93b1-d27b714ae256
+            userCondition: null
+            warning: null
+            width: 100
+        name: Classes
+        uid: 5466d146-0eb8-453b-90f6-7501f764f666
         userCondition: null
       -
         elementCondition: null
@@ -276,8 +354,164 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: a52c7e48-efcd-487f-88cd-e5770fb83d10 # Testimonials CTA
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 01bc9bae-c7ab-4c75-bced-d37cb97bdebd
+            userCondition: null
+            warning: null
+            width: 100
         name: Testimonials
         uid: 03bb47bb-21bf-45e6-9cc9-085519ec25c3
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: dd8c01a1-64b7-4717-9d7e-25e331647446 # Membership Head
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e4aeaadc-a97f-42b9-b469-5980154cc833
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8132b5bd-0022-456d-855c-8f6df7fb602f # Membership Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cc460b5f-35fb-425f-a952-109366e23523
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ee32acb1-caf5-4b06-95bd-eea113ffbfc7 # Membership Options
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e2f3c76a-6fb5-4940-8cd2-81d443b2aa14
+            userCondition: null
+            warning: null
+            width: 100
+        name: Membership
+        uid: f528e3e8-9a5d-4673-87e2-d7df79f01470
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 6ff5b512-0b65-4f6e-a46d-772831bbeabe # Philosophy Head
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 49b29ba3-7681-4490-a976-ccb9da213919
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b366fef5-3588-46c2-8d62-354769fb5cec # Philosophy List
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8f12d564-57a8-45a3-94de-ec3a3bb5d31f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Philosophy
+        uid: 4149c1a1-b4f6-43f3-9a7f-80348ff49139
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e8130424-cb5a-4c91-8a4d-3d2f704fcd61 # Meet Aly Head
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ca6d4a9c-5ebd-457e-8bd8-c24d7220d1d0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 668924ed-b4a3-4aba-a157-7a62fb136d6a # Meet Aly Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a8a00ba0-5b3d-4fe0-a8f9-9f7d5144942e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e207edb6-f51e-4892-8097-0ae1bafb1260 # Meet Aly Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5f7d3149-1e92-4411-b372-c532b29a05c6
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Meet Aly'
+        uid: 6b079e8c-fb2b-43f6-8943-833a13254c6c
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ef85c3d0-313b-4bcb-a53b-be78806edea3 # FAQ Head
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 92f063d1-8d1f-49c6-ab3c-10b154e60ed7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9b43a1c8-2c76-4cd1-9fde-669250b96f30 # FAQ List
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4fe11459-e1dc-4108-9147-173ccbf8e525
+            userCondition: null
+            warning: null
+            width: 100
+        name: FAQ
+        uid: fe63a7c7-9e11-48ad-85ca-7c312d236ade
         userCondition: null
       -
         elementCondition: null

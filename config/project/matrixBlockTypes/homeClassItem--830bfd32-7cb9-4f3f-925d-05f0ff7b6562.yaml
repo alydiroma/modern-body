@@ -1,0 +1,161 @@
+field: d91b67ff-af2c-42a0-a94d-69318e247992 # Class List
+fieldLayouts:
+  896f637c-5751-4e1b-93c5-2fcb11df93ed:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 5a38d4cd-f4f9-4491-916a-98a6ab1fd605 # Class Item Toggle Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 81330aca-af5d-4951-9e84-db751603a886
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 14bf28bc-e552-470e-90dc-600718c4c798 # Class Item Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bf1b9e4d-e294-4356-acc2-8f5248d5ce8e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 591486aa-2951-4fdb-8521-95e20b1b7b0b # Class Item CTA
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 57ab7263-681d-44ba-b228-7b063442f09f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 15f59985-5ab1-4c67-8027-e242f634ad79
+        userCondition: null
+fields:
+  5a38d4cd-f4f9-4491-916a-98a6ab1fd605: # Class Item Toggle Text
+    columnSuffix: icshtnpk
+    contentColumnType: text
+    fieldGroup: null
+    handle: homeClassItemToggleText
+    instructions: null
+    name: 'Class Item Toggle Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  14bf28bc-e552-470e-90dc-600718c4c798: # Class Item Text
+    columnSuffix: rbzntrcv
+    contentColumnType: text
+    fieldGroup: null
+    handle: classItemText
+    instructions: null
+    name: 'Class Item Text'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  591486aa-2951-4fdb-8521-95e20b1b7b0b: # Class Item CTA
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: homeClassItemCta
+    instructions: null
+    name: 'Class Item CTA'
+    searchable: false
+    settings:
+      allowCustomText: true
+      allowTarget: true
+      autoNoReferrer: true
+      customTextMaxLength: 0
+      customTextRequired: false
+      defaultLinkName: entry
+      defaultText: ''
+      enableAllLinkTypes: false
+      enableAriaLabel: false
+      enableElementCache: false
+      enableTitle: false
+      typeSettings:
+        asset:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        category:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        custom:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        email:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        entry:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: true
+          sources: '*'
+        site:
+          enabled: false
+          sites: '*'
+        tel:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        url:
+          allowAliases: false
+          disableValidation: false
+          enabled: true
+        user:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+    translationKeyFormat: null
+    translationMethod: none
+    type: lenz\linkfield\fields\LinkField
+handle: homeClassItem
+name: 'Class Item'
+sortOrder: 1

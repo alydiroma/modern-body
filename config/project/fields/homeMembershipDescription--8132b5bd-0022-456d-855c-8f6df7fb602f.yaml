@@ -1,0 +1,27 @@
+columnSuffix: okeeleca
+contentColumnType: text
+fieldGroup: 07dede5f-e375-4ca2-9622-0adde621a5c3 # Home
+handle: homeMembershipDescription
+instructions: null
+name: 'Membership Description'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

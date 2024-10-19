@@ -1,12 +1,13 @@
 %btn {
 	@include button-reset;
 	display: inline-block;
-	@include font-medium;
+	@include font-bold;
 	@include toRem('font-size', 16);
 	color: $white;
 	background-color: $accent;
 	border: 2px solid $accent;
 	border-radius: $radius;
+	appearance: none;
 	transition: color .6s ease, background-color .6s ease, border-color .6s ease;
 
 	&:hover {

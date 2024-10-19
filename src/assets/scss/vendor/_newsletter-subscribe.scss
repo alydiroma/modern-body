@@ -66,8 +66,9 @@
     padding-top: 1.5rem;
 
     .fd-form-label {
-        font-family: $font-medium !important;
+        font-family: $font-body !important;
         font-size: 0.75rem !important;
+        font-weight: 500;
         line-height: 1.2 !important;
         text-align: left;
         text-transform: uppercase !important;
@@ -94,9 +95,10 @@
 .fd-btn {
 	@include button-reset;
 	display: inline-block;
-	font-family: $font-medium !important;
+	font-family: $font-body !important;
 	font-size: 1rem !important;
     height: 44px !important;
+    font-weight: 500;
 	line-height: 40px !important;
 	color: $white;
 	padding: 0 $gap !important;
@@ -120,7 +122,7 @@
 }
 
 .ff-64f77876db7b1adad52ffecb__subtitle {
-    font-family: $font-reg;
+    font-family: $font-body;
     font-size: 1rem !important;
     margin-bottom: 1.5rem !important;
 }

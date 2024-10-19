@@ -1,0 +1,19 @@
+columnSuffix: zzuqlmkc
+contentColumnType: text
+fieldGroup: 07dede5f-e375-4ca2-9622-0adde621a5c3 # Home
+handle: homeDifferenceHead
+instructions: null
+name: 'Difference Head'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
