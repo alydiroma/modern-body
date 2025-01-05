@@ -18,7 +18,7 @@ body {
 	@include toRem('font-size', 16);
 	line-height: 1.8;
 	color: $coffee;
-	background-color: $floral-white;
+	background-color: $bg-med;
 	//background: linear-gradient(0deg, $beige 0%, $white 100%);
 	margin: 0;
 	padding: 0;
@@ -41,67 +41,6 @@ body {
 p+h2,
 p+.h2-style {
 	margin-top: $gap-md;
-}
-
-h1,
-.h1-style {
-	@include font-head;
-	@include toRem('font-size', 44);
-	line-height: 1.2;
-	margin-bottom: $gap-sm;
-
-	@include break(tablet) {
-		@include toRem('font-size', 40);
-	}
-
-	@include break(mobile) {
-		@include toRem('font-size', 36);
-	}
-}
-
-h2,
-.h2-style {
-	@include font-head;
-	@include toRem('font-size', 28);
-	line-height: 1.2;
-
-	@include break(tablet) {
-		@include toRem('font-size', 26);
-	}
-
-	@include break(mobile) {
-		@include toRem('font-size', 24);
-	}
-}
-
-h3,
-.h3-style {
-	@include font-medium;
-	@include toRem('font-size', 22);
-	line-height: 1.2;
-
-	@include break(mobile) {
-		@include toRem('font-size', 20);
-	}
-}
-
-h4,
-.h4-style {
-	@include font-medium;
-	@include toRem('font-size', 18);
-	line-height: 1.2;
-}
-
-.p-style {
-	@include font-body;
-	@include toRem('font-size', 16);
-	line-height: 1.8;
-}
-
-.p-small {
-	@include font-body;
-	@include toRem('font-size', 14);
-	line-height: 1.8;
 }
 
 small {
@@ -136,6 +75,11 @@ a {
 ul,
 ol {
 	padding-left: $gap-sm;
+}
+
+img {
+	display: block;
+	max-width: 100%
 }
 
 strong,

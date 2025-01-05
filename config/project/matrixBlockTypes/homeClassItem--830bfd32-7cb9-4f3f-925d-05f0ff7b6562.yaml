@@ -69,7 +69,7 @@ fields:
     columnSuffix: rbzntrcv
     contentColumnType: text
     fieldGroup: null
-    handle: classItemText
+    handle: homeClassItemText
     instructions: null
     name: 'Class Item Text'
     searchable: false

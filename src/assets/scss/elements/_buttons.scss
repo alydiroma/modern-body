@@ -1,3 +1,102 @@
+
+%btn {
+	@include button-reset;
+	display: block;
+	width: fit-content;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+
+%btn-underline {
+	@extend %btn;
+	@include font-bold;
+	@include toRem('font-size', 17);
+	position: relative;
+	background-color: transparent;
+
+	&::after {
+		position: absolute;
+		bottom: $sliver;
+		left: 0;
+		content: '';
+		width: 100%;
+		height: 2px;
+		transition: transform .3s ease;
+	}
+
+	&:hover {
+		background-color: transparent;
+
+		&::after {
+			transform: scaleY(2);
+		}
+	}
+}
+
+.btn-underline-white {
+	@extend %btn-underline;
+	color: $white;
+
+	&::after {
+		background-color: $white;
+	}
+}
+
+.btn-underline-orange {
+	@extend %btn-underline;
+	color: $brown;
+
+	&::after {
+		background-color: $orange;
+	}
+}
+
+%btn-cta {
+	@extend %btn;
+	@include font-bold;
+	@include toRem('font-size', 16);
+	text-transform: uppercase;
+	padding: $space $gap;
+	border: 2px solid;
+}
+
+.btn-cta-orange {
+	@extend %btn-cta;
+	color: $brown;
+	background-color: transparent;
+	border-color: $orange;
+	transition: color .3s ease, background-color .3s ease;
+
+	&:hover {
+		color: $white;
+		background-color: $orange;
+	}
+}
+
+%btn-pill {
+	@extend %btn;
+	@extend %h4-style;
+	padding: $space $gap;
+	background-color: transparent;
+	border: 2px solid;
+	border-radius: $gap;
+	transition: background-color .3s ease;
+}
+
+.btn-pill-white {
+	@extend %btn-pill;
+	color: $white;
+	border-color: $white;
+
+	&:hover {
+		background-color: $dark-brown;
+	}
+}
+
+/*
 %btn {
 	@include button-reset;
 	display: inline-block;
@@ -67,3 +166,4 @@
 		text-align: center;
 	}
 }
+*/

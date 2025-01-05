@@ -1,4 +1,4 @@
-dateModified: 1727059666
+dateModified: 1736109892
 email:
   fromEmail: support@modernbody.io
   fromName: 'Modern Body'
@@ -38,6 +38,7 @@ meta:
     1e26f696-518f-4f53-93e3-06ad726eee90: 'FAQ Answer' # FAQ Answer
     1ead34db-f5ca-4e93-86d7-d61743978668: Default # Default
     1f1a8a59-4979-401d-82a3-b9b53b9c1de2: Classes # Classes
+    2b4328ff-e27a-4607-b7bc-3e27153a810d: 'Meet Aly Signature' # Meet Aly Signature
     3c9b8501-9904-40a0-aacb-1ed669a96d5f: 'Accordion Copy' # Accordion Copy
     03ca5c96-0536-4845-9b34-97eb57f9e59a: 'Testimonial Intro' # Testimonial Intro
     3dfd732e-0ff1-4997-b0fa-45bd54fb4662: 'Intro to Pilates' # Intro to Pilates
@@ -185,7 +186,6 @@ meta:
     dccb8fdf-e43a-4604-838c-f3e8f9568225: 'Testimonial Item' # Testimonial Item
     dd8c01a1-64b7-4717-9d7e-25e331647446: 'Membership Head' # Membership Head
     df06f0d5-d0a1-4425-ac88-297d50ad1c80: 'Testimonial Link' # Testimonial Link
-    e01ee6f5-d97e-41c1-90aa-6bfa688644de: 'Difference Item Icon' # Difference Item Icon
     e0364518-4df8-4d7e-bbc0-a509ebe03558: '1:1 Training' # 1:1 Training
     e5ea1376-e6fc-44b1-8c04-fab31a32d186: 'Hero CTA' # Hero CTA
     e7ca93f7-a988-4c82-ac6e-51212c511d4f: 'About Aly' # About Aly

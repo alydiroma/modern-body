@@ -2,6 +2,7 @@
     "/web/assets/js/main.js": "/web/assets/js/main.js",
     "/web/assets/js/home.js": "/web/assets/js/home.js",
     "/web/assets/js/testimonials.js": "/web/assets/js/testimonials.js",
+    "/web/assets/css/main.css": "/web/assets/css/main.css",
     "/web/assets/fonts/Karla-VariableFont_wght.woff2": "/web/assets/fonts/Karla-VariableFont_wght.woff2",
     "/web/assets/fonts/Poppins-Bold.woff": "/web/assets/fonts/Poppins-Bold.woff",
     "/web/assets/fonts/Poppins-Medium.woff": "/web/assets/fonts/Poppins-Medium.woff",
@@ -31,6 +32,5 @@
     "/web/assets/icons/icon-podcasts-apple.svg": "/web/assets/icons/icon-podcasts-apple.svg",
     "/web/assets/icons/icon-podcasts-spotify.svg": "/web/assets/icons/icon-podcasts-spotify.svg",
     "/web/assets/icons/podcasts-spotify.svg": "/web/assets/icons/podcasts-spotify.svg",
-    "/web/assets/icons/spotify-svgrepo-com.svg": "/web/assets/icons/spotify-svgrepo-com.svg",
-    "/web/assets/css/main.css": "/web/assets/css/main.css"
+    "/web/assets/icons/spotify-svgrepo-com.svg": "/web/assets/icons/spotify-svgrepo-com.svg"
 }

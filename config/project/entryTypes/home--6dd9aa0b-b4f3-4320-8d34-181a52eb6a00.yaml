@@ -446,6 +446,18 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: e207edb6-f51e-4892-8097-0ae1bafb1260 # Meet Aly Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5f7d3149-1e92-4411-b372-c532b29a05c6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: e8130424-cb5a-4c91-8a4d-3d2f704fcd61 # Meet Aly Head
             instructions: null
             label: null
@@ -470,13 +482,13 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: e207edb6-f51e-4892-8097-0ae1bafb1260 # Meet Aly Image
+            fieldUid: 2b4328ff-e27a-4607-b7bc-3e27153a810d # Meet Aly Signature
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 5f7d3149-1e92-4411-b372-c532b29a05c6
+            uid: 65ac3ea8-358e-49a1-95b8-0a4fb0d33e89
             userCondition: null
             warning: null
             width: 100

@@ -6,6 +6,15 @@ $beige: #fbfbfb;
 $accent: #8a3a42;
 
 // new colors
+$brown: #6D5725;
+$dark-brown: #3D2F17;
+$orange: #B2482B;
+$white: #fff;
+
+$bg-dark: #e2d7c4;
+$bg-med: #eee6d9;
+$bg-light: #f5f2e8;
+
 $bone: #E0D7C6;
 $pink: #E5DAD2;
 $floral-white: #F8F6EE;
@@ -18,6 +27,7 @@ $font-head: 'Cigars Medium', sans-serif;
 $font-body: 'Karla Variable', sans-serif;
 
 // spacing
+$gap-xxxl: 9rem;
 $gap-xxl: 6rem;
 $gap-xl: 5rem;
 $gap-lg: 4rem;
@@ -30,8 +40,9 @@ $sliver: .125rem;
 
 // misc 
 $header-height: 65px;
-$radius: .25rem;
-$radius-large: .5rem;
+$radius: $space;
+$radius-large: $gap-xs;
+$radius-image: $gap-xs;
 $max-line-length: 50rem;
 $target-blank-size: .85rem;
 
@@ -40,13 +51,14 @@ $breakpoints: (
 	mobile:  ( max-width: 600px ),
 	tablet: ( max-width:  992px ),
 	laptop: ( max-width:  1024px ),
-	wide:  ( min-width: 1401px )
+	wide:  ( min-width: 1441px )
 );
 
 // containers 
 $narrow: 40rem;
 $medium: 65rem;
 $wide: 82rem;
+$x-wide: 90rem;
 
 // stack 
 $stack: (

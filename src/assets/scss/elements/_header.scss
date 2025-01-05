@@ -73,7 +73,7 @@
 			@include font-bold;
 			@include toRem('font-size', 16);
 			text-transform: uppercase;
-			line-height: 1.8;
+			line-height: 1.5;
 			color: $white;
 			text-decoration-color: transparent;
 			padding-left: $gap;
@@ -96,18 +96,18 @@
 			&::after {
 				position: absolute;
 				bottom: 0;
-				right: -100%;
+				right: 0;
 				content: '';
 				width: calc(100% - $gap);
-				height: 2px;
+				height: 0;
 				background-color: $white;
-				transition: right .3s ease;
+				transition: height .3s ease;
 			}
 	
 			&:hover {
 				
 				&::after {
-					right: 0;
+					height: $sliver;
 				}
 			}
 	

@@ -1,4 +1,6 @@
 .home {
+	color: $brown;
+	background-color: $bg-med;
 
 	&-hero {
 		display: flex;
@@ -12,7 +14,7 @@
 			left: 0;
 			width: 100%;
 			height: calc(75vh + $gap-xxl);
-			background-color: $coffee;
+			background-color: $dark-brown;
 
 			img {
 				@include object-fit;
@@ -62,21 +64,11 @@
 		}
 
 		&-tagline {
-			@include font-head;
-			@include toRem('font-size', 54);
+			@extend %h3-style;
 			line-height: 1.2;
 			text-align: center;
 			color: $white;
-			padding: $gap-sm $gap;
-
-			@include break(tablet) {
-				@include toRem('font-size', 36);
-				line-height: 1.3;
-			}	
-
-			@include break(mobile) {
-				@include toRem('font-size', 24);
-			}		
+			padding: $gap-sm $gap;		
 		}
 		
 		&-cta {
@@ -86,21 +78,12 @@
 			@include break(mobile) {
                padding-bottom: $gap;
 			}	
-
-			a {
-
-				&:hover {
-					color: $white;
-					background-color: $black;
-					border-color: $black;
-				}
-			}
 		}
 	}
 
 	&-approach {
 		padding-block: $gap-lg;
-		background-color: $bone;
+		background-color: $bg-dark;
 
 		&-container {
 			@include container;
@@ -119,19 +102,7 @@
 			flex: 1;
 
 			p {
-				@include font-head;
-				@include toRem('font-size', 54);
-				line-height: 1.2;
-				color: $field;
-	
-				@include break(tablet) {
-					@include toRem('font-size', 36);
-					line-height: 1.3;
-				}	
-	
-				@include break(mobile) {
-					@include toRem('font-size', 24);
-				}
+				@extend %h3-style;
 			}
 
 			img {
@@ -145,6 +116,7 @@
 			img {
 				display: block;
 				width: 100%;
+				border-radius: $radius-image;
 			}
 		}
 
@@ -154,24 +126,42 @@
 				display: block;
 				width: 50%;
 				@include toRem('max-width', 300);
+
+				@include break(mobile) {
+					@include toRem('max-width', 100);
+				}
 			}
 		}
 	}
 
 	&-difference {
 		padding-block: $gap-xl;
-		background-color: $floral-white;
+		background-color: $bg-med;
 
 		&-head {
 			@include container;
-			@include toRem('max-width', 300);
 			text-align: center;
+
+			h2 {
+				@include toRem('max-width', 500);
+				margin-inline: auto;
+			}
+
+			p {
+				@include toRem('max-width', 700);
+				margin-inline: auto;
+			}
 		}
 
 		&-list {
 			@include container;
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
+			border: 1px solid $brown;
+
+			@include break(tablet) {
+				grid-template-columns: repeat(2, 1fr);
+			}
 
 			@include break(mobile) {
 				display: block;
@@ -179,17 +169,21 @@
 		}
 
 		&-item {
+			@extend %p-small;
 			flex: 1;
 			display: flex;
 			flex-direction: column;
-			justify-content: space-between;
+			justify-content: flex-end;
 			padding: $gap-sm;
-			border: 1px solid $field;
+			border: 1px solid $brown;
 			aspect-ratio: 1 / 1;
-			transition: background-color .3s ease;
 
-			&:hover {
-				background-color: $bone;
+			@include break(tablet) {
+				aspect-ratio: 3 / 2;
+			}
+
+			@include break(tablet) {
+				aspect-ratio: 3 / 2;
 			}
 		}
 
@@ -204,32 +198,51 @@
 		}
 
 		&-text {
-			@include font-head;
-			@include toRem('font-size', 22);
 			display: block;
 			max-width: 75%;
-			line-height: 1.2;
-		
-			@include break(mobile) {
-				@include toRem('font-size', 20);
+
+			* {
+				@include font-head;
+				@extend %p-large;
+				line-height: 1.4;
 			}
 		}
 	}
 
 	&-try {
-		padding-bottom: $gap-xl;
-		background-color: $floral-white;
+		position: relative;
+		margin-bottom: $gap-xl;
+		background-color: $bg-med;
+
+		&::after {
+			@include container;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			content: '';
+			height: 100%;
+			background-color: $bg-light;
+			border-radius: $gap-sm;
+			transform: translateX(-50%);
+		}
 
 		&-head {
 			@include container;
+			position: relative;
 			text-align: center;
+			color: $orange;
 			padding: $gap-md;
-			background-color: $floral-white;
 			border-radius: 2rem 2rem 0 0;
+			z-index: 1;
 
 			h2, p {
 				@include toRem('max-width', 600);
 				margin-inline: auto;
+			}
+
+			p {
+				@include font-bold;
+				@extend %p-large;
 			}
 		}
 
@@ -238,6 +251,11 @@
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			gap: $gap-md;
+			z-index: 1;
+
+			@include break(mobile) {
+				gap: $gap-sm;
+			}
 
 			&::after {
 				position: absolute;
@@ -247,7 +265,6 @@
 				display: block;
 				width: 100%;
 				height: 100%;
-				background-color: $floral-white;
 			}
 		}
 
@@ -259,30 +276,120 @@
 			img {
 				display: block;
 				@include object-fit;
+				border-radius: $radius-image;
 			}
 		}
 
 		&-container {
 			@include container;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			gap: $gap;
+			align-items: center;
 			text-align: center;
 			padding: $gap-md;
-			background-color: $floral-white;
 			border-radius: 0 0 2rem 2rem;
+			z-index: 1;
 
 			p {
 				@include toRem('max-width', 600);
+				@include font-head;
 				margin-inline: auto;
 			}
 		}
 	}
 
+	&-classes {
+		padding-bottom: $gap-lg;
+
+		&-head {
+			@include container();
+		}
+
+		&-list {
+			@include container();
+			display: flex;
+			justify-content: space-between;
+			gap: $gap-lg;
+			border-top: 1px solid $coffee;
+			border-bottom: 1px solid $coffee;
+
+			@include break(mobile) {
+				gap: $gap-sm;
+			}
+		}
+
+		&-toggles {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		&-toggle {
+			@include button-reset;
+			@extend %tag;
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-transform: uppercase;
+			text-align: left;
+			color: $brown;
+			padding: $gap-sm $gap-sm $gap-sm 0;
+			border-bottom: 1px solid $coffee;
+			border-right: 1px solid $coffee;
+			transition: color .3s ease;
+
+			&:last-of-type {
+				border-bottom: 0;
+			}
+
+			&.active {
+				color: $orange;
+				border-right: 0;
+			}
+		}
+
+		&-items {
+			position: relative;
+			flex: 2;
+		}
+
+		&-item {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: $gap-sm $gap-sm $gap $gap-sm;
+			visibility: hidden;
+
+			&.active {
+				visibility: visible;
+			}
+
+			&-text {
+
+				p {
+					@extend %h4-style;
+				}
+			}
+		}
+	}
+
 	&-testimonials {
+		padding-block: $gap-xl;
+		background-color: $bg-dark;
 
 		&-container {
 			@include container;
 			display: flex;
 			justify-content: space-between;
 			gap: $gap-lg;
+
+			@include break(tablet) {
+				gap: $gap;
+			}
 
 			@include break(mobile) {
 				display: block;
@@ -293,18 +400,12 @@
 			position: relative;
 			flex: 1;
 			height: auto;
-			border-radius: $radius-large;
+			border-radius: $radius-image;
 			overflow: hidden;
 
 			@include break(mobile) {
 				height: 300px;
 				margin-bottom: $gap;
-			}
-
-			&.in-view {
-				img {
-					transform: scale(1.075);
-				}
 			}
 
 			img {
@@ -323,21 +424,219 @@
 
 		&-copy {
 			flex: 1;
+		}
+
+		&-cta {
+			@include container;
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	&-membership {
+		padding-block: $gap-xl;
+
+		&-head {
+			@include container;
+			display: flex;
+			justify-content: space-between;
+			gap: $gap;
+
+			@include break(tablet) {
+				flex-direction: column;
+				gap: $gap-sm;
+			}
 
 			h2 {
-				position: relative;
-				display: inline-block;
-				color: $black;
-				margin-left: -$gap-sm;
-				padding: $gap-xs $gap-sm;
-				transition: color .6s ease;
-				z-index: 1;
+				color: $orange;
+			}
+
+			&-text {
+				@include toRem(max-width, 500);
+
+				@include break(wide) {
+					@include toRem(max-width, 700);
+				}
 			}
 		}
 
-		&-link {
-			display: block;
-			@include font-bold;
+		&-list {
+			@include container;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: $gap;
+
+			@include break(tablet) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			@include break(mobile) {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		&-item {
+			position: relative;
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			gap: $gap-xs;
+			border-radius: $space;
+
+			&-image {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: $dark-brown;
+				border-radius: $radius-image;
+				overflow: hidden;
+				z-index: -1;
+
+				img {
+					display: block;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					opacity: .35;
+				}
+			}
+
+			&-text {
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: stretch;
+				gap: $gap-xxxl;
+				height: 100%;
+				color: $white;
+				padding: $gap;
+				z-index: 1;
+
+				.price {
+					@extend %h3-style;
+				}
+
+				.desc {
+					@extend %h4-style;
+				}
+			}
+
+			&-tag {
+				text-align: center;
+				color: $brown;
+			}
+		}
+	}
+
+	&-philosophy {
+
+		&-container {
+			@include container;
+			display: flex;
+			justify-content: space-between;
+			gap: $gap-lg;
+
+			@include break(tablet) {
+				flex-direction: column;
+				gap: $gap;
+			}
+
+			@include break(mobile) {
+				gap: $gap-sm;
+			}
+
+			h2 {
+				text-wrap: nowrap;
+			}
+		}
+
+		&-item {
+			padding-bottom: $gap;
+			border-bottom: 1px solid $orange;
+		}
+	}
+
+	&-meet {
+		position: relative;
+		height: 100vh;
+		color: $white;
+		margin-block: $gap-xxl;
+		padding-block: $gap $gap-xxl;
+		background-color: $dark-brown;
+
+		&-bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				opacity: .35;
+			}
+		}
+
+		&-container {
+			@include container;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: stretch;
+			gap: $gap-xl;
+			height: 100%;
+			z-index: 1;
+
+			h2 {
+				font-size: 20vw;
+				line-height: 1;
+
+				@include break(wide) {
+					font-size: 15vw;
+				}
+			}
+		}
+
+		&-text {
+			@include toRem('max-width', 500);
+		}
+
+		&-signature {
+			@include toRem('max-width', 300);
+		}
+	}
+
+	&-faq {
+		padding-top: $gap-xl;
+		border-top: 1px solid $orange;
+
+		&-container {
+			@include container;
+			display: flex;
+			justify-content: space-between;
+			gap: $gap;
+
+			@include break(tablet) {
+				flex-direction: column;
+			}
+		}
+
+		&-item {
+			padding-bottom: $gap;
+			border-bottom: 1px solid $orange;
+		}
+
+		&-toggle {
+			@include button-reset;
+			text-align: left;
+			color: $brown;
 		}
 	}
 }

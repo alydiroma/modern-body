@@ -6,6 +6,10 @@
 	@include container($narrow);
 }
 
+.container-wide {
+	@include container($x-wide);
+}
+
 .container-bg {
 	color: $white;
 	padding: $gap;
