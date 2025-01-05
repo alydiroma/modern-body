@@ -1,5 +1,3 @@
-import getHeight from './modules/getHeight';
-
 // classes toggles
 function setItemsHeight() {
 	const classItemsList = document.querySelector('.home-classes-items'),
