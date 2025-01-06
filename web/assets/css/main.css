@@ -411,6 +411,7 @@ strong,
   text-transform: uppercase;
   padding: 0.25rem 2rem;
   border: 2px solid;
+  border-radius: 0.25rem;
 }
 
 .btn-cta-orange {
@@ -1216,7 +1217,7 @@ textarea {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  opacity: 0.35;
+  opacity: 0.5;
 }
 .home-hero-container {
   width: calc(100% - 5rem);
@@ -1316,19 +1317,22 @@ textarea {
 .home-approach-column {
   flex: 1;
 }
-.home-approach-column img {
-  display: block;
-  width: 100%;
+.home-approach-image {
+  aspect-ratio: 1/1.125;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 .home-approach-image img {
   display: block;
   width: 100%;
-  border-radius: 0.5rem;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .home-approach-icon img {
   display: block;
   width: 50%;
-  max-width: 18.75rem;
+  max-width: 12.5rem;
 }
 @media (max-width: 600px) {
   .home-approach-icon img {
@@ -1755,7 +1759,7 @@ textarea {
   color: #B2482B;
 }
 .home-membership-head-text {
-  max-width: 31.25rem;
+  max-width: 37.5rem;
 }
 @media (min-width: 1441px) {
   .home-membership-head-text {
@@ -1815,7 +1819,7 @@ textarea {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.35;
+  opacity: 0.5;
 }
 .home-membership-item-text {
   position: relative;
@@ -1890,7 +1894,7 @@ textarea {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.35;
+  opacity: 0.5;
 }
 .home-meet-container {
   width: calc(100% - 5rem);
