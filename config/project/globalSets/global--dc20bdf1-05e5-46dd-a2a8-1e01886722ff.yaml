@@ -91,6 +91,24 @@ fieldLayouts:
         name: Newsletter
         uid: 429e79a9-6431-4b1e-a965-9977af7c52d1
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4ac9add2-4d4a-4269-b89c-2c97af4112b4 # Footer Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 891519c9-0663-400f-8fe0-cda872e082f0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Footer
+        uid: 355301d1-d368-4c33-94a9-57b3f446a33a
+        userCondition: null
 handle: global
 name: Global
 sortOrder: 1

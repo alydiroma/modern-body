@@ -1,0 +1,27 @@
+columnSuffix: ateszkpr
+contentColumnType: text
+fieldGroup: 5c337995-e31f-4ea4-9ee5-80ee8beda0c9 # Global
+handle: footerDescription
+instructions: null
+name: 'Footer Description'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

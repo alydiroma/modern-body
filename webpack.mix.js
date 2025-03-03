@@ -25,4 +25,8 @@ mix
 .copyDirectory('src/assets/icons', 'web/assets/icons')
     .options({
         processCssUrls: false
+    })
+.copyDirectory('src/assets/images', 'web/assets/images')
+    .options({
+        processCssUrls: false
     });

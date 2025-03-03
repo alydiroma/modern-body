@@ -1,74 +1,39 @@
-$_icon-padding: .35rem;
-$_logo-width: 16.75rem;
-$_logo-width-mobile: 14.75rem;
-$_subscribe-form-width: 18rem;
-
 .footer {
-	position: relative;
-	margin-top: $gap-xl;
-	padding: $gap 0;
-	border-top: 2px solid $accent;
-	z-index: 2;
+	margin-block: 10rem 2rem;
 
 	@include break(tablet) {
-		display: flex;
-		flex-direction: column;
-		gap: $gap;
+		margin-block: 6rem 2rem;
 	}
 
-	a {
-		color: $accent;
-		text-decoration: none;
-
-		&:hover {
-			text-decoration: underline;
-		}
-	}
-
-	&-top {
-		@include container($medium);
-		display: flex;
-		justify-content: space-between;
-		gap: $gap-sm;
-
-		@include break(tablet) {
-			flex-direction: column;
-			gap: $gap;
-		}
-
-		@include break(mobile) {
-			flex-direction: column;
-			gap: $gap;
-		}
-	}
-
-	&-column {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-
-		@include break(tablet) {
-			flex-direction: row;
-			gap: $gap;
-		}
-
-		@include break(mobile) {
-			flex-direction: column;
-		}
+	&-inner {
+		@include container;
 	}
 
 	&-logo {
 		display: block;
-		width: $_logo-width;
-
-		@include break(mobile) {
-			width: $_logo-width-mobile;
-		}
+		width: 100%;
 
 		img {
 			display: block;
 			width: 100%;
+		}
+	}
+
+	&-middle {
+		display: flex;
+		justify-content: space-between;
+		gap: $gap-md;
+
+		@include break(tablet) {
+			flex-direction: column;
+		}
+	}
+
+	&-desc {
+		@include toRem('max-width', 500);
+
+		* {
+			@include toRem('font-size', 16);
 		}
 	}
 
@@ -78,22 +43,36 @@ $_subscribe-form-width: 18rem;
 		gap: $gap-lg;
 
 		@include break(tablet) {
-			justify-content: flex-start;
+			justify-content: space-between;
 		}
 
 		@include break(mobile) {
 			flex-direction: column;
-			gap: $gap-sm;
+			gap: $gap-md;
 		}
 
 		&-column {
 			display: flex;
 			flex-direction: column;
-			gap: $gap-sm;
+			gap: $gap-xs;
 			padding: 0;
 
 			@include break(tablet) {
 				gap: $gap-xs;
+			}
+
+			h2 {
+				@include font-body;
+				@include toRem('font-size', 16);
+				text-transform: uppercase;
+				color: $brown;
+			}
+
+			ul {
+				display: flex;
+				flex-direction: column;
+				gap: $gap-xs;
+				padding: 0;				
 			}
 		}
 
@@ -111,6 +90,7 @@ $_subscribe-form-width: 18rem;
 		}
 
 		&-link {
+			color: $brown;
 
 			&.active {
 				text-decoration: underline;
@@ -122,80 +102,16 @@ $_subscribe-form-width: 18rem;
 		}
 	}
 
-	&-social {
+	&-copyright {
+		color: $brown;
 
-		ul {
-			display: flex;
-			gap: $gap;
-			padding: 0;
-		}
+		a {
+			color: $brown;
+			text-decoration: underline;
 
-		li {
-			display: inline-block;
-			width: $gap;
-			list-style: none;
-
-			a {
-				display: block;
-				width: $gap;
-				height: $gap;
-				padding: $_icon-padding;
-				background-color: $accent;
-				border-radius: $radius-large;
-				transition: background-color .3s ease;
-
-				&::after {
-					display: none;
-				}
-
-				&:hover {
-					background-color: $black;
-
-					svg {
-						.fill {
-							fill: $black;
-						}
-					}
-				}
+			&:hover {
+				color: $orange;
 			}
-
-			svg {
-				display: block;
-				width: 100%;
-				height: 100%;
-				object-fit: contain;
-				object-position: center;
-				fill: $white;
-				transition: fill .3s ease;
-
-				.fill {
-					fill: $accent;
-					transition: fill .3s ease;
-				}
-			}
-		}
-	}
-
-	&-subscribe {
-		@include container($medium);
-		margin-block: $gap-md;
-
-		@include break(mobile) {
-			margin-block: 0;
-		}
-	}
-
-	&-bottom {
-		@include container($medium);
-		display: flex;
-		justify-content: center;
-		align-items: flex-end;
-		gap: $gap-sm;
-
-		@include break(tablet) {
-			flex-direction: column;
-			align-items: center;
-			gap: $gap;
 		}
 	}
 }

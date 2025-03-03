@@ -59,14 +59,6 @@ a {
 	color: $accent;
 	text-decoration: none;
 
-	&[target=_blank] {
-
-		&::after {
-			content: '\0279A';
-			font-size: 1em;
-		}
-	}
-
 	&:hover {
 		text-decoration: underline;
 	}
