@@ -1,5 +1,5 @@
-    {% set nodes = craft.navigation.nodes('mainNav').all() %}
-<nav class="header-nav">
+{% set nodes = craft.navigation.nodes('mainNavLeft').all() %}
+<nav class="header-nav header-nav-left">
     <ul class="nav-items" data-panel-group>
         {% nav node in nodes %}
             {% if node.hasDescendants %}

@@ -1,9 +1,9 @@
-columnSuffix: knwmdeat
+columnSuffix: nvrdbolg
 contentColumnType: text
 fieldGroup: 07dede5f-e375-4ca2-9622-0adde621a5c3 # Home
-handle: homeClassListHead
+handle: homeClassesHead
 instructions: null
-name: 'Class List Head'
+name: 'Classes Head'
 searchable: false
 settings:
   byteLimit: null

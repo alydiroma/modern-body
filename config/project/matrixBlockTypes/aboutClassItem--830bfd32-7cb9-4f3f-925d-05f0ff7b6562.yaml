@@ -49,7 +49,7 @@ fields:
     columnSuffix: icshtnpk
     contentColumnType: text
     fieldGroup: null
-    handle: homeClassItemToggleText
+    handle: aboutClassItemToggleText
     instructions: null
     name: 'Class Item Toggle Text'
     searchable: false
@@ -69,7 +69,7 @@ fields:
     columnSuffix: rbzntrcv
     contentColumnType: text
     fieldGroup: null
-    handle: homeClassItemText
+    handle: aboutClassItemText
     instructions: null
     name: 'Class Item Text'
     searchable: false
@@ -97,7 +97,7 @@ fields:
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
-    handle: homeClassItemCta
+    handle: aboutClassItemCta
     instructions: null
     name: 'Class Item CTA'
     searchable: false
@@ -156,6 +156,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: lenz\linkfield\fields\LinkField
-handle: homeClassItem
+handle: aboutClassItem
 name: 'Class Item'
 sortOrder: 1

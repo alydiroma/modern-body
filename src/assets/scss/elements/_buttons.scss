@@ -47,7 +47,7 @@
 
 .btn-underline-orange {
 	@extend %btn-underline;
-	color: $brown;
+	color: $dark-brown;
 
 	&::after {
 		background-color: $orange;
@@ -66,7 +66,7 @@
 
 .btn-cta-orange {
 	@extend %btn-cta;
-	color: $brown;
+	color: $dark-brown;
 	background-color: transparent;
 	border-color: $orange;
 	transition: color .3s ease, background-color .3s ease;
@@ -74,6 +74,19 @@
 	&:hover {
 		color: $white;
 		background-color: $orange;
+	}
+}
+
+.btn-cta-white {
+	@extend %btn-cta;
+	color: $white;
+	background-color: transparent;
+	border-color: $white;
+	transition: color .3s ease, background-color .3s ease;
+
+	&:hover {
+		color: $orange;
+		background-color: $white;
 	}
 }
 

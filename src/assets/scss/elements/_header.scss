@@ -1,9 +1,18 @@
+body:has(.home) {
+	.header {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+}
+
 .header {
 	position: relative;
 	display: flex;
 	align-items: center;
 	width: 100%;
-	height: $gap-xxl;
+	padding-block: $gap;
 	z-index: 999;	
 
 	&-home {
@@ -27,6 +36,12 @@
 	&-nav {
 		flex: 1;
 
+		&-right {
+			display: flex;
+			justify-content: flex-end;
+			text-align: right;
+		}
+
 		@include break(tablet) {
 			display: none;
 		}
@@ -36,17 +51,18 @@
 		flex: 1;
 		position: relative;
 		display: block;
-		height: $gap-xl;
+		height: $gap-xxl;
 		text-align: center;
-		transition: opacity .3s ease;
+		transition: filter .3s ease;
 
 		@include break(mobile) {
 			flex: auto;
-			height: 2.5rem;
+			height: $gap-lg;
 		}
 
 		&:hover {
-			opacity: .7;
+			//filter: brightness(0) saturate(100%) invert(35%) sepia(14%) saturate(3883%) hue-rotate(334deg) brightness(94%) contrast(91%);
+			filter: drop-shadow(2px 2px 2px $orange);
 		}
 
 		img {

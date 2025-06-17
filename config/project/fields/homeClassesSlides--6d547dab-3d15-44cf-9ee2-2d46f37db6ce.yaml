@@ -1,12 +1,12 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: 07dede5f-e375-4ca2-9622-0adde621a5c3 # Home
-handle: homeClassList
+handle: homeClassesSlides
 instructions: null
-name: 'Class List'
+name: 'Classes Slides'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_homeclasslist}}'
+  contentTable: '{{%matrixcontent_homeclassesslides}}'
   maxBlocks: null
   minBlocks: null
   propagationKeyFormat: null

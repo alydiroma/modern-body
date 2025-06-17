@@ -1,0 +1,77 @@
+fieldLayouts:
+  158f5450-d393-4b95-8664-da5486b67a99:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 9325fa36-6a7e-4c0e-aad3-aa9ab337c503
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 95712409-ccc0-4743-9c99-ca02d0877bfa
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 1d8da57b-b4ba-4538-b802-fa5a134c1005 # Class List Head
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 19fd678d-0334-4a5c-86b6-7e447dc98a59
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d91b67ff-af2c-42a0-a94d-69318e247992 # Class List
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 32f343ed-a914-44c3-9589-335a945268a4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Classes
+        uid: 48191115-e52b-4bae-b184-00525add4e50
+        userCondition: null
+handle: about
+hasTitleField: false
+name: About
+section: f288e9d7-dc12-4748-af43-3c970380b3cf # About
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

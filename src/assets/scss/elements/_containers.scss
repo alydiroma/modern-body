@@ -6,6 +6,10 @@
 	@include container($narrow);
 }
 
+.container-medium {
+	@include container($medium);
+}
+
 .container-wide {
 	@include container($x-wide);
 }

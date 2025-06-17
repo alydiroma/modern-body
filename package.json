@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-		"dev": "npm run development",
-		"development": "mix",
-		"watch": "mix watch",
-		"watch-poll": "mix watch -- --watch-options-poll=1000",
-		"hot": "mix watch --hot",
-		"prod": "npm run production",
-		"production": "mix --production"
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
   },
   "keywords": [],
   "author": "",
@@ -20,5 +20,8 @@
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.59.2",
     "sass-loader": "^12.6.0"
+  },
+  "dependencies": {
+    "swiper": "^11.2.8"
   }
 }

@@ -1,0 +1,46 @@
+{% extends "_layout" %}
+{% block content %}
+<main class="about">
+    <section class="about-classes stack-sm">
+        <div class="about-classes-head">
+            <h2 class="h3-style">{{entry.homeClassListHead}}</h2>
+        </div>
+        <div class="about-classes-list">
+            <div class="about-classes-toggles">
+                {% set blocks = entry.homeClassList.all() %}
+                {% if blocks | length %}
+                    {% for block in blocks %}
+                        {% set classIndex = "class-#{loop.index}" %}
+                        {% set toggleIndex = "toggle-#{loop.index}" %}
+                        {% if loop.first %}
+                            <button id={{ toggleIndex }} class="about-classes-toggle active" aria-expanded="true" aria-controls={{ classIndex }}>{{ block.homeClassItemToggleText | striptags }}</button>
+                        {% else %}
+                            <button id={{ toggleIndex }} class="about-classes-toggle" aria-expanded="false" aria-controls={{ classIndex }}>{{ block.homeClassItemToggleText | striptags }}</button>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <div class="about-classes-items">
+                {% set blocks = entry.homeClassList.all() %}
+                {% if blocks | length %}
+                    {% for block in blocks %}
+                        {% set classIndex = "class-#{loop.index}" %}
+                        {% set toggleIndex = "toggle-#{loop.index}" %}
+                        {% if loop.first %}
+                            <div class="about-classes-item stack-sm active" id={{ classIndex }} role="region" aria-labelledby={{ toggleIndex }} data-height>
+                                <span class="about-classes-item-text">{{block.homeClassItemText}}</span>
+                                <a class="btn-underline-orange" href="{{ block.homeTestimonialLink }}">{{ block.homeClassItemCta.getCustomText('CTA') }}</a>
+                            </div>
+                        {% else %}
+                            <div class="about-classes-item stack-sm" id={{ classIndex }} role="region" aria-labelledby={{ toggleIndex }} data-height>
+                                <span class="about-classes-item-text">{{block.homeClassItemText}}</span>
+                                <a class="btn-underline-orange" href="{{ block.homeTestimonialLink }}">{{ block.homeClassItemCta.getCustomText('CTA') }}</a>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}   

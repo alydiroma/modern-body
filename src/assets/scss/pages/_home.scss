@@ -1,11 +1,12 @@
 .home {
-	color: $brown;
+	color: $dark-brown;
 	background-color: $bg-med;
 
 	&-hero {
+		position: relative;
 		display: flex;
 		align-items: center;
-		height: 75vh;
+		height: 95vh;
 		overflow: hidden;
 
 		&-bg {
@@ -13,7 +14,7 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: calc(75vh + $gap-xxl);
+			height: 100%;
 			background-color: $dark-brown;
 
 			img {
@@ -29,6 +30,7 @@
             flex-direction: column;
 			justify-content: center;
 			height: 100%;
+			padding-top: $gap-xl;
 			z-index: 1;
 		}
 
@@ -143,6 +145,7 @@
 
 			h2 {
 				@include toRem('max-width', 500);
+				color: $orange;
 				margin-inline: auto;
 			}
 
@@ -208,13 +211,13 @@
 		}
 	}
 
-	&-try {
+	&-classes {
 		position: relative;
 		margin-bottom: $gap-xl;
 		background-color: $bg-med;
 
 		&::after {
-			@include container;
+			@include container();
 			position: absolute;
 			top: 0;
 			left: 50%;
@@ -230,7 +233,7 @@
 			position: relative;
 			text-align: center;
 			color: $orange;
-			padding: $gap-md;
+			padding-block: $gap-md $gap-sm;
 			border-radius: 2rem 2rem 0 0;
 			z-index: 1;
 
@@ -240,139 +243,65 @@
 			}
 
 			p {
-				@include font-bold;
-				@extend %p-large;
+				color: $dark-brown;
 			}
 		}
 
-		&-images {
-			position: relative;
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			gap: $gap-md;
-			z-index: 1;
+		&-nav {
+			display: flex;
+			justify-content: center;
 
-			@include break(mobile) {
-				gap: $gap-sm;
+			&-next, 
+			&-prev {
+				@extend %btn;
+
+				svg {
+					fill: $orange;
+					transition: fill .3s ease;
+				}
+
+				&:hover {
+
+					svg {
+						fill: $black;
+					}
+				}
 			}
+		}
 
-			&::after {
-				position: absolute;
-				top: 0;
-				left: 0;
-				content: '';
-				display: block;
+		&-carousel {
+			padding-inline: $gap-sm;
+		}
+
+		&-slide {
+			background-color: $white;
+			border-radius: $gap-sm;
+			
+			&-image {
 				width: 100%;
-				height: 100%;
-			}
-		}
+				aspect-ratio: 1 / 1;
+				border-radius: $gap-xs $gap-xs 0 0;
+				overflow: hidden;
 
-		&-image {
-			position: relative;
-			aspect-ratio: 1 / 1;
-			z-index: 1;
-
-			img {
-				display: block;
-				@include object-fit;
-				border-radius: $radius-image;
-			}
-		}
-
-		&-container {
-			@include container;
-			position: relative;
-			display: flex;
-			flex-direction: column;
-			gap: $gap;
-			align-items: center;
-			text-align: center;
-			padding: $gap-md;
-			border-radius: 0 0 2rem 2rem;
-			z-index: 1;
-
-			p {
-				@include toRem('max-width', 600);
-				@include font-head;
-				margin-inline: auto;
-			}
-		}
-	}
-
-	&-classes {
-		padding-bottom: $gap-lg;
-
-		&-head {
-			@include container();
-		}
-
-		&-list {
-			@include container();
-			display: flex;
-			justify-content: space-between;
-			gap: $gap-lg;
-			border-top: 1px solid $coffee;
-			border-bottom: 1px solid $coffee;
-
-			@include break(mobile) {
-				gap: $gap-sm;
-			}
-		}
-
-		&-toggles {
-			flex: 1;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-		}
-
-		&-toggle {
-			@include button-reset;
-			@extend %tag;
-			display: block;
-			width: 100%;
-			height: 100%;
-			text-transform: uppercase;
-			text-align: left;
-			color: $brown;
-			padding: $gap-sm $gap-sm $gap-sm 0;
-			border-bottom: 1px solid $coffee;
-			border-right: 1px solid $coffee;
-			transition: color .3s ease;
-
-			&:last-of-type {
-				border-bottom: 0;
-			}
-
-			&.active {
-				color: $orange;
-				border-right: 0;
-			}
-		}
-
-		&-items {
-			position: relative;
-			flex: 2;
-		}
-
-		&-item {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			padding: $gap-sm $gap-sm $gap $gap-sm;
-			visibility: hidden;
-
-			&.active {
-				visibility: visible;
+				img {
+					display: block;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
 			}
 
 			&-text {
-
-				p {
-					@extend %h4-style;
-				}
+				padding: 0 $gap-sm $gap $gap-sm;
 			}
+		}
+
+		&-cta {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			padding-block: $gap-md;
+			z-index: 1;
 		}
 	}
 

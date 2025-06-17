@@ -49,14 +49,14 @@
 
 %p-style {
 	@include font-body;
-	@include toRem('font-size', 19);
+	@include toRem('font-size', 20);
     line-height: 1.6;
     text-wrap: pretty;
 }
 
 %p-small {
 	@include font-body;
-	@include toRem('font-size', 16);
+	@include toRem('font-size', 18);
     line-height: 1.6;
     text-wrap: pretty;
 }

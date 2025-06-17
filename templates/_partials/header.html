@@ -1,15 +1,13 @@
 <header class="header">
     <div class="header-container">
-        {% include '_partials/nav-main' %}
+        {% include '_partials/nav-main-left' %}
         {% set image = global.globalLogoImageLong.one() %}
         {% if image %}
             <a class="header-logo" href="/" title="home">
                 <img src="{{ image.url() }}" alt="Aly DiRoma">
             </a>
         {% endif %}
-        <div class="header-trial">
-            <a href="#">Try Free!</a>
-        </div>
+        {% include '_partials/nav-main-right' %}
         <button class="header-mobile btn-secondary-black btn-sm" aria-pressed="false" data-mobile-nav-btn>Menu</button>
         {% include '_partials/nav-mobile' %}
     </div>

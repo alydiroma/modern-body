@@ -7,22 +7,23 @@
             <div class="home-hero-copy stack-sm">
                 <p class="home-hero-tagline">{{ entry.homeHeroTagline | striptags }}</p>
                 {% if entry.homeHeroCta.getLink() %}
-                    <p class="home-hero-cta">
-                        <a class="btn-underline-white" href="{{ entry.homeHeroCta }}">{{ entry.homeHeroCta.customText }}</a>
-                    </p>
+                <p class="home-hero-cta">
+                    <a class="btn-cta-white" href="{{ entry.homeHeroCta }}">{{ entry.homeHeroCta.customText }}</a>
+                </p>
                 {% endif %}
             </div>
         </div>
         <div class="home-hero-bg">
             {% if entry.homeHeroImage %}
-                {% set blockImage = entry.homeHeroImage.one() %}
-                {% if blockImage %}
-                    {% include '_partials/block-image' %}
-                {% endif %}
+            {% set blockImage = entry.homeHeroImage.one() %}
+            {% if blockImage %}
+            {% include '_partials/block-image' %}
+            {% endif %}
             {% endif %}
         </div>
     </section>
 
+    <!--
     <section class="home-approach">
         <div class="home-approach-container">
             <div class="home-approach-column stack-reg">
@@ -43,92 +44,78 @@
                 {% endif %}
                 {{entry.homeApproachBottomText}}
                 {% if entry.homeApproachCta %}
-                    <a class="btn-underline-orange" href="{{ entry.homeApproachCta }}">{{ entry.homeApproachCta.getCustomText('Begin Your Movement Practice') }}</a>
+                    <a class="btn-cta-orange" href="{{ entry.homeApproachCta }}">{{ entry.homeApproachCta.getCustomText('Begin Your Movement Practice') }}</a>
                 {% endif %}
             </div>
         </div>
     </section>
+    -->
 
     <section class="home-difference stack-lg">
         <div class="home-difference-head stack-sm">
-            <h2 class="h3-style">{{entry.homeDifferenceHead}}</h2>
+            <h2 class="h2-style">{{entry.homeDifferenceHead}}</h2>
             {{entry.homeDifferenceText}}
         </div>
         <div class="home-difference-list">
             {% set blocks = entry.homeDifferenceList.all() %}
             {% if blocks | length %}
-                {% for block in blocks %}
-                    <div class="home-difference-item">
-                        <div class="stack-xs"> 
-                            <p>{{ loop.index }}</p>
-                            <p class="home-difference-text h4-style">{{block.homeDifferenceText | striptags}}</p>
-                        </div>
-                    </div>
-                {% endfor %}
+            {% for block in blocks %}
+            <div class="home-difference-item">
+                <div class="stack-xs">
+                    <p>{{ loop.index }}</p>
+                    <p class="home-difference-text h4-style">{{block.homeDifferenceText | striptags}}</p>
+                </div>
+            </div>
+            {% endfor %}
             {% endif %}
         </div>
     </section>
 
-    <section class="home-try">
-        <div class="home-try-head">
-            <h2>{{entry.homeTryHead}}</h2>
-            <p>{{entry.homeTrySubhead}}</p>
-        </div>
-
-        <div class="home-try-images">
-            {% set tryImages = entry.homeTryImages.all() %}
-            {% for blockImage in tryImages %}
-            <div class="home-try-image">
-                {% include '_partials/block-image' %}
+    <section class="home-classes">
+        <div class="home-classes-head stack-reg">
+            <div class="stack-xs">
+                <h2 class="h3-style">{{entry.homeClassesHead}}</h2>
+                <p>{{entry.homeClassesText | striptags }}</p>
             </div>
-            {% endfor %}
+            <div class="home-classes-nav">
+                <button class="home-classes-nav-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 800 800"><title>view previous slide</title><path d="m168.2 349.12 320-200c39.963-24.976 91.8 3.752 91.8 50.88v399.999c0 47.127-51.837 75.857-91.8 50.88l-320-200c-37.6-23.5-37.6-78.259 0-101.759Z"/></svg>
+                </button>
+                <button class="home-classes-nav-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 20 20"><title>view next slide</title><path d="m15.795 11.272-8 5A1.5 1.5 0 0 1 5.5 15V5a1.5 1.5 0 0 1 2.295-1.272l8 5a1.5 1.5 0 0 1 0 2.544Z"/></svg>
+                </button>
+            </div>
         </div>
 
-        <div class="home-try-container">
-            <p>{{entry.homeTryText | striptags}}</p>
-            <a class="btn-cta-orange" href="{{ entry.homeTryCta }}">{{ entry.homeTryCta.getCustomText('Try for Free') }}</a>
-        </div>
-    </section>
-
-    <section class="home-classes stack-sm">
-        <div class="home-classes-head">
-            <h2 class="h3-style">{{entry.homeClassListHead}}</h2>
-        </div>
-        <div class="home-classes-list">
-            <div class="home-classes-toggles">
-                {% set blocks = entry.homeClassList.all() %}
+        <div class="home-classes-carousel swiper">
+            <div class="swiper-wrapper">
+                {% set blocks = entry.homeClassesSlides.all() %}
                 {% if blocks | length %}
-                    {% for block in blocks %}
-                        {% set classIndex = "class-#{loop.index}" %}
-                        {% set toggleIndex = "toggle-#{loop.index}" %}
-                        {% if loop.first %}
-                            <button id={{ toggleIndex }} class="home-classes-toggle active" aria-expanded="true" aria-controls={{ classIndex }}>{{ block.homeClassItemToggleText | striptags }}</button>
-                        {% else %}
-                            <button id={{ toggleIndex }} class="home-classes-toggle" aria-expanded="false" aria-controls={{ classIndex }}>{{ block.homeClassItemToggleText | striptags }}</button>
-                        {% endif %}
-                    {% endfor %}
+                {% for block in blocks %}
+                <div class="swiper-slide">
+                    <div class="home-classes-slide stack-sm">
+                        <div class="home-classes-slide-image">
+                            {% set classImage = block.homeClassesSlideImage.one() %}
+                            {% if classImage %}
+                                <img src="{{ classImage.url('block') }}" 
+                                width="{{ classImage.getWidth('block') }}"
+                                height="{{ classImage.getHeight('block') }}"
+                                alt="{{ classImage.alt }}" />
+                            {% endif %}
+                        </div>
+                        <div class="home-classes-slide-text stack-xs">
+                            <h3 class="h4-style">{{ block.homeClassesSlideTitle }}</h3>
+                            <p class="p-small">{{ block.homeClassesSlideDescription | striptags }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
                 {% endif %}
             </div>
-            <div class="home-classes-items">
-                {% set blocks = entry.homeClassList.all() %}
-                {% if blocks | length %}
-                    {% for block in blocks %}
-                        {% set classIndex = "class-#{loop.index}" %}
-                        {% set toggleIndex = "toggle-#{loop.index}" %}
-                        {% if loop.first %}
-                            <div class="home-classes-item stack-sm active" id={{ classIndex }} role="region" aria-labelledby={{ toggleIndex }} data-height>
-                                <span class="home-classes-item-text">{{block.homeClassItemText}}</span>
-                                <a class="btn-underline-orange" href="{{ block.homeTestimonialLink }}">{{ block.homeClassItemCta.getCustomText('CTA') }}</a>
-                            </div>
-                        {% else %}
-                            <div class="home-classes-item stack-sm" id={{ classIndex }} role="region" aria-labelledby={{ toggleIndex }} data-height>
-                                <span class="home-classes-item-text">{{block.homeClassItemText}}</span>
-                                <a class="btn-underline-orange" href="{{ block.homeTestimonialLink }}">{{ block.homeClassItemCta.getCustomText('CTA') }}</a>
-                            </div>
-                        {% endif %}
-                    {% endfor %}
-                {% endif %}
-            </div>
+        </div>
+
+        <div class="home-classes-cta">
+            <a class="btn-cta-orange" href="{{ entry.homeClassesCta }}">{{ entry.homeClassesCta.getCustomText('Try for Free') }}</a>
         </div>
     </section>
 
@@ -137,7 +124,7 @@
             <div class="home-testimonials-image">
                 {% set blockImage = entry.homeTestimonialImage.one() %}
                 {% if blockImage %}
-                    {% include '_partials/block-image' %}
+                {% include '_partials/block-image' %}
                 {% endif %}
             </div>
             <div class="home-testimonials-copy stack-sm">
@@ -145,14 +132,16 @@
                 <div class="stack-reg">
                     {% set blocks = entry.homeTestimonialsList.all() %}
                     {% if blocks | length %}
-                        {% for block in blocks %}
-                            <div class="stack-xs">
-                                <p>{{ block.homeTestimonial | striptags }}&mdash;<span class="tag">{{ block.homeTestimonialName }}</span></p>
-                                {% if block.homeTestimonialLink %}
-                                    <a class="btn-underline-orange" href="{{ block.homeTestimonialLink }}">{{ block.homeTestimonialLink.getCustomText('Watch Video') }}</a>
-                                {% endif %}
-                            </div>
-                        {% endfor %}
+                    {% for block in blocks %}
+                    <div class="stack-xs">
+                        <p>{{ block.homeTestimonial | striptags }}&mdash;<span class="tag">{{ block.homeTestimonialName
+                                }}</span></p>
+                        {% if block.homeTestimonialLink %}
+                        <a class="btn-underline-orange" href="{{ block.homeTestimonialLink }}">{{
+                            block.homeTestimonialLink.getCustomText('Watch Video') }}</a>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
                     {% endif %}
                 </div>
             </div>
@@ -172,29 +161,30 @@
         <div class="home-membership-list">
             {% set blocks = entry.homeMembershipOptions.all() %}
             {% if blocks | length %}
-                {% for block in blocks %}
-                    <div class="home-membership-item">
-                        <div class="home-membership-item-text">
-                            <div class="home-membership-item-image">
-                                {% set blockImage = block.homeMembershipOptionImage.one() %}
-                                {% if blockImage %}
-                                    {% include '_partials/block-image' %}
-                                {% endif %}
-                            </div>
-                            <div>
-                                <h3 class="tag-small">{{block.homeMembershipOptionPlan}}</h3>
-                                <p class="price">{{block.homeMembershipOptionPrice}}</p>
-                                {% if block.homeMembershipOptionSubhead %}
-                                    <p class="desc">{{block.homeMembershipOptionSubhead}}</p>
-                                {% endif %}
-                            </div>
-                            <div>
-                                <a class="btn-pill-white" href="{{ block.homeTestimonialLink }}">{{ block.homeMembershipOptionCta.getCustomText('Select This Plan') }}</a>
-                            </div>
-                        </div>
-                        <p class="home-membership-item-tag">{{block.homeMembershipOptionDetail}}</p>
+            {% for block in blocks %}
+            <div class="home-membership-item">
+                <div class="home-membership-item-text">
+                    <div class="home-membership-item-image">
+                        {% set blockImage = block.homeMembershipOptionImage.one() %}
+                        {% if blockImage %}
+                        {% include '_partials/block-image' %}
+                        {% endif %}
                     </div>
-                {% endfor %}
+                    <div>
+                        <h3 class="tag-small">{{block.homeMembershipOptionPlan}}</h3>
+                        <p class="price">{{block.homeMembershipOptionPrice}}</p>
+                        {% if block.homeMembershipOptionSubhead %}
+                        <p class="desc">{{block.homeMembershipOptionSubhead}}</p>
+                        {% endif %}
+                    </div>
+                    <div>
+                        <a class="btn-pill-white" href="{{ block.homeTestimonialLink }}">{{
+                            block.homeMembershipOptionCta.getCustomText('Select This Plan') }}</a>
+                    </div>
+                </div>
+                <p class="home-membership-item-tag">{{block.homeMembershipOptionDetail}}</p>
+            </div>
+            {% endfor %}
             {% endif %}
         </div>
     </section>
@@ -205,12 +195,12 @@
             <div class="home-philosophy-list stack-reg">
                 {% set blocks = entry.homePhilosophyList.all() %}
                 {% if blocks | length %}
-                    {% for block in blocks %}
-                        <div class="home-philosophy-item stack-xs">
-                           <h3 class="h4-style">{{ block.homePhilosophyItemHead }}</h3>
-                           {{ block.homePhilosophyItemDescription }}
-                        </div>
-                    {% endfor %}
+                {% for block in blocks %}
+                <div class="home-philosophy-item stack-xs">
+                    <h3 class="h4-style">{{ block.homePhilosophyItemHead }}</h3>
+                    {{ block.homePhilosophyItemDescription }}
+                </div>
+                {% endfor %}
                 {% endif %}
             </div>
         </div>
@@ -220,7 +210,7 @@
         <div class="home-meet-bg">
             {% set image = entry.homeMeetAlyImage.one() %}
             {% if image %}
-                <img src="{{ image.url }}" alt="{{ image.alt }}" />
+            <img src="{{ image.url }}" alt="{{ image.alt }}" />
             {% endif %}
         </div>
         <div class="home-meet-container stack-lg">
@@ -229,9 +219,9 @@
                 {{ entry.homeMeetAlyText }}
                 {% set signature = entry.homeMeetAlySignature.one() %}
                 {% if signature %}
-                    <div class="home-meet-signature">
-                        <img src="{{ signature.url }}" alt="{{ signature.alt }}" />
-                    </div>
+                <div class="home-meet-signature">
+                    <img src="{{ signature.url }}" alt="{{ signature.alt }}" />
+                </div>
                 {% endif %}
             </div>
         </div>
@@ -246,16 +236,17 @@
             <div class="home-faq-list stack-reg" data-panel-group>
                 {% set blocks = entry.homeFaqList.all() %}
                 {% if blocks | length %}
-                    {% for block in blocks %}
-                        <div class="home-faq-item" data-panel>
-                            <button class="home-faq-toggle h4-style" data-panel-trigger aria-expanded="false">
-                                {{ block.homeFaqQuestion | striptags }}
-                            </button>
-                            <div class="home-faq-answer panel-target rich-text" style="visibility: hidden" data-panel-target data-height>
-                                {{ block.homeFaqAnswer }}
-                            </div>
-                        </div>
-                    {% endfor %}
+                {% for block in blocks %}
+                <div class="home-faq-item" data-panel>
+                    <button class="home-faq-toggle h4-style" data-panel-trigger aria-expanded="false">
+                        {{ block.homeFaqQuestion | striptags }}
+                    </button>
+                    <div class="home-faq-answer panel-target rich-text" style="visibility: hidden" data-panel-target
+                        data-height>
+                        {{ block.homeFaqAnswer }}
+                    </div>
+                </div>
+                {% endfor %}
                 {% endif %}
             </div>
         </div>

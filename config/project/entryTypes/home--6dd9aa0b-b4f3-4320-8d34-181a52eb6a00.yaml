@@ -30,6 +30,7 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -224,91 +225,49 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 28a4dc1f-944a-44ed-82cb-8a50a8b69243 # Try Head
+            fieldUid: 15c2249b-2a16-4099-8c27-c249429ecebe # Classes Head
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: eadbbef2-e054-4546-b244-1c26e22ea246
+            uid: 0d182d2a-fb30-4684-890c-c15370d77f6d
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 63c128b9-aff9-4cd2-ab38-873bdce8e2a1 # Try Subhead
+            fieldUid: a30a92ab-ba97-4a5b-83f9-ba21d87d2cc6 # Classes Text
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 3afd1ced-5e5f-464d-b409-b1a67b78d5cb
+            uid: 0347a05d-20a6-4912-a7e8-ca0e091d8553
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: d7a6e9a6-eab6-444f-b7f8-7a0ed4194618 # Try Images
+            fieldUid: ddea75eb-f726-4277-888c-a56f79dd9e56 # Classes CTA
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 3fa315c1-a272-4b85-8c4c-9e02d1509912
+            uid: 355ac569-3034-47f7-b2ab-48f97cb43f63
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 4b64d905-1751-48d9-b6d7-c226b9124379 # Try Text
+            fieldUid: 6d547dab-3d15-44cf-9ee2-2d46f37db6ce # Classes Slides
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 33e7532a-5d70-43e6-8476-7450eaf66f53
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: f53309fd-198f-4b52-90b4-7f6ed0b6d947 # Try CTA
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 88cd8c1b-7174-4ba5-bff2-c170df989d8f
-            userCondition: null
-            warning: null
-            width: 100
-        name: 'Try MB'
-        uid: db1c7d1a-dae4-4cd6-b5b1-b16daf850b6b
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: 1d8da57b-b4ba-4538-b802-fa5a134c1005 # Class List Head
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 9afc2c35-f3f7-4851-b121-286826e071df
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: d91b67ff-af2c-42a0-a94d-69318e247992 # Class List
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 14831677-a41e-4994-93b1-d27b714ae256
+            uid: d140a7d2-d23a-47a0-9dbd-8a01b1312f96
             userCondition: null
             warning: null
             width: 100
