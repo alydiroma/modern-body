@@ -15,10 +15,10 @@
         </div>
         <div class="home-hero-bg">
             {% if entry.homeHeroImage %}
-            {% set blockImage = entry.homeHeroImage.one() %}
-            {% if blockImage %}
-            {% include '_partials/block-image' %}
-            {% endif %}
+                {% set fullWidthImage = entry.homeHeroImage.one() %}
+                {% if fullWidthImage %}
+                    {% include '_partials/full-width-image' %}
+                {% endif %}
             {% endif %}
         </div>
     </section>
@@ -31,14 +31,14 @@
         <div class="home-difference-list">
             {% set blocks = entry.homeDifferenceList.all() %}
             {% if blocks | length %}
-            {% for block in blocks %}
-            <div class="home-difference-item">
-                <div class="stack-xs">
-                    <p>{{ loop.index }}</p>
-                    <p class="home-difference-text h4-style">{{block.homeDifferenceText | striptags}}</p>
+                {% for block in blocks %}
+                <div class="home-difference-item">
+                    <div class="stack-xs">
+                        <p>{{ loop.index }}</p>
+                        <p class="home-difference-text h4-style">{{block.homeDifferenceText | striptags}}</p>
+                    </div>
                 </div>
-            </div>
-            {% endfor %}
+                {% endfor %}
             {% endif %}
         </div>
     </section>
@@ -106,7 +106,7 @@
                     {% if blocks | length %}
                     {% for block in blocks %}
                     <div class="stack-xs">
-                        <p>{{ block.homeTestimonial | striptags }}&mdash;<span class="tag">{{ block.homeTestimonialName }}</span></p>
+                        <p>{{ block.homeTestimonial | striptags }} &mdash; <span class="tag">{{ block.homeTestimonialName }}</span></p>
                         <button class="btn-underline-orange video-btn" data-video="{{ block.homeTestimonialsVideo }}">Watch {{ block.homeTestimonialName }}&#8217;s Video</button>
                     </div>
                     {% endfor %}

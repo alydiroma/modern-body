@@ -1,9 +1,14 @@
 .footer {
-	margin-block: 10rem 2rem;
+	padding-block: 10rem 2rem;
+	background-color: $bg-med;
 
 	@include break(tablet) {
-		margin-block: 6rem 2rem;
+		padding-block: 6rem 2rem;
 	}
+
+	@include break(mobile) {
+		padding-block: 4rem 2rem;
+	}	
 
 	&-inner {
 		@include container;
@@ -65,7 +70,7 @@
 				@include font-body;
 				@include toRem('font-size', 16);
 				text-transform: uppercase;
-				color: $brown;
+				color: $dark-brown;
 			}
 
 			ul {
@@ -90,7 +95,7 @@
 		}
 
 		&-link {
-			color: $brown;
+			color: $dark-brown;
 
 			&.external {
 
@@ -119,10 +124,10 @@
 	}
 
 	&-copyright {
-		color: $brown;
+		color: $dark-brown;
 
 		a {
-			color: $brown;
+			color: $dark-brown;
 			text-decoration: underline;
 
 			&:hover {

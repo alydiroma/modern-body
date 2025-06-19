@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: d6e77677-670a-4b49-a894-c4d43cf36dac # About
-handle: aboutAlyImage
+handle: aboutBannerImage
 instructions: null
-name: 'About Aly Image'
+name: 'Banner Image'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -16,7 +16,7 @@ settings:
   localizeRelations: false
   maintainHierarchy: false
   maxRelations: 1
-  minRelations: null
+  minRelations: 1
   previewMode: full
   restrictFiles: false
   restrictLocation: false
@@ -27,8 +27,7 @@ settings:
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  sources:
-    - 'volume:14a6f0f3-b531-4d1d-a2b5-c9b0a56a2ef0' # Assets
+  sources: '*'
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list

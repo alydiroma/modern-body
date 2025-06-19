@@ -1,33 +1,41 @@
 {% extends "_layout" %}
 {% block content %}
 <main class="about">
-    <h1 class="sr-only">About Page</h1>
-    <div class="about-container">
-        <section class="stack-sm">
-            <h2 class="h3-style">About Aly</h2>
-            <p>Modern Body developed from the desire I had to find a way to keep my body strong and healthy without running myself into the ground.</p>
-            <p>Having come from a world of dance and athletics my entire life, you could say movement to me is like a second language. The relationship I developed with my body was intimate and deep, but not always kind.</p>
-            <p>While dancing and training gave me the strength and understanding of how my body moved and functioned, it also took its toll over the years. I was not only run down and out of sync with the needs of my body, but I was also disconnected from what was best for my health.</p>
-            <p>As the pressures I placed upon my body grew, they culminated into the development of some disordered patterns of behavior that from the outside looked “healthy,” but left me depleted and searching for a new way to take care of myself.</p>
-            <p>As much as I tried to step away from movement while working through my challenges, I knew something was missing. I could no longer deny the fact that if I wasn’t moving my body in some way, shape, or form, I didn’t feel quite right.</p>
-            <p class="emphasis">I found Pilates and gained a new perspective on how my body functioned. With more knowledge, and a deep appreciation of the complexity, but also the simplicity, of what physical well-being really meant, I knew I wanted to help more people feel this way too.</p>
-            <p>I loved that I no longer had to put myself through the wringer to get stronger, and I didn’t have to spend hours a day exercising to be healthy. I realized that consistency, paired with a mentality of  quality over quantity, is most effective.</p>
-            <p>I believe that building a strong, resilient, mobile body plays a critical role in allowing us to continue living the life we desire, without hesitation, for years to come.</p>
-        </section>
+    <section class="about-banner">
+        <div class="about-banner-container stack-md">
+            <h1>{{ entry.aboutBannerTitle }}</h1>
 
-        <section class="stack-sm">
-            <h2 class="h3-style">About Modern Body</h2>
-            <p>Modern Body is focused on taking care of your health and physical well-being in a way that supports the needs of your body for your modern life.</p>
-            <p>Our goal is to help you create a strong, mobile, and stable body through our Pilates and movement program. This is about taking care of your body today and keeping it moving for years to come, no matter what season of life you’re in.</p>
-            <p>With our workouts and classes designed to support your body’s needs, you’ll cultivate a lasting relationship with movement. Our program is crafted specifically to keep you feeling good and living life the way you want to.</p>
-            <p>We stay current with the latest scientific research in the fields of physiology and exercise sciences to implement into our programming. This way you’ll always be instructed to move with the safest and most effective practices for your body.</p>
-            <p>Modern to us means more than research, it also means staying present with your body and training it for what you need here and now. Because your body is constantly changing each day, instead of fighting against change, we embrace it.</p>
-            <p>We keep the focus on recognizing where your body is in the current moment, then work out according to what will be most supportive to your goals, lifestyle, and nervous system. Not everyday will be a push;  some days may be more intense, and others more about maintenance or restoration.</p>
-            <p class="emphasis">This is a program designed to give you a sustainable method to move your body for years to come. It’s not about how hard your body works, but about how well your body works.</p>
-            <p>We believe your body is stronger than you know, and more intelligent than you give it credit for. When you show up for yourself and take care of your one body, you’ll be amazed at what you are capable of.</p>
-            <p>We promise to give you the most effective method to build a resilient, responsive, adaptable body to support you no matter what life throws your way.</p>
-        </section>
-    </div>
+            {% if entry.aboutBannerText %}
+                <p class="h4-style">{{ entry.aboutBannerText | striptags }}</p>
+            {% endif %}
+        </div>
+        <div class="about-banner-bg">
+            {% if entry.aboutBannerImage %}
+                {% set fullWidthImage = entry.aboutBannerImage.one() %}
+                {% if fullWidthImage %}
+                    {% include '_partials/full-width-image' %}
+                {% endif %}
+            {% endif %}
+        </div>
+    </section>
+
+    <section class="about-content">
+        <div class="about-content-container">
+            <div class="about-content-main stack-sm">
+                <h2>{{ entry.aboutMbHead }}</h2>
+                {{ entry.aboutMbCopy }}
+            </div>
+            <div class="about-content-side">
+                <div class="about-content-side-image">
+                    {% set blockImage = entry.aboutMbImage.one() %}
+                    {% if blockImage %}
+                        {% include '_partials/block-image' %}
+                    {% endif %}
+                </div>
+                <p class="h4-style">{{ entry.aboutMbSidebarCopy | striptags }}</p>
+            </div>
+        </div>
+    </section>
 
     <section class="about-classes stack-sm">
         <div class="about-classes-head">
@@ -78,6 +86,33 @@
                 {% endfor %}
                 {% endif %}
             </div>
+        </div>
+    </section>
+
+    <section class="about-content">
+        <div class="about-content-container">
+            <div class="about-content-side desktop">
+                <div class="about-content-side-image">
+                    {% set blockImage = entry.aboutAlyImage.one() %}
+                    {% if blockImage %}
+                        {% include '_partials/block-image' %}
+                    {% endif %}
+                </div>
+                <p class="h4-style">{{ entry.aboutAlySidebarCopy | striptags}}</p>
+            </div>
+            <div class="about-content-main stack-sm">
+                <h2>{{ entry.aboutAlyHead }}</h2>
+                {{ entry.aboutAlyCopy }}
+            </div>
+            <div class="about-content-side mobile">
+                <div class="about-content-side-image">
+                    {% set blockImage = entry.aboutAlyImage.one() %}
+                    {% if blockImage %}
+                        {% include '_partials/block-image' %}
+                    {% endif %}
+                </div>
+                <p class="h4-style">{{ entry.aboutAlySidebarCopy | striptags}}</p>
+            </div>            
         </div>
     </section>
 </main>

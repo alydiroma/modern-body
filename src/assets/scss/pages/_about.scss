@@ -1,34 +1,146 @@
 .about {
+	color: $dark-brown;
+	background-color: $bg-med;
 
-	&-container {
-		@include container;
+	&-banner {
+		position: relative;
 		display: flex;
-		justify-content: space-between;
-		gap: $gap-xl;
-		margin-bottom: $gap-xl;
+		align-items: center;
+		height: 85vh;
+		overflow: hidden;
 
-		section {
+		&-bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: $dark-brown;
+
+			img {
+				@include object-fit;
+				opacity: .25;
+			}	
+		}
+
+		&-container {
+			@include container;
+			position: relative;
+            display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			text-align: center;
+			color: $white;
+			padding-top: $gap-xl;
+			z-index: 1;
+
+			h1, p {
+				@include toRem('max-width', 700);
+			}
+
+			h1 {
+				letter-spacing: .03em;
+			}
+		}
+	}
+
+	&-content {
+		padding-block: $gap-lg;
+		background-color: $bg-med;
+
+		&-container {
+			@include container;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			gap: $gap-lg;	
+			
+			@include break(tablet) {
+				flex-direction: column;
+			}
+		}
+
+		&-main {
 			flex: 1;
+		}	
 
-			.emphasis {
+		&-side {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			gap: $gap-lg;
+
+			@include break(tablet) {
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				gap: $gap;	
+			}
+
+			@include break(mobile) {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+
+			&.desktop {
+
+				@include break(tablet) {
+					display: none;
+				}
+			}
+
+			&.mobile {
+				display: none;
+
+				@include break(tablet) {
+					display: flex;
+				}
+			}
+
+			p {
 				color: $orange;
+
+				@include break(tablet) {
+					flex: 1;
+				}
+			}
+
+			&-image {
+				flex: 1;
+				aspect-ratio: 1 / 1;
+				border-radius: $radius-image;
+				overflow: hidden;
+
+				@include break(tablet) {
+					flex: 1;
+				}
+
+				img {
+					display: block;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
 			}
 		}
 	}
 
     &-classes {
-		padding-block: $gap-lg;
-		background-color: $bg-med;
+		padding-block: $gap-md $gap-lg;
+		background-color: $bg-light;
 
 		&-head {
 			@include container();
+			color: $orange;
 		}
 
 		&-list {
 			@include container();
 			display: flex;
 			justify-content: space-between;
-			gap: $gap-lg;
+			gap: $gap-sm;
 			border-top: 1px solid $coffee;
 			border-bottom: 1px solid $coffee;
 
@@ -78,7 +190,7 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			padding: $gap-sm $gap-sm $gap $gap-sm;
+			padding: $gap;
 			visibility: hidden;
 
 			&.active {

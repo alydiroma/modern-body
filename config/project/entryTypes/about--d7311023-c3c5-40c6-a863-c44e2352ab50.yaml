@@ -31,8 +31,98 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 1e54c489-6a15-4b2b-bddc-69dc884564d1 # Banner Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b40d6f75-67ee-4260-8e1d-052ef2eeac00
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4a07c364-0767-4a93-aaa8-4deb778f1f27 # Banner Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56038f25-60c0-457a-a7ba-912028eb4bcc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ad0a8a25-f07f-40e6-a729-40065563d5dd # Banner Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 76c7e700-239e-453d-83fb-2053182ad90b
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 95712409-ccc0-4743-9c99-ca02d0877bfa
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ea3e5fec-5010-406f-8917-449ffc89219f # About MB Head
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2c548643-c5b8-4d65-a480-a1f81ff0e53b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0816030d-965b-4191-920d-1eb3e31b40bf # About MB Copy
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1fff5db1-bff8-445a-a35b-48336227d582
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ab565c8c-49f1-4ccf-982f-dad31b867199 # About MB Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0772be96-414e-4159-b38c-71354ba53b6b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 84378dce-e3a9-4571-ad93-24faccf4126a # About MB Sidebar Copy
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 77e7505c-3dba-4eee-9310-4a725c5d83a7
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'About MB'
+        uid: 409ba3da-c267-4e74-bc12-fcfff90f20ef
         userCondition: null
       -
         elementCondition: null
@@ -63,6 +153,60 @@ fieldLayouts:
             width: 100
         name: Classes
         uid: 48191115-e52b-4bae-b184-00525add4e50
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: aee54a5e-7620-4ca4-9d34-f51ba025df2f # About Aly Head
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aa46bf4b-4196-43ac-b948-d15406fdaa9c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0bcf0882-1270-403e-a73f-fdf2649a1a9d # About Aly Copy
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0bd3c4f7-8695-4b1e-8503-076056200840
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b87e3b3f-cace-45aa-9c6d-2378c7874b72 # About Aly Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 512eca20-ac41-491e-99fd-470101c6004f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5736b993-6ba4-432b-a07b-64f999b41f2f # About Aly Sidebar Copy
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b857b3a2-c97c-4076-be0d-6781ba0b8b48
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'About Aly'
+        uid: 4dc4ead7-92d8-4548-b928-4ebaf889585b
         userCondition: null
 handle: about
 hasTitleField: false

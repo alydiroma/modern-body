@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: d6e77677-670a-4b49-a894-c4d43cf36dac # About
-handle: aboutAlyImage
+handle: aboutMbImage
 instructions: null
-name: 'About Aly Image'
+name: 'About MB Image'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -15,7 +15,7 @@ settings:
   defaultUploadLocationSubpath: null
   localizeRelations: false
   maintainHierarchy: false
-  maxRelations: 1
+  maxRelations: null
   minRelations: null
   previewMode: full
   restrictFiles: false
@@ -24,7 +24,7 @@ settings:
   restrictedLocationSource: 'volume:14a6f0f3-b531-4d1d-a2b5-c9b0a56a2ef0' # Assets
   restrictedLocationSubpath: null
   selectionLabel: null
-  showSiteMenu: true
+  showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources:

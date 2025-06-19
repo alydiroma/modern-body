@@ -1,8 +1,17 @@
 %h1-style {
 	@include font-head;
-	@include toRem('font-size', 72);
+	@include toRem('font-size', 96);
     line-height: 1.2;
     letter-spacing: 0.005em;
+    text-wrap: pretty;
+
+    @include break(tablet) {
+        @include toRem('font-size', 84);
+	}
+
+    @include break(mobile) {
+        @include toRem('font-size', 72);
+	}
 }
 
 %h2-style {

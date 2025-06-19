@@ -44,7 +44,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: b87e3b3f-cace-45aa-9c6d-2378c7874b72 # Image
+            fieldUid: b87e3b3f-cace-45aa-9c6d-2378c7874b72 # About Aly Image
             instructions: null
             label: null
             required: false
