@@ -11,8 +11,8 @@
 
             <nav class="footer-nav">
                 <div class="footer-nav-column">
-                    <h2>Information</h2>
-                    {{ craft.navigation.render('footerNavColumn1', {
+                    <h2>Modern Body</h2>
+                    {{ craft.navigation.render('footerSiteNav', {
                         liClass: 'footer-nav-item',
                         aClass: 'footer-nav-link',
                         activeClass: 'active',
@@ -20,17 +20,17 @@
                     }}
                 </div>
                 <div class="footer-nav-column">
-                    <h2>Modern Body</h2>
-                    {{ craft.navigation.render('footerNavColumn2', {
+                    <h2>Classes</h2>
+                    {{ craft.navigation.render('footerClassesNav', {
                         liClass: 'footer-nav-item',
-                        aClass: 'footer-nav-link',
+                        aClass: 'footer-nav-link external',
                         activeClass: 'active',
                         })
                     }}
-                </div>
+                </div>               
                 <div class="footer-nav-column">
                     <h2>Let's Connect</h2>
-                    {{ craft.navigation.render('footerNavColumn3', {
+                    {{ craft.navigation.render('footerSocialLinks', {
                         liClass: 'footer-nav-item',
                         aClass: 'footer-nav-link',
                         activeClass: 'active',

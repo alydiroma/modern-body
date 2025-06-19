@@ -1,4 +1,4 @@
-dateModified: 1750306521
+dateModified: 1750315165
 email:
   fromEmail: support@modernbody.io
   fromName: 'Modern Body'
@@ -101,7 +101,7 @@ meta:
     485c9d29-4e5b-4658-9c86-ed411faf38f6: Title # Title
     620c319e-a58d-401d-ba93-5d4b6317efa0: 'Approach CTA' # Approach CTA
     669c6ed2-f83d-4272-900e-a301c802839a: 'Podcast Image' # Podcast Image
-    0816ea9d-8582-4bee-aafc-b482935a9c94: 'Footer Nav Column 2' # Footer Nav Column 2
+    0816ea9d-8582-4bee-aafc-b482935a9c94: 'Footer Site Nav' # Footer Site Nav
     830bfd32-7cb9-4f3f-925d-05f0ff7b6562: 'Class Item' # Class Item
     831a1862-ae47-4961-b2a4-ddc9c451e096: FAQ # FAQ
     854bb4fe-e607-46c0-8623-93814869aea5: Description # Description
@@ -146,6 +146,7 @@ meta:
     aa2ff4ae-da1b-4ca0-8b78-03ce349ee782: 'FAQ Item' # FAQ Item
     ac16953e-d476-4c04-a41e-9115e69331e6: Contact # Contact
     aca07eab-0630-4970-8c9c-c2c20f485094: 'Testimonial Summary' # Testimonial Summary
+    acea5b4c-7ceb-431c-910e-5ed5b85da86b: 'Testimonials Video' # Testimonials Video
     ae634bf8-48e5-4164-8ab4-7ea661caa5a5: Accordion # Accordion
     af23db4e-b155-44e8-9387-875605aafbcc: 'Membership Option' # Membership Option
     b0bc9f09-62f0-4eb2-807f-395e29fdc51d: 'Classes Slide Title' # Classes Slide Title
@@ -180,6 +181,7 @@ meta:
     cefc55e3-defd-4873-a167-004cbf243849: Content # Content
     cf1c4053-2810-40b9-8b64-e0031fbd8588: 'Philosophy Item Description' # Philosophy Item Description
     cf9ba132-fcad-4b8c-b751-f8f46acea212: 'Sidebar Image' # Sidebar Image
+    d4b8cccb-5c21-4f34-822b-fdcaccb73633: 'Footer Classes Nav' # Footer Classes Nav
     d4baabcc-a917-427c-92e1-321c37f3b023: 'Testimonial Items' # Testimonial Items
     d6e77677-670a-4b49-a894-c4d43cf36dac: About # About
     d7a6e9a6-eab6-444f-b7f8-7a0ed4194618: 'Try Images' # Try Images
@@ -187,7 +189,7 @@ meta:
     d7f85d24-6fac-479b-8e5b-cdd8fa5b5c8a: 'Philosophy Intro Text' # Philosophy Intro Text
     d91b67ff-af2c-42a0-a94d-69318e247992: 'Class List' # Class List
     d92a80b9-3c27-47b7-991b-dc4254819fe9: Testimonials # Testimonials
-    d109eed7-bc66-4edb-8452-ac786ef35013: 'Footer Nav Column 3' # Footer Nav Column 3
+    d109eed7-bc66-4edb-8452-ac786ef35013: 'Footer Social Links' # Footer Social Links
     d24222de-bc96-4eff-8cd1-e26af7a505cb: 'Difference Head' # Difference Head
     d76015ab-cb69-4d6c-9f18-cc3506db7bd7: 'Testimonial Name' # Testimonial Name
     d7311023-c3c5-40c6-a863-c44e2352ab50: About # About
@@ -198,7 +200,6 @@ meta:
     dccb8fdf-e43a-4604-838c-f3e8f9568225: 'Testimonial Item' # Testimonial Item
     dd8c01a1-64b7-4717-9d7e-25e331647446: 'Membership Head' # Membership Head
     ddea75eb-f726-4277-888c-a56f79dd9e56: 'Classes CTA' # Classes CTA
-    df06f0d5-d0a1-4425-ac88-297d50ad1c80: 'Testimonial Link' # Testimonial Link
     e0364518-4df8-4d7e-bbc0-a509ebe03558: '1:1 Training' # 1:1 Training
     e5ea1376-e6fc-44b1-8c04-fab31a32d186: 'Hero CTA' # Hero CTA
     e7ca93f7-a988-4c82-ac6e-51212c511d4f: 'About Aly' # About Aly
@@ -225,7 +226,6 @@ meta:
     ef70b6a7-9da3-4ffd-b6a3-33407f08a79b: 'Sidebar Head' # Sidebar Head
     ef78c8c4-5030-4480-8f50-50b231fff44c: 'Second Image' # Second Image
     ef85c3d0-313b-4bcb-a53b-be78806edea3: 'FAQ Head' # FAQ Head
-    f055c382-964c-43a8-a07a-efd54cb890e5: 'Footer Nav Column 1' # Footer Nav Column 1
     f1dbd402-7281-4d1a-a2dc-3753d5a44df9: 'Company Bullets' # Company Bullets
     f2f30c2d-3302-48f9-ab43-2fe10d21e800: 'Podcast Title' # Podcast Title
     f4af40b0-3ee1-4b65-bfe3-fcf6e67c3c75: 'About Signature' # About Signature

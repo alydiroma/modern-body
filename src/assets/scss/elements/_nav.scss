@@ -6,7 +6,7 @@ body:has(.home) {
 		&-link {
 			color: $white;
 
-			&::after {
+			&::before {
 				background-color: $white;
 			}
 		}
@@ -48,7 +48,7 @@ body:has(.home) {
 		text-decoration-color: transparent;
 		overflow: hidden;
 
-		&::after {
+		&::before {
 			position: absolute;
 			bottom: 0;
 			left: 0;
@@ -63,7 +63,7 @@ body:has(.home) {
 		&.nav-active,
 		&[aria-expanded="true"] {
 			
-			&::after {
+			&::before {
 				height: $sliver;
 			}
 		}
@@ -73,12 +73,28 @@ body:has(.home) {
 			outline-offset: 2px;
 		}
 
+		&.external {
+
+			&::after {
+				content: '';
+				display: inline-block;
+				width: $gap-sm;
+				height: $gap-sm;
+				margin-left: $space;
+				background-image: url('data:image/svg+xml,<svg width="800" height="800" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M19 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5v2H5v12h12v-5h2Zm-.003-7.586-7.293 7.293-1.414-1.414L17.583 5h-4.586V3h8v8h-2V6.414Z" fill="%23FFF"/></svg>');
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+				transform: translateY(2px);
+			}
+		}
+
 		&.active {
 			@include font-medium;
 			color: $accent;
 			cursor: default;
 
-			&::after {
+			&::before {
 				display: none;
 			}
 		}

@@ -1270,7 +1270,7 @@ strong,
 .btn-cta-white, .btn-cta-orange {
   font-family: "Karla Variable", sans-serif;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.125rem;
   text-transform: uppercase;
   padding: 0.5rem 3rem;
   border: 2px solid;
@@ -1681,7 +1681,7 @@ body:has(.home) .header-logo .logo-interior {
 body:has(.home) .nav-link {
   color: #fff;
 }
-body:has(.home) .nav-link::after {
+body:has(.home) .nav-link::before {
   background-color: #fff;
 }
 
@@ -1715,7 +1715,7 @@ body:has(.home) .nav-link::after {
   text-decoration-color: transparent;
   overflow: hidden;
 }
-.nav-link::after {
+.nav-link::before {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1725,12 +1725,24 @@ body:has(.home) .nav-link::after {
   background-color: #3D2F17;
   transition: height 0.3s ease;
 }
-.nav-link:hover::after, .nav-link.nav-active::after, .nav-link[aria-expanded=true]::after {
+.nav-link:hover::before, .nav-link.nav-active::before, .nav-link[aria-expanded=true]::before {
   height: 0.125rem;
 }
 .nav-link:focus-visible {
   outline: 1px solid #8a3a42;
   outline-offset: 2px;
+}
+.nav-link.external::after {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.25rem;
+  background-image: url('data:image/svg+xml,<svg width="800" height="800" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M19 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5v2H5v12h12v-5h2Zm-.003-7.586-7.293 7.293-1.414-1.414L17.583 5h-4.586V3h8v8h-2V6.414Z" fill="%23FFF"/></svg>');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transform: translateY(2px);
 }
 .nav-link.active {
   font-family: "Karla Variable", sans-serif;
@@ -1738,7 +1750,7 @@ body:has(.home) .nav-link::after {
   color: #8a3a42;
   cursor: default;
 }
-.nav-link.active::after {
+.nav-link.active::before {
   display: none;
 }
 .nav-button {
@@ -1939,6 +1951,18 @@ body:has(.home) .nav-link::after {
 }
 .footer-nav-link {
   color: #6D5725;
+}
+.footer-nav-link.external::after {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.125rem;
+  background-image: url('data:image/svg+xml,<svg width="800" height="800" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M19 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5v2H5v12h12v-5h2Zm-.003-7.586-7.293 7.293-1.414-1.414L17.583 5h-4.586V3h8v8h-2V6.414Z" fill="%233D2F17"/></svg>');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transform: translateY(2px);
 }
 .footer-nav-link.active {
   text-decoration: underline;
@@ -2345,6 +2369,7 @@ body:has(.home) .nav-link::after {
 .home-testimonials {
   padding-block: 0 5rem;
   background-color: #eee6d9;
+  scroll-margin-top: 3rem;
 }
 .home-testimonials-container {
   width: calc(100% - 5rem);
@@ -2377,9 +2402,13 @@ body:has(.home) .nav-link::after {
   border-radius: 0.5rem;
   overflow: hidden;
 }
+.home-testimonials-image:has(iframe) {
+  background-color: transparent;
+}
 @media (max-width: 992px) {
   .home-testimonials-image {
-    height: 300px;
+    width: 100%;
+    aspect-ratio: 16/9;
     margin-bottom: 2rem;
   }
 }
@@ -2397,11 +2426,26 @@ body:has(.home) .nav-link::after {
   transform: scale(1);
   transition: transform 1.2s ease;
 }
+.home-testimonials-image iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
 .home-testimonials-copy {
   flex: 1;
 }
 .home-testimonials-copy h2 {
   color: #B2482B;
+}
+.home-testimonials-copy .video-btn {
+  padding-bottom: 0.5rem;
 }
 .home-testimonials-cta {
   width: calc(100% - 5rem);
@@ -2652,7 +2696,7 @@ body:has(.home) .nav-link::after {
 .home-faq-item {
   margin-left: 2rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #B2482B;
+  border-bottom: 2px solid #B2482B;
 }
 .home-faq-toggle {
   text-decoration: none;

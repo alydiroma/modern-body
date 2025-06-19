@@ -10626,6 +10626,29 @@ var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper'
     prevEl: '.home-classes-nav-prev'
   }
 });
+
+// testimonial videos
+var testimonialSection = document.getElementById('testimonials');
+var testimonialVideoBtns = document.querySelectorAll('.video-btn');
+var testimonialImage = document.querySelector('.home-testimonials-image');
+var selectTesimonialVideo = function selectTesimonialVideo() {
+  testimonialVideoBtns.forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      var windowWidth = window.innerWidth;
+      var videoId = btn.dataset.video;
+      testimonialImage.innerHTML = '<iframe src="https://player.vimeo.com/video/' + videoId + '?h=c1bcc1e18c&amp;autoplay=1&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen="" loading="lazy"></iframe>';
+      if (windowWidth <= 992) {
+        testimonialSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+};
+if (testimonialVideoBtns) {
+  selectTesimonialVideo();
+}
 })();
 
 /******/ })()

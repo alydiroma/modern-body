@@ -91,7 +91,7 @@
         </div>
     </section>
 
-    <section class="home-testimonials stack-lg">
+    <section id="testimonials" class="home-testimonials stack-lg">
         <div class="home-testimonials-container">
             <div class="home-testimonials-image">
                 {% set blockImage = entry.homeTestimonialImage.one() %}
@@ -106,12 +106,8 @@
                     {% if blocks | length %}
                     {% for block in blocks %}
                     <div class="stack-xs">
-                        <p>{{ block.homeTestimonial | striptags }}&mdash;<span class="tag">{{ block.homeTestimonialName
-                                }}</span></p>
-                        {% if block.homeTestimonialLink %}
-                        <a class="btn-underline-orange" href="{{ block.homeTestimonialLink }}">{{
-                            block.homeTestimonialLink.getCustomText('Watch Video') }}</a>
-                        {% endif %}
+                        <p>{{ block.homeTestimonial | striptags }}&mdash;<span class="tag">{{ block.homeTestimonialName }}</span></p>
+                        <button class="btn-underline-orange video-btn" data-video="{{ block.homeTestimonialsVideo }}">Watch {{ block.homeTestimonialName }}&#8217;s Video</button>
                     </div>
                     {% endfor %}
                     {% endif %}
@@ -150,7 +146,7 @@
                         {% endif %}
                     </div>
                     <div>
-                        <a class="btn-cta-white" href="{{ block.homeTestimonialLink }}">{{
+                        <a class="btn-cta-white" href="{{ block.homeMembershipOptionCta }}">{{
                             block.homeMembershipOptionCta.getCustomText('Select This Plan') }}</a>
                     </div>
                 </div>

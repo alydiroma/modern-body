@@ -31,13 +31,13 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: df06f0d5-d0a1-4425-ac88-297d50ad1c80 # Testimonial Link
+            fieldUid: acea5b4c-7ceb-431c-910e-5ed5b85da86b # Testimonials Video
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 7516ed03-5ccb-4fa1-9866-b2be14526347
+            uid: 67e2e7c5-e612-4750-b9ee-e2c45fe0feca
             userCondition: null
             warning: null
             width: 100
@@ -45,6 +45,26 @@ fieldLayouts:
         uid: 92f43532-2e7b-4120-aba4-d8be334b3350
         userCondition: null
 fields:
+  acea5b4c-7ceb-431c-910e-5ed5b85da86b: # Testimonials Video
+    columnSuffix: aqcsxvsa
+    contentColumnType: text
+    fieldGroup: null
+    handle: homeTestimonialsVideo
+    instructions: null
+    name: 'Testimonials Video'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   d76015ab-cb69-4d6c-9f18-cc3506db7bd7: # Testimonial Name
     columnSuffix: gnmlchnb
     contentColumnType: text
@@ -65,69 +85,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  df06f0d5-d0a1-4425-ac88-297d50ad1c80: # Testimonial Link
-    columnSuffix: null
-    contentColumnType: string
-    fieldGroup: null
-    handle: homeTestimonialLink
-    instructions: null
-    name: 'Testimonial Link'
-    searchable: false
-    settings:
-      allowCustomText: true
-      allowTarget: false
-      autoNoReferrer: false
-      customTextMaxLength: 0
-      customTextRequired: false
-      defaultLinkName: asset
-      defaultText: ''
-      enableAllLinkTypes: false
-      enableAriaLabel: false
-      enableElementCache: false
-      enableTitle: false
-      typeSettings:
-        asset:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: false
-          sources: '*'
-        category:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: false
-          sources: '*'
-        custom:
-          allowAliases: false
-          disableValidation: false
-          enabled: false
-        email:
-          allowAliases: false
-          disableValidation: false
-          enabled: false
-        entry:
-          allowCrossSiteLink: false
-          allowCustomQuery: true
-          enabled: true
-          sources: '*'
-        site:
-          enabled: false
-          sites: '*'
-        tel:
-          allowAliases: false
-          disableValidation: false
-          enabled: false
-        url:
-          allowAliases: false
-          disableValidation: false
-          enabled: false
-        user:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: false
-          sources: '*'
-    translationKeyFormat: null
-    translationMethod: none
-    type: lenz\linkfield\fields\LinkField
   ebe89201-1375-4202-8c7d-80cd9a140f5d: # Testimonial
     columnSuffix: noqfjonc
     contentColumnType: text

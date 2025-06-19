@@ -11,7 +11,7 @@
             {% else %}
                 <li class="nav-item">
                     <a {% if node.url %}href="{{ node.url }}" {% endif %}
-                        class="nav-link bold {% if node.active %}nav-active{% endif %}">
+                        class="nav-link bold external {% if node.active %}nav-active{% endif %}">
                         {{- node.title -}}
                     </a>
             {% endif %}

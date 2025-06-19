@@ -57,7 +57,7 @@
 %btn-cta {
 	@extend %btn;
 	@include font-bold;
-	@include toRem('font-size', 16);
+	@include toRem('font-size', 18);
 	text-transform: uppercase;
 	padding: $gap-xs $gap-md;
 	border: 2px solid;

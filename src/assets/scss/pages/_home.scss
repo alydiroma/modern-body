@@ -301,6 +301,7 @@
 	&-testimonials {
 		padding-block: 0 $gap-xl;
 		background-color: $bg-med;
+		scroll-margin-top: $gap-md;
 
 		&-container {
 			@include container;
@@ -321,8 +322,13 @@
 			border-radius: $radius-image;
 			overflow: hidden;
 
+			&:has(iframe) {
+				background-color: transparent;
+			}
+
 			@include break(tablet) {
-				height: 300px;
+				width: 100%;
+				aspect-ratio: 16 / 9;
 				margin-bottom: $gap;
 			}
 
@@ -337,7 +343,18 @@
 				object-position: center;
 				transform: scale(1);
 				transition: transform 1.2s ease;
-			}	
+			}
+			
+			iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				object-position: center;				
+			}
 		}
 
 		&-copy {
@@ -345,6 +362,10 @@
 
 			h2 {
 				color: $orange;
+			}
+
+			.video-btn {
+				padding-bottom: $gap-xs;
 			}
 		}
 
@@ -552,7 +573,7 @@
 		&-item {
 			margin-left: $gap;
 			padding-bottom: $gap;
-			border-bottom: 1px solid $orange;
+			border-bottom: 2px solid $orange;
 		}
 
 		&-toggle {
