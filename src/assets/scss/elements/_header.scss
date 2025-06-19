@@ -149,6 +149,7 @@
 
 	&-mobile-btn {
 		@extend %btn;
+		@extend %tag;
 		display: none;
 		color: $white;
 		z-index: 999;

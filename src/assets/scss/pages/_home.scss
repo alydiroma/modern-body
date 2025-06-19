@@ -512,6 +512,10 @@
 		padding-block: $gap $gap-xxl;
 		background-color: $dark-brown;
 
+		@include break(mobile) {
+			height: unset;
+		}
+
 		&-bg {
 			position: absolute;
 			top: 0;

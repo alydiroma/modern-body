@@ -958,7 +958,7 @@ p,
   text-wrap: pretty;
 }
 
-.about-classes-toggle, .home-classes-nav-prev, .home-classes-nav-next, .tag, .tag-small {
+.about-classes-toggle, .home-classes-nav-prev, .home-classes-nav-next, .header-mobile-btn, .tag, .tag-small {
   font-family: "Karla Variable", sans-serif;
   font-weight: 700;
   font-size: 1.0625rem;
@@ -2545,6 +2545,11 @@ textarea {
   color: #fff;
   padding-block: 2rem 6rem;
   background-color: #3D2F17;
+}
+@media (max-width: 600px) {
+  .home-meet {
+    height: unset;
+  }
 }
 .home-meet-bg {
   position: absolute;
