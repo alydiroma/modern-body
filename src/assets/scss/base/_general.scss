@@ -18,10 +18,13 @@ body {
 	@include toRem('font-size', 16);
 	line-height: 1.8;
 	color: $coffee;
-	background-color: $bg-med;
-	//background: linear-gradient(0deg, $beige 0%, $white 100%);
+	background-color: $white;
 	margin: 0;
 	padding: 0;
+
+	&:has(.home) {
+		background-color: $bg-med;
+	}
 
 	&.fixed {
 		position: fixed;

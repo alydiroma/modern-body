@@ -166,7 +166,7 @@
             <div class="home-philosophy-list">
                 <div class="home-philosophy-intro stack-sm">
                     <h2 class="h3-style">{{ entry.homePhilosophyHead }}</h2>
-                    <p class="h4-style">{{ entry.homePhilosophyIntroText }}</p>
+                    <p class="h4-style">{{ entry.homePhilosophyIntroText | striptags }}</p>
                 </div>
                 {% set blocks = entry.homePhilosophyList.all() %}
                 {% if blocks | length %}

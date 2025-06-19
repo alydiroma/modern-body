@@ -4,7 +4,8 @@
         {% set image = global.globalLogoImageLong.one() %}
         {% if image %}
             <a class="header-logo" href="/" title="home">
-                <img src="{{ image.url() }}" alt="Aly DiRoma">
+                <img class="logo-home" src="/assets/images/logo-header-home.png" alt="Visit the Modern Body homepage.">
+                <img class="logo-interior" src="/assets/images/logo-header-interior.png" alt="Visit the Modern Body homepage.">
             </a>
         {% endif %}
         {% include '_partials/nav-main-right' %}

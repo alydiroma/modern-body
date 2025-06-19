@@ -1,7 +1,7 @@
 // classes toggles
 function setItemsHeight() {
-	const classItemsList = document.querySelector('.home-classes-items'),
-		classItems = document.querySelectorAll('.home-classes-item');
+	const classItemsList = document.querySelector('.about-classes-items'),
+		classItems = document.querySelectorAll('.about-classes-item');
 
 	let classesHeight = 0;
 
@@ -17,8 +17,8 @@ function setItemsHeight() {
 }
 
 const classes = () => {
-	const classToggles = document.querySelectorAll('.home-classes-toggle'),
-		classItems = document.querySelectorAll('.home-classes-item');
+	const classToggles = document.querySelectorAll('.about-classes-toggle'),
+		classItems = document.querySelectorAll('.about-classes-item');
 
 	setItemsHeight();
 	classToggles.forEach((toggle) => {
