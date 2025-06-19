@@ -1,63 +1,72 @@
 .podcasts {
-    
-    &-head {
-        @include container($narrow);
-        text-align: center;
-    }
+    color: $dark-brown;
+	background-color: $bg-med;
 
-    &-intro {
-        margin-top: $gap-md;
-    }
+	&-banner {
+		position: relative;
+		display: flex;
+		align-items: center;
+		height: 85vh;
+		overflow: hidden;
 
-    &-container {
-        @include container();
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: $gap-md;
-        margin-top: $gap-md;
-        padding-top: $gap-md;
-        border-top: 2px solid $accent;
+		&-bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: $dark-brown;
 
-        @include break(tablet) {
-            grid-template-columns: repeat(2, 1fr);
-        }
+			img {
+				@include object-fit;
+				opacity: .25;
+			}	
+		}
 
-        @include break(mobile) {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
+		&-container {
+			@include container;
+			position: relative;
+            display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			text-align: center;
+			color: $white;
+			padding-top: $gap-xl;
+			z-index: 1;
 
-    &-item {
+			h1, p {
+				@include toRem('max-width', 700);
+			}
 
-        &-image {
-            display: block;
-            aspect-ratio: 1 / 1;
-            overflow: hidden;
+			h1 {
+				letter-spacing: .03em;
+			}
+		}
 
-            &:hover {
-                img {
-                    transform: scale(1.075);
+        &-text,
+        &-text p {
+            @extend %h4-style;
+
+            a {
+                color: $white;
+                border-bottom: 2px solid $white;
+                transition: border .3s ease;
+
+                &:hover {
+                    text-decoration: none;
+                    border-bottom: 2px solid transparent;
                 }
-            }			
-        
-            img {
-                display: block;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transform: scale(1);
-                transition: transform 1.2s ease;				
             }
         }
+	}
 
-        &-link {
-            text-decoration: underline;
-            text-decoration-color: transparent;
-            transition: text-decoration-color .3s ease;
-
-            &:hover {
-                text-decoration-color: inherit;
-            }
+    &-embed {
+        padding-top: $gap-xl;
+        
+        iframe {
+            max-width: 100% !important;
         }
     }
 }

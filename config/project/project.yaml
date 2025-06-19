@@ -1,4 +1,4 @@
-dateModified: 1750351944
+dateModified: 1750353408
 email:
   fromEmail: support@modernbody.io
   fromName: 'Modern Body'
@@ -36,6 +36,7 @@ meta:
     0e62c248-99e6-42ab-b8cd-d7ec668bc886: 'Hero Image' # Hero Image
     1a723490-90d3-4125-80a2-2f0c6f91b5eb: 'Approach Icon' # Approach Icon
     1d8da57b-b4ba-4538-b802-fa5a134c1005: 'Class List Head' # Class List Head
+    1e5f4a32-c5bd-4f87-82e4-874cd297cf47: 'Podcast Title' # Podcast Title
     1e26f696-518f-4f53-93e3-06ad726eee90: 'FAQ Answer' # FAQ Answer
     1e54c489-6a15-4b2b-bddc-69dc884564d1: 'Banner Title' # Banner Title
     1ead34db-f5ca-4e93-86d7-d61743978668: Default # Default
@@ -150,6 +151,7 @@ meta:
     a4731ac5-9e41-4ca2-b1d3-9d5f372ec3bc: '1:1 Training' # 1:1 Training
     a7317e16-6eeb-4299-a34d-02eabaa60519: Intro # Intro
     aa2ff4ae-da1b-4ca0-8b78-03ce349ee782: 'FAQ Item' # FAQ Item
+    aa484a7d-f7fa-42c3-b2dd-a05d05e35de0: 'Banner image' # Banner image
     ab565c8c-49f1-4ccf-982f-dad31b867199: 'About MB Image' # About MB Image
     ac16953e-d476-4c04-a41e-9115e69331e6: Contact # Contact
     aca07eab-0630-4970-8c9c-c2c20f485094: 'Testimonial Summary' # Testimonial Summary
@@ -236,8 +238,9 @@ meta:
     ef70b6a7-9da3-4ffd-b6a3-33407f08a79b: 'Sidebar Head' # Sidebar Head
     ef78c8c4-5030-4480-8f50-50b231fff44c: 'Second Image' # Second Image
     ef85c3d0-313b-4bcb-a53b-be78806edea3: 'FAQ Head' # FAQ Head
+    eff44e11-1bf3-4bcd-a4b7-a0b46586fea6: 'Banner Text' # Banner Text
     f1dbd402-7281-4d1a-a2dc-3753d5a44df9: 'Company Bullets' # Company Bullets
-    f2f30c2d-3302-48f9-ab43-2fe10d21e800: 'Podcast Title' # Podcast Title
+    f2f30c2d-3302-48f9-ab43-2fe10d21e800: 'Banner Title' # Banner Title
     f4af40b0-3ee1-4b65-bfe3-fcf6e67c3c75: 'About Signature' # About Signature
     f5be697b-d99a-4ba7-839a-99400f9ebf97: 'Testimonial Poster Image' # Testimonial Poster Image
     f8eb5410-e3fc-41c3-a94e-d80f41ebad14: 'Full-width Mobile' # Full-width Mobile

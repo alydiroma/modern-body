@@ -1,23 +1,24 @@
 {% extends "_layout" %}
 {% block content %}
 <main class="podcasts">
-  <div class="podcasts-head stack-sm">
-    <h1>Podcasts</h1>
-  </div>
-  <div class="podcasts-container">
-    {% set entryQuery = craft.entries()
-    .section('podcastEpisode')
-    .orderBy('podcastDate DESC')
-    .limit(10) %}
-      {% set entries = entryQuery.all() %}
-      {% if entries | length %}
-      {% for entry in entries %}
-      <div class="podcasts-item stack-sm">
-        <h2><a class="podcasts-item-link" href="/podcasts/{{ entry.slug }}">{{ entry.podcastTitle }}</a></h2>
-        <p class="p-small">{{ entry.podcastSummary | striptags }}</p>
-      </div>
-      {% endfor %}
-    {% endif %}
+  <section class="podcasts-banner">
+    <div class="podcasts-banner-container stack-md">
+      <h1>{{ entry.podcastBannerTitle }}</h1>
+      {% if entry.podcastBannerText %}
+       <div class="podcasts-banner-text">{{ entry.podcastBannerText }}</div>
+      {% endif %}
+    </div>
+    <div class="podcasts-banner-bg">
+      {% if entry.podcastBannerImage %}
+      {% set fullWidthImage = entry.podcastBannerImage.one() %}
+      {% if fullWidthImage %}
+      {% include '_partials/full-width-image' %}
+      {% endif %}
+      {% endif %}
+    </div>
+  </section>
+  <div class="podcasts-embed container">
+    <iframe height="450" width="100%" title="Media player" src="https://embed.podcasts.apple.com/us/podcast/modern-body-pilates-movement-for-life/id1728460146?itscg=30200&amp;itsct=podcast_box_player&amp;ls=1&amp;mttnsubad=1728460146&amp;theme=auto" id="embedPlayer" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="border: 0px; border-radius: 12px; width: 100%; height: 450px; max-width: 660px;"></iframe>
   </div>
 </main>
 {% endblock %}

@@ -12,6 +12,7 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -30,8 +31,49 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: aa484a7d-f7fa-42c3-b2dd-a05d05e35de0 # Banner image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c078ff20-f0c9-41a8-a04a-593d249e60ed
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f2f30c2d-3302-48f9-ab43-2fe10d21e800 # Banner Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d026d957-cbc4-463b-bdf9-256f38392d7c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: eff44e11-1bf3-4bcd-a4b7-a0b46586fea6 # Banner Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: beea65a1-b136-4b7a-b100-77ac536b1b8f
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: dbb53240-67f6-4afe-97f7-2bf4896df125
+        userCondition: null
+      -
+        elementCondition: null
+        name: Podcasts
+        uid: 96a28331-da9e-49ec-8812-bc200b257f8a
         userCondition: null
 handle: podcasts
 hasTitleField: true
