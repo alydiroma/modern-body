@@ -10606,19 +10606,19 @@ __webpack_require__.r(__webpack_exports__);
 var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper', {
   loop: true,
   slidesPerView: 1,
-  spaceBetween: 0,
+  spaceBetween: 24,
   breakpoints: {
-    992: {
+    620: {
       slidesPerView: 2,
-      spaceBetween: 48
+      spaceBetween: 24
     },
-    1024: {
+    992: {
       slidesPerView: 3,
-      spaceBetween: 48
+      spaceBetween: 24
     },
     1440: {
       slidesPerView: 4,
-      spaceBetween: 48
+      spaceBetween: 24
     }
   },
   navigation: {

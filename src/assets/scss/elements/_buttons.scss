@@ -59,14 +59,14 @@
 	@include font-bold;
 	@include toRem('font-size', 16);
 	text-transform: uppercase;
-	padding: $space $gap;
+	padding: $gap-xs $gap-md;
 	border: 2px solid;
 	border-radius: $radius;
 }
 
 .btn-cta-orange {
 	@extend %btn-cta;
-	color: $dark-brown;
+	color: $orange;
 	background-color: transparent;
 	border-color: $orange;
 	transition: color .3s ease, background-color .3s ease;

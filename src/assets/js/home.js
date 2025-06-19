@@ -4,19 +4,19 @@ import Swiper from 'swiper/bundle';
 const swiper = new Swiper('.swiper', {
 	loop: true,
 	slidesPerView: 1,
-	spaceBetween: 0,
+	spaceBetween: 24,
 	breakpoints: {
-		992: {
+		620: {
 			slidesPerView: 2,
-			spaceBetween: 48
+			spaceBetween: 24
 		},
-		1024: {
+		992: {
 			slidesPerView: 3,
-			spaceBetween: 48
+			spaceBetween: 24
 		},
 		1440: {
 			slidesPerView: 4,
-			spaceBetween: 48
+			spaceBetween: 24
 		}
 	},
 	navigation: {

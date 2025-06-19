@@ -62,7 +62,7 @@ body:has(.home) {
 
 		&:hover {
 			//filter: brightness(0) saturate(100%) invert(35%) sepia(14%) saturate(3883%) hue-rotate(334deg) brightness(94%) contrast(91%);
-			filter: drop-shadow(2px 2px 2px $orange);
+			filter: drop-shadow(4px 4px 2px $dark-brown);
 		}
 
 		img {

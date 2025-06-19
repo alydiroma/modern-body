@@ -23,37 +23,9 @@
         </div>
     </section>
 
-    <!--
-    <section class="home-approach">
-        <div class="home-approach-container">
-            <div class="home-approach-column stack-reg">
-                {{entry.homeApproachTopText}}
-                {% set image = entry.homeApproachImage.one() %}
-                {% if image %}
-                    <div class="home-approach-image">
-                        <img src="{{ image.url }}"  alt="{{ image.alt }}" />
-                    </div>
-                {% endif %}
-            </div>
-            <div class="home-approach-column stack-reg">
-                {% set image = entry.homeApproachIcon.one() %}
-                {% if image %}
-                    <div class="home-approach-icon">
-                        <img src="{{ image.url }}"  alt="{{ image.alt }}" />
-                    </div>
-                {% endif %}
-                {{entry.homeApproachBottomText}}
-                {% if entry.homeApproachCta %}
-                    <a class="btn-cta-orange" href="{{ entry.homeApproachCta }}">{{ entry.homeApproachCta.getCustomText('Begin Your Movement Practice') }}</a>
-                {% endif %}
-            </div>
-        </div>
-    </section>
-    -->
-
-    <section class="home-difference stack-lg">
+   <section class="home-difference stack-reg">
         <div class="home-difference-head stack-sm">
-            <h2 class="h2-style">{{entry.homeDifferenceHead}}</h2>
+            <h2 class="h3-style">{{entry.homeDifferenceHead}}</h2>
             {{entry.homeDifferenceText}}
         </div>
         <div class="home-difference-list">
@@ -74,15 +46,15 @@
     <section class="home-classes">
         <div class="home-classes-head stack-reg">
             <div class="stack-xs">
-                <h2 class="h3-style">{{entry.homeClassesHead}}</h2>
+                <h2 class="h2-style">{{entry.homeClassesHead}}</h2>
                 <p>{{entry.homeClassesText | striptags }}</p>
             </div>
             <div class="home-classes-nav">
                 <button class="home-classes-nav-prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 800 800"><title>view previous slide</title><path d="m168.2 349.12 320-200c39.963-24.976 91.8 3.752 91.8 50.88v399.999c0 47.127-51.837 75.857-91.8 50.88l-320-200c-37.6-23.5-37.6-78.259 0-101.759Z"/></svg>
+                    <svg width="32" height="38" viewBox="0 0 32 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.5 33.6104C31.4997 36.6634 28.1597 38.5164 25.5898 36.9033L2.31641 22.293C-0.10541 20.7722 -0.105407 17.2278 2.31641 15.707L25.5898 1.09668C28.1598 -0.516325 31.4997 1.3365 31.5 4.38965V33.6104Z" stroke="#B2482B"/></svg>
                 </button>
                 <button class="home-classes-nav-next">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 20 20"><title>view next slide</title><path d="m15.795 11.272-8 5A1.5 1.5 0 0 1 5.5 15V5a1.5 1.5 0 0 1 2.295-1.272l8 5a1.5 1.5 0 0 1 0 2.544Z"/></svg>
+                    <svg width="32" height="38" viewBox="0 0 32 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 4.38965C0.500272 1.33659 3.84025 -0.516364 6.41016 1.09668L29.6836 15.707C32.1054 17.2278 32.1054 20.7722 29.6836 22.293L6.41016 36.9033C3.84023 38.5163 0.500265 36.6635 0.5 33.6104V4.38965Z" stroke="#B2482B"/></svg>
                 </button>
             </div>
         </div>
@@ -151,11 +123,11 @@
         </div>
     </section>
 
-    <section class="home-membership stack-lg">
-        <div class="home-membership-head">
+    <section class="home-membership stack-reg">
+        <div class="home-membership-head stack-sm">
             <h2>{{entry.homeMembershipHead}}</h2>
             <div class="home-membership-head-text h4-style">
-                {{entry.homeMembershipDescription | striptags}}
+                <p>{{entry.homeMembershipDescription | striptags}}</p>
             </div>
         </div>
         <div class="home-membership-list">
@@ -178,7 +150,7 @@
                         {% endif %}
                     </div>
                     <div>
-                        <a class="btn-pill-white" href="{{ block.homeTestimonialLink }}">{{
+                        <a class="btn-cta-white" href="{{ block.homeTestimonialLink }}">{{
                             block.homeMembershipOptionCta.getCustomText('Select This Plan') }}</a>
                     </div>
                 </div>
@@ -190,9 +162,12 @@
     </section>
 
     <section class="home-philosophy">
-        <div class="home-philosophy-container">
-            <h2 class="h3-style">{{entry.homePhilosophyHead}}</h2>
-            <div class="home-philosophy-list stack-reg">
+        <div class="home-philosophy-container stack-reg">
+            <div class="home-philosophy-list">
+                <div class="home-philosophy-intro stack-sm">
+                    <h2 class="h3-style">{{ entry.homePhilosophyHead }}</h2>
+                    <p class="h4-style">{{ entry.homePhilosophyIntroText }}</p>
+                </div>
                 {% set blocks = entry.homePhilosophyList.all() %}
                 {% if blocks | length %}
                 {% for block in blocks %}
@@ -228,7 +203,7 @@
     </section>
 
     <section class="home-faq">
-        <div class="home-faq-container">
+        <div class="home-faq-container stack-reg">
             <div class="home-faq-head">
                 <h2 class="h3-style">{{entry.homeFaqHead}}</h2>
             </div>

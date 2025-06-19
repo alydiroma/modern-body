@@ -29,7 +29,7 @@ $_nav-panel-width: 14rem;
 		position: relative;
 		display: block;
 		@include font-bold;
-		@include toRem('font-size', 16);
+		@include toRem('font-size', 18);
 		line-height: 1.5;
 		color: $white;
 		text-decoration-color: transparent;

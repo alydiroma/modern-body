@@ -117,72 +117,6 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 51e9181e-4a28-40cf-9c94-3c2ef58b2dbf # Approach Top Text
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 1b989f4e-ef48-48b5-8e88-625bce1b026b
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: ed6ccbec-5dc5-4aae-afe2-4d164632b585 # Approach Image
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 67fdc71b-ee5b-448b-a3f2-53e5df455e71
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 1a723490-90d3-4125-80a2-2f0c6f91b5eb # Approach Icon
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 61c534a2-5185-4a20-86ab-1dcd13bad7d8
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: ce2c625c-1f6f-4907-ab36-bd4170a940c3 # Approach Bottom Text
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 8c1c2e62-9af4-4be6-9254-b4211fa5f9d7
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 620c319e-a58d-401d-ba93-5d4b6317efa0 # Approach CTA
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 83d616f2-5f26-4150-bb36-3405be9f17b3
-            userCondition: null
-            warning: null
-            width: 100
-        name: Approach
-        uid: 4306cfb3-2a33-476a-8495-83eab1bef946
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
             fieldUid: d24222de-bc96-4eff-8cd1-e26af7a505cb # Difference Head
             instructions: null
             label: null
@@ -382,6 +316,18 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 49b29ba3-7681-4490-a976-ccb9da213919
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d7f85d24-6fac-479b-8e5b-cdd8fa5b5c8a # Philosophy Intro Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 15935fa4-bc98-4449-8577-94093ac9b1bd
             userCondition: null
             warning: null
             width: 100
