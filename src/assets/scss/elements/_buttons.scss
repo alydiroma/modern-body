@@ -49,6 +49,11 @@
 	@extend %btn-underline;
 	color: $dark-brown;
 
+	&:focus-visible {
+		outline: 1px solid $orange;
+		outline-offset: 2px;
+	}
+
 	&::after {
 		background-color: $orange;
 	}
@@ -62,6 +67,10 @@
 	padding: $gap-xs $gap-md;
 	border: 2px solid;
 	border-radius: $radius;
+
+	&:focus-visible {
+		outline-offset: 4px;
+	}
 }
 
 .btn-cta-orange {
@@ -70,6 +79,10 @@
 	background-color: transparent;
 	border-color: $orange;
 	transition: color .3s ease, background-color .3s ease;
+
+	&:focus-visible {
+		outline: 2px solid $dark-brown;
+	}
 
 	&:hover {
 		color: $white;
@@ -84,100 +97,12 @@
 	border-color: $white;
 	transition: color .3s ease, background-color .3s ease;
 
+	&:focus-visible {
+		outline: 2px solid $orange;
+	}
+
 	&:hover {
 		color: $orange;
 		background-color: $white;
 	}
 }
-
-%btn-pill {
-	@extend %btn;
-	@extend %h4-style;
-	padding: $space $gap;
-	background-color: transparent;
-	border: 2px solid;
-	border-radius: $gap;
-	transition: background-color .3s ease;
-}
-
-.btn-pill-white {
-	@extend %btn-pill;
-	color: $white;
-	border-color: $white;
-
-	&:hover {
-		background-color: $dark-brown;
-	}
-}
-
-/*
-%btn {
-	@include button-reset;
-	display: inline-block;
-	@include font-bold;
-	@include toRem('font-size', 16);
-	color: $white;
-	background-color: $accent;
-	border: 2px solid $accent;
-	border-radius: $radius;
-	appearance: none;
-	transition: color .6s ease, background-color .6s ease, border-color .6s ease;
-
-	&:hover {
-		text-decoration: none;
-		color: $accent;
-		background-color: transparent;
-	}
-}
-
-.btn {
-	@extend %btn;
-	height: 44px;
-	line-height: 40px;
-	padding: 0 $gap;
-}
-
-.btn-secondary {
-	@extend %btn;
-	height: 44px;
-	line-height: 40px;
-	color: $accent;
-	padding: 0 $gap;
-	background-color: $white;
-
-	&:hover {
-		color: $white;
-		background-color: $accent;
-	}
-}
-
-.btn-secondary-black {
-	@extend %btn;
-	height: 44px;
-	line-height: 40px;
-	color: $black;
-	padding: 0 $gap;
-	background-color: $white;
-	border-color: $black;
-
-	&:hover {
-		color: $white;
-		background-color: $black;
-	}
-}
-
-.btn-sm {
-	@extend %btn;
-	height: 34px;
-	line-height: 30px;
-	padding: 0 $gap-sm;
-}
-
-.btn-wide-mobile {
-	@include break(mobile) {
-		display: block;
-		width: 100%;
-		text-align: center;
-	}
-}
-*/

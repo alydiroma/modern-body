@@ -1,29 +1,29 @@
 <div class="nav-mobile stack-sm" data-mobile-nav>
     {% set image = global.globalLogoImageLong.one() %}
     {% if image %}
-    <a class="nav-mobile-image" href="/" title="home">
-        <img src="{{ image.url() }}" alt="Aly DiRoma">
-    </a>
+        <a class="nav-mobile-image" href="/" title="home">
+            <img src="{{ image.url() }}" alt="Aly DiRoma">
+        </a>
     {% endif %}
-    {% set nodes = craft.navigation.nodes('mainNav').all() %}
     <nav class="mobile-nav">
-        <ul class="nav-items stack-xs">
+        <ul class="stack-sm">
+            {% set nodes = craft.navigation.nodes('mainNavLeft').all() %}
             {% nav node in nodes %}
-                {% if node.hasDescendants %}
-                    <li class="nav-item">
+                <li class="nav-item">
+                    <a {% if node.url %}href="{{ node.url }}" {% endif %}
+                        class="nav-link bold {% if node.active %}nav-active{% endif %}">
                         {{- node.title -}}
-                {% else %}
-                    <li class="nav-item">
-                        <a {% if node.url %}href="{{ node.url }}" {% endif %}
-                            class="nav-link bold {% if node.active %}nav-active{% endif %}">
-                            {{- node.title -}}
-                        </a>
-                {% endif %}
-                {% ifchildren %}
-                    <ul class="stack-xs">
-                        {% children %}
-                    </ul>
-                {% endifchildren %}
+                    </a>
+                </li>
+            {% endnav %}
+
+            {% set nodes = craft.navigation.nodes('mainNavRight').all() %}
+            {% nav node in nodes %}
+            <li class="nav-item">
+                <a {% if node.url %}href="{{ node.url }}" {% endif %}
+                    class="nav-link bold external {% if node.active %}nav-active{% endif %}">
+                    {{- node.title -}}
+                </a>
             </li>
             {% endnav %}
         </ul>

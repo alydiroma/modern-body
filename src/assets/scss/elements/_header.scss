@@ -57,6 +57,11 @@
 			filter: drop-shadow(4px 4px 2px $dark-brown);
 		}
 
+		&:focus-visible {
+			outline: 1px solid $white;
+			outline-offset: 2px;
+		}
+
 		img {
 			display: block;
 			width: 100%;
@@ -120,7 +125,7 @@
 			}
 	
 			&:focus-visible {
-				outline: 1px solid $accent;
+				outline: 1px solid white;
 				outline-offset: 2px;
 			}
 	
@@ -142,12 +147,19 @@
 		}
 	}
 
-	&-mobile {
+	&-mobile-btn {
+		@extend %btn;
 		display: none;
+		color: $white;
+		z-index: 999;
 		
 		@include break(tablet) {
 			display: block;
-			z-index: 999;
+		}
+
+		&:focus-visible {
+			outline: 1px solid $white;
+			outline-offset: 2px;
 		}
 	}
 }

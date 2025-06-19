@@ -5,8 +5,8 @@
     left: -100%;
     width: 100vw;
     height: 100vh;
-    padding: $gap-xxl $gap;
-    background-color: $white;
+    padding: $gap;
+    background-color: $dark-brown;
     transition: left .3s ease;
     z-index: 998;
 
@@ -35,17 +35,15 @@
 
 .mobile-nav {
 
+    ul {
+        margin-top: $gap-xl;
+        padding: 0;
+    }
+
     .nav-items {
         display: block;
         margin: 0;
         padding: 0;
-    }
-
-    .nav-item {
-
-        ul {
-            margin: $gap-sm 0 0 $gap-sm;
-        }
     }
 
     .nav-link {

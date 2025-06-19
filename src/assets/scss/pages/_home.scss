@@ -582,6 +582,11 @@
 			text-align: left;
 			color: $dark-brown;
 
+			&:focus-visible {
+				outline: 1px solid $orange;
+				outline-offset: 2px;
+			}
+
 			&[aria-expanded="true"] {
 
 				&::before {
