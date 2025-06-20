@@ -969,10 +969,6 @@ p,
   font-size: 0.9375rem;
 }
 
-:root {
-  interpolate-size: allow-keywords;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -2637,7 +2633,7 @@ textarea {
 }
 .home-faq-item {
   margin-left: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   border-bottom: 2px solid #B2482B;
 }
 .home-faq-toggle {

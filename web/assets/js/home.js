@@ -10653,10 +10653,10 @@ var faqAccordionToggles = document.querySelectorAll('.home-faq-toggle');
 var toggleFaqs = function toggleFaqs() {
   faqAccordionToggles.forEach(function (toggle) {
     toggle.addEventListener('click', function () {
-      faqAccordionToggles.forEach(function (toggle) {
-        toggle.setAttribute('aria-expanded', 'false');
-      });
       var expanded = toggle.getAttribute('aria-expanded');
+      faqAccordionToggles.forEach(function (faq) {
+        faq.setAttribute('aria-expanded', 'false');
+      });
       if (expanded === 'false') {
         toggle.setAttribute('aria-expanded', 'true');
       } else {
