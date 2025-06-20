@@ -969,6 +969,10 @@ p,
   font-size: 0.9375rem;
 }
 
+:root {
+  interpolate-size: allow-keywords;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -2589,6 +2593,11 @@ textarea {
     width: calc(100% - 2rem);
   }
 }
+@media (max-width: 600px) {
+  .home-meet-container {
+    gap: 0;
+  }
+}
 .home-meet-container h2 {
   font-size: 20vw;
   line-height: 1;
@@ -2656,6 +2665,10 @@ textarea {
 .home-faq-toggle[aria-expanded=true]::before {
   content: "-";
 }
+.home-faq-toggle[aria-expanded=true] + .home-faq-answer {
+  height: auto;
+  visibility: visible;
+}
 .home-faq-toggle::before {
   position: absolute;
   top: 50%;
@@ -2663,6 +2676,10 @@ textarea {
   content: "+";
   font-size: 2rem;
   transform: translateY(-50%);
+}
+.home-faq-answer {
+  height: 0;
+  visibility: hidden;
 }
 
 .about {

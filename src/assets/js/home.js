@@ -52,3 +52,26 @@ const selectTesimonialVideo = () => {
 if (testimonialVideoBtns) {
 	selectTesimonialVideo();
 }
+
+const faqAccordionToggles = document.querySelectorAll('.home-faq-toggle');
+
+const toggleFaqs = () => {
+	faqAccordionToggles.forEach((toggle) => {
+		toggle.addEventListener('click', () => {
+			faqAccordionToggles.forEach((toggle) => {
+				toggle.setAttribute('aria-expanded', 'false');
+			});
+			const expanded = toggle.getAttribute('aria-expanded');
+			if (expanded === 'false') {
+				toggle.setAttribute('aria-expanded', 'true');
+			}
+			else {
+				toggle.setAttribute('aria-expanded', 'false');
+			}
+		});
+	});
+}
+
+if (faqAccordionToggles) {
+	toggleFaqs();
+}

@@ -10649,6 +10649,25 @@ var selectTesimonialVideo = function selectTesimonialVideo() {
 if (testimonialVideoBtns) {
   selectTesimonialVideo();
 }
+var faqAccordionToggles = document.querySelectorAll('.home-faq-toggle');
+var toggleFaqs = function toggleFaqs() {
+  faqAccordionToggles.forEach(function (toggle) {
+    toggle.addEventListener('click', function () {
+      faqAccordionToggles.forEach(function (toggle) {
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+      var expanded = toggle.getAttribute('aria-expanded');
+      if (expanded === 'false') {
+        toggle.setAttribute('aria-expanded', 'true');
+      } else {
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+};
+if (faqAccordionToggles) {
+  toggleFaqs();
+}
 })();
 
 /******/ })()

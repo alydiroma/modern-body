@@ -204,16 +204,15 @@
                 <h2 class="h3-style">{{entry.homeFaqHead}}</h2>
             </div>
 
-            <div class="home-faq-list stack-reg" data-panel-group>
+            <div class="home-faq-list stack-reg">
                 {% set blocks = entry.homeFaqList.all() %}
                 {% if blocks | length %}
                 {% for block in blocks %}
-                <div class="home-faq-item" data-panel>
-                    <button class="home-faq-toggle h4-style" data-panel-trigger aria-expanded="false">
+                <div class="home-faq-item">
+                    <button class="home-faq-toggle h4-style" aria-expanded="false">
                         {{ block.homeFaqQuestion | striptags }}
                     </button>
-                    <div class="home-faq-answer panel-target rich-text" style="visibility: hidden" data-panel-target
-                        data-height>
+                    <div class="home-faq-answer panel-target rich-text">
                         {{ block.homeFaqAnswer }}
                     </div>
                 </div>

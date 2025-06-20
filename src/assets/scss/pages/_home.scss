@@ -543,6 +543,10 @@
 			height: 100%;
 			z-index: 1;
 
+			@include break(mobile) {
+				gap: 0;
+			}
+
 			h2 {
 				font-size: 20vw;
 				line-height: 1;
@@ -596,6 +600,11 @@
 				&::before {
 					content: '-';
 				}
+
+				& + .home-faq-answer {
+					height: auto;
+					visibility: visible;
+				}
 			}
 
 			&::before {
@@ -606,6 +615,11 @@
 				font-size: $gap;
 				transform: translateY(-50%);
 			}
+		}
+
+		&-answer {
+			height: 0;
+			visibility: hidden;
 		}
 	}
 }
