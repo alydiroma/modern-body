@@ -2855,7 +2855,9 @@ textarea {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+  background-color: #fff;
   border-top: 1px solid #3D2F17;
+  border-right: 1px solid #3D2F17;
   border-bottom: 1px solid #3D2F17;
 }
 @media (max-width: 1024px) {
@@ -2896,7 +2898,8 @@ textarea {
   text-transform: uppercase;
   text-align: left;
   color: #6D5725;
-  padding: 1rem 1rem 1rem 0;
+  padding: 1rem;
+  background-color: #f5f2e8;
   border-bottom: 1px solid #3D2F17;
   border-right: 1px solid #3D2F17;
   transition: color 0.3s ease;
@@ -2907,9 +2910,14 @@ textarea {
 .about-classes-toggle:last-of-type {
   border-bottom: 0;
 }
+.about-classes-toggle:hover {
+  color: #B2482B;
+}
 .about-classes-toggle.active {
   color: #B2482B;
+  background-color: #fff;
   border-right: 0;
+  border-left: 1px solid #3D2F17;
 }
 .about-classes-items {
   position: relative;

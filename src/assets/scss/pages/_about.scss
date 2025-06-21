@@ -141,7 +141,9 @@
 			display: flex;
 			justify-content: space-between;
 			gap: $gap-sm;
+			background-color: $white;
 			border-top: 1px solid $coffee;
+			border-right: 1px solid $coffee;
 			border-bottom: 1px solid $coffee;
 
 			@include break(mobile) {
@@ -165,7 +167,8 @@
 			text-transform: uppercase;
 			text-align: left;
 			color: $brown;
-			padding: $gap-sm $gap-sm $gap-sm 0;
+			padding: $gap-sm;
+			background-color: $bg-light;
 			border-bottom: 1px solid $coffee;
 			border-right: 1px solid $coffee;
 			transition: color .3s ease;
@@ -174,9 +177,15 @@
 				border-bottom: 0;
 			}
 
+			&:hover {
+				color: $orange;
+			}
+
 			&.active {
 				color: $orange;
+				background-color: $white;
 				border-right: 0;
+				border-left: 1px solid $coffee;
 			}
 		}
 
