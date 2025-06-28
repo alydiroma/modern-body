@@ -159,6 +159,24 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: b75c5afe-111c-4e2f-a65f-f246cffac5f9 # Highlight Copy 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 913012b3-3457-4aa5-bde2-39b40d06427f
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Highlight 1'
+        uid: 9342b858-b8b0-46e8-87a0-6d88f6c2de9e
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
             fieldUid: 15c2249b-2a16-4099-8c27-c249429ecebe # Classes Head
             instructions: null
             label: null
@@ -207,6 +225,24 @@ fieldLayouts:
             width: 100
         name: Classes
         uid: 5466d146-0eb8-453b-90f6-7501f764f666
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d7ddcb4d-e580-41da-928c-8221ed45a2a2 # Highlight Copy 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 20bd0a20-f668-47cf-a573-575c7cad8bfb
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Highlight 2'
+        uid: bb35024f-baa5-439c-bbbf-e41b16d1e0dd
         userCondition: null
       -
         elementCondition: null

@@ -1508,6 +1508,12 @@ textarea {
   text-align: center;
   transition: filter 0.3s ease;
 }
+@media (max-width: 992px) {
+  .header-logo {
+    align-self: flex-start;
+    text-align: left;
+  }
+}
 @media (max-width: 600px) {
   .header-logo {
     flex: auto;
@@ -1527,6 +1533,12 @@ textarea {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+@media (max-width: 992px) {
+  .header-logo img {
+    -o-object-position: center left;
+       object-position: center left;
+  }
 }
 .header-trial {
   flex: 1;
@@ -2172,6 +2184,78 @@ textarea {
 .home-difference-text * {
   font-family: "Cigars Medium", sans-serif;
   line-height: 1.4;
+}
+.home-highlight {
+  width: calc(100% - 5rem);
+  max-width: 82rem;
+  margin-inline: auto;
+  margin-bottom: 5rem;
+  background-color: #e2d7c4;
+  border-radius: 1rem;
+}
+@media (max-width: 1024px) {
+  .home-highlight {
+    width: calc(100% - 4rem);
+  }
+}
+@media (max-width: 600px) {
+  .home-highlight {
+    width: calc(100% - 2rem);
+  }
+}
+@media (max-width: 600px) {
+  .home-highlight.last .home-highlight-inner {
+    padding: 3rem 1rem 2rem 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .home-highlight.last .home-highlight-icon {
+    top: -2rem;
+    left: 0;
+  }
+}
+.home-highlight-inner {
+  width: calc(100% - 5rem);
+  max-width: 40rem;
+  margin-inline: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding-block: 4rem;
+}
+@media (max-width: 1024px) {
+  .home-highlight-inner {
+    width: calc(100% - 4rem);
+  }
+}
+@media (max-width: 600px) {
+  .home-highlight-inner {
+    width: calc(100% - 2rem);
+  }
+}
+@media (max-width: 600px) {
+  .home-highlight-inner {
+    padding: 2rem 1rem 3rem 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .home-highlight-icon {
+    position: absolute;
+    bottom: -2rem;
+    right: 0;
+    width: 5rem;
+  }
+}
+.home-highlight-icon img {
+  display: block;
+}
+.home-highlight-copy p {
+  font-family: "Cigars Medium", sans-serif;
+  font-size: 1.75rem;
+  line-height: 1.6;
+  text-wrap: pretty;
 }
 .home-classes {
   position: relative;

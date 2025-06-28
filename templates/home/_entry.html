@@ -43,6 +43,19 @@
         </div>
     </section>
 
+    {% if entry.homeHighlightCopyOne %}
+        <section class="home-highlight first">
+            <div class="home-highlight-inner">
+                <div class="home-highlight-icon">
+                    <img src="/assets/icons/butterfly-red.png" alt="">
+                </div>
+                <div class="home-highlight-copy">
+                    <p>{{ entry.homeHighlightCopyOne | striptags }}</p>
+                </div>
+            </div>
+        </section>   
+    {% endif %}
+
     <section class="home-classes">
         <div class="home-classes-head stack-reg">
             <div class="stack-xs">
@@ -90,6 +103,19 @@
             <a class="btn-cta-orange" href="{{ entry.homeClassesCta }}">{{ entry.homeClassesCta.getCustomText('Try for Free') }}</a>
         </div>
     </section>
+
+    {% if entry.homeHighlightCopyTwo %}
+        <section class="home-highlight last">
+            <div class="home-highlight-inner">
+                <div class="home-highlight-copy">
+                    <p>{{ entry.homeHighlightCopyTwo | striptags }}</p>
+                </div>                
+                <div class="home-highlight-icon">
+                    <img src="/assets/icons/butterfly-red.png" alt="">
+                </div>
+            </div>
+        </section>   
+    {% endif %}    
 
     <section id="testimonials" class="home-testimonials stack-lg">
         <div class="home-testimonials-container">

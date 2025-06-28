@@ -24,6 +24,31 @@ window.onresize = function () {
   timer = setTimeout(_modules_panels__WEBPACK_IMPORTED_MODULE_1__["default"], 50);
 };
 
+// focus trap
+var trapFocus = function trapFocus(element, toggle) {
+  var focusableEls = element.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])');
+  var firstFocusableEl = focusableEls[0];
+  var lastFocusableEl = focusableEls[focusableEls.length - 1];
+  var KEYCODE_TAB = 9;
+  element.addEventListener('keydown', function (e) {
+    var isTabPressed = e.key === 'Tab';
+    if (!isTabPressed) {
+      return;
+    }
+    if (e.shiftKey) {
+      if (document.activeElement === firstFocusableEl) {
+        lastFocusableEl.focus();
+        e.preventDefault();
+      }
+    } else {
+      if (document.activeElement === lastFocusableEl) {
+        toggle.focus();
+        e.preventDefault();
+      }
+    }
+  });
+};
+
 // mobile nav
 var pageBody = document.querySelector('body');
 var mobileNavBtn = document.querySelector('[data-mobile-nav-btn]');
@@ -45,6 +70,7 @@ mobileNavBtn.addEventListener('click', function (event) {
     mobileNav.classList.remove('opened');
   }
 });
+trapFocus(mobileNav, mobileNavBtn);
 
 // set copyright year
 document.getElementById("copyright-year").innerHTML = new Date().getFullYear();

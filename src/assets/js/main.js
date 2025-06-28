@@ -12,6 +12,35 @@ window.onresize = function () {
 	timer = setTimeout(panels, 50);
 }
 
+// focus trap
+const trapFocus = (element, toggle) => {
+	const focusableEls = element.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])');
+	const firstFocusableEl = focusableEls[0];  
+	const lastFocusableEl = focusableEls[focusableEls.length - 1];
+	const KEYCODE_TAB = 9;
+
+	element.addEventListener('keydown', function(e) {
+		const isTabPressed = (e.key === 'Tab');
+
+		if (!isTabPressed) { 
+			return; 
+		}
+
+		if ( e.shiftKey ) {
+			if (document.activeElement === firstFocusableEl) {
+				lastFocusableEl.focus();
+				e.preventDefault();
+			}
+		}
+		else {
+			if (document.activeElement === lastFocusableEl) {
+				toggle.focus();
+				e.preventDefault();
+			}
+		}
+	});
+}
+
 // mobile nav
 const pageBody = document.querySelector('body');
 const mobileNavBtn = document.querySelector('[data-mobile-nav-btn]');
@@ -34,6 +63,8 @@ mobileNavBtn.addEventListener('click', (event) => {
 		mobileNav.classList.remove('opened');
 	}
 });
+
+trapFocus(mobileNav, mobileNavBtn);
 
 // set copyright year
 document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
