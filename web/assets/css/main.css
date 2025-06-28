@@ -2820,6 +2820,7 @@ textarea {
   max-width: 43.75rem;
 }
 .about-banner-container h1 {
+  font-weight: 400;
   letter-spacing: 0.03em;
 }
 .about-content {
@@ -3526,6 +3527,7 @@ textarea {
   max-width: 43.75rem;
 }
 .podcasts-banner-container h1 {
+  font-weight: 400;
   letter-spacing: 0.03em;
 }
 .podcasts-banner-text a, .podcasts-banner-text p a {
