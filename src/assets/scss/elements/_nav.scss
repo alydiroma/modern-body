@@ -11,6 +11,10 @@ $_nav-panel-width: 14rem;
         display: flex;
         justify-content: flex-start;
         gap: $gap-md;
+
+		@include break(mobile) {
+			justify-content: center;
+		}
     }
 
     &-item {

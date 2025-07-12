@@ -36,6 +36,11 @@
 			padding-top: $gap-xl;
 			z-index: 1;
 
+			@include break(tablet) {
+				justify-content: flex-end;
+				padding-bottom: $gap-xl;
+			}
+
 			h1, p {
 				@include toRem('max-width', 700);
 			}

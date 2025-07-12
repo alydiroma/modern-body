@@ -888,7 +888,7 @@ h1,
 @media (max-width: 600px) {
   h1,
   .h1-style {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 }
 
@@ -958,14 +958,14 @@ p,
   text-wrap: pretty;
 }
 
-.about-classes-toggle, .home-classes-nav-prev, .home-classes-nav-next, .header-mobile-btn, .tag, .tag-small {
+.about-classes-toggle, .home-classes-nav-prev, .home-classes-nav-next, .header-mobile-btn, .tag, .home-membership-item-tag, .tag-small {
   font-family: "Karla Variable", sans-serif;
   font-weight: 700;
   font-size: 1.0625rem;
   text-transform: uppercase;
 }
 
-.tag-small {
+.home-membership-item-tag, .tag-small {
   font-size: 0.9375rem;
 }
 
@@ -1487,17 +1487,35 @@ textarea {
     width: calc(100% - 2rem);
   }
 }
+@media (max-width: 992px) {
+  .header-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
 .header-nav {
   flex: 1;
+}
+@media (max-width: 992px) {
+  .header-nav {
+    flex: 0 0 calc(50% - 2rem);
+  }
+}
+@media (max-width: 600px) {
+  .header-nav {
+    flex: 0 0 100%;
+    justify-content: center;
+  }
 }
 .header-nav-right {
   display: flex;
   justify-content: flex-end;
   text-align: right;
 }
-@media (max-width: 992px) {
-  .header-nav {
-    display: none;
+@media (max-width: 600px) {
+  .header-nav-right {
+    justify-content: center;
   }
 }
 .header-logo {
@@ -1508,16 +1526,21 @@ textarea {
   text-align: center;
   transition: filter 0.3s ease;
 }
+.header-logo.desktop {
+  display: block;
+}
 @media (max-width: 992px) {
-  .header-logo {
-    align-self: flex-start;
-    text-align: left;
+  .header-logo.desktop {
+    display: none;
   }
 }
-@media (max-width: 600px) {
-  .header-logo {
-    flex: auto;
-    height: 4rem;
+.header-logo.mobile {
+  display: none;
+}
+@media (max-width: 992px) {
+  .header-logo.mobile {
+    display: block;
+    flex: 0 0 100%;
   }
 }
 .header-logo:hover {
@@ -1536,8 +1559,8 @@ textarea {
 }
 @media (max-width: 992px) {
   .header-logo img {
-    -o-object-position: center left;
-       object-position: center left;
+    max-width: 14rem;
+    margin-inline: auto;
   }
 }
 .header-trial {
@@ -1629,6 +1652,11 @@ textarea {
   display: flex;
   justify-content: flex-start;
   gap: 3rem;
+}
+@media (max-width: 600px) {
+  .nav-items {
+    justify-content: center;
+  }
 }
 .nav-item {
   position: relative;
@@ -2029,6 +2057,12 @@ textarea {
 @media (max-width: 600px) {
   .home-hero-container {
     width: calc(100% - 2rem);
+  }
+}
+@media (max-width: 992px) {
+  .home-hero-container {
+    justify-content: flex-end;
+    padding-bottom: 5rem;
   }
 }
 .home-hero-logo {
@@ -2576,7 +2610,7 @@ textarea {
   z-index: 1;
 }
 .home-membership-item-tag {
-  text-align: center;
+  text-transform: none;
   color: #3D2F17;
 }
 .home-philosophy {
@@ -2814,6 +2848,12 @@ textarea {
 @media (max-width: 600px) {
   .about-banner-container {
     width: calc(100% - 2rem);
+  }
+}
+@media (max-width: 992px) {
+  .about-banner-container {
+    justify-content: flex-end;
+    padding-bottom: 5rem;
   }
 }
 .about-banner-container h1, .about-banner-container p {
@@ -3521,6 +3561,12 @@ textarea {
 @media (max-width: 600px) {
   .podcasts-banner-container {
     width: calc(100% - 2rem);
+  }
+}
+@media (max-width: 992px) {
+  .podcasts-banner-container {
+    justify-content: flex-end;
+    padding-bottom: 5rem;
   }
 }
 .podcasts-banner-container h1, .podcasts-banner-container p {

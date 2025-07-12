@@ -10,7 +10,7 @@
 	}
 
     @include break(mobile) {
-        @include toRem('font-size', 72);
+        @include toRem('font-size', 64);
 	}
 }
 
@@ -66,6 +66,13 @@
 %p-small {
 	@include font-body;
 	@include toRem('font-size', 18);
+    line-height: 1.6;
+    text-wrap: pretty;
+}
+
+%p-xsmall {
+	@include font-body;
+	@include toRem('font-size', 15);
     line-height: 1.6;
     text-wrap: pretty;
 }

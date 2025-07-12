@@ -24,19 +24,34 @@
 		justify-content: space-between;
 		align-items: center;
 		gap: $gap;
+
+		@include break(tablet) {
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: $gap-sm;
+		}
 	}
 
 	&-nav {
 		flex: 1;
 
+		@include break(tablet) {
+			flex: 0 0 calc(50% - $gap);
+		}
+
+		@include break(mobile) {
+			flex: 0 0 100%;
+			justify-content: center;
+		}
+
 		&-right {
 			display: flex;
 			justify-content: flex-end;
 			text-align: right;
-		}
 
-		@include break(tablet) {
-			display: none;
+			@include break(mobile) {
+				justify-content: center;
+			}
 		}
 	}
 
@@ -48,14 +63,21 @@
 		text-align: center;
 		transition: filter .3s ease;
 
-		@include break(tablet) {
-			align-self: flex-start;
-			text-align: left;
+		&.desktop {
+			display: block;
+
+			@include break(tablet) {
+				display: none;
+			}			
 		}
 
-		@include break(mobile) {
-			flex: auto;
-			height: $gap-lg;
+		&.mobile {
+			display: none;
+
+			@include break(tablet) {
+				display: block;
+				flex: 0 0 100%;
+			}
 		}
 
 		&:hover {
@@ -74,7 +96,8 @@
 			object-fit: contain;
 
 			@include break(tablet) {
-				object-position: center left;
+				max-width: 14rem;
+				margin-inline: auto;
 			}
 		}
 	}

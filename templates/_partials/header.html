@@ -1,14 +1,18 @@
 <header class="header">
     <div class="header-container">
-        {% include '_partials/nav-main-left' %}
         {% set image = global.globalLogoImageLong.one() %}
         {% if image %}
-            <a class="header-logo" href="/" title="home">
+            <a class="header-logo mobile" href="/" title="home">
+                <img src="/assets/images/logo-header-home.png" alt="Visit the Modern Body homepage.">
+            </a>
+        {% endif %}
+
+        {% include '_partials/nav-main-left' %}
+        {% if image %}
+            <a class="header-logo desktop" href="/" title="home">
                 <img src="/assets/images/logo-header-home.png" alt="Visit the Modern Body homepage.">
             </a>
         {% endif %}
         {% include '_partials/nav-main-right' %}
-        <button class="header-mobile-btn" aria-pressed="false" data-mobile-nav-btn>Menu</button>
-        {% include '_partials/nav-mobile' %}
     </div>
 </header>

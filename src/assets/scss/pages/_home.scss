@@ -32,6 +32,11 @@
 			height: 100%;
 			padding-top: $gap-xl;
 			z-index: 1;
+
+			@include break(tablet) {
+				justify-content: flex-end;
+				padding-bottom: $gap-xl;
+			}
 		}
 
 		&-logo {
@@ -525,7 +530,8 @@
 			}
 
 			&-tag {
-				text-align: center;
+				@extend %tag-small;
+				text-transform: none;
 				color: $dark-brown;
 			}
 		}
