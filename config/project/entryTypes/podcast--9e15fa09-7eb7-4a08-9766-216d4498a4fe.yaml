@@ -157,7 +157,6 @@ fieldLayouts:
 handle: podcast
 hasTitleField: true
 name: Podcast
-section: 72019b80-1d51-41ee-a5ba-74053c9a5bd0 # Podcast Episode
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

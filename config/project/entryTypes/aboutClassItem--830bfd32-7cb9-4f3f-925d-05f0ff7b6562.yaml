@@ -1,0 +1,74 @@
+color: null
+description: null
+fieldLayouts:
+  896f637c-5751-4e1b-93c5-2fcb11df93ed:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 5a38d4cd-f4f9-4491-916a-98a6ab1fd605
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: 'Class Item Toggle Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 81330aca-af5d-4951-9e84-db751603a886
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 14bf28bc-e552-470e-90dc-600718c4c798
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Class Item Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bf1b9e4d-e294-4356-acc2-8f5248d5ce8e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 591486aa-2951-4fdb-8521-95e20b1b7b0b # Class List - Class Item - Class Item CTA
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Class Item CTA'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 57ab7263-681d-44ba-b228-7b063442f09f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 15f59985-5ab1-4c67-8027-e242f634ad79
+        userCondition: null
+handle: aboutClassItem
+hasTitleField: false
+icon: null
+name: 'Class Item'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

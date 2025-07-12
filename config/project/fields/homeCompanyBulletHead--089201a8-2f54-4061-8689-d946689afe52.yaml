@@ -1,0 +1,16 @@
+columnSuffix: vexgxqne
+handle: homeCompanyBulletHead
+instructions: null
+name: 'Company Bullets - Bullet - Bullet Head'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

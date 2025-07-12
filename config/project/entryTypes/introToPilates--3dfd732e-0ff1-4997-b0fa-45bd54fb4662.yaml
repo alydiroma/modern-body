@@ -85,7 +85,6 @@ fieldLayouts:
 handle: introToPilates
 hasTitleField: false
 name: 'Intro to Pilates'
-section: 4b9411de-fe15-4e34-b54a-3eaa702c336d # Intro to Pilates
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

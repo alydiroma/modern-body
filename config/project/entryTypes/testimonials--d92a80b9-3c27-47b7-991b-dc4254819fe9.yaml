@@ -79,7 +79,6 @@ fieldLayouts:
 handle: testimonials
 hasTitleField: false
 name: Testimonials
-section: 76361647-45f5-4715-8354-8155fe5b6810 # Testimonials
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

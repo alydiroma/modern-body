@@ -7,12 +7,7 @@
             <div class="home-hero-copy stack-sm">
                 <p class="home-hero-tagline">{{ entry.homeHeroTagline | striptags }}</p>
                 {% if entry.homeHeroCta %}
-                    <p class="home-hero-cta">
-                        {{ tag('a', {
-                            class: "btn-cta-white",
-                            text: 'Start for Free',
-                            href: entry.homeHeroCta
-                        }) }}
+                    <a class="btn-cta-white" href="{{ entry.homeHeroCta }}">{{ entry.homeHeroCta.label }}</a>
                  </p>
                 {% endif %}
             </div>
@@ -105,11 +100,7 @@
 
         <div class="home-classes-cta">
             {% if entry.homeClassesCta %}
-                {{ tag('a', {
-                    class: 'btn-cta-orange',
-                    text: 'Try for Free',
-                    href: entry.homeClassesCta
-                }) }}
+                <a class="btn-cta-orange" href="{{ entry.homeClassesCta }}">{{ entry.homeClassesCta.label }}</a>
             {% endif %}
         </div>
     </section>
@@ -183,11 +174,7 @@
                     </div>
                     <div>
                         {% if entry.homeMembershipOptionCta %}
-                            {{ tag('a', {
-                                class: "btn-cta-white",
-                                text: 'Learn More',
-                                href: entry.homeMembershipOptionCta
-                            }) }}
+                            <a class="btn-cta-white" href="{{ entry.homeMembershipOptionCta }}">{{ entry.homeMembershipOptionCta.label }}</a>
                         {% endif %}
                     </div>
                 </div>

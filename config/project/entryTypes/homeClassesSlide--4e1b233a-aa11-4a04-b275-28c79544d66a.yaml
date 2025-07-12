@@ -1,0 +1,74 @@
+color: null
+description: null
+fieldLayouts:
+  28eeca9b-c454-4b30-87c5-65246e4d0c1f:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: b0bc9f09-62f0-4eb2-807f-395e29fdc51d
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: 'Classes Slide Title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4681a7a5-aaa5-406f-a374-fafa7e664994
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 03362b47-11fb-4022-8604-e324d8bc0137
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Classes Slide Description'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d5711802-0c5f-4465-bbf0-33343d5b8ed3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 2b0cf0b7-8482-4c37-b48b-472c7277cf6f
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Classes Slide Image'
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cea97e44-d8bd-4de3-801a-d411e8848ce5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f3020da7-9b25-4fe6-b869-b7c92718a072
+        userCondition: null
+handle: homeClassesSlide
+hasTitleField: false
+icon: null
+name: 'Classes Slide'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

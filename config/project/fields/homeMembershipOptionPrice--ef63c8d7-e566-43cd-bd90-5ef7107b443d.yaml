@@ -1,0 +1,16 @@
+columnSuffix: verobxqz
+handle: homeMembershipOptionPrice
+instructions: null
+name: 'Membership Options - Membership Option - Membership Option Price'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

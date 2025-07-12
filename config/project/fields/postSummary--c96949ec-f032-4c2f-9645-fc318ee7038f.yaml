@@ -1,6 +1,5 @@
 columnSuffix: mbpcrcld
 contentColumnType: text
-fieldGroup: 5f0332ac-8ba6-4aab-ab82-e982da9d4551 # Posts
 handle: postSummary
 instructions: 'Summary for resources landing page.'
 name: Summary

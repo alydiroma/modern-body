@@ -139,7 +139,6 @@ fieldLayouts:
 handle: default
 hasTitleField: false
 name: Default
-section: 7365b913-af69-4a61-8213-fcf62513f1b5 # Posts
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

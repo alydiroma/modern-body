@@ -1,7 +1,20 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: d7311023-c3c5-40c6-a863-c44e2352ab50 # About
 handle: about
+maxAuthors: 1
 name: About
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   9d74e71c-d037-432d-887d-4065ec79a9c7: # Modern Body

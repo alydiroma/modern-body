@@ -1,16 +1,18 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 07dede5f-e375-4ca2-9622-0adde621a5c3 # Home
 handle: homeClassesSlides
 instructions: null
 name: 'Classes Slides'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_homeclassesslides}}'
-  maxBlocks: null
-  minBlocks: null
+  entryTypes:
+    -
+      uid: 4e1b233a-aa11-4a04-b275-28c79544d66a
+  maxEntries: null
+  minEntries: null
   propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

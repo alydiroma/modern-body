@@ -1,0 +1,74 @@
+color: null
+description: null
+fieldLayouts:
+  1720bf5e-2892-4c20-a80f-f3564110a5ed:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: da4444f1-47dd-462a-84b6-0d72b5c266f6
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: 'Product Title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 343b6cee-2897-4de7-8fab-938bd08217f5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: da521950-25a7-4aaa-be24-0f045a90984a
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Product Description'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f4aef017-e93f-4a2d-997e-099b18216f99
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: 6bfbcd2b-1df4-4957-93f9-af5634cb74d7
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Product Link'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d5eb64c4-888d-4c91-959f-c49bad5e0bf4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a0b8c855-93b6-4653-9497-d652eaa52757
+        userCondition: null
+handle: homeProductsItems
+hasTitleField: false
+icon: null
+name: 'Products Items'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

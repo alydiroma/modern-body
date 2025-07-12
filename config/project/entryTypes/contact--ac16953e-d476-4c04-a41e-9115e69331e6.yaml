@@ -79,7 +79,6 @@ fieldLayouts:
 handle: contact
 hasTitleField: false
 name: Contact
-section: 29f08e9f-d744-454f-bc1a-64cbddf3f0c8 # Contact
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

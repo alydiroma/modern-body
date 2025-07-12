@@ -1,0 +1,74 @@
+color: null
+description: null
+fieldLayouts:
+  2ce200b4-334a-4adb-ba8a-64cfb2901194:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: ebe89201-1375-4202-8c7d-80cd9a140f5d
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: Testimonial
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 337bab3a-5e86-4cb5-810d-c9dd84faead7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: d76015ab-cb69-4d6c-9f18-cc3506db7bd7
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Testimonial Name'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1e187492-e38b-460c-91b9-ce157cac39c0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            fieldUid: acea5b4c-7ceb-431c-910e-5ed5b85da86b
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Testimonials Video'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 67e2e7c5-e612-4750-b9ee-e2c45fe0feca
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 92f43532-2e7b-4120-aba4-d8be334b3350
+        userCondition: null
+handle: homeTestimonialItems
+hasTitleField: false
+icon: null
+name: 'Testimonial Items'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

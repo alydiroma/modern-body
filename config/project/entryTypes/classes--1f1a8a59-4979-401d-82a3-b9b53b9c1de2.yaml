@@ -97,7 +97,6 @@ fieldLayouts:
 handle: classes
 hasTitleField: false
 name: Classes
-section: 83953fb7-e107-4565-970c-a90f8151ddd5 # Classes
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

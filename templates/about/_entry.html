@@ -68,11 +68,7 @@
                 <div class="about-classes-item stack-sm active" id={{ classIndex }} role="region" aria-labelledby={{ toggleIndex }} data-height>
                     <span class="about-classes-item-text">{{block.aboutClassItemText}}</span>
                     {% if block.aboutClassItemCta %}
-                        {{ tag('a', {
-                            class: "btn-underline-orange",
-                            text: 'Learn More',
-                            href: block.aboutClassItemCta
-                        }) }}
+                        <a class="btn-underline-orange" href="{{ block.aboutClassItemCta }}">{{ block.aboutClassItemCta.label }}</a>
                     {% endif %}
                 </div>
                 {% else %}
@@ -80,11 +76,7 @@
                     toggleIndex }} data-height>
                     <span class="about-classes-item-text">{{block.aboutClassItemText}}</span>
                     {% if block.aboutClassItemCta %}
-                        {{ tag('a', {
-                            class: "btn-underline-orange",
-                            text: 'Learn More',
-                            href: block.aboutClassItemCta
-                        }) }}
+                        <a class="btn-underline-orange" href="{{ block.aboutClassItemCta }}">{{ block.aboutClassItemCta.label }}</a>
                     {% endif %}
                 </div>
                 {% endif %}

@@ -1,16 +1,18 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 07dede5f-e375-4ca2-9622-0adde621a5c3 # Home
 handle: homeDifferenceList
 instructions: null
 name: 'Difference List'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_homedifferencelist}}'
-  maxBlocks: null
-  minBlocks: null
+  entryTypes:
+    -
+      uid: 20b6bb8e-2942-4e94-aed6-92a7f8b48e54
+  maxEntries: null
+  minEntries: null
   propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

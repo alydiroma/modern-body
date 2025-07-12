@@ -1,14 +1,43 @@
 columnSuffix: null
-contentColumnType: string(255)
-fieldGroup: 07dede5f-e375-4ca2-9622-0adde621a5c3 # Home
 handle: homeCompanyCta
 instructions: null
 name: 'Company CTA'
 searchable: false
 settings:
+  fullGraphqlData: false
   maxLength: 255
+  showLabelField: true
+  typeSettings:
+    __assoc__:
+      -
+        - url
+        -
+          __assoc__:
+            -
+              - allowRootRelativeUrls
+              - ''
+            -
+              - allowAnchors
+              - ''
+            -
+              - allowCustomSchemes
+              - ''
+      -
+        - entry
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+            -
+              - showUnpermittedSections
+              - ''
+            -
+              - showUnpermittedEntries
+              - ''
   types:
     - url
+    - entry
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\Url
+type: craft\fields\Link

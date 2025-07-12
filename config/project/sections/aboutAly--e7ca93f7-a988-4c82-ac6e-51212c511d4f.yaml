@@ -1,7 +1,20 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 221b0134-0f21-4270-a087-06a4eaf0ded3 # About Aly
 handle: aboutAly
+maxAuthors: 1
 name: 'About Aly'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   9d74e71c-d037-432d-887d-4065ec79a9c7: # Modern Body

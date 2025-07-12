@@ -85,7 +85,6 @@ fieldLayouts:
 handle: training
 hasTitleField: false
 name: '1:1 Training'
-section: e0364518-4df8-4d7e-bbc0-a509ebe03558 # 1:1 Training
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

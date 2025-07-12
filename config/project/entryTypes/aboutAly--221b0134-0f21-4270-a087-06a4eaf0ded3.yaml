@@ -139,7 +139,6 @@ fieldLayouts:
 handle: aboutAly
 hasTitleField: false
 name: 'About Aly'
-section: e7ca93f7-a988-4c82-ac6e-51212c511d4f # About Aly
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

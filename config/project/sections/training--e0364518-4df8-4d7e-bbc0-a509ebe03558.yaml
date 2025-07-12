@@ -1,7 +1,20 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: a4731ac5-9e41-4ca2-b1d3-9d5f372ec3bc # 1:1 Training
 handle: training
+maxAuthors: 1
 name: '1:1 Training'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   9d74e71c-d037-432d-887d-4065ec79a9c7: # Modern Body

@@ -1,4 +1,4 @@
-dateModified: 1752339420
+dateModified: 1752350764
 email:
   fromEmail: support@modernbody.io
   fromName: 'Modern Body'
@@ -26,28 +26,21 @@ fs:
       subfolder: local/
     type: servd\AssetStorage\AssetsPlatform\Fs
     url: 'https://modern-body.files.svdcdn.com'
-graphql:
-  publicToken:
-    enabled: false
-    expiryDate: null
 meta:
   __names__:
     0abc2601-eb4e-47a7-bb20-6358900e5ed0: 'About Image' # About Image
     0bcf0882-1270-403e-a73f-fdf2649a1a9d: 'About Aly Copy' # About Aly Copy
     0cde0605-f76d-4d81-b240-a89fc8d0966e: Subtitle # Subtitle
     0d0100be-ea79-4a84-b7ba-2a406203ef77: 'Company Image' # Company Image
-    0e24ebfd-5210-45ab-8434-b505aa1e3db4: Link # Link
+    0e24ebfd-5210-45ab-8434-b505aa1e3db4: 'Class List - Class - Link' # Class List - Class - Link
     0e62c248-99e6-42ab-b8cd-d7ec668bc886: 'Hero Image' # Hero Image
     1a723490-90d3-4125-80a2-2f0c6f91b5eb: 'Approach Icon' # Approach Icon
     1d8da57b-b4ba-4538-b802-fa5a134c1005: 'Class List Head' # Class List Head
     1e5f4a32-c5bd-4f87-82e4-874cd297cf47: 'Podcast Title' # Podcast Title
-    1e26f696-518f-4f53-93e3-06ad726eee90: 'FAQ Answer' # FAQ Answer
     1e54c489-6a15-4b2b-bddc-69dc884564d1: 'Banner Title' # Banner Title
     1ead34db-f5ca-4e93-86d7-d61743978668: Default # Default
     1f1a8a59-4979-401d-82a3-b9b53b9c1de2: Classes # Classes
-    2b0cf0b7-8482-4c37-b48b-472c7277cf6f: 'Classes Slide Image' # Classes Slide Image
     2b4328ff-e27a-4607-b7bc-3e27153a810d: 'Meet Aly Signature' # Meet Aly Signature
-    3c9b8501-9904-40a0-aacb-1ed669a96d5f: 'Accordion Copy' # Accordion Copy
     03ca5c96-0536-4845-9b34-97eb57f9e59a: 'Testimonial Intro' # Testimonial Intro
     3dfd732e-0ff1-4997-b0fa-45bd54fb4662: 'Intro to Pilates' # Intro to Pilates
     4a07c364-0767-4a93-aaa8-4deb778f1f27: 'Banner Image' # Banner Image
@@ -55,128 +48,85 @@ meta:
     4b64d905-1751-48d9-b6d7-c226b9124379: 'Try Text' # Try Text
     4b9411de-fe15-4e34-b54a-3eaa702c336d: 'Intro to Pilates' # Intro to Pilates
     4d2ffb4a-b740-4fd6-96c8-451c18168856: 'Tik Tok' # Tik Tok
-    4e1b233a-aa11-4a04-b275-28c79544d66a: 'Classes Slide' # Classes Slide
-    5a38d4cd-f4f9-4491-916a-98a6ab1fd605: 'Class Item Toggle Text' # Class Item Toggle Text
-    5b538405-4604-4935-95ad-c4f6cb5da0b5: 'Philosophy Item Head' # Philosophy Item Head
-    5c337995-e31f-4ea4-9ee5-80ee8beda0c9: Global # Global
     5d6e6468-5ba1-4d69-9cc9-61ae8d7dec0c: 'Testimonial Image' # Testimonial Image
-    5d9037d9-870f-4c88-93fb-fc01efa9af9d: Subtitle # Subtitle
-    5f0332ac-8ba6-4aab-ab82-e982da9d4551: Posts # Posts
     5f8469b0-407a-4b00-b0e9-4d7704b09500: title # title
-    6bfbcd2b-1df4-4957-93f9-af5634cb74d7: 'Product Link' # Product Link
     6c3a246e-c9d3-4dc1-86f1-3f3193836374: Podcasts # Podcasts
     6d547dab-3d15-44cf-9ee2-2d46f37db6ce: 'Classes Slides' # Classes Slides
     6dd9aa0b-b4f3-4320-8d34-181a52eb6a00: Home # Home
     6ed75db1-ad9e-4521-9601-42a5208aca06: 'Difference List' # Difference List
     6ff5b512-0b65-4f6e-a46d-772831bbeabe: 'Philosophy Head' # Philosophy Head
     7c815618-2626-41f3-bbec-7e8471481ac9: FAQ # FAQ
-    07dede5f-e375-4ca2-9622-0adde621a5c3: Home # Home
     8a752967-d814-4b19-bdfb-02fe03817648: Title # Title
     8d08adba-2f82-490b-9eb6-cb31df5a179e: Intro # Intro
-    008d22bc-e1f4-4f9e-8107-1d146047680c: 'Testimonial Name' # Testimonial Name
     8d913888-595d-4a9e-a5a0-9ee572262eb3: 'Main Nav Right' # Main Nav Right
-    8fcc0341-0be2-48bb-867d-c746a78e9c82: 'Products Items' # Products Items
+    8dbe285a-51c7-470b-84ae-66bd16722a01: 'Public Schema' # Public Schema
     9b43a1c8-2c76-4cd1-9fde-669250b96f30: 'FAQ List' # FAQ List
     9d74e71c-d037-432d-887d-4065ec79a9c7: 'Modern Body' # Modern Body
     9dcc22a0-40c6-4f63-a63c-f48162fe4295: 'Podcast YouTube URL' # Podcast YouTube URL
     9ddbe15b-bd59-4e81-b887-21754a3754c0: Sidebar # Sidebar
     9e15fa09-7eb7-4a08-9766-216d4498a4fe: Podcast # Podcast
-    010f0163-ae73-4856-aa58-73380990ab5b: Description # Description
-    11d2fbd0-367e-4709-b5a0-ab8554cc5c29: 'FAQ Question' # FAQ Question
     14a6f0f3-b531-4d1d-a2b5-c9b0a56a2ef0: Assets # Assets
-    14bf28bc-e552-470e-90dc-600718c4c798: 'Class Item Text' # Class Item Text
     14f5726b-60c3-4f4e-bc91-c2b2e0364c3d: SEO # SEO
     15c2249b-2a16-4099-8c27-c249429ecebe: 'Classes Head' # Classes Head
-    20b6bb8e-2942-4e94-aed6-92a7f8b48e54: 'Difference Item' # Difference Item
-    21b6ca88-6ace-44d7-8c0e-fb6ccbab53d8: Bullet # Bullet
     28a4dc1f-944a-44ed-82cb-8a50a8b69243: 'Try Head' # Try Head
     29c627bb-9663-43ab-95e0-dec6b1e20414: 'Main Nav Left' # Main Nav Left
     29f08e9f-d744-454f-bc1a-64cbddf3f0c8: Contact # Contact
+    30e758f0-4260-47ad-9e45-f215fa9c17f2: 'Public Schema' # Public Schema
     34d91206-bdc7-4cac-b810-e54fa52a8f98: 'Products Head' # Products Head
     43c4b11f-16f2-4fb5-8984-7701e5e667d0: 'Hero Tagline' # Hero Tagline
-    045ba267-c317-43b4-a99b-65dc73c739b4: 'Testimonial Anchor' # Testimonial Anchor
     45cdf667-692c-4321-96aa-54465fc2c000: Instagram # Instagram
     51e9181e-4a28-40cf-9c94-3c2ef58b2dbf: 'Approach Top Text' # Approach Top Text
     63c128b9-aff9-4cd2-ab38-873bdce8e2a1: 'Try Subhead' # Try Subhead
-    84d4713f-9e53-4b1c-8d8e-e5600fa07269: Class # Class
     96f6e380-8739-4368-a5b3-042e778befe7: 'Company Head' # Company Head
-    124a2b5d-f5d0-4b64-866a-f328213b6f7a: 'Testimonial Video ID' # Testimonial Video ID
-    196bdac8-d7ed-4635-acc3-e671ce97f550: Common # Common
     221b0134-0f21-4270-a087-06a4eaf0ded3: 'About Aly' # About Aly
     313c48a2-dfc1-4518-9ba6-7fc0974e9c50: Block # Block
     414a85ef-26ae-44bc-84ae-b9b99c0c85f8: Intro # Intro
-    485c9d29-4e5b-4658-9c86-ed411faf38f6: Title # Title
     620c319e-a58d-401d-ba93-5d4b6317efa0: 'Approach CTA' # Approach CTA
     669c6ed2-f83d-4272-900e-a301c802839a: 'Podcast Image' # Podcast Image
     0816ea9d-8582-4bee-aafc-b482935a9c94: 'Footer Site Nav' # Footer Site Nav
-    830bfd32-7cb9-4f3f-925d-05f0ff7b6562: 'Class Item' # Class Item
     831a1862-ae47-4961-b2a4-ddc9c451e096: FAQ # FAQ
     854bb4fe-e607-46c0-8623-93814869aea5: Description # Description
     949dacbe-f141-438a-9783-ccf2d76f4cc3: Full-Width # Full-Width
     961c4e37-3a41-4b10-8ec3-6a16adb32128: 'Sidebar Accordion' # Sidebar Accordion
-    1048f1f6-9ff4-4134-94d1-1dc90d85b12c: Podcasts # Podcasts
-    03362b47-11fb-4022-8604-e324d8bc0137: 'Classes Slide Description' # Classes Slide Description
     3535db6f-4eec-4e4f-9099-c45146b30d88: 'Podcast YouTube Embed URL' # Podcast YouTube Embed URL
-    4228cf43-424d-43d2-a3d7-9a057c92dfdc: 'FAQ Question' # FAQ Question
-    4600c290-19b8-4151-be72-581d542046ce: SEO # SEO
-    4871b553-a933-4e7c-adbd-3d84341b6958: 'Membership Option Plan' # Membership Option Plan
     5736b993-6ba4-432b-a07b-64f999b41f2f: 'About Aly Sidebar Copy' # About Aly Sidebar Copy
     6887f96e-ee16-4b11-9a20-45e7c13aeda4: FAQs # FAQs
     7365b913-af69-4a61-8213-fcf62513f1b5: Posts # Posts
     7423b0a5-5fd4-453c-bf35-2239363d4c5a: 'Podcast Date' # Podcast Date
     8132b5bd-0022-456d-855c-8f6df7fb602f: 'Membership Description' # Membership Description
     9121f0f4-c29a-4085-af84-e633b5d10a1a: Title # Title
-    24552ad8-1522-4671-bd6f-aefad369b0ef: 'About MB' # About MB
-    51746d4c-7059-4e18-a742-14078d5dbab7: 'Membership Option CTA' # Membership Option CTA
+    51746d4c-7059-4e18-a742-14078d5dbab7: 'Membership Options - Membership Option - Membership Option CTA' # Membership Options - Membership Option - Membership Option CTA
     72019b80-1d51-41ee-a5ba-74053c9a5bd0: 'Podcast Episode' # Podcast Episode
     72290a5d-87bd-4deb-82d3-e36bf3349682: 'Difference Text' # Difference Text
     83953fb7-e107-4565-970c-a90f8151ddd5: Classes # Classes
     84378dce-e3a9-4571-ad93-24faccf4126a: 'About MB Sidebar Copy' # About MB Sidebar Copy
-    089201a8-2f54-4061-8689-d946689afe52: 'Bullet Head' # Bullet Head
-    449581e6-e2e9-4598-94f7-9baec2081577: 'FAQ Item' # FAQ Item
     476101d0-23c9-47fa-98eb-7d3ec4770862: Credentials # Credentials
-    591486aa-2951-4fdb-8521-95e20b1b7b0b: 'Class Item CTA' # Class Item CTA
+    591486aa-2951-4fdb-8521-95e20b1b7b0b: 'Class List - Class Item - Class Item CTA' # Class List - Class Item - Class Item CTA
     612978b4-b183-4027-a49c-607cf17f73f3: 'Full-Width Laptop' # Full-Width Laptop
     668924ed-b4a3-4aba-a157-7a62fb136d6a: 'Meet Aly Text' # Meet Aly Text
     0816030d-965b-4191-920d-1eb3e31b40bf: 'About MB Copy' # About MB Copy
-    3050829a-ace6-4ccb-a141-cfe1f06e97aa: Contact # Contact
     8915217e-26ce-446f-86ff-c4175cabb0b2: Blog # Blog
     32622215-2664-4d65-84fb-c1a3d9939bdd: 'About Modern Body' # About Modern Body
-    36244931-f53f-4d86-a541-bd644c03591f: 'Accordion Head' # Accordion Head
     51560042-57cb-418c-8ba2-b86b090eb5b4: Title # Title
     68962412-698f-411d-a320-ca893137e690: Intro # Intro
     76361647-45f5-4715-8354-8155fe5b6810: Testimonials # Testimonials
-    77517042-ad23-4cb1-a85b-a749aad0e660: Blog # Blog
     92053381-bc29-48a8-b8c9-f691eefa64b5: Title # Title
     a30a92ab-ba97-4a5b-83f9-ba21d87d2cc6: 'Classes Text' # Classes Text
     a52c7e48-efcd-487f-88cd-e5770fb83d10: 'Testimonials CTA' # Testimonials CTA
     a4731ac5-9e41-4ca2-b1d3-9d5f372ec3bc: '1:1 Training' # 1:1 Training
     a7317e16-6eeb-4299-a34d-02eabaa60519: Intro # Intro
-    aa2ff4ae-da1b-4ca0-8b78-03ce349ee782: 'FAQ Item' # FAQ Item
     aa484a7d-f7fa-42c3-b2dd-a05d05e35de0: 'Banner image' # Banner image
     ab565c8c-49f1-4ccf-982f-dad31b867199: 'About MB Image' # About MB Image
     ac16953e-d476-4c04-a41e-9115e69331e6: Contact # Contact
-    aca07eab-0630-4970-8c9c-c2c20f485094: 'Testimonial Summary' # Testimonial Summary
-    acea5b4c-7ceb-431c-910e-5ed5b85da86b: 'Testimonials Video' # Testimonials Video
     ad0a8a25-f07f-40e6-a729-40065563d5dd: 'Banner Text' # Banner Text
-    ae634bf8-48e5-4164-8ab4-7ea661caa5a5: Accordion # Accordion
     aee54a5e-7620-4ca4-9d34-f51ba025df2f: 'About Aly Head' # About Aly Head
-    af23db4e-b155-44e8-9387-875605aafbcc: 'Membership Option' # Membership Option
-    b0bc9f09-62f0-4eb2-807f-395e29fdc51d: 'Classes Slide Title' # Classes Slide Title
     b01a73ea-d922-4f2c-99e1-45ed4ba8d02a: Blog # Blog
-    b1a0dcc7-f87c-4b74-a02d-f1e59ebe30c7: 'Membership Option Detail' # Membership Option Detail
     b75c5afe-111c-4e2f-a65f-f246cffac5f9: 'Highlight Copy 1' # Highlight Copy 1
-    b87d114e-c463-4311-adbe-dc8e506e6d2b: Classes # Classes
     b87e3b3f-cace-45aa-9c6d-2378c7874b72: 'About Aly Image' # About Aly Image
     b366fef5-3588-46c2-8d62-354769fb5cec: 'Philosophy List' # Philosophy List
-    b570e17c-b9e6-413f-bebf-b38f5c0f529d: 'Philosophy Item' # Philosophy Item
     b9670d0b-5a81-4f60-b60d-718a73dd81b5: 'Podcast Spotify URL' # Podcast Spotify URL
-    bbacdeb5-f511-4a44-b666-f24ba0c9b5fd: 'Home Membership Option Image' # Home Membership Option Image
     bc2faaee-59b6-4f7a-a9a5-36f7a19cbb14: 'Products List' # Products List
     bcbd0805-dc1f-4220-a882-9df589f05f15: 'Podcast URL' # Podcast URL
-    be094951-a83c-4f73-90e2-1279b3332b1b: 'Bullet Copy' # Bullet Copy
-    bea3d6c0-82bf-44e2-8922-7fe48dac029b: FAQ # FAQ
-    bf710d01-d9f2-4c16-97d2-6e04c591a6cd: Image # Image
     bfc66a87-43b5-45fb-992a-27586fcff3e4: 'Testimonials Head' # Testimonials Head
     c3cb6ef7-7f2e-4185-84a3-704e84298417: 'Class List' # Class List
     c249f4db-294d-44b8-ba21-a84bc989d17a: Home # Home
@@ -193,11 +143,9 @@ meta:
     ce2c625c-1f6f-4907-ab36-bd4170a940c3: 'Approach Bottom Text' # Approach Bottom Text
     cef6c373-ddac-4750-a65b-14ec99b6a138: YouTube # YouTube
     cefc55e3-defd-4873-a167-004cbf243849: Content # Content
-    cf1c4053-2810-40b9-8b64-e0031fbd8588: 'Philosophy Item Description' # Philosophy Item Description
     cf9ba132-fcad-4b8c-b751-f8f46acea212: 'Sidebar Image' # Sidebar Image
     d4b8cccb-5c21-4f34-822b-fdcaccb73633: 'Footer Classes Nav' # Footer Classes Nav
     d4baabcc-a917-427c-92e1-321c37f3b023: 'Testimonial Items' # Testimonial Items
-    d6e77677-670a-4b49-a894-c4d43cf36dac: About # About
     d7a6e9a6-eab6-444f-b7f8-7a0ed4194618: 'Try Images' # Try Images
     d7ddcb4d-e580-41da-928c-8221ed45a2a2: 'Highlight Copy 2' # Highlight Copy 2
     d7efe282-0770-409c-b80d-98a2d44f3231: 'Testimonials List' # Testimonials List
@@ -206,13 +154,8 @@ meta:
     d92a80b9-3c27-47b7-991b-dc4254819fe9: Testimonials # Testimonials
     d109eed7-bc66-4edb-8452-ac786ef35013: 'Footer Social Links' # Footer Social Links
     d24222de-bc96-4eff-8cd1-e26af7a505cb: 'Difference Head' # Difference Head
-    d76015ab-cb69-4d6c-9f18-cc3506db7bd7: 'Testimonial Name' # Testimonial Name
     d7311023-c3c5-40c6-a863-c44e2352ab50: About # About
-    da4444f1-47dd-462a-84b6-0d72b5c266f6: 'Product Title' # Product Title
-    da521950-25a7-4aaa-be24-0f045a90984a: 'Product Description' # Product Description
-    dc3c592a-a80a-4b90-82de-2ef042f17c7d: 'Difference Text' # Difference Text
     dc20bdf1-05e5-46dd-a2a8-1e01886722ff: Global # Global
-    dccb8fdf-e43a-4604-838c-f3e8f9568225: 'Testimonial Item' # Testimonial Item
     dd8c01a1-64b7-4717-9d7e-25e331647446: 'Membership Head' # Membership Head
     ddea75eb-f726-4277-888c-a56f79dd9e56: 'Classes CTA' # Classes CTA
     e0364518-4df8-4d7e-bbc0-a509ebe03558: '1:1 Training' # 1:1 Training
@@ -223,22 +166,17 @@ meta:
     e86c3ea3-5a1e-4917-a91a-cee28bdf3ca3: 'About Copy' # About Copy
     e89c1ecc-9442-423f-ab32-6b3d2de27eac: 'Hero Logo' # Hero Logo
     e207edb6-f51e-4892-8097-0ae1bafb1260: 'Meet Aly Image' # Meet Aly Image
-    e528c06e-6a42-4282-ae2b-4e38fceda003: Testimonials # Testimonials
     e8130424-cb5a-4c91-8a4d-3d2f704fcd61: 'Meet Aly Head' # Meet Aly Head
     ea3e5fec-5010-406f-8917-449ffc89219f: 'About MB Head' # About MB Head
     eb3e9070-3281-4a39-b619-956f9f2b1925: 'Podcast Description' # Podcast Description
     eb27df65-98ff-4304-a1c5-656559b62c93: Image # Image
-    ebe89201-1375-4202-8c7d-80cd9a140f5d: Testimonial # Testimonial
-    ec6b8c17-c1c6-4f35-ad4c-eb15724fdc38: 'About Aly' # About Aly
     ec86547a-843d-4f8f-b33c-e98741f534ec: 'Podcast Apple URL' # Podcast Apple URL
     ecb84e38-b859-4ef8-aeaa-c1e468b2fd35: 'Newsletter Subscribe Label' # Newsletter Subscribe Label
     ed6ccbec-5dc5-4aae-afe2-4d164632b585: 'Approach Image' # Approach Image
     edd1d7a7-ee00-446d-af3c-31d47d1609b4: 'Modern Body' # Modern Body
-    edeb94d7-66ba-4232-856d-c3110b64a5d0: 'Membership Option Subhead' # Membership Option Subhead
     ee5c98ed-bfa0-436e-b575-a89a085760b5: 'Second Sidebar Image' # Second Sidebar Image
     ee32acb1-caf5-4b06-95bd-eea113ffbfc7: 'Membership Options' # Membership Options
     ee757f8e-ee65-4f02-8c69-eb90acbd9dbb: 'Podcast Summary' # Podcast Summary
-    ef63c8d7-e566-43cd-bd90-5ef7107b443d: 'Membership Option Price' # Membership Option Price
     ef70b6a7-9da3-4ffd-b6a3-33407f08a79b: 'Sidebar Head' # Sidebar Head
     ef78c8c4-5030-4480-8f50-50b231fff44c: 'Second Image' # Second Image
     ef85c3d0-313b-4bcb-a53b-be78806edea3: 'FAQ Head' # FAQ Head
@@ -247,13 +185,10 @@ meta:
     f1dbd402-7281-4d1a-a2dc-3753d5a44df9: 'Company Bullets' # Company Bullets
     f2f30c2d-3302-48f9-ab43-2fe10d21e800: 'Banner Title' # Banner Title
     f4af40b0-3ee1-4b65-bfe3-fcf6e67c3c75: 'About Signature' # About Signature
-    f5be697b-d99a-4ba7-839a-99400f9ebf97: 'Testimonial Poster Image' # Testimonial Poster Image
     f8eb5410-e3fc-41c3-a94e-d80f41ebad14: 'Full-width Mobile' # Full-width Mobile
     f288e9d7-dc12-4748-af43-3c970380b3cf: About # About
     f298ea40-4b97-45ea-9487-8bde6bb0540e: Podcasts # Podcasts
-    f851a4be-7bd7-4309-b0ef-c6ae24caecf3: 'Testimonial Items' # Testimonial Items
     f53309fd-198f-4b52-90b4-7f6ed0b6d947: 'Try CTA' # Try CTA
-    fd99ba12-b360-4bbb-8fa1-2d576c0d95f5: 'FAQ Answer' # FAQ Answer
 plugins:
   ckeditor:
     edition: standard
@@ -281,11 +216,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: DRE8JQEZNKX0BQ0CYJ2H3S5K
-    schemaVersion: 2.0.7
-  redactor:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.3.0
+    schemaVersion: 2.1.0
   redactor-custom-styles:
     edition: standard
     enabled: true
@@ -294,7 +225,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: VQZ8J88KPTFXWGRF48YFG2IO
-    schemaVersion: 3.0.12
+    schemaVersion: 3.0.13
   servd-asset-storage:
     edition: standard
     enabled: true
@@ -319,15 +250,11 @@ plugins:
       securityKey: qLNHbuXmaw85EbG3wqtgkXUPH5LPRunB
       suppressWarnings: ''
       useLocalVolumes: false
-  typedlinkfield:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.0.0
 system:
   edition: solo
   live: true
   name: 'Modern Body'
-  schemaVersion: 4.15.0.0
+  schemaVersion: 5.8.0.3
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false

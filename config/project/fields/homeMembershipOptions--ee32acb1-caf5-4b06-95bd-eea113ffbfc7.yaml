@@ -1,16 +1,18 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 07dede5f-e375-4ca2-9622-0adde621a5c3 # Home
 handle: homeMembershipOptions
 instructions: null
 name: 'Membership Options'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_homemembershipoptions}}'
-  maxBlocks: null
-  minBlocks: null
+  entryTypes:
+    -
+      uid: af23db4e-b155-44e8-9387-875605aafbcc
+  maxEntries: null
+  minEntries: null
   propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

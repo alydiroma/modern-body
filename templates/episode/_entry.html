@@ -18,20 +18,10 @@
     <div class="episode__content stack-sm">
         <div class="episode__content__links">
             <p>
-                {{ tag('a', {
-                    text: 'Listen on Apple Podcasts',
-                    href: entry.podcastAppleUrl,
-                    class: 'link-apple-podcast'
-                    })
-                }}
+                <a href="{{ entry.podcastAppleUrl }}">{{ entry.podcastAppleUrl.label }}</a>
             </p>
             <p>
-                {{ tag('a', {
-                    text: 'Listen on Spotify',
-                    href: entry.podcastSpotifyUrl,
-                    class: 'link-spotify-podcast'
-                    })
-                }}
+                <a href="{{ entry.podcastSpotifyUrl }}">{{ entry.podcastSpotifyUrl.label }}</a>
             </p>
         </div>
 

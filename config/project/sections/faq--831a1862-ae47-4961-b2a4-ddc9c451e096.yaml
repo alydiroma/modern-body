@@ -1,7 +1,20 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 7c815618-2626-41f3-bbec-7e8471481ac9 # FAQ
 handle: faq
+maxAuthors: 1
 name: FAQ
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   9d74e71c-d037-432d-887d-4065ec79a9c7: # Modern Body

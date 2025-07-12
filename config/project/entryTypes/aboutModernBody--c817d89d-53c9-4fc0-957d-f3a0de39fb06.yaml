@@ -121,7 +121,6 @@ fieldLayouts:
 handle: aboutModernBody
 hasTitleField: false
 name: 'About Modern Body'
-section: 32622215-2664-4d65-84fb-c1a3d9939bdd # About Modern Body
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

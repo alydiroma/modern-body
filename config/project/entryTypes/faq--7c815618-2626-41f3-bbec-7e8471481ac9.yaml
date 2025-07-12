@@ -85,7 +85,6 @@ fieldLayouts:
 handle: faq
 hasTitleField: false
 name: FAQ
-section: 831a1862-ae47-4961-b2a4-ddc9c451e096 # FAQ
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

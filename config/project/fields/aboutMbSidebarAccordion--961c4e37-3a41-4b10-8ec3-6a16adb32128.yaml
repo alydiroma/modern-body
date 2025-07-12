@@ -1,16 +1,18 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 24552ad8-1522-4671-bd6f-aefad369b0ef # About MB
 handle: aboutMbSidebarAccordion
 instructions: null
 name: 'Sidebar Accordion'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_aboutmbsidebaraccordion}}'
-  maxBlocks: null
-  minBlocks: null
+  entryTypes:
+    -
+      uid: ae634bf8-48e5-4164-8ab4-7ea661caa5a5
+  maxEntries: null
+  minEntries: null
   propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix
