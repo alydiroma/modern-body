@@ -152,7 +152,7 @@ fieldLayouts:
         uid: 2c22ce95-9c60-4cd1-8893-23b53f1b90bd
         userCondition: null
 handle: footerClassesNav
-instructions: ''
+instructions: null
 maxNodes: null
 name: 'Footer Classes Nav'
 permissions:

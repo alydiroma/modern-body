@@ -152,7 +152,7 @@ fieldLayouts:
         uid: 1f18d9ec-1c07-4826-a130-aae91bc54375
         userCondition: null
 handle: footerSiteNav
-instructions: ''
+instructions: null
 maxNodes: null
 name: 'Footer Site Nav'
 permissions:

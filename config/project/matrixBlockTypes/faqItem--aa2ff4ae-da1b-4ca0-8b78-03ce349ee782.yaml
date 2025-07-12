@@ -42,25 +42,23 @@ fields:
     name: 'FAQ Question'
     searchable: false
     settings:
-      availableTransforms: ''
-      availableVolumes: ''
+      availableTransforms: '*'
+      availableVolumes: '*'
+      characterLimit: null
+      ckeConfig: f062b6d8-1aff-4ec3-bef3-e9a7f786c1fc # Simple
       columnType: text
-      configSelectionMode: choose
-      defaultTransform: ''
-      manualConfig: ''
+      defaultTransform: null
       purifierConfig: null
       purifyHtml: true
-      redactorConfig: null
-      removeEmptyTags: false
-      removeInlineStyles: false
-      removeNbsp: false
-      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      uiMode: enlarged
+      showWordCount: false
+      sourceEditingGroups:
+        - __ADMINS__
+      wordLimit: null
     translationKeyFormat: null
     translationMethod: none
-    type: craft\redactor\Field
+    type: craft\ckeditor\Field
   fd99ba12-b360-4bbb-8fa1-2d576c0d95f5: # FAQ Answer
     columnSuffix: dtcriruu
     contentColumnType: text
@@ -70,25 +68,23 @@ fields:
     name: 'FAQ Answer'
     searchable: false
     settings:
-      availableTransforms: ''
-      availableVolumes: ''
+      availableTransforms: '*'
+      availableVolumes: '*'
+      characterLimit: null
+      ckeConfig: f062b6d8-1aff-4ec3-bef3-e9a7f786c1fc # Simple
       columnType: text
-      configSelectionMode: choose
-      defaultTransform: ''
-      manualConfig: ''
+      defaultTransform: null
       purifierConfig: null
       purifyHtml: true
-      redactorConfig: null
-      removeEmptyTags: false
-      removeInlineStyles: false
-      removeNbsp: false
-      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      uiMode: enlarged
+      showWordCount: false
+      sourceEditingGroups:
+        - __ADMINS__
+      wordLimit: null
     translationKeyFormat: null
     translationMethod: none
-    type: craft\redactor\Field
+    type: craft\ckeditor\Field
 handle: faqItem
 name: 'FAQ Item'
 sortOrder: 1

@@ -46,7 +46,11 @@
                             </div>
                             {% if block.classLink %}
                                 <p class="classes-item-link">
-                                    <a class="btn btn-wide-mobile" href="{{ block.classLink }}">{{ block.classLink.getCustomText('Learn More') }}</a>
+                                    {{ tag('a', {
+                                        class: "btn btn-wide-mobile",
+                                        text: 'Learn More',
+                                        href: block.classLink
+                                      }) }}
                                 </p>
                             {% endif %}
                         </div>

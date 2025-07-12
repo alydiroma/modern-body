@@ -381,7 +381,7 @@
 			flex: 1;
 			height: auto;
 			background-color: $dark-brown;
-			border-radius: $radius-image;
+			border-radius: $gap;
 			overflow: hidden;
 
 			&:has(iframe) {

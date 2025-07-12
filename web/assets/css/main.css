@@ -2411,7 +2411,7 @@ textarea {
   flex: 1;
   height: auto;
   background-color: #3D2F17;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   overflow: hidden;
 }
 .home-testimonials-image:has(iframe) {

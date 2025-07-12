@@ -103,67 +103,19 @@ fields:
     type: craft\fields\PlainText
   51746d4c-7059-4e18-a742-14078d5dbab7: # Membership Option CTA
     columnSuffix: null
-    contentColumnType: string
+    contentColumnType: string(255)
     fieldGroup: null
     handle: homeMembershipOptionCta
     instructions: null
     name: 'Membership Option CTA'
     searchable: false
     settings:
-      allowCustomText: true
-      allowTarget: true
-      autoNoReferrer: true
-      customTextMaxLength: 0
-      customTextRequired: false
-      defaultLinkName: entry
-      defaultText: ''
-      enableAllLinkTypes: false
-      enableAriaLabel: false
-      enableElementCache: false
-      enableTitle: false
-      typeSettings:
-        asset:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: false
-          sources: '*'
-        category:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: false
-          sources: '*'
-        custom:
-          allowAliases: false
-          disableValidation: false
-          enabled: false
-        email:
-          allowAliases: false
-          disableValidation: false
-          enabled: false
-        entry:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: true
-          sources: '*'
-        site:
-          enabled: false
-          sites: '*'
-        tel:
-          allowAliases: false
-          disableValidation: false
-          enabled: false
-        url:
-          allowAliases: false
-          disableValidation: false
-          enabled: true
-        user:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: false
-          sources: '*'
+      maxLength: 255
+      types:
+        - url
     translationKeyFormat: null
     translationMethod: none
-    type: lenz\linkfield\fields\LinkField
+    type: craft\fields\Url
   b1a0dcc7-f87c-4b74-a02d-f1e59ebe30c7: # Membership Option Detail
     columnSuffix: oavxzdzn
     contentColumnType: text
@@ -210,17 +162,6 @@ fields:
       restrictedDefaultUploadSubpath: null
       restrictedLocationSource: 'volume:14a6f0f3-b531-4d1d-a2b5-c9b0a56a2ef0' # Assets
       restrictedLocationSubpath: null
-      selectionCondition:
-        __assoc__:
-          -
-            - elementType
-            - craft\elements\Asset
-          -
-            - fieldContext
-            - global
-          -
-            - class
-            - craft\elements\conditions\assets\AssetCondition
       selectionLabel: null
       showSiteMenu: true
       showUnpermittedFiles: false

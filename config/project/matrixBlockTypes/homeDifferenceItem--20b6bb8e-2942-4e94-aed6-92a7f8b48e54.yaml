@@ -32,23 +32,21 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
+      characterLimit: null
+      ckeConfig: f062b6d8-1aff-4ec3-bef3-e9a7f786c1fc # Simple
       columnType: text
-      configSelectionMode: choose
-      defaultTransform: ''
-      manualConfig: ''
+      defaultTransform: null
       purifierConfig: null
       purifyHtml: true
-      redactorConfig: null
-      removeEmptyTags: false
-      removeInlineStyles: false
-      removeNbsp: false
-      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      uiMode: enlarged
+      showWordCount: false
+      sourceEditingGroups:
+        - __ADMINS__
+      wordLimit: null
     translationKeyFormat: null
     translationMethod: none
-    type: craft\redactor\Field
+    type: craft\ckeditor\Field
 handle: homeDifferenceItem
 name: 'Difference Item'
 sortOrder: 1

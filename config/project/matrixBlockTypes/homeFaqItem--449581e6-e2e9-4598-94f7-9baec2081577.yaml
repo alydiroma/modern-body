@@ -44,23 +44,21 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
+      characterLimit: null
+      ckeConfig: f062b6d8-1aff-4ec3-bef3-e9a7f786c1fc # Simple
       columnType: text
-      configSelectionMode: choose
-      defaultTransform: ''
-      manualConfig: ''
+      defaultTransform: null
       purifierConfig: null
       purifyHtml: true
-      redactorConfig: null
-      removeEmptyTags: false
-      removeInlineStyles: false
-      removeNbsp: false
-      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      uiMode: enlarged
+      showWordCount: false
+      sourceEditingGroups:
+        - __ADMINS__
+      wordLimit: null
     translationKeyFormat: null
     translationMethod: none
-    type: craft\redactor\Field
+    type: craft\ckeditor\Field
   4228cf43-424d-43d2-a3d7-9a057c92dfdc: # FAQ Question
     columnSuffix: oaxxjapr
     contentColumnType: text
@@ -72,23 +70,21 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
+      characterLimit: null
+      ckeConfig: f062b6d8-1aff-4ec3-bef3-e9a7f786c1fc # Simple
       columnType: text
-      configSelectionMode: choose
-      defaultTransform: ''
-      manualConfig: ''
+      defaultTransform: null
       purifierConfig: null
       purifyHtml: true
-      redactorConfig: null
-      removeEmptyTags: false
-      removeInlineStyles: false
-      removeNbsp: false
-      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      uiMode: enlarged
+      showWordCount: false
+      sourceEditingGroups:
+        - __ADMINS__
+      wordLimit: null
     translationKeyFormat: null
     translationMethod: none
-    type: craft\redactor\Field
+    type: craft\ckeditor\Field
 handle: homeFaqItem
 name: 'FAQ Item'
 sortOrder: 1

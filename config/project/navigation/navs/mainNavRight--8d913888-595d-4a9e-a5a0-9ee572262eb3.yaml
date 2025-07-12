@@ -152,7 +152,7 @@ fieldLayouts:
         uid: d509f7d4-1067-425d-bc02-b97a847ae0a1
         userCondition: null
 handle: mainNavRight
-instructions: ''
+instructions: null
 maxNodes: null
 name: 'Main Nav Right'
 permissions:

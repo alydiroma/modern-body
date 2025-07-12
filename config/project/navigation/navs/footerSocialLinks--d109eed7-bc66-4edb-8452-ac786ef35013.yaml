@@ -152,7 +152,7 @@ fieldLayouts:
         uid: 4ebbfea6-79a2-4012-9cb3-0652f27ca249
         userCondition: null
 handle: footerSocialLinks
-instructions: ''
+instructions: null
 maxNodes: null
 name: 'Footer Social Links'
 permissions:

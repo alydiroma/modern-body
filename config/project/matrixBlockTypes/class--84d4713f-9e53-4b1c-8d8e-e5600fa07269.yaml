@@ -71,67 +71,19 @@ fieldLayouts:
 fields:
   0e24ebfd-5210-45ab-8434-b505aa1e3db4: # Link
     columnSuffix: null
-    contentColumnType: string
+    contentColumnType: string(255)
     fieldGroup: null
     handle: classLink
     instructions: null
     name: Link
     searchable: false
     settings:
-      allowCustomText: true
-      allowTarget: true
-      autoNoReferrer: true
-      customTextMaxLength: 0
-      customTextRequired: false
-      defaultLinkName: url
-      defaultText: 'Find Out More'
-      enableAllLinkTypes: false
-      enableAriaLabel: false
-      enableElementCache: false
-      enableTitle: false
-      typeSettings:
-        asset:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: false
-          sources: '*'
-        category:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: false
-          sources: '*'
-        custom:
-          allowAliases: false
-          disableValidation: false
-          enabled: false
-        email:
-          allowAliases: false
-          disableValidation: false
-          enabled: false
-        entry:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: true
-          sources: '*'
-        site:
-          enabled: false
-          sites: '*'
-        tel:
-          allowAliases: false
-          disableValidation: false
-          enabled: false
-        url:
-          allowAliases: false
-          disableValidation: false
-          enabled: true
-        user:
-          allowCrossSiteLink: false
-          allowCustomQuery: false
-          enabled: false
-          sources: '*'
+      maxLength: 255
+      types:
+        - url
     translationKeyFormat: null
     translationMethod: none
-    type: lenz\linkfield\fields\LinkField
+    type: craft\fields\Url
   5d9037d9-870f-4c88-93fb-fc01efa9af9d: # Subtitle
     columnSuffix: fzwedecp
     contentColumnType: text
@@ -141,25 +93,23 @@ fields:
     name: Subtitle
     searchable: false
     settings:
-      availableTransforms: ''
-      availableVolumes: ''
+      availableTransforms: '*'
+      availableVolumes: '*'
+      characterLimit: null
+      ckeConfig: f062b6d8-1aff-4ec3-bef3-e9a7f786c1fc # Simple
       columnType: text
-      configSelectionMode: choose
-      defaultTransform: ''
-      manualConfig: ''
+      defaultTransform: null
       purifierConfig: null
       purifyHtml: true
-      redactorConfig: null
-      removeEmptyTags: false
-      removeInlineStyles: false
-      removeNbsp: false
-      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      uiMode: enlarged
+      showWordCount: false
+      sourceEditingGroups:
+        - __ADMINS__
+      wordLimit: null
     translationKeyFormat: null
     translationMethod: none
-    type: craft\redactor\Field
+    type: craft\ckeditor\Field
   010f0163-ae73-4856-aa58-73380990ab5b: # Description
     columnSuffix: tvlbeebc
     contentColumnType: text
@@ -169,25 +119,23 @@ fields:
     name: Description
     searchable: false
     settings:
-      availableTransforms: ''
-      availableVolumes: ''
+      availableTransforms: '*'
+      availableVolumes: '*'
+      characterLimit: null
+      ckeConfig: f062b6d8-1aff-4ec3-bef3-e9a7f786c1fc # Simple
       columnType: text
-      configSelectionMode: choose
-      defaultTransform: ''
-      manualConfig: ''
+      defaultTransform: null
       purifierConfig: null
       purifyHtml: true
-      redactorConfig: null
-      removeEmptyTags: false
-      removeInlineStyles: false
-      removeNbsp: false
-      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      uiMode: enlarged
+      showWordCount: false
+      sourceEditingGroups:
+        - __ADMINS__
+      wordLimit: null
     translationKeyFormat: null
     translationMethod: none
-    type: craft\redactor\Field
+    type: craft\ckeditor\Field
   485c9d29-4e5b-4658-9c86-ed411faf38f6: # Title
     columnSuffix: nvantnum
     contentColumnType: text
@@ -234,17 +182,6 @@ fields:
       restrictedDefaultUploadSubpath: null
       restrictedLocationSource: 'volume:14a6f0f3-b531-4d1d-a2b5-c9b0a56a2ef0' # Assets
       restrictedLocationSubpath: null
-      selectionCondition:
-        __assoc__:
-          -
-            - elementType
-            - craft\elements\Asset
-          -
-            - fieldContext
-            - global
-          -
-            - class
-            - craft\elements\conditions\assets\AssetCondition
       selectionLabel: null
       showSiteMenu: true
       showUnpermittedFiles: false

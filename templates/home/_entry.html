@@ -6,10 +6,14 @@
             <h1 class="sr-only">{{ entry.homeTitle }}</h1>
             <div class="home-hero-copy stack-sm">
                 <p class="home-hero-tagline">{{ entry.homeHeroTagline | striptags }}</p>
-                {% if entry.homeHeroCta.getLink() %}
-                <p class="home-hero-cta">
-                    <a class="btn-cta-white" href="{{ entry.homeHeroCta }}">{{ entry.homeHeroCta.customText }}</a>
-                </p>
+                {% if entry.homeHeroCta %}
+                    <p class="home-hero-cta">
+                        {{ tag('a', {
+                            class: "btn-cta-white",
+                            text: 'Start for Free',
+                            href: entry.homeHeroCta
+                        }) }}
+                 </p>
                 {% endif %}
             </div>
         </div>
@@ -100,7 +104,13 @@
         </div>
 
         <div class="home-classes-cta">
-            <a class="btn-cta-orange" href="{{ entry.homeClassesCta }}">{{ entry.homeClassesCta.getCustomText('Try for Free') }}</a>
+            {% if entry.homeClassesCta %}
+                {{ tag('a', {
+                    class: 'btn-cta-orange',
+                    text: 'Try for Free',
+                    href: entry.homeClassesCta
+                }) }}
+            {% endif %}
         </div>
     </section>
 
@@ -172,8 +182,13 @@
                         {% endif %}
                     </div>
                     <div>
-                        <a class="btn-cta-white" href="{{ block.homeMembershipOptionCta }}">{{
-                            block.homeMembershipOptionCta.getCustomText('Select This Plan') }}</a>
+                        {% if entry.homeMembershipOptionCta %}
+                            {{ tag('a', {
+                                class: "btn-cta-white",
+                                text: 'Learn More',
+                                href: entry.homeMembershipOptionCta
+                            }) }}
+                        {% endif %}
                     </div>
                 </div>
                 <p class="home-membership-item-tag">{{block.homeMembershipOptionDetail}}</p>

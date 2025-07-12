@@ -1,4 +1,4 @@
-dateModified: 1751123816
+dateModified: 1752339420
 email:
   fromEmail: support@modernbody.io
   fromName: 'Modern Body'
@@ -23,9 +23,13 @@ fs:
       optimiseUrlPattern: ''
       projectSlug: ''
       securityKey: ''
-      subfolder: modern-body/local/
+      subfolder: local/
     type: servd\AssetStorage\AssetsPlatform\Fs
-    url: 'https://cdn2.assets-servd.host'
+    url: 'https://modern-body.files.svdcdn.com'
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
 meta:
   __names__:
     0abc2601-eb4e-47a7-bb20-6358900e5ed0: 'About Image' # About Image
@@ -94,7 +98,6 @@ meta:
     45cdf667-692c-4321-96aa-54465fc2c000: Instagram # Instagram
     51e9181e-4a28-40cf-9c94-3c2ef58b2dbf: 'Approach Top Text' # Approach Top Text
     63c128b9-aff9-4cd2-ab38-873bdce8e2a1: 'Try Subhead' # Try Subhead
-    63ee439f-a7aa-41cf-b686-93b2f5f6392d: 'Product Link Text' # Product Link Text
     84d4713f-9e53-4b1c-8d8e-e5600fa07269: Class # Class
     96f6e380-8739-4368-a5b3-042e778befe7: 'Company Head' # Company Head
     124a2b5d-f5d0-4b64-866a-f328213b6f7a: 'Testimonial Video ID' # Testimonial Video ID
@@ -114,7 +117,6 @@ meta:
     1048f1f6-9ff4-4134-94d1-1dc90d85b12c: Podcasts # Podcasts
     03362b47-11fb-4022-8604-e324d8bc0137: 'Classes Slide Description' # Classes Slide Description
     3535db6f-4eec-4e4f-9099-c45146b30d88: 'Podcast YouTube Embed URL' # Podcast YouTube Embed URL
-    4046c835-2452-4000-84ec-20b3d05d8d00: Pricing # Pricing
     4228cf43-424d-43d2-a3d7-9a057c92dfdc: 'FAQ Question' # FAQ Question
     4600c290-19b8-4151-be72-581d542046ce: SEO # SEO
     4871b553-a933-4e7c-adbd-3d84341b6958: 'Membership Option Plan' # Membership Option Plan
@@ -241,6 +243,7 @@ meta:
     ef78c8c4-5030-4480-8f50-50b231fff44c: 'Second Image' # Second Image
     ef85c3d0-313b-4bcb-a53b-be78806edea3: 'FAQ Head' # FAQ Head
     eff44e11-1bf3-4bcd-a4b7-a0b46586fea6: 'Banner Text' # Banner Text
+    f062b6d8-1aff-4ec3-bef3-e9a7f786c1fc: Simple # Simple
     f1dbd402-7281-4d1a-a2dc-3753d5a44df9: 'Company Bullets' # Company Bullets
     f2f30c2d-3302-48f9-ab43-2fe10d21e800: 'Banner Title' # Banner Title
     f4af40b0-3ee1-4b65-bfe3-fcf6e67c3c75: 'About Signature' # About Signature
@@ -252,6 +255,10 @@ meta:
     f53309fd-198f-4b52-90b4-7f6ed0b6d947: 'Try CTA' # Try CTA
     fd99ba12-b360-4bbb-8fa1-2d576c0d95f5: 'FAQ Answer' # FAQ Answer
 plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
   contact-form:
     edition: standard
     enabled: true
