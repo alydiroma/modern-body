@@ -100,7 +100,7 @@
 
         <div class="home-classes-cta">
             {% if entry.homeClassesCta %}
-                <a class="btn-cta-orange" href="{{ entry.homeClassesCta }}">{{ entry.homeClassesCta.label }}</a>
+                <a class="" href="{{ entry.homeClassesCta }}">{{ entry.homeClassesCta.label }}</a>
             {% endif %}
         </div>
     </section>
@@ -173,8 +173,8 @@
                         {% endif %}
                     </div>
                     <div>
-                        {% if entry.homeMembershipOptionCta %}
-                            <a class="btn-cta-white" href="{{ entry.homeMembershipOptionCta }}">{{ entry.homeMembershipOptionCta.label }}</a>
+                        {% if block.homeMembershipOptionCta %}
+                            <a class="btn-cta-white" href="{{ block.homeMembershipOptionCta }}">{{ block.homeMembershipOptionCta.label }}</a>
                         {% endif %}
                     </div>
                 </div>
