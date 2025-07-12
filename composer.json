@@ -2,10 +2,10 @@
   "require": {
     "carlcs/craft-redactorcustomstyles": "^4.0",
     "craftcms/ckeditor": "^3.13",
-    "craftcms/cms": "4.15.6.2",
+    "craftcms/cms": "4.16.4",
     "craftcms/contact-form": "3.1.0",
     "craftcms/redactor": "3.1.0",
-    "misterbk/mix": "v1.7.2",
+    "misterbk/mix": "v1.8.1",
     "nystudio107/craft-seomatic": "4.0.31",
     "sebastianlenz/linkfield": "^2.1",
     "servd/craft-asset-storage": "3.5.26",
