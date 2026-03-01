@@ -179,6 +179,10 @@
 		.control-button {
 			@include button-reset;
 			display: block;
+
+			span, svg {
+				pointer-events: none;
+			}
 			
 			svg {
 				width: $gap-sm;

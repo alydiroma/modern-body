@@ -70,6 +70,7 @@ const loadPodcasts = () => {
 
                     container.appendChild(div);
                 });
+                customAudio();
 
                 btn.setAttribute('data-offset', offset + limit);
                 btn.innerText = 'Load More';
@@ -102,7 +103,7 @@ const showMoreLatestPodcast = () => {
     });
 }
 
-const playAudio = () => {
+const customAudio = () => {
     const formatAudioTime = (time) => {
         let hours = Math.floor(time / 3600);
         let minutes = Math.floor((time % 3600) / 60);
@@ -173,4 +174,4 @@ const playAudio = () => {
 
 loadPodcasts();
 showMoreLatestPodcast();
-playAudio();
+customAudio();

@@ -3718,6 +3718,9 @@ textarea {
 .podcasts .custom-controls .control-button:hover {
   cursor: pointer;
 }
+.podcasts .custom-controls .control-button span, .podcasts .custom-controls .control-button svg {
+  pointer-events: none;
+}
 .podcasts .custom-controls .control-button svg {
   width: 1rem;
 }
