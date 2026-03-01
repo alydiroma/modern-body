@@ -35,10 +35,9 @@ class DefaultController extends Controller
     public function actionLoadMore()
     {
         $this->requireAcceptsJson();
-        $limit = (int)Craft::$app->request->getParam('limit', 6);
+        $limit = (int)Craft::$app->request->getParam('limit', 12);
         $offset = (int)Craft::$app->request->getParam('offset', 0);
 
-        // Fetch using the Module Instance
         $module = \modules\captivateapi\CaptivateApi::getInstance();
         $episodes = $module->getEpisodes($limit, $offset);
 

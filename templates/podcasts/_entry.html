@@ -25,16 +25,9 @@
             <h2 class="h3-style">{{ episode.title }}</h2>
             <p class="p-small">{{ episode.published_date | date('F j, Y') }}</p>
         </div>
-    {% else %}
-        <p>No episodes found.</p>
-    {% endfor %}
-    {% set media = craft.captivateApi.getMedia(1, 0) %}
-    {% for mediaItem in media %}
-        {% if mediaItem.media_url %}
+        {% if episode.media_url %}
             {% include '_partials/audio-player' %}
         {% endif %}
-    {% endfor %}
-    {% for episode in episodes %}
         {% if episode.shownotes %}
             <button type="button" aria-expanded="false" class="podcasts-latest-toggle-btn p-style" aria-controls="more-copy" id="more-toggle">
                 Show More About This Episode
@@ -43,6 +36,8 @@
                 <p>{{ episode.shownotes | raw}}</p>
             </div>
         {% endif %}
+    {% else %}
+        <p>No episodes found.</p>
     {% endfor %}
   </section>
   <section class="podcasts-list stack-md">
@@ -50,15 +45,15 @@
         <h2 class="h3-style">More Podcasts</h2>
     </div>
     <div id="episode-container" class="podcasts-list-inner container-medium">
-        {% set media = craft.captivateApi.getMedia(12, 1) %}
-        {% for mediaItem in media %}
-            {% if mediaItem.title %}
+        {% set episodes = craft.captivateApi.getEpisodes(6, 1) %}
+        {% for episode in episodes %}
+            {% if episode.title %}
             <div class="podcasts-item">
                 <div class="stack-xs">
-                    <h3>{{ mediaItem.title }}</h3>
-                    <p class="p-small">{{ mediaItem.created_at | date('F j, Y') }}</p>
+                    <h3>{{ episode.title }}</h3>
+                    <p class="p-small">{{ episode.created_at | date('F j, Y') }}</p>
                 </div>
-                {% if mediaItem.media_url %}
+                {% if episode.media_url %}
                     {% include '_partials/audio-player' %}
                 {% endif %}
             </div>
@@ -68,7 +63,7 @@
         {% endfor %}
     </div>
     <div class="podcasts-button">
-        <button id="load-more-btn" class="btn-cta-orange" data-offset="4">Load More</button>
+        <button id="load-more-btn" class="btn-cta-orange" data-offset="7">Load More</button>
     </div>
   </section>
 </main>
