@@ -117,15 +117,15 @@ const playAudio = () => {
         const button = player.querySelector('.control-button');
         const buttonPlaying = player.querySelector('.playing');
         const buttonPaused = player.querySelector('.paused');
-        const buttonIcon = player.querySelector('.btn-icon');
         const progressBar = player.querySelector('.progressBar');
         const progressCurrent = player.querySelector('.progress-current');
         const progressDuration = player.querySelector('.progress-duration');
         const volumeControl = player.querySelector('.volumeControl');
 
         audio.addEventListener('loadedmetadata', function() {
-            if (audio.duration) {
+            if (Number.isFinite(audio.duration)) {
                 const percentage = (audio.currentTime / audio.duration) * 100;
+                progressBar.value = percentage;
                 progressDuration.textContent = formatAudioTime(audio.duration);
             }
         }, false);
@@ -138,11 +138,12 @@ const playAudio = () => {
             } else {
                 audio.pause();
                 buttonPaused.classList.add('show');
-                buttonPlaying.classList.remove('show');        }
+                buttonPlaying.classList.remove('show');
+            }
         });
 
         audio.addEventListener('timeupdate', () => {
-            if (audio.duration) {
+            if (Number.isFinite(audio.duration) && audio.duration > 0) {
                 const percentage = (audio.currentTime / audio.duration) * 100;
                 progressBar.value = percentage;
                 progressCurrent.textContent = formatAudioTime(audio.currentTime);
@@ -150,16 +151,16 @@ const playAudio = () => {
         });
 
         progressBar.addEventListener('input', () => {
-            if (audio.duration) {
-                const time = (progressBar.value / 100) * audio.duration;
-                audio.currentTime = formatAudioTime(time);
+            if (Number.isFinite(audio.duration) && audio.duration > 0) {
+                const time = (parseFloat(progressBar.value) / 100) * audio.duration;
+                audio.currentTime = time; 
             }
         });
 
         volumeControl.addEventListener('input', () => {
             audio.volume = volumeControl.value;
         });
-    }
+    };
 
     const customPlayers = document.querySelectorAll('.custom-player');
 

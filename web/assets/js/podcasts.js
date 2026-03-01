@@ -75,14 +75,14 @@ var playAudio = function playAudio() {
     var button = player.querySelector('.control-button');
     var buttonPlaying = player.querySelector('.playing');
     var buttonPaused = player.querySelector('.paused');
-    var buttonIcon = player.querySelector('.btn-icon');
     var progressBar = player.querySelector('.progressBar');
     var progressCurrent = player.querySelector('.progress-current');
     var progressDuration = player.querySelector('.progress-duration');
     var volumeControl = player.querySelector('.volumeControl');
     audio.addEventListener('loadedmetadata', function () {
-      if (audio.duration) {
+      if (Number.isFinite(audio.duration)) {
         var percentage = audio.currentTime / audio.duration * 100;
+        progressBar.value = percentage;
         progressDuration.textContent = formatAudioTime(audio.duration);
       }
     }, false);
@@ -100,16 +100,16 @@ var playAudio = function playAudio() {
       }
     });
     audio.addEventListener('timeupdate', function () {
-      if (audio.duration) {
+      if (Number.isFinite(audio.duration) && audio.duration > 0) {
         var percentage = audio.currentTime / audio.duration * 100;
         progressBar.value = percentage;
         progressCurrent.textContent = formatAudioTime(audio.currentTime);
       }
     });
     progressBar.addEventListener('input', function () {
-      if (audio.duration) {
-        var time = progressBar.value / 100 * audio.duration;
-        audio.currentTime = formatAudioTime(time);
+      if (Number.isFinite(audio.duration) && audio.duration > 0) {
+        var time = parseFloat(progressBar.value) / 100 * audio.duration;
+        audio.currentTime = time;
       }
     });
     volumeControl.addEventListener('input', function () {
