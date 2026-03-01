@@ -17,7 +17,7 @@
       {% endif %}
     </div>
   </section>
-  <section class="podcasts-latest stack-md">
+  <section class="podcasts-latest stack-sm">
     {% set episodes = craft.captivateApi.getEpisodes(1, 0) %}
     {% for episode in episodes %}
         <div class="podcasts-latest-head stack-xs">
@@ -25,24 +25,48 @@
             <h2 class="h3-style"><a href="https://modern-body.captivate.fm/">{{ episode.title }}</a></h2>
             <p class="p-small">{{ episode.published_date | date('F j, Y') }}</p>
         </div>
-        <div class="podcasts-latest-copy stack-sm">
-            <p>{{ episode.shownotes | raw}}</p>
-        </div>
     {% else %}
         <p>No episodes found.</p>
     {% endfor %}
-  </section>
+    {% set media = craft.captivateApi.getMedia(1, 0) %}
+    {% for mediaItem in media %}
+        {% if mediaItem.media_url %}
+            <audio controls>
+                <source src={{ mediaItem.media_url}} type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            {% endif %}
+        {% endfor %}
+        {% for episode in episodes %}
+            {% if episode.shownotes %}
+            <button type="button" aria-expanded="false" class="podcasts-latest-toggle-btn p-style" aria-controls="more-copy" id="more-toggle">
+                Show More About This Episode
+            </button>
+            <div class="podcasts-latest-copy stack-sm" id="more-copy" role="region" aria-labelledby="more-toggle">
+                <p>{{ episode.shownotes | raw}}</p>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </section>
   <section class="podcasts-list stack-md">
     <div class="podcasts-head container-medium">
         <h2 class="h3-style">More Podcasts</h2>
     </div>
     <div id="episode-container" class="podcasts-list-inner container-medium">
-        {% set episodes = craft.captivateApi.getEpisodes(12, 1) %}
-        {% for episode in episodes %}
+        {% set media = craft.captivateApi.getMedia(12, 1) %}
+        {% for mediaItem in media %}
+            {% if mediaItem.title %}
             <div class="podcasts-item">
-                <h3><a href="https://modern-body.captivate.fm/">{{ episode.title }}</a></h3>
-                <p class="p-small">{{ episode.published_date | date('F j, Y') }}</p>
+                <div class="stack-xs">
+                    <h3><a href="https://modern-body.captivate.fm/">{{ mediaItem.title }}</a></h3>
+                    <p class="p-small">{{ mediaItem.created_at | date('F j, Y') }}</p>
+                </div>
+                <audio controls>
+                    <source src={{ mediaItem.media_url}} type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
             </div>
+            {% endif %}
         {% else %}
             <p>No episodes found.</p>
         {% endfor %}

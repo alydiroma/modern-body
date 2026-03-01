@@ -2,6 +2,11 @@
     color: $dark-brown;
 	background-color: $bg-med;
 
+	audio {
+		width: 100%;
+		max-width: 100%;
+	}
+
 	&-banner {
 		position: relative;
 		display: flex;
@@ -80,7 +85,24 @@
 			@include toRem('font-size', 32);
 		}
 
+		&-toggle-btn {
+			@include button-reset;
+			color: $accent;
+
+			&:hover {
+				cursor: pointer;
+				text-decoration: underline;
+			}
+		}
+
 		&-copy {
+			display: none;
+			margin-top: $gap;
+
+			&.show {
+				display: block;
+			}
+
 			h3, h3 strong,
 			p strong {
 				@include font-body;
@@ -143,6 +165,6 @@
 		h3 {
 			@include font-body;
 			@include toRem('font-size', 20);
-		}		
+		}	
 	}
 }

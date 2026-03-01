@@ -18,7 +18,6 @@ class DefaultController extends Controller
         $client = Craft::createGuzzleClient();
 
         try {
-            // Added missing endpoint path: /authenticate/token
             $response = $client->post('https://api.captivate.fm', [
                 'form_params' => [
                     'username' => $username,

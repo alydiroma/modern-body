@@ -3513,6 +3513,10 @@ textarea {
   color: #3D2F17;
   background-color: #eee6d9;
 }
+.podcasts audio {
+  width: 100%;
+  max-width: 100%;
+}
 .podcasts-banner {
   position: relative;
   display: flex;
@@ -3608,6 +3612,33 @@ textarea {
 }
 .podcasts-latest h2 {
   font-size: 2rem;
+}
+.podcasts-latest-toggle-btn {
+  text-decoration: none;
+  text-shadow: none;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: #8a3a42;
+}
+.podcasts-latest-toggle-btn:hover {
+  cursor: pointer;
+}
+.podcasts-latest-toggle-btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.podcasts-latest-copy {
+  display: none;
+  margin-top: 2rem;
+}
+.podcasts-latest-copy.show {
+  display: block;
 }
 .podcasts-latest-copy h3, .podcasts-latest-copy h3 strong,
 .podcasts-latest-copy p strong {
