@@ -21,7 +21,13 @@
  */
 
 use craft\helpers\App;
+use modules\captivateapi\CaptivateApi;
 
 return [
-    'id' => App::env('CRAFT_APP_ID') ?: 'CraftCMS',
+    'modules' => [
+        'captivateapi' => [
+            'class' => \modules\captivateapi\CaptivateApi::class,
+        ],
+    ],
+    'bootstrap' => ['captivateapi'], // This makes the routes active
 ];

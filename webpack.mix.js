@@ -14,6 +14,7 @@ mix
 .js('src/assets/js/main.js', 'web/assets/js/')
 .js('src/assets/js/home.js', 'web/assets/js/')
 .js('src/assets/js/about.js', 'web/assets/js/')
+.js('src/assets/js/podcasts.js', 'web/assets/js/')
 .js('src/assets/js/testimonials.js', 'web/assets/js/')
 .copyDirectory('src/assets/fonts', 'web/assets/fonts')
     .options({
