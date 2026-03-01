@@ -22,7 +22,7 @@
     {% for episode in episodes %}
         <div class="podcasts-latest-head stack-xs">
             <p class="tag">Latest</p>
-            <h2 class="h3-style"><a href="https://modern-body.captivate.fm/">{{ episode.title }}</a></h2>
+            <h2 class="h3-style">{{ episode.title }}</h2>
             <p class="p-small">{{ episode.published_date | date('F j, Y') }}</p>
         </div>
     {% else %}
@@ -55,7 +55,7 @@
             {% if mediaItem.title %}
             <div class="podcasts-item">
                 <div class="stack-xs">
-                    <h3><a href="https://modern-body.captivate.fm/">{{ mediaItem.title }}</a></h3>
+                    <h3>{{ mediaItem.title }}</h3>
                     <p class="p-small">{{ mediaItem.created_at | date('F j, Y') }}</p>
                 </div>
                 {% if mediaItem.media_url %}
