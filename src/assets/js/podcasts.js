@@ -70,5 +70,75 @@ const showMoreLatestPodcast = () => {
     });
 }
 
+const playAudio = () => {
+    const formatAudioTime = (time) => {
+        let hours = Math.floor(time / 3600);
+        let minutes = Math.floor((time % 3600) / 60);
+        if (minutes < 10) {
+            minutes = '0' + minutes;
+        }
+        return timeString = hours + ':' + minutes;
+    }
+
+    const playerControls = (player) => {
+        const audio = player.querySelector('.player');
+        const button = player.querySelector('.control-button');
+        const buttonPlaying = player.querySelector('.playing');
+        const buttonPaused = player.querySelector('.paused');
+        const buttonIcon = player.querySelector('.btn-icon');
+        const progressBar = player.querySelector('.progressBar');
+        const progressCurrent = player.querySelector('.progress-current');
+        const progressDuration = player.querySelector('.progress-duration');
+        const volumeControl = player.querySelector('.volumeControl');
+
+        audio.addEventListener('loadedmetadata', function() {
+            console.log('audio.duration', audio.duration);
+            if (audio.duration) {
+                const percentage = (audio.currentTime / audio.duration) * 100;
+                progressDuration.textContent = formatAudioTime(audio.duration);
+            }
+        }, false);
+
+        button.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play().catch(e => console.error("Playback failed:", e));
+                buttonPaused.classList.remove('show');
+                buttonPlaying.classList.add('show');
+            } else {
+                audio.pause();
+                buttonPaused.classList.add('show');
+                buttonPlaying.classList.remove('show');        }
+        });
+
+        audio.addEventListener('timeupdate', () => {
+            if (audio.duration) {
+                const percentage = (audio.currentTime / audio.duration) * 100;
+                progressBar.value = percentage;
+                progressCurrent.textContent = formatAudioTime(audio.currentTime);
+            }
+        });
+
+        progressBar.addEventListener('input', () => {
+            if (audio.duration) {
+                const time = (progressBar.value / 100) * audio.duration;
+                audio.currentTime = formatAudioTime(time);
+            }
+        });
+
+        volumeControl.addEventListener('input', () => {
+            audio.volume = volumeControl.value;
+        });
+    }
+
+    const customPlayers = document.querySelectorAll('.custom-player');
+
+    customPlayers.forEach((player) => {
+        if (player) {
+            playerControls(player);
+        }
+    });
+}
+
 loadPodcasts();
 showMoreLatestPodcast();
+playAudio();

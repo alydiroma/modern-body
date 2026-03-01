@@ -3513,10 +3513,6 @@ textarea {
   color: #3D2F17;
   background-color: #eee6d9;
 }
-.podcasts audio {
-  width: 100%;
-  max-width: 100%;
-}
 .podcasts-banner {
   position: relative;
   display: flex;
@@ -3685,7 +3681,7 @@ textarea {
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
-  padding: 2rem;
+  padding: 1rem;
   border: 2px solid #B2482B;
   border-radius: 0.5rem;
 }
@@ -3697,6 +3693,134 @@ textarea {
 .podcasts-item h3 {
   font-family: "Karla Variable", sans-serif;
   font-size: 1.25rem;
+}
+.podcasts .custom-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #3D2F17;
+  border-radius: 0.5rem;
+}
+.podcasts .custom-controls .control-button {
+  text-decoration: none;
+  text-shadow: none;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
+}
+.podcasts .custom-controls .control-button:hover {
+  cursor: pointer;
+}
+.podcasts .custom-controls .control-button svg {
+  width: 1rem;
+}
+.podcasts .custom-controls .control-button .paused {
+  display: none;
+}
+.podcasts .custom-controls .control-button .paused.show {
+  display: block;
+}
+.podcasts .custom-controls .control-button .playing {
+  display: none;
+}
+.podcasts .custom-controls .control-button .playing.show {
+  display: block;
+}
+.podcasts .custom-controls .control {
+  flex: 0 0 1rem;
+}
+.podcasts .custom-controls .volume,
+.podcasts .custom-controls .progress,
+.podcasts .custom-controls .progress-text {
+  display: flex;
+  align-items: center;
+}
+.podcasts .custom-controls .progress {
+  flex: 2;
+  gap: 0.5rem;
+}
+.podcasts .custom-controls .progress-current {
+  margin-right: 0.125rem;
+}
+.podcasts .custom-controls .progress-duration {
+  margin-left: 0.125rem;
+}
+.podcasts .custom-controls .volume {
+  flex: 1;
+  gap: 0.5rem;
+}
+.podcasts .custom-controls input[type=range] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  background: transparent;
+}
+.podcasts .custom-controls input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+          appearance: none;
+  height: 1rem;
+  border-radius: 0.75rem;
+  background: #E0D7C6;
+}
+.podcasts .custom-controls input[type=range]::-moz-range-track {
+  -moz-appearance: none;
+       appearance: none;
+  height: 1rem;
+  border-radius: 0.75rem;
+  background: #E0D7C6;
+}
+.podcasts .custom-controls input[type=range]::-moz-range-progress {
+  background: #1e3650;
+  height: 1rem;
+  border-radius: 0.75rem 0 0 0.75rem;
+}
+.podcasts .custom-controls input[type=range]::-ms-track {
+  appearance: none;
+  height: 1rem;
+  border-radius: 0.75rem;
+  background: #E0D7C6;
+  color: transparent;
+  border: 0;
+}
+.podcasts .custom-controls input[type=range]::-ms-fill-lower {
+  background: #1e3650;
+  border-radius: 0.75rem 0 0 0.75rem;
+}
+.podcasts .custom-controls input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 0.75rem;
+  background: #3D2F17;
+  cursor: pointer;
+  margin-top: 0;
+}
+.podcasts .custom-controls input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+       appearance: none;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 0.75rem;
+  background: #3D2F17;
+  cursor: pointer;
+  margin-top: -14px;
+}
+.podcasts .custom-controls input[type=range]::-ms-thumb {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 0.75rem;
+  background: #3D2F17;
+  cursor: pointer;
+  margin-top: -14px;
 }
 
 .episode {

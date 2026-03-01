@@ -31,23 +31,20 @@
     {% set media = craft.captivateApi.getMedia(1, 0) %}
     {% for mediaItem in media %}
         {% if mediaItem.media_url %}
-            <audio controls>
-                <source src={{ mediaItem.media_url}} type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            {% endif %}
-        {% endfor %}
-        {% for episode in episodes %}
-            {% if episode.shownotes %}
+            {% include '_partials/audio-player' %}
+        {% endif %}
+    {% endfor %}
+    {% for episode in episodes %}
+        {% if episode.shownotes %}
             <button type="button" aria-expanded="false" class="podcasts-latest-toggle-btn p-style" aria-controls="more-copy" id="more-toggle">
                 Show More About This Episode
             </button>
             <div class="podcasts-latest-copy stack-sm" id="more-copy" role="region" aria-labelledby="more-toggle">
                 <p>{{ episode.shownotes | raw}}</p>
             </div>
-            {% endif %}
-        {% endfor %}
-    </section>
+        {% endif %}
+    {% endfor %}
+  </section>
   <section class="podcasts-list stack-md">
     <div class="podcasts-head container-medium">
         <h2 class="h3-style">More Podcasts</h2>
@@ -61,10 +58,9 @@
                     <h3><a href="https://modern-body.captivate.fm/">{{ mediaItem.title }}</a></h3>
                     <p class="p-small">{{ mediaItem.created_at | date('F j, Y') }}</p>
                 </div>
-                <audio controls>
-                    <source src={{ mediaItem.media_url}} type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
+                {% if mediaItem.media_url %}
+                    {% include '_partials/audio-player' %}
+                {% endif %}
             </div>
             {% endif %}
         {% else %}

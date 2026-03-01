@@ -61,7 +61,71 @@ var showMoreLatestPodcast = function showMoreLatestPodcast() {
     }
   });
 };
+var playAudio = function playAudio() {
+  var formatAudioTime = function formatAudioTime(time) {
+    var hours = Math.floor(time / 3600);
+    var minutes = Math.floor(time % 3600 / 60);
+    if (minutes < 10) {
+      minutes = '0' + minutes;
+    }
+    return timeString = hours + ':' + minutes;
+  };
+  var playerControls = function playerControls(player) {
+    var audio = player.querySelector('.player');
+    var button = player.querySelector('.control-button');
+    var buttonPlaying = player.querySelector('.playing');
+    var buttonPaused = player.querySelector('.paused');
+    var buttonIcon = player.querySelector('.btn-icon');
+    var progressBar = player.querySelector('.progressBar');
+    var progressCurrent = player.querySelector('.progress-current');
+    var progressDuration = player.querySelector('.progress-duration');
+    var volumeControl = player.querySelector('.volumeControl');
+    audio.addEventListener('loadedmetadata', function () {
+      console.log('audio.duration', audio.duration);
+      if (audio.duration) {
+        var percentage = audio.currentTime / audio.duration * 100;
+        progressDuration.textContent = formatAudioTime(audio.duration);
+      }
+    }, false);
+    button.addEventListener('click', function () {
+      if (audio.paused) {
+        audio.play()["catch"](function (e) {
+          return console.error("Playback failed:", e);
+        });
+        buttonPaused.classList.remove('show');
+        buttonPlaying.classList.add('show');
+      } else {
+        audio.pause();
+        buttonPaused.classList.add('show');
+        buttonPlaying.classList.remove('show');
+      }
+    });
+    audio.addEventListener('timeupdate', function () {
+      if (audio.duration) {
+        var percentage = audio.currentTime / audio.duration * 100;
+        progressBar.value = percentage;
+        progressCurrent.textContent = formatAudioTime(audio.currentTime);
+      }
+    });
+    progressBar.addEventListener('input', function () {
+      if (audio.duration) {
+        var time = progressBar.value / 100 * audio.duration;
+        audio.currentTime = formatAudioTime(time);
+      }
+    });
+    volumeControl.addEventListener('input', function () {
+      audio.volume = volumeControl.value;
+    });
+  };
+  var customPlayers = document.querySelectorAll('.custom-player');
+  customPlayers.forEach(function (player) {
+    if (player) {
+      playerControls(player);
+    }
+  });
+};
 loadPodcasts();
 showMoreLatestPodcast();
+playAudio();
 /******/ })()
 ;

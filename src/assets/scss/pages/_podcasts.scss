@@ -3,8 +3,8 @@
 	background-color: $bg-med;
 
 	audio {
-		width: 100%;
-		max-width: 100%;
+		//width: 100%;
+		//max-width: 100%;
 	}
 
 	&-banner {
@@ -154,7 +154,7 @@
 		flex-direction: column;
 		justify-content: space-between;
 		gap: $gap-sm;
-		padding: $gap;
+		padding: $gap-sm;
 		border: 2px solid $orange;
 		border-radius: $radius-large;
 
@@ -166,5 +166,137 @@
 			@include font-body;
 			@include toRem('font-size', 20);
 		}	
+	}
+
+	.custom-controls {
+		display: flex;
+		align-items: center;
+		gap: $gap-xs;
+		padding: $gap-xs;
+		border: 1px solid $coffee;
+		border-radius: $gap-xs;
+		
+		.control-button {
+			@include button-reset;
+			display: block;
+			
+			svg {
+				width: $gap-sm;
+			}
+
+			.paused {
+				display: none;
+
+				&.show {
+					display: block;
+				}
+			}
+
+			.playing {
+				display: none;
+
+				&.show {
+					display: block;
+				}
+			}
+		}
+		
+		.control {
+			flex: 0 0 $gap-sm;
+		}
+
+		.volume,
+		.progress,
+		.progress-text {
+			display: flex;
+			align-items: center;
+		}
+		
+		.progress {
+			flex: 2;
+			gap: $gap-xs;
+
+			&-current {
+				margin-right: $sliver;
+			}
+
+			&-duration {
+				margin-left: $sliver;
+			}
+		}
+		
+		.volume {
+			flex: 1;
+			gap: $gap-xs;
+		}
+
+		input[type=range] {
+			appearance: none; 
+			width: 100%; 
+			background: transparent; 
+
+			&::-webkit-slider-runnable-track {
+				appearance: none;
+				height: $gap-sm;
+				border-radius: 0.75rem;
+				background: $bone;		
+			}
+
+			&::-moz-range-track {
+				appearance: none;
+				height: $gap-sm;
+				border-radius: 0.75rem;
+				background: $bone;		
+			}
+
+			&::-moz-range-progress {
+				background: #1e3650;
+				height: $gap-sm;
+				border-radius: 0.75rem 0 0 0.75rem;
+			}
+
+			&::-ms-track {
+				appearance: none;
+				height: $gap-sm;
+				border-radius: 0.75rem;
+				background: $bone;
+				color: transparent;
+				border: 0;
+			}
+
+			&::-ms-fill-lower {
+				background: #1e3650;
+				border-radius: 0.75rem 0 0 0.75rem;
+			}
+
+			&::-webkit-slider-thumb {
+				appearance: none;
+				height: $gap-sm;
+				width: $gap-sm;
+				border-radius: .75rem;
+				background: #3D2F17;
+				cursor: pointer;
+				margin-top: 0;
+			}
+
+			&::-moz-range-thumb {
+				appearance: none;
+				height: $gap-sm;
+				width: $gap-sm;
+				border-radius: 0.75rem;
+				background: #3D2F17;
+				cursor: pointer;
+				margin-top: -14px; 
+			}
+
+			&::-ms-thumb {
+				height: $gap-sm;
+				width: $gap-sm;
+				border-radius: 0.75rem;
+				background: #3D2F17;
+				cursor: pointer;
+				margin-top: -14px;
+			}
+		}
 	}
 }
