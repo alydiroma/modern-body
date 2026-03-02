@@ -126,14 +126,10 @@
 
 		&-inner {
 			display: grid;
-			grid-template-columns: repeat(3, 1fr);
+			grid-template-columns: repeat(2, 1fr);
 			gap: $gap;
 
 			@include break(tablet) {
-				grid-template-columns: repeat(2, 1fr);
-			}
-
-			@include break(mobile) {
 				grid-template-columns: repeat(1, 1fr);
 			}
 		}
@@ -219,7 +215,7 @@
 		}
 		
 		.progress {
-			flex: 1.25;
+			flex: 1.5;
 			gap: $gap-xs;
 
 			&-current {

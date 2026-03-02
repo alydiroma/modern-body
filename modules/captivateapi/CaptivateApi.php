@@ -63,7 +63,7 @@ class CaptivateApi extends BaseModule
         }, 82800);
     }
 
-    public function getEpisodes($limit = 12, $offset = 0)
+    public function getEpisodes($limit = 6, $offset = 0)
     {
         $limit = (int)$limit;
         $offset = (int)$offset;

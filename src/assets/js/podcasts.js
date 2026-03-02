@@ -3,7 +3,7 @@ const loadPodcasts = () => {
     document.getElementById('load-more-btn').addEventListener('click', function() {
         const btn = this;
         const offset = parseInt(btn.getAttribute('data-offset'));
-        const limit = 12;
+        const limit = 6;
         const totalCount = btn.getAttribute('data-count');
 
         const url = `/actions/captivateapi/default/load-more?limit=${limit}&offset=${offset}`;

@@ -8,7 +8,7 @@ var loadPodcasts = function loadPodcasts() {
   document.getElementById('load-more-btn').addEventListener('click', function () {
     var btn = this;
     var offset = parseInt(btn.getAttribute('data-offset'));
-    var limit = 12;
+    var limit = 6;
     var totalCount = btn.getAttribute('data-count');
     var url = "/actions/captivateapi/default/load-more?limit=".concat(limit, "&offset=").concat(offset);
     btn.innerText = 'Loading...';

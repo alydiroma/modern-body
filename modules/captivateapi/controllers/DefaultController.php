@@ -35,7 +35,7 @@ class DefaultController extends Controller
     public function actionLoadMore()
     {
         $this->requireAcceptsJson();
-        $limit = (int)Craft::$app->request->getParam('limit', 12);
+        $limit = (int)Craft::$app->request->getParam('limit', 6);
         $offset = (int)Craft::$app->request->getParam('offset', 0);
 
         $module = \modules\captivateapi\CaptivateApi::getInstance();

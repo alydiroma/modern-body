@@ -3660,15 +3660,10 @@ textarea {
 }
 .podcasts-list-inner {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 @media (max-width: 992px) {
-  .podcasts-list-inner {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 600px) {
   .podcasts-list-inner {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -3754,7 +3749,7 @@ textarea {
   align-items: center;
 }
 .podcasts .custom-controls .progress {
-  flex: 1.25;
+  flex: 1.5;
   gap: 0.5rem;
 }
 .podcasts .custom-controls .progress-current {
