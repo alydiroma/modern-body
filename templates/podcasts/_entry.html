@@ -63,8 +63,10 @@
         {% endfor %}
     </div>
     <div class="podcasts-button">
-        <button id="load-more-btn" class="btn-cta-orange" data-offset="7">Load More</button>
+        {% set episodesCount = craft.captivateApi.getEpisodesCount %}
+        <button id="load-more-btn" class="btn-cta-orange" data-offset="7" data-count={{ episodesCount}}>Load More</button>
     </div>
   </section>
 </main>
+
 {% endblock %}

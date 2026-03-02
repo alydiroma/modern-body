@@ -3589,6 +3589,7 @@ textarea {
   width: calc(100% - 5rem);
   max-width: 50rem;
   margin-inline: auto;
+  container: podcast/inline-size;
   padding-block: 5rem;
 }
 @media (max-width: 1024px) {
@@ -3677,6 +3678,7 @@ textarea {
   justify-content: center;
 }
 .podcasts-item {
+  container: podcast/inline-size;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -3702,6 +3704,11 @@ textarea {
   border: 1px solid #3D2F17;
   border-radius: 0.5rem;
 }
+@container podcast (width < 25rem) {
+  .podcasts .custom-controls {
+    flex-wrap: wrap;
+  }
+}
 .podcasts .custom-controls .control-button {
   text-decoration: none;
   text-shadow: none;
@@ -3714,6 +3721,7 @@ textarea {
      -moz-appearance: none;
           appearance: none;
   display: block;
+  margin-top: 0.25rem;
 }
 .podcasts .custom-controls .control-button:hover {
   cursor: pointer;
@@ -3746,7 +3754,7 @@ textarea {
   align-items: center;
 }
 .podcasts .custom-controls .progress {
-  flex: 2;
+  flex: 1.25;
   gap: 0.5rem;
 }
 .podcasts .custom-controls .progress-current {
@@ -3758,6 +3766,11 @@ textarea {
 .podcasts .custom-controls .volume {
   flex: 1;
   gap: 0.5rem;
+}
+@container podcast (width < 25rem) {
+  .podcasts .custom-controls .volume {
+    flex: 0 0 100%;
+  }
 }
 .podcasts .custom-controls input[type=range] {
   -webkit-appearance: none;

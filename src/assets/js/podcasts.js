@@ -1,12 +1,18 @@
 const loadPodcasts = () => {
+    let loadedCount = 7; // page loads with 7 podcasts - latest and six more
     document.getElementById('load-more-btn').addEventListener('click', function() {
         const btn = this;
         const offset = parseInt(btn.getAttribute('data-offset'));
         const limit = 12;
+        const totalCount = btn.getAttribute('data-count');
 
         const url = `/actions/captivateapi/default/load-more?limit=${limit}&offset=${offset}`;
 
         btn.innerText = 'Loading...';
+
+        if (loadedCount > totalCount - limit) {
+            btn.style.display = 'none';
+        }
 
         const formatter = new Intl.DateTimeFormat('en-US', {
             month: 'long',
@@ -27,7 +33,7 @@ const loadPodcasts = () => {
         .then(data => {
             if (data.success && data.episodes.length > 0) {
                 const container = document.getElementById('episode-container');
-                
+                loadedCount = loadedCount + data.episodes.length;
                 data.episodes.forEach(ep => {
                     const div = document.createElement('div');
                     div.className = 'podcasts-item';
@@ -57,7 +63,7 @@ const loadPodcasts = () => {
                             `</div>` +
                             `<div class="progress">` +
                                 `<div class="progress-text">` +
-                                    `<span class="progress-current">0:00</span> / <span class="progress-duration"></span>` +
+                                    `<span class="progress-current">0:00:00</span> / <span class="progress-duration"></span>` +
                                 `</div>` +
                                 `<input type="range" class="progressBar" min="0" max="100" value="0">` +
                             `</div>` +
@@ -107,10 +113,14 @@ const customAudio = () => {
     const formatAudioTime = (time) => {
         let hours = Math.floor(time / 3600);
         let minutes = Math.floor((time % 3600) / 60);
+        let seconds = Math.floor(time % 60);
         if (minutes < 10) {
             minutes = '0' + minutes;
         }
-        return timeString = hours + ':' + minutes;
+        if (seconds < 10) {
+            seconds = '0' + seconds;
+        }
+        return timeString = hours + ':' + minutes + ':' + seconds;
     }
 
     const playerControls = (player) => {

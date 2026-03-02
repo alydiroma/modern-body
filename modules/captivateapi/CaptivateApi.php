@@ -101,4 +101,38 @@ class CaptivateApi extends BaseModule
             }
         }, 3600);
     }
+
+    public function getEpisodesCount()
+    {
+        $cacheKey = "captivate_v10_total_count";
+
+        return \Craft::$app->cache->getOrSet($cacheKey, function() {
+            $auth = $this->getAuthToken();
+            $token = $auth['user']['token'] ?? null;
+            $showId = \Craft::parseEnv('$CAPTIVATE_SHOW_ID');
+
+            if (!$token || !$showId) {
+                return 0;
+            }
+
+            try {
+                $client = \Craft::createGuzzleClient();
+                $response = $client->get("https://api.captivate.fm/shows/{$showId}/episodes", [
+                    'headers' => [
+                        'Authorization' => 'Bearer ' . $token,
+                        'Accept'        => 'application/json',
+                    ],
+                ]);
+
+                $body = json_decode($response->getBody()->getContents(), true);
+                
+                return (int)($body['count'] ?? 0);
+
+            } catch (\Exception $e) {
+                \Craft::error("Captivate Count Error: " . $e->getMessage(), __METHOD__);
+                return 0; 
+            }
+        }, 3600);
+    }
+
 }

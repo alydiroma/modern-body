@@ -2,11 +2,6 @@
     color: $dark-brown;
 	background-color: $bg-med;
 
-	audio {
-		//width: 100%;
-		//max-width: 100%;
-	}
-
 	&-banner {
 		position: relative;
 		display: flex;
@@ -75,6 +70,7 @@
 
     &-latest {
 		@include container(50rem);
+		container: podcast / inline-size;
 		padding-block: $gap-xl;
 
 		@include break(mobile) {
@@ -150,6 +146,7 @@
 	}
 
 	&-item {
+		container: podcast / inline-size;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -174,11 +171,16 @@
 		gap: $gap-xs;
 		padding: $gap-xs;
 		border: 1px solid $coffee;
-		border-radius: $gap-xs;
-		
+		border-radius: $gap-xs;	
+
+		@container podcast (width < 25rem) {
+			flex-wrap: wrap;
+		}
+
 		.control-button {
 			@include button-reset;
 			display: block;
+			margin-top: $space;
 
 			span, svg {
 				pointer-events: none;
@@ -217,7 +219,7 @@
 		}
 		
 		.progress {
-			flex: 2;
+			flex: 1.25;
 			gap: $gap-xs;
 
 			&-current {
@@ -232,6 +234,10 @@
 		.volume {
 			flex: 1;
 			gap: $gap-xs;
+
+			@container podcast (width < 25rem) {
+				flex: 0 0 100%;
+			}
 		}
 
 		input[type=range] {
