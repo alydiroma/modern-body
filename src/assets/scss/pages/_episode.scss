@@ -39,7 +39,7 @@
 
         blockquote {
             @include toRem('font-size', 20);
-            color: $accent;
+            color: $brick;
             padding-block: 1rem;
         }
 

@@ -1,5 +1,5 @@
 .home {
-	color: $dark-brown;
+	color: $coffee;
 	background-color: $bg-med;
 
 	&-hero {
@@ -15,7 +15,7 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: $dark-brown;
+			background-color: $coffee;
 
 			img {
 				@include object-fit;
@@ -109,7 +109,7 @@
 
 			h2 {
 				@include toRem('max-width', 500);
-				color: $orange;
+				color: $brick;
 
 				@include break(tablet) {
 					max-width: unset;
@@ -143,7 +143,7 @@
 			flex-direction: column;
 			justify-content: flex-end;
 			padding: $gap-sm;
-			border: 2px solid $orange;
+			border: 2px solid $brick;
 			border-radius: $radius-large;
 			aspect-ratio: 1 / 1;
 
@@ -261,7 +261,7 @@
 			@include container;
 			position: relative;
 			text-align: center;
-			color: $orange;
+			color: $brick;
 			padding-block: $gap-md $gap-sm;
 			border-radius: 2rem 2rem 0 0;
 			z-index: 1;
@@ -276,7 +276,7 @@
 			}
 
 			p {
-				color: $dark-brown;
+				color: $coffee;
 			}
 		}
 
@@ -293,7 +293,7 @@
 				svg {
 					display: block;
 					width: $gap-sm;
-					fill: $orange;
+					fill: $brick;
 					transition: transform .3s ease;
 				}
 
@@ -339,7 +339,7 @@
 			&-image {
 				width: 100%;
 				aspect-ratio: 1 / 1;
-				background-color: $dark-brown;
+				background-color: $coffee;
 				border-radius: $radius-large $radius-large 0 0;
 				overflow: hidden;
 
@@ -385,7 +385,7 @@
 			position: relative;
 			flex: 1;
 			height: auto;
-			background-color: $dark-brown;
+			background-color: $coffee;
 			border-radius: $gap;
 			overflow: hidden;
 
@@ -428,7 +428,7 @@
 			flex: 1;
 
 			h2 {
-				color: $orange;
+				color: $brick;
 			}
 
 			.video-btn {
@@ -452,7 +452,7 @@
 			text-align: center;
 
 			h2 {
-				color: $orange;
+				color: $brick;
 			}
 
 			&-text {
@@ -494,7 +494,7 @@
 				left: 0;
 				width: 100%;
 				height: 100%;
-				background-color: $dark-brown;
+				background-color: $coffee;
 				border-radius: $radius-image;
 				overflow: hidden;
 				z-index: -1;
@@ -532,7 +532,7 @@
 			&-tag {
 				@extend %tag-small;
 				text-transform: none;
-				color: $dark-brown;
+				color: $coffee;
 			}
 		}
 	}
@@ -544,7 +544,7 @@
 			@include container;
 
 			h2 {
-				color: $orange;
+				color: $brick;
 			}
 		}
 
@@ -568,7 +568,7 @@
 
 		&-item {
 			padding: $gap;
-			border: 2px solid $orange;
+			border: 2px solid $brick;
 			border-radius: $radius-large;
 		}
 	}
@@ -578,7 +578,7 @@
 		height: 100vh;
 		color: $white;
 		padding-block: $gap $gap-xxl;
-		background-color: $dark-brown;
+		background-color: $coffee;
 
 		@include break(mobile) {
 			height: unset;
@@ -636,10 +636,10 @@
 
 	&-faq {
 		padding-top: $gap-xl;
-		border-top: 1px solid $orange;
+		border-top: 1px solid $brick;
 
 		h2 {
-			color: $orange;
+			color: $brick;
 		}
 
 		&-container {
@@ -649,17 +649,17 @@
 		&-item {
 			margin-left: $gap;
 			padding-bottom: $gap-sm;
-			border-bottom: 2px solid $orange;
+			border-bottom: 2px solid $brick;
 		}
 
 		&-toggle {
 			@include button-reset;
 			position: relative;
 			text-align: left;
-			color: $dark-brown;
+			color: $coffee;
 
 			&:focus-visible {
-				outline: 1px solid $orange;
+				outline: 1px solid $brick;
 				outline-offset: 2px;
 			}
 

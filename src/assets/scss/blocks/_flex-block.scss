@@ -26,7 +26,7 @@
     &-bg {
         color: $white;
         padding: $gap;
-        background-color: $accent;
+        background-color: $brick;
         border-radius: $radius-large;
 
         @include break(tablet) {

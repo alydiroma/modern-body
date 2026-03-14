@@ -1,5 +1,5 @@
 .podcasts {
-    color: $dark-brown;
+    color: $coffee;
 	background-color: $bg-med;
 
 	&-banner {
@@ -15,7 +15,7 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: $dark-brown;
+			background-color: $coffee;
 
 			img {
 				@include object-fit;
@@ -84,7 +84,7 @@
 		&-toggle-btn {
 			@include button-reset;
 			position: relative;
-			color: $accent;
+			color: $brick;
 			margin-left: $gap-sm;
 
 			&::before {
@@ -171,7 +171,7 @@
 		gap: $gap-sm;
 		padding: $gap-sm;
 		background-color: $white;
-		border: 2px solid $orange;
+		border: 2px solid $brick;
 		border-radius: $radius-large;
 
 		@include break(mobile) {

@@ -47,15 +47,15 @@
 
 .btn-underline-orange {
 	@extend %btn-underline;
-	color: $dark-brown;
+	color: $coffee;
 
 	&:focus-visible {
-		outline: 1px solid $orange;
+		outline: 1px solid $brick;
 		outline-offset: 2px;
 	}
 
 	&::after {
-		background-color: $orange;
+		background-color: $brick;
 	}
 }
 
@@ -75,35 +75,34 @@
 
 .btn-cta-orange {
 	@extend %btn-cta;
-	color: $orange;
+	color: $brick;
 	background-color: transparent;
-	border-color: $orange;
+	border-color: $brick;
 	transition: color .3s ease, background-color .3s ease;
 
 	&:focus-visible {
-		outline: 2px solid $dark-brown;
+		outline: 2px solid $coffee;
 	}
 
 	&:hover {
 		color: $white;
-		background-color: $orange;
+		background-color: $brick;
 	}
 }
-
 
 .btn-solid-orange {
 	@extend %btn-cta;
 	color: $white;
-	background-color: $orange;
-	border-color: $orange;
+	background-color: $brick;
+	border-color: $brick;
 	transition: color .3s ease, background-color .3s ease;
 
 	&:focus-visible {
-		outline: 2px solid $dark-brown;
+		outline: 2px solid $coffee;
 	}
 
 	&:hover {
-		color: $orange;
+		color: $brick;
 		background-color: transparent;
 	}
 }
@@ -116,11 +115,11 @@
 	transition: color .3s ease, background-color .3s ease;
 
 	&:focus-visible {
-		outline: 2px solid $orange;
+		outline: 2px solid $brick;
 	}
 
 	&:hover {
-		color: $orange;
+		color: $brick;
 		background-color: $white;
 	}
 }

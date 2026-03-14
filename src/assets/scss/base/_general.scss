@@ -53,13 +53,13 @@ small {
 a,
 button {
 	&:focus-visible {
-		outline: 1px solid $accent;
+		outline: 1px solid $brick;
 		outline-offset: 2px;
 	}
 }
 
 a {
-	color: $accent;
+	color: $brick;
 	text-decoration: none;
 
 	&:hover {
@@ -106,7 +106,7 @@ strong,
 	@include font-head;
 	@include toRem('font-size', 24);
 	line-height: 1.8;
-	color: $accent;
+	color: $brick;
 	margin: $gap 0;
 
 	@include break(tablet) {

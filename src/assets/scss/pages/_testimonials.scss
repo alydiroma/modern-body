@@ -24,7 +24,7 @@
         gap: $gap-md;
         margin-top: $gap-md;
         padding-top: $gap-md;
-        border-top: 2px solid $accent;
+        border-top: 2px solid $brick;
 
         @include break(tablet) {
             flex-direction: column;

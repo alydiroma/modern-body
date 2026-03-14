@@ -20,7 +20,7 @@
         }
 
         .message.error {
-            color: $accent;
+            color: $brick;
         }
 
         .errors {
@@ -29,7 +29,7 @@
 
             li {
                 @include toRem('font-size', 14);
-                color: $accent;
+                color: $brick;
             }
         }
 

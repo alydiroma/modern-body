@@ -82,7 +82,7 @@ $_nav-panel-width: 14rem;
 
 		&.active {
 			@include font-medium;
-			color: $accent;
+			color: $brick;
 			cursor: default;
 
 			&::before {

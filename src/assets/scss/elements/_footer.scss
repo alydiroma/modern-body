@@ -70,7 +70,7 @@
 				@include font-body;
 				@include toRem('font-size', 16);
 				text-transform: uppercase;
-				color: $dark-brown;
+				color: $coffee;
 			}
 
 			ul {
@@ -95,7 +95,7 @@
 		}
 
 		&-link {
-			color: $dark-brown;
+			color: $coffee;
 
 			&.external {
 
@@ -124,14 +124,14 @@
 	}
 
 	&-copyright {
-		color: $dark-brown;
+		color: $coffee;
 
 		a {
-			color: $dark-brown;
+			color: $coffee;
 			text-decoration: underline;
 
 			&:hover {
-				color: $orange;
+				color: $brick;
 			}
 		}
 	}

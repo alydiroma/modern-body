@@ -2,25 +2,14 @@
 $black: #222;
 $white: #ffffff;
 $gray: #bbb;
-$beige: #fbfbfb;
-$accent: #8a3a42;
-
-// new colors
-$brown: #6D5725;
-$dark-brown: #3D2F17;
-$orange: #B2482B;
-$white: #fff;
-
-$bg-dark: #e2d7c4;
-$bg-med: #eee6d9;
-$bg-light: #f5f2e8;
-
 $bone: #E0D7C6;
-$pink: #E5DAD2;
 $floral-white: #F8F6EE;
 $brick: #B2482B;
-$field: #6D5725;
 $coffee: #3D2F17;
+
+$bg-dark: lighten($bone, 2%);
+$bg-med: darken($floral-white, 5%);
+$bg-light: $floral-white;
 
 // fonts
 $font-head: 'Cigars Medium', sans-serif;

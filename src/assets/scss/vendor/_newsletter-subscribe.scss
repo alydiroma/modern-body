@@ -14,7 +14,7 @@
 
 .fd-has-success .fd-form-success {
     display: block;
-    color: $accent !important;
+    color: $brick !important;
 }
 
 .fd-form-success>*:last-child {
@@ -88,7 +88,7 @@
 }
 
 .fd-focus-visible:nth-child(n):nth-child(n):nth-child(n) {
-    outline: 1px solid $accent !important;
+    outline: 1px solid $brick !important;
     box-shadow: unset !important;
 }
 
@@ -102,13 +102,13 @@
 	line-height: 40px !important;
 	color: $white;
 	padding: 0 $gap !important;
-	background-color: $accent !important;
-	border: 2px solid $accent !important;
+	background-color: $brick !important;
+	border: 2px solid $brick !important;
 	border-radius: $radius !important;
 	transition: color .6s ease, background-color .6s ease;
 
 	&:hover {
-		color: $accent !important;
+		color: $brick !important;
 		background-color: transparent !important;
 	}
 }

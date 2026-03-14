@@ -17,7 +17,7 @@
         @include container($narrow);
         margin-top: $gap-md;
         padding-top: $gap-sm;
-        border-top: 2px solid $accent;
+        border-top: 2px solid $brick;
 
         .emphasis {
             @include font-medium;
