@@ -995,7 +995,7 @@ body {
   padding: 0;
 }
 body:has(.home) {
-  background-color: #f1ecdc;
+  background-color: #F1ECDC;
 }
 body.fixed {
   position: fixed;
@@ -1828,7 +1828,7 @@ textarea {
 
 .footer {
   padding-block: 10rem 2rem;
-  background-color: #f1ecdc;
+  background-color: #F1ECDC;
 }
 @media (max-width: 992px) {
   .footer {
@@ -2025,7 +2025,7 @@ textarea {
 
 .home {
   color: #3D2F17;
-  background-color: #f1ecdc;
+  background-color: #F1ECDC;
 }
 .home-hero {
   position: relative;
@@ -2129,7 +2129,7 @@ textarea {
 }
 .home-difference {
   padding-block: 5rem;
-  background-color: #f1ecdc;
+  background-color: #F1ECDC;
 }
 .home-difference-head {
   width: calc(100% - 5rem);
@@ -2309,7 +2309,7 @@ textarea {
 .home-classes {
   position: relative;
   margin-bottom: 5rem;
-  background-color: #f1ecdc;
+  background-color: #F1ECDC;
 }
 .home-classes::after {
   width: calc(100% - 5rem);
@@ -2433,7 +2433,7 @@ textarea {
 }
 .home-testimonials {
   padding-block: 0 5rem;
-  background-color: #f1ecdc;
+  background-color: #F1ECDC;
   scroll-margin-top: 3rem;
 }
 .home-testimonials-container {
@@ -2817,7 +2817,7 @@ textarea {
 
 .about {
   color: #3D2F17;
-  background-color: #f1ecdc;
+  background-color: #F1ECDC;
 }
 .about-banner {
   position: relative;
@@ -2884,7 +2884,7 @@ textarea {
 }
 .about-content {
   padding-block: 4rem;
-  background-color: #f1ecdc;
+  background-color: #F1ECDC;
 }
 .about-content-container {
   width: calc(100% - 5rem);
@@ -3530,7 +3530,7 @@ textarea {
 
 .podcasts {
   color: #3D2F17;
-  background-color: #f1ecdc;
+  background-color: #F1ECDC;
 }
 .podcasts-banner {
   position: relative;
