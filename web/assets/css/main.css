@@ -2239,7 +2239,7 @@ textarea {
   max-width: 82rem;
   margin-inline: auto;
   margin-bottom: 5rem;
-  background-color: #e4dccd;
+  background-color: #E0D7C6;
   border-radius: 1rem;
 }
 @media (max-width: 1024px) {
@@ -2531,7 +2531,7 @@ textarea {
 }
 .home-membership {
   padding-block: 5rem;
-  background-color: #e4dccd;
+  background-color: #E0D7C6;
 }
 .home-membership-head {
   width: calc(100% - 5rem);

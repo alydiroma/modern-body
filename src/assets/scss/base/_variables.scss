@@ -7,7 +7,7 @@ $floral-white: #F8F6EE;
 $brick: #B2482B;
 $coffee: #3D2F17;
 
-$bg-dark: lighten($bone, 2%);
+$bg-dark: $bone;
 $bg-med: darken($floral-white, 5%);
 $bg-light: $floral-white;
 
