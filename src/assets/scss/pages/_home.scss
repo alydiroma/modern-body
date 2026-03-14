@@ -330,9 +330,14 @@
 
 		&-carousel {
 			padding-inline: $gap-sm;
+
+			.swiper-slide {
+				height: auto;
+			}
 		}
 
 		&-slide {
+			height: 100%;
 			background-color: $white;
 			border-radius: $gap-sm;
 			

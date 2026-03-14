@@ -2399,7 +2399,11 @@ textarea {
 .home-classes-carousel {
   padding-inline: 1rem;
 }
+.home-classes-carousel .swiper-slide {
+  height: auto;
+}
 .home-classes-slide {
+  height: 100%;
   background-color: #ffffff;
   border-radius: 1rem;
 }
