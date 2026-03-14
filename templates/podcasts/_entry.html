@@ -29,7 +29,7 @@
             {% include '_partials/audio-player' %}
         {% endif %}
         {% if episode.shownotes %}
-            <button type="button" aria-expanded="false" class="podcasts-latest-toggle-btn p-style" aria-controls="more-copy" id="more-toggle">
+            <button type="button" aria-expanded="false" class="podcasts-latest-toggle-btn p-small bold" aria-controls="more-copy" id="more-toggle">
                 Show More About This Episode
             </button>
             <div class="podcasts-latest-copy stack-sm" id="more-copy" role="region" aria-labelledby="more-toggle">
@@ -64,7 +64,7 @@
     </div>
     <div class="podcasts-button">
         {% set episodesCount = craft.captivateApi.getEpisodesCount %}
-        <button id="load-more-btn" class="btn-cta-orange" data-offset="7" data-count={{ episodesCount }}>Load More</button>
+        <button id="load-more-btn" class="btn-solid-orange" data-offset="7" data-count={{ episodesCount }}>Load More</button>
     </div>
   </section>
 </main>

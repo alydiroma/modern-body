@@ -83,7 +83,29 @@
 
 		&-toggle-btn {
 			@include button-reset;
+			position: relative;
 			color: $accent;
+			margin-left: $gap-sm;
+
+			&::before {
+				@extend %p-style;
+				position: absolute;
+				top: 50%;
+				left: -$gap-sm;
+				transform: translateY(-50%);
+			}
+
+			&[aria-expanded="false"] {
+				&::before {
+					content: '+';
+				}
+			}
+
+			&[aria-expanded="true"] {
+				&::before {
+					content: '\2013';
+				}				
+			}
 
 			&:hover {
 				cursor: pointer;
@@ -148,6 +170,7 @@
 		justify-content: space-between;
 		gap: $gap-sm;
 		padding: $gap-sm;
+		background-color: $white;
 		border: 2px solid $orange;
 		border-radius: $radius-large;
 
@@ -166,6 +189,7 @@
 		align-items: center;
 		gap: $gap-xs;
 		padding: $gap-xs;
+		background-color: $white;
 		border: 1px solid $coffee;
 		border-radius: $gap-xs;	
 
@@ -256,7 +280,7 @@
 			}
 
 			&::-moz-range-progress {
-				background: #1e3650;
+				background: $bone;
 				height: $gap-sm;
 				border-radius: 0.75rem 0 0 0.75rem;
 			}
@@ -271,7 +295,7 @@
 			}
 
 			&::-ms-fill-lower {
-				background: #1e3650;
+				background: $bone;
 				border-radius: 0.75rem 0 0 0.75rem;
 			}
 
@@ -280,7 +304,7 @@
 				height: $gap-sm;
 				width: $gap-sm;
 				border-radius: .75rem;
-				background: #3D2F17;
+				background: $coffee;
 				cursor: pointer;
 				margin-top: 0;
 			}
@@ -290,7 +314,7 @@
 				height: $gap-sm;
 				width: $gap-sm;
 				border-radius: 0.75rem;
-				background: #3D2F17;
+				background: $coffee;
 				cursor: pointer;
 				margin-top: -14px; 
 			}
@@ -299,7 +323,7 @@
 				height: $gap-sm;
 				width: $gap-sm;
 				border-radius: 0.75rem;
-				background: #3D2F17;
+				background: $coffee;
 				cursor: pointer;
 				margin-top: -14px;
 			}
